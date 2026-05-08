@@ -1,20 +1,36 @@
 # URAI Foundation
 
-The URAI Foundation is an independent public-interest organization dedicated to the ethical, transparent, and human-centered development of life-scale artificial intelligence systems.
+The URAI Foundation is an independent public-interest organization dedicated to ethical, transparent, and human-centered development across the URAI ecosystem.
 
-The Foundation exists to ensure that technologies developed within the URAI ecosystem align with societal benefit, individual dignity, and long-term public trust.
+The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion—not generic claims about more intelligence.
+
+Website: [uraifoundation.org](https://uraifoundation.org/)
 
 ---
 
 ## Mission
 
-Advance responsible AI through open research, ethical frameworks, governance standards, and public accountability.
+Advance responsible AI through open research, ethical frameworks, governance standards, transparency practices, and public accountability.
+
+---
+
+## Website
+
+This repository now includes a lightweight static public website:
+
+- `index.html` — production homepage for `uraifoundation.org`.
+- `styles.css` — responsive visual system and layout styling.
+- `CNAME` — GitHub Pages custom domain configuration.
+- `robots.txt` and `sitemap.xml` — crawl and indexing support.
+- `site.webmanifest` — basic site metadata for installable browser contexts.
+
+The website should communicate the Foundation as professional, warm, grounded, and human. Avoid generic AI hype. The preferred framing is cohesion, real-life human experience, community benefit, consent, accountability, and trustworthy public standards.
 
 ---
 
 ## Repository status
 
-This repository is a documentation-first public-interest project. It currently contains governance, ethics, transparency, security, and contribution materials rather than application source code.
+This repository is a documentation-first public-interest project with a static website layer. It contains governance, ethics, transparency, security, contribution materials, and the public-facing site for the Foundation.
 
 Use the documents here as living standards. Changes should be reviewed, versioned, and traceable through pull requests.
 
@@ -30,6 +46,7 @@ The URAI Foundation supports and maintains:
 - Open documentation and explainability practices.
 - Collaboration with researchers, nonprofits, and institutions.
 - Oversight frameworks that prioritize human well-being.
+- Public-facing communication for the Foundation and its standards.
 
 ---
 
@@ -75,7 +92,7 @@ The Foundation serves as the ethical and governance anchor for the ecosystem.
 
 ## Local validation
 
-No package installation is required for the current documentation-only repository.
+No package installation is required for the current static/documentation repository.
 
 Run all local checks before opening a pull request:
 
@@ -98,6 +115,20 @@ The script checks Markdown and repository text files for:
 - Empty Markdown files.
 - Invalid UTF-8 in text files.
 - Unsupported or unsafe URI schemes in Markdown links.
+
+---
+
+## Website launch checklist
+
+Before launch or major website changes:
+
+1. Confirm GitHub Pages is enabled for the repository and points to the branch/folder that contains `index.html`.
+2. Confirm DNS for `uraifoundation.org` points to GitHub Pages.
+3. Verify the homepage loads over HTTPS.
+4. Check desktop and mobile layouts.
+5. Test navigation, document links, GitHub links, issue link, and contact email.
+6. Confirm the page title, meta description, canonical URL, Open Graph tags, `robots.txt`, and `sitemap.xml` are correct.
+7. Run `make check`.
 
 ---
 
