@@ -1,0 +1,9 @@
+{
+  "name": "URAI Foundation",
+  "short_name": "URAI Foundation",
+  "description": "Public-interest governance and human-centered standards for the URAI ecosystem.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f1e8",
+  "theme_color": "#f6f1e8"
+}
