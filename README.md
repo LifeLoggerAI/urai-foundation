@@ -62,6 +62,7 @@ The URAI Foundation supports and maintains:
 - [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
 - [Versioning and Change Policy](VERSIONING.md): standards versioning, change categories, changelog rules, and release-note expectations.
 - [Changelog](CHANGELOG.md): public trace of material standards, governance, process, and website changes.
+- [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md): responsive, accessibility, metadata, and release-verification checklist for public website work.
 - [Decision Record Template](docs/templates/decision-record.md): reusable template for significant governance decisions.
 - [Risk Review Record Template](docs/templates/risk-review-record.md): reusable template for documenting AI, privacy, safety, or public-interest risk reviews.
 - [Security Policy](SECURITY.md): how to report security, privacy, or safety issues.
@@ -134,7 +135,7 @@ Before launch or major website changes:
 1. Confirm GitHub Pages is enabled for the repository and points to the branch/folder that contains `index.html`.
 2. Confirm DNS for `uraifoundation.org` points to GitHub Pages.
 3. Verify the homepage loads over HTTPS.
-4. Check desktop and mobile layouts.
+4. Complete the [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md).
 5. Test navigation, document links, GitHub links, issue link, and contact email.
 6. Confirm the page title, meta description, canonical URL, Open Graph tags, favicon, `robots.txt`, `site.webmanifest`, and `sitemap.xml` are correct.
 7. Run `make check`.
