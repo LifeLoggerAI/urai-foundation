@@ -2,9 +2,17 @@
 
 ## Reporting security, privacy, or safety issues
 
-Please do not open a public issue for vulnerabilities, exposed secrets, private data, or active abuse paths.
+Please do not open a public issue for vulnerabilities, exposed secrets, private data, active abuse paths, or sensitive safety concerns.
 
-Use a private maintainer contact channel when available. If no private channel has been published yet, open a minimal public issue requesting a secure contact method without including sensitive details.
+Sensitive reports should be directed to:
+
+- security@uraifoundation.org
+
+If the security mailbox is unavailable, send a minimal request for a secure reporting channel to:
+
+- hello@uraifoundation.org
+
+Do not include sensitive exploit details in public issues.
 
 ## What to include
 
@@ -22,4 +30,4 @@ Maintainers should acknowledge sensitive reports, limit access to details, avoid
 
 ## Out of scope
 
-Good-faith reports about policy gaps, documentation ambiguity, or governance weaknesses are welcome, but they may be routed through the standard issue process if they do not involve sensitive exploitation details.
+Good-faith reports about policy gaps, documentation ambiguity, governance weaknesses, accessibility concerns, or public-interest review gaps are welcome, but they may be routed through the normal issue process if they do not involve sensitive exploitation details.
