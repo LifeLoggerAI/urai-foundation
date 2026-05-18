@@ -1,7 +1,7 @@
 ---
 name: Risk review request
 about: Request review for an AI, privacy, safety, or public-interest risk
-Title: "Risk review: "
+title: "Risk review: "
 labels: risk-review
 ---
 
