@@ -60,6 +60,13 @@ class ValidateDocsTests(unittest.TestCase):
             anchors = validate_docs.markdown_anchors(path)
         self.assertEqual(anchors, {"repeat", "repeat-1"})
 
+    def test_html_anchors_include_id_and_name_attributes(self) -> None:
+        with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
+            path = Path(tmp) / "sample.html"
+            path.write_text('<h1 id="intro">Intro</h1>\n<a name="legacy"></a>\n', encoding="utf-8")
+            anchors = validate_docs.html_anchors(path)
+        self.assertEqual(anchors, {"intro", "legacy"})
+
     def test_validate_file_ignores_links_inside_fenced_code_blocks(self) -> None:
         with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
             path = Path(tmp) / "sample.md"
@@ -70,6 +77,10 @@ class ValidateDocsTests(unittest.TestCase):
     def test_markdown_link_targets_include_images_and_reference_definitions(self) -> None:
         self.assertEqual(validate_docs.markdown_link_targets("![Alt](docs/image.png)"), ["docs/image.png"])
         self.assertEqual(validate_docs.markdown_link_targets("[policy]: docs/policy.md"), ["docs/policy.md"])
+
+    def test_html_link_targets_include_href_src_and_action(self) -> None:
+        line = '<a href="/docs/a.md"><img src="/logo.svg"><form action="/submit"></form>'
+        self.assertEqual(validate_docs.html_link_targets(line), ["/docs/a.md", "/logo.svg", "/submit"])
 
     def test_validate_file_detects_broken_image_link(self) -> None:
         with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
@@ -84,6 +95,38 @@ class ValidateDocsTests(unittest.TestCase):
             path.write_text("# Title\n\nSee [Policy][policy].\n\n[policy]: missing.md\n", encoding="utf-8")
             errors = validate_docs.validate_file(path)
         self.assertTrue(any("broken relative link" in error for error in errors))
+
+    def test_validate_file_detects_broken_html_root_relative_link(self) -> None:
+        with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
+            path = Path(tmp) / "sample.html"
+            path.write_text('<a href="/missing.html">Missing</a>\n', encoding="utf-8")
+            errors = validate_docs.validate_file(path)
+        self.assertTrue(any("broken relative link" in error for error in errors))
+
+    def test_validate_file_allows_existing_html_root_relative_link(self) -> None:
+        with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
+            linked_path = validate_docs.ROOT / "temporary-target.html"
+            linked_path.write_text('<h1 id="target">Target</h1>\n', encoding="utf-8")
+            path = Path(tmp) / "sample.html"
+            path.write_text('<a href="/temporary-target.html#target">Target</a>\n', encoding="utf-8")
+            try:
+                errors = validate_docs.validate_file(path)
+            finally:
+                linked_path.unlink()
+        self.assertFalse(any("broken relative link" in error for error in errors))
+        self.assertFalse(any("broken HTML anchor" in error for error in errors))
+
+    def test_validate_file_detects_broken_html_anchor(self) -> None:
+        with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
+            linked_path = validate_docs.ROOT / "temporary-target.html"
+            linked_path.write_text('<h1 id="target">Target</h1>\n', encoding="utf-8")
+            path = Path(tmp) / "sample.html"
+            path.write_text('<a href="/temporary-target.html#missing">Target</a>\n', encoding="utf-8")
+            try:
+                errors = validate_docs.validate_file(path)
+            finally:
+                linked_path.unlink()
+        self.assertTrue(any("broken HTML anchor" in error for error in errors))
 
     def test_normalize_link_target_removes_titles_and_angle_brackets(self) -> None:
         self.assertEqual(validate_docs.normalize_link_target('docs/policy.md "Policy"'), "docs/policy.md")
@@ -107,11 +150,16 @@ class ValidateDocsTests(unittest.TestCase):
             errors = validate_docs.validate_file(path)
         self.assertFalse(any("broken relative link" in error for error in errors))
 
-    def test_iter_files_includes_extensionless_and_dotfile_text_configs(self) -> None:
+    def test_iter_files_includes_static_site_files_and_text_configs(self) -> None:
         files = validate_docs.iter_files()
         self.assertIn(validate_docs.ROOT / "Makefile", files)
         self.assertIn(validate_docs.ROOT / ".editorconfig", files)
         self.assertIn(validate_docs.ROOT / ".gitignore", files)
+        self.assertIn(validate_docs.ROOT / "CNAME", files)
+        self.assertIn(validate_docs.ROOT / "index.html", files)
+        self.assertIn(validate_docs.ROOT / "styles.css", files)
+        self.assertIn(validate_docs.ROOT / "sitemap.xml", files)
+        self.assertIn(validate_docs.ROOT / "site.webmanifest", files)
 
     def test_unsupported_link_schemes_are_rejected(self) -> None:
         with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
@@ -126,6 +174,14 @@ class ValidateDocsTests(unittest.TestCase):
             path.write_text("# Title\n\n[Email](mailto:security@example.com)\n[Phone](tel:+15555550100)\n", encoding="utf-8")
             errors = validate_docs.validate_file(path)
         self.assertFalse(any("unsupported link scheme" in error for error in errors))
+
+    def test_data_uris_and_same_page_hashes_are_ignored_for_html(self) -> None:
+        with tempfile.TemporaryDirectory(dir=validate_docs.ROOT) as tmp:
+            path = Path(tmp) / "sample.html"
+            path.write_text('<a href="#local">Local</a><img src="data:image/svg+xml,test">\n', encoding="utf-8")
+            errors = validate_docs.validate_file(path)
+        self.assertFalse(any("unsupported link scheme" in error for error in errors))
+        self.assertFalse(any("broken relative link" in error for error in errors))
 
 
 if __name__ == "__main__":
