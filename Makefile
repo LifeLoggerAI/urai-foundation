@@ -1,4 +1,4 @@
-.PHONY: check test validate
+.PHONY: check test validate verify-live
 
 check: test validate
 
@@ -7,3 +7,6 @@ test:
 
 validate:
 	python3 scripts/validate-docs.py
+
+verify-live:
+	python3 scripts/verify-live-domain.py
