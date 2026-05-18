@@ -34,6 +34,8 @@ This repository is a documentation-first public-interest project with a static w
 
 Use the documents here as living standards. Changes should be reviewed, versioned, and traceable through pull requests.
 
+See the [Implementation Map](docs/implementation-map.md) for the current repository surface, integration boundaries, validation requirements, known limitations, and future hardening candidates.
+
 ---
 
 ## Scope of work
@@ -56,6 +58,7 @@ The URAI Foundation supports and maintains:
 - [Ethical AI Principles](docs/ethical-ai-principles.md): required principles for human-centered AI work.
 - [Transparency Framework](docs/transparency-framework.md): disclosure, reporting, and accountability expectations.
 - [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
+- [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
 - [Decision Record Template](docs/templates/decision-record.md): reusable template for significant governance decisions.
 - [Risk Review Record Template](docs/templates/risk-review-record.md): reusable template for documenting AI, privacy, safety, or public-interest risk reviews.
 - [Security Policy](SECURITY.md): how to report security, privacy, or safety issues.
@@ -115,6 +118,8 @@ The script checks Markdown and repository text files for:
 - Empty Markdown files.
 - Invalid UTF-8 in text files.
 - Unsupported or unsafe URI schemes in Markdown links.
+
+Pull requests and pushes to `main` also run these checks through GitHub Actions.
 
 ---
 
