@@ -61,6 +61,7 @@ The URAI Foundation supports and maintains:
 - [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
 - [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
 - [System-of-Systems Integration Contract](docs/system-of-systems-integration.md): canonical integration status, DNS blocker, and cross-URAI handoff contract.
+- [Live Deployment Runbook](docs/live-deployment-runbook.md): DNS cutover, GitHub Pages settings, live-domain verification, and rollback process.
 - [Versioning and Change Policy](VERSIONING.md): standards versioning, change categories, changelog rules, and release-note expectations.
 - [Changelog](CHANGELOG.md): public trace of material standards, governance, process, and website changes.
 - [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md): responsive, accessibility, metadata, and release-verification checklist for public website work.
@@ -129,6 +130,24 @@ Pull requests and pushes to `main` also run these checks through GitHub Actions.
 
 ---
 
+## Live deployment verification
+
+Run:
+
+```bash
+python3 scripts/verify-live-domain.py
+```
+
+Or through Make:
+
+```bash
+make verify-live
+```
+
+This check fails intentionally while `uraifoundation.org` resolves to Squarespace. The site is live on GitHub Pages only after the live-domain verifier passes.
+
+---
+
 ## Website launch checklist
 
 Before launch or major website changes:
@@ -140,6 +159,7 @@ Before launch or major website changes:
 5. Test navigation, document links, GitHub links, issue link, and contact email.
 6. Confirm the page title, meta description, canonical URL, Open Graph tags, favicon, `robots.txt`, `site.webmanifest`, and `sitemap.xml` are correct.
 7. Run `make check`.
+8. Run `make verify-live` after DNS cutover.
 
 ---
 
