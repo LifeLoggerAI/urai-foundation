@@ -1,0 +1,58 @@
+name: Policy or governance proposal
+description: Propose a change to Foundation standards, governance, transparency, or review process.
+title: "Policy proposal: "
+labels:
+  - policy
+  - governance
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for substantive changes to Foundation standards. For minor typo or formatting fixes, use the documentation issue form instead.
+  - type: input
+    id: affected-documents
+    attributes:
+      label: Affected documents
+      description: List the documents, templates, or website sections this proposal would change.
+      placeholder: docs/governance-charter.md, docs/transparency-framework.md
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the change in clear, concrete terms.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain why this change is needed and what problem it solves.
+    validations:
+      required: true
+  - type: textarea
+    id: affected-communities
+    attributes:
+      label: Affected people or communities
+      description: Identify who may be affected and how they may benefit or be burdened.
+    validations:
+      required: false
+  - type: dropdown
+    id: risk-level
+    attributes:
+      label: Expected risk level
+      options:
+        - Low
+        - Medium
+        - High
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions and open questions
+      description: List assumptions, evidence gaps, dependencies, or unresolved tradeoffs.
+    validations:
+      required: false

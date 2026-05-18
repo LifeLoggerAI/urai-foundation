@@ -1,0 +1,32 @@
+name: Maintainer or process question
+description: Ask about contribution flow, review routing, public standards process, or repository maintenance.
+title: "Process: "
+labels:
+  - process
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for non-sensitive process questions. For security, privacy, safety, or conduct concerns that include sensitive details, follow SECURITY.md instead of opening a public issue.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do you need clarified?
+    validations:
+      required: true
+  - type: input
+    id: related-area
+    attributes:
+      label: Related area
+      description: Optional document, process, PR, issue, or website section.
+      placeholder: CONTRIBUTING.md, SECURITY.md, docs/governance-charter.md
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add any public, non-sensitive context that would help maintainers answer.
+    validations:
+      required: false

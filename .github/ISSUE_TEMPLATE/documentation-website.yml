@@ -1,0 +1,53 @@
+name: Documentation or website issue
+description: Report a broken link, typo, accessibility issue, unclear language, or static website problem.
+title: "Docs/site: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for public documentation and static website improvements. Do not include secrets, private data, or sensitive incident details.
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Link or path to the affected file, page, heading, or section.
+      placeholder: README.md, index.html#standards, docs/risk-review-process.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Broken link
+        - Typo or formatting
+        - Unclear language
+        - Accessibility
+        - Website layout
+        - Missing documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior or text
+      description: What is wrong, confusing, missing, or broken?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-fix
+    attributes:
+      label: Proposed fix
+      description: Suggest the replacement text, link, or behavior if you know it.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks
+      options:
+        - label: I checked that this does not include secrets, private data, or sensitive vulnerability details.
+          required: true

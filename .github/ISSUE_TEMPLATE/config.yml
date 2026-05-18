@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sensitive security, privacy, or safety concern
+    url: https://github.com/LifeLoggerAI/urai-foundation/blob/main/SECURITY.md
+    about: Read the security policy before sharing sensitive details. Do not include secrets, private data, or active abuse paths in public issues.
+  - name: Contribution guide
+    url: https://github.com/LifeLoggerAI/urai-foundation/blob/main/CONTRIBUTING.md
+    about: Review contribution expectations before proposing substantial changes.
