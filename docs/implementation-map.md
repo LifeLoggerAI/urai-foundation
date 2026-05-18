@@ -11,14 +11,14 @@ The repository's production surface is:
 - Public static homepage for `uraifoundation.org`.
 - Public governance, ethics, transparency, and risk-review standards.
 - Contribution, conduct, and security process documentation.
-- Local validation tooling for Markdown links, anchors, text hygiene, and unsafe URI schemes.
+- Local validation tooling for Markdown links, anchors, text hygiene, static-site links, and unsafe URI schemes.
 - CI validation for pull requests and pushes to `main`.
 
 ## Existing implemented components
 
 | Area | Current implementation | Status |
 | --- | --- | --- |
-| Public website | `index.html`, `styles.css`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented |
+| Public website | `index.html`, `styles.css`, `favicon.svg`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented |
 | Governance standards | `docs/governance-charter.md` | Implemented |
 | Ethical standards | `docs/ethical-ai-principles.md` | Implemented |
 | Transparency standards | `docs/transparency-framework.md` | Implemented |
@@ -71,7 +71,7 @@ The CI workflow runs the same check on pull requests and pushes to `main`.
 
 ## Known limitations
 
-- This repository does not include an HTML validator or visual regression testing for the static site.
+- This repository does not include visual regression testing for the static site.
 - External links are allowed by scheme but are not currently checked for remote availability.
 - Governance documents are living standards and still require human review for substantive policy quality.
 - No automated deployment verification is included beyond static file/document validation.
@@ -80,7 +80,6 @@ The CI workflow runs the same check on pull requests and pushes to `main`.
 
 Consider these only if the repository's maintenance burden justifies them:
 
-- Add an HTML validation step.
 - Add a link checker for external URLs with safe retry and allowlist behavior.
 - Add accessibility checks for the static homepage.
 - Add release notes or versioning for major standards updates.
