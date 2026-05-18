@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate repository documentation without third-party dependencies."""
+"""Validate repository documentation and static-site files without third-party dependencies."""
 
 from __future__ import annotations
 
@@ -10,12 +10,15 @@ from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {".git", "node_modules", "dist", "build", "coverage", "__pycache__"}
-TEXT_EXTENSIONS = {".md", ".txt", ".yml", ".yaml", ".json", ".py"}
-TEXT_FILENAMES = {".editorconfig", ".gitignore", "Makefile"}
+TEXT_EXTENSIONS = {".css", ".html", ".json", ".md", ".py", ".txt", ".webmanifest", ".xml", ".yaml", ".yml"}
+TEXT_FILENAMES = {".editorconfig", ".gitignore", "CNAME", "Makefile"}
 MARKDOWN_INLINE_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 MARKDOWN_REFERENCE_LINK_RE = re.compile(r"^\s{0,3}\[[^\]]+\]:\s+(\S+)")
 MARKDOWN_HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
+HTML_LINK_RE = re.compile(r"\b(?:href|src|action)\s*=\s*([\"'])(.*?)\1", re.IGNORECASE)
+HTML_ANCHOR_RE = re.compile(r"\b(?:id|name)\s*=\s*([\"'])(.*?)\1", re.IGNORECASE)
 ALLOWED_EXTERNAL_SCHEMES = {"http", "https", "mailto", "tel"}
+IGNORED_LINK_PREFIXES = {"data:", "#"}
 
 
 def iter_files() -> list[Path]:
@@ -52,7 +55,7 @@ def normalize_link_target(target: str) -> str:
 
 
 def split_link_target(target: str) -> tuple[str, str]:
-    """Return the decoded path and anchor portions of a Markdown link target."""
+    """Return the decoded path and anchor portions of a Markdown or HTML link target."""
     normalized_target = normalize_link_target(target)
     path, _, anchor = normalized_target.partition("#")
     path = unquote(path.split("?", 1)[0])
@@ -116,6 +119,11 @@ def markdown_anchors(path: Path) -> set[str]:
     return anchors
 
 
+def html_anchors(path: Path) -> set[str]:
+    text = path.read_text(encoding="utf-8")
+    return {match.group(2).strip() for match in HTML_ANCHOR_RE.finditer(text) if match.group(2).strip()}
+
+
 def markdown_link_targets(line: str) -> list[str]:
     """Return inline, image, and reference-style Markdown link targets from a line."""
     targets = [match.group(1).strip() for match in MARKDOWN_INLINE_LINK_RE.finditer(line)]
@@ -125,15 +133,39 @@ def markdown_link_targets(line: str) -> list[str]:
     return targets
 
 
-def validate_markdown_link(path: Path, line_number: int, target: str, anchor_cache: dict[Path, set[str]]) -> str | None:
+def html_link_targets(line: str) -> list[str]:
+    """Return href, src, and action link targets from one HTML line."""
+    return [match.group(2).strip() for match in HTML_LINK_RE.finditer(line)]
+
+
+def resolve_internal_link(source_path: Path, clean_target: str, *, root_relative: bool) -> Path:
+    if not clean_target:
+        return source_path
+    if root_relative and clean_target == "/":
+        return ROOT / "index.html"
+    if root_relative and clean_target.startswith("/"):
+        return (ROOT / clean_target.lstrip("/")).resolve()
+    return (source_path.parent / clean_target).resolve()
+
+
+def validate_internal_link(
+    path: Path,
+    line_number: int,
+    target: str,
+    *,
+    root_relative: bool,
+    anchor_cache: dict[Path, set[str]],
+) -> str | None:
     rel = path.relative_to(ROOT)
     if not target or is_external_link(target):
+        return None
+    if any(target.startswith(prefix) for prefix in IGNORED_LINK_PREFIXES):
         return None
     if has_unsupported_scheme(target):
         return f"{rel}:{line_number}: unsupported link scheme: {target}"
 
     clean_target, anchor = split_link_target(target)
-    linked_path = path if not clean_target else (path.parent / clean_target).resolve()
+    linked_path = resolve_internal_link(path, clean_target, root_relative=root_relative)
     try:
         linked_path.relative_to(ROOT)
     except ValueError:
@@ -147,7 +179,20 @@ def validate_markdown_link(path: Path, line_number: int, target: str, anchor_cac
         if anchor.lower() not in anchors:
             return f"{rel}:{line_number}: broken Markdown anchor: {target}"
 
+    if anchor and linked_path.suffix.lower() == ".html":
+        anchors = anchor_cache.setdefault(linked_path, html_anchors(linked_path))
+        if anchor not in anchors:
+            return f"{rel}:{line_number}: broken HTML anchor: {target}"
+
     return None
+
+
+def validate_markdown_link(path: Path, line_number: int, target: str, anchor_cache: dict[Path, set[str]]) -> str | None:
+    return validate_internal_link(path, line_number, target, root_relative=False, anchor_cache=anchor_cache)
+
+
+def validate_html_link(path: Path, line_number: int, target: str, anchor_cache: dict[Path, set[str]]) -> str | None:
+    return validate_internal_link(path, line_number, target, root_relative=True, anchor_cache=anchor_cache)
 
 
 def validate_file(path: Path) -> list[str]:
@@ -177,6 +222,14 @@ def validate_file(path: Path) -> list[str]:
         for line_number, line in iter_markdown_content_lines(text):
             for target in markdown_link_targets(line):
                 error = validate_markdown_link(path, line_number, target, anchor_cache)
+                if error:
+                    errors.append(error)
+
+    if path.suffix.lower() == ".html":
+        anchor_cache = {}
+        for line_number, line in enumerate(text.splitlines(), start=1):
+            for target in html_link_targets(line):
+                error = validate_html_link(path, line_number, target, anchor_cache)
                 if error:
                     errors.append(error)
 
