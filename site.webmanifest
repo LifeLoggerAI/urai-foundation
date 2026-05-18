@@ -1,9 +1,18 @@
 {
   "name": "URAI Foundation",
   "short_name": "URAI Foundation",
-  "description": "Public-interest governance and human-centered standards for the URAI ecosystem.",
+  "description": "Public-interest governance, transparency, and human-centered AI standards for the URAI ecosystem.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#f7f1e8",
-  "theme_color": "#f6f1e8"
+  "background_color": "#0b1020",
+  "theme_color": "#0d1427",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
