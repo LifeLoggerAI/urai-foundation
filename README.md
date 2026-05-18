@@ -59,6 +59,8 @@ The URAI Foundation supports and maintains:
 - [Transparency Framework](docs/transparency-framework.md): disclosure, reporting, and accountability expectations.
 - [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
 - [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
+- [Versioning and Change Policy](VERSIONING.md): standards versioning, change categories, changelog rules, and release-note expectations.
+- [Changelog](CHANGELOG.md): public trace of material standards, governance, process, and website changes.
 - [Decision Record Template](docs/templates/decision-record.md): reusable template for significant governance decisions.
 - [Risk Review Record Template](docs/templates/risk-review-record.md): reusable template for documenting AI, privacy, safety, or public-interest risk reviews.
 - [Security Policy](SECURITY.md): how to report security, privacy, or safety issues.
@@ -110,14 +112,15 @@ python3 -m unittest discover -s tests
 python3 scripts/validate-docs.py
 ```
 
-The script checks Markdown and repository text files for:
+The script checks Markdown, repository text files, and static-site files for:
 
 - Missing final newlines.
 - Trailing whitespace.
 - Broken relative Markdown links, image links, reference-style links, and Markdown heading anchors.
-- Empty Markdown files.
+- Broken root-relative HTML links and HTML anchors.
+- Empty text files.
 - Invalid UTF-8 in text files.
-- Unsupported or unsafe URI schemes in Markdown links.
+- Unsupported or unsafe URI schemes in Markdown and HTML links.
 
 Pull requests and pushes to `main` also run these checks through GitHub Actions.
 
@@ -141,11 +144,12 @@ Before launch or major website changes:
 
 1. Open an issue or discussion for substantial policy changes.
 2. Draft edits in a focused branch.
-3. Run `python3 scripts/validate-docs.py`.
+3. Run `make check`.
 4. Open a pull request using the PR template.
 5. Request review from Foundation maintainers and relevant subject-matter reviewers.
-6. Record accepted changes in public version history.
-7. Use the decision or risk-review templates for significant governance changes or high-impact AI reviews.
+6. Update `CHANGELOG.md` for material standards, governance, process, or website changes.
+7. Record accepted changes in public version history.
+8. Use the decision or risk-review templates for significant governance changes or high-impact AI reviews.
 
 ---
 
