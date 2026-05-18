@@ -18,7 +18,7 @@ MARKDOWN_HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
 HTML_LINK_RE = re.compile(r"\b(?:href|src|action)\s*=\s*([\"'])(.*?)\1", re.IGNORECASE)
 HTML_ANCHOR_RE = re.compile(r"\b(?:id|name)\s*=\s*([\"'])(.*?)\1", re.IGNORECASE)
 ALLOWED_EXTERNAL_SCHEMES = {"http", "https", "mailto", "tel"}
-IGNORED_LINK_PREFIXES = {"data:", "#"}
+IGNORED_LINK_PREFIXES = {"data:"}
 
 
 def iter_files() -> list[Path]:
@@ -165,6 +165,9 @@ def validate_internal_link(
         return f"{rel}:{line_number}: unsupported link scheme: {target}"
 
     clean_target, anchor = split_link_target(target)
+    if not clean_target and not anchor:
+        return None
+
     linked_path = resolve_internal_link(path, clean_target, root_relative=root_relative)
     try:
         linked_path.relative_to(ROOT)
