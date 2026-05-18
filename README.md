@@ -60,6 +60,7 @@ The URAI Foundation supports and maintains:
 - [Transparency Framework](docs/transparency-framework.md): disclosure, reporting, and accountability expectations.
 - [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
 - [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
+- [System-of-Systems Integration Contract](docs/system-of-systems-integration.md): canonical integration status, DNS blocker, and cross-URAI handoff contract.
 - [Versioning and Change Policy](VERSIONING.md): standards versioning, change categories, changelog rules, and release-note expectations.
 - [Changelog](CHANGELOG.md): public trace of material standards, governance, process, and website changes.
 - [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md): responsive, accessibility, metadata, and release-verification checklist for public website work.
