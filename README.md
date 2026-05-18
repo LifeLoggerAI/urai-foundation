@@ -16,13 +16,14 @@ Advance responsible AI through open research, ethical frameworks, governance sta
 
 ## Website
 
-This repository now includes a lightweight static public website:
+This repository includes a lightweight static public website:
 
 - `index.html` — production homepage for `uraifoundation.org`.
 - `styles.css` — responsive visual system and layout styling.
+- `favicon.svg` — site icon and compact brand mark.
 - `CNAME` — GitHub Pages custom domain configuration.
 - `robots.txt` and `sitemap.xml` — crawl and indexing support.
-- `site.webmanifest` — basic site metadata for installable browser contexts.
+- `site.webmanifest` — site metadata for installable browser contexts.
 
 The website should communicate the Foundation as professional, warm, grounded, and human. Avoid generic AI hype. The preferred framing is cohesion, real-life human experience, community benefit, consent, accountability, and trustworthy public standards.
 
@@ -115,9 +116,10 @@ The script checks Markdown and repository text files for:
 - Missing final newlines.
 - Trailing whitespace.
 - Broken relative Markdown links, image links, reference-style links, and Markdown heading anchors.
-- Empty Markdown files.
+- Broken root-relative static-site links and HTML anchors.
+- Empty text files.
 - Invalid UTF-8 in text files.
-- Unsupported or unsafe URI schemes in Markdown links.
+- Unsupported or unsafe URI schemes in Markdown and HTML links.
 
 Pull requests and pushes to `main` also run these checks through GitHub Actions.
 
@@ -132,7 +134,7 @@ Before launch or major website changes:
 3. Verify the homepage loads over HTTPS.
 4. Check desktop and mobile layouts.
 5. Test navigation, document links, GitHub links, issue link, and contact email.
-6. Confirm the page title, meta description, canonical URL, Open Graph tags, `robots.txt`, and `sitemap.xml` are correct.
+6. Confirm the page title, meta description, canonical URL, Open Graph tags, favicon, `robots.txt`, `site.webmanifest`, and `sitemap.xml` are correct.
 7. Run `make check`.
 
 ---
