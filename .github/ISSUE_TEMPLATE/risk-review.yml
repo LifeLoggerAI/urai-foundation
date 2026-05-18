@@ -1,0 +1,76 @@
+name: Risk review request
+description: Request review for an AI, privacy, safety, rights, or public-interest risk.
+title: "Risk review: "
+labels:
+  - risk-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for non-sensitive review requests. Do not include secrets, private data, exploitation steps, or active abuse details in a public issue. For sensitive concerns, follow SECURITY.md.
+  - type: input
+    id: owner
+    attributes:
+      label: Proposal owner
+      description: Person or team responsible for the proposal.
+      placeholder: Team or maintainer name
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Proposal summary
+      description: What is being proposed, changed, or deployed?
+    validations:
+      required: true
+  - type: textarea
+    id: intended-users
+    attributes:
+      label: Intended users and deployment context
+      description: Who will use or be affected by this, and in what setting?
+    validations:
+      required: true
+  - type: textarea
+    id: data-categories
+    attributes:
+      label: Data categories
+      description: Describe categories of data involved. Do not include actual personal data or secrets.
+    validations:
+      required: false
+  - type: dropdown
+    id: initial-risk
+    attributes:
+      label: Initial risk classification
+      options:
+        - Low
+        - Medium
+        - High
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: risk-areas
+    attributes:
+      label: Risk areas
+      options:
+        - label: Privacy or consent
+        - label: Safety or misuse
+        - label: Fairness or exclusion
+        - label: Rights, access, or autonomy
+        - label: Transparency or explainability
+        - label: Security or abuse prevention
+        - label: Public trust or institutional impact
+  - type: textarea
+    id: mitigations
+    attributes:
+      label: Existing mitigations or controls
+      description: List current controls, owners, deadlines, monitoring signals, or rollback plans.
+    validations:
+      required: false
+  - type: textarea
+    id: requested-decision
+    attributes:
+      label: Requested decision
+      description: What decision, approval, feedback, or escalation do you need?
+    validations:
+      required: true
