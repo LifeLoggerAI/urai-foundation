@@ -1,6 +1,6 @@
 # URAI Foundation
 
-The URAI Foundation is an independent public-interest organization dedicated to ethical, transparent, and human-centered development across the URAI ecosystem.
+URAI Foundation is an active formation-era public-interest standards project dedicated to ethical, transparent, and human-centered development across the URAI ecosystem. This repository and website do not claim nonprofit, charity, grantmaking, donation, tax-exempt, or legal foundation status unless separately verified and documented.
 
 The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion—not generic claims about more intelligence.
 
