@@ -3,6 +3,7 @@
 Date: 2026-06-30
 Repository: `LifeLoggerAI/urai-foundation`
 Status: DONE BUT NEEDS EXTERNAL ENV
+Latest source hardening commit noted here: `1c2d0ae4714581e8104384f5d50efe0777b36f8e`
 
 ## What this repo is
 
@@ -38,6 +39,7 @@ This repo is not a backend app, account system, donation system, grant intake, p
 | Route validation | LIVE / VERIFIED IN SOURCE | `scripts/validate-routes.py`. |
 | Unit tests | LIVE / VERIFIED IN SOURCE | `tests/test_validate_docs.py` and `tests/test_validate_routes.py`. |
 | GitHub Actions | WIRED | Runs checks on push and pull request. |
+| GitHub Pages static serving | WIRED | `.nojekyll` is present to disable Jekyll processing. |
 | GitHub Pages custom domain | WIRED BUT NEEDS EXTERNAL VERIFICATION | `CNAME` contains `uraifoundation.org`. |
 | Live domain DNS and HTTPS | NEEDS EXTERNAL ENV | Must be verified from DNS provider/GitHub Pages. |
 | Backend persistence | NOT PRESENT | No backend form, database, CRM, or API. |
@@ -71,6 +73,7 @@ python3 scripts/validate-routes.py
 - Source: branch `main`, root folder `/`
 - Custom domain: `uraifoundation.org`
 - Custom domain config file: `CNAME`
+- Static serving marker: `.nojekyll`
 
 ## Remaining external blockers
 
