@@ -47,6 +47,19 @@ class SmokeLiveRoutesTests(unittest.TestCase):
         self.assertEqual(result.status, 200)
         self.assertIn("status=200", result.detail)
 
+    def test_request_url_rejects_wrong_host_server(self) -> None:
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.getcode.return_value = 200
+        response.headers.get.side_effect = lambda key, default="": {"content-type": "text/html", "server": "Squarespace"}.get(key, default)
+
+        with patch.object(smoke_live_routes.urllib.request, "urlopen", return_value=response):
+            result = smoke_live_routes.request_url(smoke_live_routes.DOMAIN + "/")
+
+        self.assertFalse(result.ok)
+        self.assertEqual(result.status, 200)
+        self.assertIn("wrong-host=true", result.detail)
+
     def test_main_returns_failure_when_any_route_fails(self) -> None:
         with patch.object(
             smoke_live_routes,
