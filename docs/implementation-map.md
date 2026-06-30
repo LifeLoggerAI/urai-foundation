@@ -4,11 +4,12 @@ This map describes the current production surface of the URAI Foundation reposit
 
 ## Current repository role
 
-URAI Foundation is a documentation-first public-interest repository with a lightweight static website. It is not currently a service runtime, SDK package, database-backed application, or API server.
+URAI Foundation is a documentation-first public-interest repository with a lightweight static website. It is not currently a service runtime, SDK package, database-backed application, backend form processor, donation platform, grant system, or API server.
 
 The repository's production surface is:
 
 - Public static homepage for `uraifoundation.org`.
+- Separate static route pages for accessibility, Deaf community considerations, emotional wellness standards, responsible AI, research intent, partner-interest boundaries, contact, privacy, and terms.
 - Public governance, ethics, transparency, and risk-review standards.
 - Contribution, conduct, security, release, changelog, accessibility, and quality process documentation.
 - Structured issue and pull-request templates for documentation, policy, risk review, and site-quality work.
@@ -19,7 +20,8 @@ The repository's production surface is:
 
 | Area | Current implementation | Status |
 | --- | --- | --- |
-| Public website | `index.html`, `styles.css`, `favicon.svg`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented |
+| Public website | `index.html`, route folders, `styles.css`, `favicon.svg`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented |
+| Public routes | `/accessibility/`, `/deaf-community/`, `/emotional-wellness/`, `/responsible-ai/`, `/research/`, `/partners/`, `/contact/`, `/privacy/`, `/terms/` | Implemented as static HTML |
 | Governance standards | `docs/governance-charter.md` | Implemented |
 | Ethical standards | `docs/ethical-ai-principles.md` | Implemented |
 | Transparency standards | `docs/transparency-framework.md` | Implemented |
@@ -44,6 +46,13 @@ Expected integration points are:
 - Governance decisions use the decision-record template when they materially affect standards or exceptions.
 - Security, privacy, safety, and conduct reports follow the documented reporting paths.
 - Public website and documentation remain the source of truth for Foundation-facing commitments.
+
+## Public action boundaries
+
+- Contact is mailto and public GitHub Issues only.
+- No backend contact form, ticketing system, CRM, database, or message persistence exists in this repository.
+- No donation flow, grant intake, partner database, research intake backend, user account system, analytics script, or payment workflow exists in this repository.
+- Public route pages must keep formation-era language and must not imply live services, official partnerships, formal programs, or certification claims unless future evidence is added.
 
 ## Out of scope unless explicitly approved
 
@@ -80,12 +89,14 @@ The CI workflow runs the same check on pull requests and pushes to `main`.
 - External links are allowed by scheme but are not currently checked for remote availability.
 - Governance documents are living standards and still require human review for substantive policy quality.
 - No automated deployment verification is included beyond static file/document validation.
+- `uraifoundation.org` must not be marked live until DNS and HTTPS verification pass.
 
 ## Future hardening candidates
 
 Consider these only if the repository's maintenance burden justifies them:
 
 - Add a link checker for external URLs with safe retry and allowlist behavior.
-- Add automated accessibility checks for the static homepage.
+- Add automated accessibility checks for the static homepage and route pages.
+- Add visual regression or screenshot smoke tests for route pages.
 - Add GitHub Releases or signed release tags for major standards versions.
 - Add a private published security contact if the Foundation establishes a dedicated reporting address.
