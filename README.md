@@ -1,8 +1,8 @@
 # URAI Foundation
 
-URAI Foundation is an active formation-era public-interest standards project dedicated to ethical, transparent, and human-centered development across the URAI ecosystem. This repository and website do not claim nonprofit, charity, grantmaking, donation, tax-exempt, or legal foundation status unless separately verified and documented.
+URAI Foundation is an active formation-era public-interest standards project dedicated to ethical, transparent, and human-centered development across the URAI ecosystem. This repository and website do not claim formal organization status, public programs, services, donations, grants, clinical support, or official partnerships unless separately verified and documented.
 
-The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion—not generic claims about more intelligence.
+The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion, not generic claims about more intelligence.
 
 Website: [uraifoundation.org](https://uraifoundation.org/)
 
@@ -19,6 +19,15 @@ Advance responsible AI through open research, ethical frameworks, governance sta
 This repository includes a lightweight static public website:
 
 - `index.html` — production homepage for `uraifoundation.org`.
+- `accessibility/index.html` — accessibility standards page.
+- `deaf-community/index.html` — Deaf community considerations page.
+- `emotional-wellness/index.html` — emotional wellness standards/safety page.
+- `responsible-ai/index.html` — responsible AI standards page.
+- `research/index.html` — research intent and open standards page.
+- `partners/index.html` — partner-interest boundary page.
+- `contact/index.html` — mailto and GitHub issue contact page.
+- `privacy/index.html` — static-site privacy notice.
+- `terms/index.html` — conservative terms and usage notice.
 - `styles.css` — responsive visual system and layout styling.
 - `favicon.svg` — site icon and compact brand mark.
 - `CNAME` — GitHub Pages custom domain configuration.
@@ -31,11 +40,30 @@ The website should communicate the Foundation as professional, warm, grounded, a
 
 ## Repository status
 
-This repository is a documentation-first public-interest project with a static website layer. It contains governance, ethics, transparency, security, contribution materials, and the public-facing site for the Foundation.
+This repository is a documentation-first public-interest project with a static website layer. It contains governance, ethics, transparency, security, contribution materials, public route pages, and the public-facing site for the Foundation.
 
 Use the documents here as living standards. Changes should be reviewed, versioned, and traceable through pull requests.
 
 See the [Implementation Map](docs/implementation-map.md) for the current repository surface, integration boundaries, validation requirements, known limitations, and future hardening candidates.
+
+---
+
+## Public route map
+
+| Route | Purpose | Runtime status |
+| --- | --- | --- |
+| `/` | Homepage and route map | Static HTML |
+| `/accessibility/` | Accessibility standards | Static HTML |
+| `/deaf-community/` | Deaf community considerations | Static HTML |
+| `/emotional-wellness/` | Emotional wellness standards/safety | Static HTML |
+| `/responsible-ai/` | Responsible AI standards | Static HTML |
+| `/research/` | Research intent and open standards | Static HTML |
+| `/partners/` | Partner-interest boundaries | Static HTML |
+| `/contact/` | Mailto and public GitHub issue paths | Static HTML, no backend form |
+| `/privacy/` | Static-site privacy notice | Static HTML |
+| `/terms/` | Usage notice for public docs | Static HTML |
+
+The site has no backend forms, accounts, donation flow, grant intake, partner database, analytics script, CRM, or persistent contact workflow in this repository.
 
 ---
 
@@ -44,10 +72,10 @@ See the [Implementation Map](docs/implementation-map.md) for the current reposit
 The URAI Foundation supports and maintains:
 
 - Ethical principles and guidelines for AI systems.
-- Public-interest research and publications.
+- Public-interest research framing and publications when evidence exists.
 - Governance and transparency standards.
 - Open documentation and explainability practices.
-- Collaboration with researchers, nonprofits, and institutions.
+- Standards review paths for researchers, nonprofits, builders, and institutions.
 - Oversight frameworks that prioritize human well-being.
 - Public-facing communication for the Foundation and its standards.
 
@@ -75,11 +103,11 @@ The URAI Foundation supports and maintains:
 
 ## Independence
 
-The URAI Foundation operates independently from commercial entities within the URAI ecosystem.
+The URAI Foundation publishes independent standards for the URAI ecosystem.
 
-While URAI Labs and affiliated organizations may build products and services, the Foundation:
+While URAI Labs and affiliated organizations may build products and services, the Foundation standards surface:
 
-- Maintains independent governance.
+- Maintains independent governance expectations.
 - Publishes openly and transparently.
 - Advocates for user rights and autonomy.
 - Prioritizes societal benefit over commercial outcomes.
@@ -93,9 +121,9 @@ No commercial entity may override the ethical standards defined by the Foundatio
 - **URAI Labs** — commercial product development.
 - **URAI IP Holdings** — intellectual property stewardship.
 - **URAI Privacy** — data protection and consent constraints.
-- **URAI Foundation** — ethics, research, and public accountability.
+- **URAI Foundation** — ethics, research, and public accountability standards.
 
-The Foundation serves as the ethical and governance anchor for the ecosystem.
+The Foundation serves as the ethical and governance standards anchor for the ecosystem.
 
 ---
 
@@ -156,7 +184,7 @@ Before launch or major website changes:
 2. Confirm DNS for `uraifoundation.org` points to GitHub Pages.
 3. Verify the homepage loads over HTTPS.
 4. Complete the [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md).
-5. Test navigation, document links, GitHub links, issue link, and contact email.
+5. Test navigation, document links, GitHub links, issue link, email link, and all static route pages.
 6. Confirm the page title, meta description, canonical URL, Open Graph tags, favicon, `robots.txt`, `site.webmanifest`, and `sitemap.xml` are correct.
 7. Run `make check`.
 8. Run `make verify-live` after DNS cutover.
@@ -191,4 +219,4 @@ Changes to ethical standards or governance documents should be documented and tr
 
 ## Current formation status
 
-The URAI Foundation is in active formation. Documents in this repository represent living standards and may evolve through research, review, and public dialogue.
+The URAI Foundation is in active formation. Documents and public route pages in this repository represent living standards and may evolve through research, review, and public dialogue.
