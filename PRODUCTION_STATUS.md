@@ -3,7 +3,7 @@
 Date: 2026-06-30
 Repository: `LifeLoggerAI/urai-foundation`
 Status: DONE BUT NEEDS EXTERNAL ENV
-Latest source hardening commit noted here: `90a953d9b4bff00c3aae176a008f3532e5139a5e`
+Latest source hardening commit noted here: `8ebc0f4553409bf315552d568dfc9dfbb1493b93`
 
 ## What this repo is
 
@@ -37,7 +37,7 @@ This repo is not a backend app, account system, donation system, grant intake, p
 | Privacy notice | LIVE / VERIFIED IN SOURCE | Static-site notice. No accounts/forms/persistence in this repo. |
 | Terms notice | LIVE / VERIFIED IN SOURCE | Conservative documentation usage notice. |
 | Route validation | LIVE / VERIFIED IN SOURCE | `scripts/validate-routes.py`. |
-| Unit tests | LIVE / VERIFIED IN SOURCE | `tests/test_validate_docs.py` and `tests/test_validate_routes.py`. |
+| Unit tests | LIVE / VERIFIED IN SOURCE | `tests/test_validate_docs.py`, `tests/test_validate_routes.py`, and `tests/test_smoke_live_routes.py`. |
 | Live route smoke test | WIRED BUT NEEDS EXTERNAL VERIFICATION | `scripts/smoke-live-routes.py` checks homepage, all required routes, and sitemap over HTTPS. |
 | GitHub Actions checks | WIRED | Runs checks on push and pull request. |
 | GitHub Pages Actions deploy | WIRED BUT NEEDS EXTERNAL VERIFICATION | `.github/workflows/pages.yml` validates then deploys static root via GitHub Pages Actions. |
