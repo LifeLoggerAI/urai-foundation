@@ -23,6 +23,7 @@ REQUIRED_PATHS = [
     "/sitemap.xml",
 ]
 TIMEOUT_SECONDS = 15
+FORBIDDEN_SERVER_MARKERS = ("squarespace",)
 
 
 @dataclass(frozen=True)
@@ -40,8 +41,12 @@ def request_url(url: str) -> SmokeResult:
             status = response.getcode()
             content_type = response.headers.get("content-type", "")
             server = response.headers.get("server", "")
-            ok = 200 <= status < 400
+            lower_server = server.lower()
+            wrong_host = any(marker in lower_server for marker in FORBIDDEN_SERVER_MARKERS)
+            ok = 200 <= status < 400 and not wrong_host
             detail = f"status={status} content-type={content_type!r} server={server!r}"
+            if wrong_host:
+                detail = f"{detail} wrong-host=true"
             return SmokeResult(url=url, ok=ok, status=status, detail=detail)
     except urllib.error.HTTPError as exc:
         return SmokeResult(url=url, ok=False, status=exc.code, detail=f"http error: {exc}")
