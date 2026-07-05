@@ -1,3 +1,0 @@
-# Test
-
-Repo write check.
