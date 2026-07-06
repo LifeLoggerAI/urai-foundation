@@ -1,102 +1,139 @@
-# Implementation Map
+# Canonical Implementation Map
 
-This map describes the current production surface of the URAI Foundation repository and the boundaries that should guide future work.
+Status: formation-stage source map
+Last reviewed: 2026-07-06
 
-## Current repository role
+## Repository role
 
-URAI Foundation is a documentation-first public-interest repository with a lightweight static website. It is not currently a service runtime, SDK package, database-backed application, backend form processor, donation platform, grant system, or API server.
+`LifeLoggerAI/urai-foundation` is a documentation-first public-interest standards repository with a lightweight static website.
 
-The repository's production surface is:
+It is not a service runtime, SDK, database, backend form processor, donation/grant platform, certification service, research-participant system, clinical resource, or commercial product repository.
 
-- Public static homepage for `uraifoundation.org`.
-- Separate static route pages for accessibility, Deaf community considerations, emotional wellness standards, responsible AI, research intent, partner-interest boundaries, contact, privacy, and terms.
-- Public governance, ethics, transparency, and risk-review standards.
-- Contribution, conduct, security, release, changelog, accessibility, and quality process documentation.
-- Structured issue and pull-request templates for documentation, policy, risk review, and site-quality work.
-- Local validation tooling for Markdown links, anchors, text hygiene, static-site links, and unsafe URI schemes.
-- CI validation for pull requests and pushes to `main`.
+## Canonical source surfaces
 
-## Existing implemented components
-
-| Area | Current implementation | Status |
+| Surface | Paths | Status |
 | --- | --- | --- |
-| Public website | `index.html`, route folders, `styles.css`, `favicon.svg`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented |
-| Public routes | `/accessibility/`, `/deaf-community/`, `/emotional-wellness/`, `/responsible-ai/`, `/research/`, `/partners/`, `/contact/`, `/privacy/`, `/terms/` | Implemented as static HTML |
-| Governance standards | `docs/governance-charter.md` | Implemented |
-| Ethical standards | `docs/ethical-ai-principles.md` | Implemented |
-| Transparency standards | `docs/transparency-framework.md` | Implemented |
-| Risk review process | `docs/risk-review-process.md` and `docs/templates/risk-review-record.md` | Implemented |
-| Decision records | `docs/templates/decision-record.md` | Implemented |
-| Website quality | `docs/accessibility-and-site-quality-checklist.md` | Implemented |
-| Release traceability | `VERSIONING.md`, `CHANGELOG.md` | Implemented |
-| Contribution process | `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `.github/pull_request_template.md` | Implemented |
-| Issue intake | `.github/ISSUE_TEMPLATE/documentation-gap.md`, `.github/ISSUE_TEMPLATE/policy-proposal.md`, `.github/ISSUE_TEMPLATE/risk-review-request.md`, `.github/ISSUE_TEMPLATE/site-quality.md` | Implemented |
-| Security process | `SECURITY.md` | Implemented |
-| Local validation | `Makefile`, `scripts/validate-docs.py`, `tests/test_validate_docs.py` | Implemented |
-| CI validation | `.github/workflows/check.yml` | Implemented |
+| Public website | `index.html`, required route directories, `styles.css`, `favicon.svg`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, `CNAME` | Implemented in source |
+| Public artifact build | `scripts/build-public-site.py` | Implemented on audit branch |
+| Public artifact manifest | `_site/public-build-manifest.json` generated at build time | Implemented on audit branch |
+| Core standards | `docs/governance-charter.md`, `docs/ethical-ai-principles.md`, `docs/transparency-framework.md`, `docs/risk-review-process.md` | Formation-draft |
+| Standards registry | `standards/registry.json`, `standards/registry.schema.json` | Formation-draft |
+| Product integration | `docs/product-integration-contract.md` | Formation-draft |
+| Publication/review | `docs/publication-and-review-policy.md` | Formation-draft |
+| Accountability templates | `docs/templates/` | Implemented as drafts |
+| Audit/roadmap | `docs/audits/foundation-v1-audit-2026-07-06.md` | Implemented |
+| Production truth | `docs/canonical-production-truth.md`, `PRODUCTION_STATUS.md` | Implemented; external proof blocked |
+| Deployment/rollback | `docs/live-deployment-runbook.md`, `docs/final-live-cutover-runbook.md` | Implemented; no cutover authorized |
+| Validation | `Makefile`, `scripts/validate-*.py`, `tests/` | Implemented; PR checks required |
+| CI | `.github/workflows/check.yml`, `.github/workflows/pages.yml` | Implemented; Pages settings/live run unverified |
 
-## Integration boundaries
+## Public routes
 
-The Foundation anchors ethics, public accountability, and governance for the URAI ecosystem. Integration should remain standards-based unless a future proposal explicitly changes this repository into a software package or service.
+- `/`
+- `/accessibility/`
+- `/deaf-community/`
+- `/emotional-wellness/`
+- `/responsible-ai/`
+- `/research/`
+- `/partners/`
+- `/contact/`
+- `/privacy/`
+- `/terms/`
 
-Expected integration points are:
+All route source files exist. Live custom-domain delivery remains unverified.
 
-- Product teams reference Foundation standards during system design and review.
-- High-impact AI changes use the risk-review process before deployment.
-- Governance decisions use the decision-record template when they materially affect standards or exceptions.
-- Security, privacy, safety, and conduct reports follow the documented reporting paths.
-- Public website and documentation remain the source of truth for Foundation-facing commitments.
+## Publication boundary
 
-## Public action boundaries
+GitHub Pages must publish `_site`, not the repository root.
 
-- Contact is mailto and public GitHub Issues only.
-- No backend contact form, ticketing system, CRM, database, or message persistence exists in this repository.
-- No donation flow, grant intake, partner database, research intake backend, user account system, analytics script, or payment workflow exists in this repository.
-- Public route pages must keep formation-era language and must not imply live services, official partnerships, formal programs, or certification claims unless future evidence is added.
+The allowlist includes:
 
-## Out of scope unless explicitly approved
+- public website assets and routes;
+- selected public standards and templates;
+- the draft standards registry.
 
-The following should not be added casually because they would change the repository's role:
+It excludes from the website artifact:
 
-- Backend APIs or long-running services.
-- Databases, migrations, or stateful infrastructure.
-- Product SDKs or commercial application code.
-- Private operational data, credentials, incident details, or confidential partner materials.
-- Mock integrations that appear production-ready but do not connect to real systems.
+- audit working papers;
+- launch proof;
+- tests/scripts/workflows;
+- repository administration;
+- advisor/outreach/operational planning under `docs/foundation/`;
+- other files not explicitly approved for publication.
 
-If one of these becomes necessary, open an issue or decision record first and document the governance rationale.
+The GitHub repository itself remains public. Sensitive or confidential material must not be committed merely because the website artifact excludes it.
 
-## Validation requirements
+## Validation lifecycle
 
-Before merging material changes, run:
+Run:
 
 ```bash
 make check
+make build-site
 ```
 
-This runs:
+`make check` performs:
 
-```bash
-python3 -m unittest discover -s tests
-python3 scripts/validate-docs.py
-```
+- Python unit tests;
+- Markdown/HTML internal link and anchor validation;
+- UTF-8/newline/whitespace validation;
+- required route and sitemap validation;
+- standards registry validation.
 
-The CI workflow runs the same check on pull requests and pushes to `main`.
+The `Check` workflow also builds and uploads the curated `_site` artifact for PR review.
 
-## Known limitations
+## Deployment model
 
-- This repository does not include visual regression testing for the static site.
-- External links are allowed by scheme but are not currently checked for remote availability.
-- Governance documents are living standards and still require human review for substantive policy quality.
-- No automated deployment verification is included beyond static file/document validation.
-- `uraifoundation.org` must not be marked live until DNS and HTTPS verification pass.
+Current evidence is conflicting:
 
-## Future hardening candidates
+- GitHub Pages source configuration exists;
+- issue #10 reports a Firebase fallback;
+- Firebase config is absent from this repository;
+- exact deployed/rollback SHAs and custom-domain proof are missing.
 
-Consider these only if the repository's maintenance burden justifies them:
+The recommended architecture is repository-native GitHub Pages using the curated artifact, but owner approval and external verification are required. See `docs/canonical-production-truth.md`.
 
-- Add a link checker for external URLs with safe retry and allowlist behavior.
-- Add automated accessibility checks for the static homepage and route pages.
-- Add visual regression or screenshot smoke tests for route pages.
-- Add GitHub Releases or signed release tags for major standards versions.
-- Add a private published security contact if the Foundation establishes a dedicated reporting address.
+## Integration boundaries
+
+Products reference Foundation standards through evidence contracts rather than importing commercial runtime code into this repository.
+
+Product-side records should include system cards, providers, data flows, consent, risk, accessibility, automation, incidents/exceptions, and exact release evidence. See `docs/product-integration-contract.md`.
+
+## Out of scope without an approved architectural decision
+
+- backend APIs or long-running services;
+- databases, migrations, accounts, or private intake;
+- product SDKs or commercial application code;
+- payment, donation, grant, or fundraising systems;
+- research participant enrollment;
+- certification/assessment operations;
+- confidential partner/advisor/legal/incident data;
+- mock integrations that appear live without real evidence.
+
+## Current limitations
+
+- Current `main` head at audit start had no attached check status.
+- Custom-domain DNS, TLS, provider, deployed SHA, and rollback SHA are not verified.
+- No private security reporting path is proven.
+- No branch protection/required review evidence is recorded.
+- No root licensing model is approved.
+- No automated HTML/accessibility/visual regression or external-link gate exists.
+- Public standards are linked as raw Markdown rather than accessible versioned HTML.
+- Governance roles and external reviewers are not constituted.
+- No conformance or certification program exists.
+- Legal, tax, research, partner, funding, and institutional status remain unverified.
+
+## Future repository architecture
+
+Keep the repository unified through Foundation v1 while content volume and maintenance remain manageable.
+
+Consider a split only after evidence shows a need for separate release cycles or permissions, potentially into:
+
+- public website/publication renderer;
+- standards registry/specifications;
+- research publications/archive;
+- governance and decision records;
+- accessibility standards/evidence;
+- developer schemas/integration tooling.
+
+A split requires a migration plan, canonical-link strategy, ownership, versioning, CI, archive, and rollback. Do not split solely to increase repository count.
