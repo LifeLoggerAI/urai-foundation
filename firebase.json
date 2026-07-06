@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      { "source": "/mission", "destination": "/mission.html" },
+      { "source": "/standards", "destination": "/standards.html" },
+      { "source": "/research", "destination": "/research.html" },
+      { "source": "/ethics", "destination": "/ethics.html" },
+      { "source": "/accessibility", "destination": "/accessibility.html" },
+      { "source": "/digital-dignity", "destination": "/digital-dignity.html" },
+      { "source": "/advisors", "destination": "/advisors.html" },
+      { "source": "/grants", "destination": "/grants.html" },
+      { "source": "/founder", "destination": "/founder.html" },
+      { "source": "/contact", "destination": "/contact.html" }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}
