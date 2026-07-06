@@ -1,17 +1,24 @@
 # URAI Foundation Production Status
 
-Date: 2026-06-30
+Last reviewed: 2026-07-06
 Repository: `LifeLoggerAI/urai-foundation`
-Status: DONE BUT NEEDS EXTERNAL ENV
-Latest source hardening commit noted here: `c5af9613ba83d8c26ef3e661b90ce1565e12970c`
+Audit-start `main` SHA: `a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea`
+Status: **SOURCE IMPLEMENTED / CUSTOM-DOMAIN PRODUCTION NOT VERIFIED**
 
-## What this repo is
+## Executive status
 
-URAI Foundation is a documentation-first, static public website and public-interest standards repository. It publishes formation-era governance, ethical AI, transparency, risk-review, accessibility, privacy, terms, contact, research-intent, and partner-interest pages.
+The repository is a documentation-first, static public website and formation-stage standards source. Required public route files exist and public copy is conservative about legal, program, research, partner, certification, donation, grant, and clinical status.
 
-## What this repo is not
+The custom-domain production state is not yet verified because:
 
-This repo is not a backend app, account system, donation system, grant intake, partner database, CRM, analytics collector, clinical or therapy service, public program platform, or formal organization/legal-status proof source.
+- repository files configure GitHub Pages;
+- issue #10 reports a separate Firebase Hosting fallback;
+- Firebase deployment configuration is absent from this repository;
+- exact current deployed and rollback SHAs are not recorded;
+- exact-current custom-domain DNS/TLS/route proof is not tied to the current head;
+- the audit-start head has no attached check status.
+
+See `docs/canonical-production-truth.md`.
 
 ## Source-complete public routes
 
@@ -26,93 +33,105 @@ This repo is not a backend app, account system, donation system, grant intake, p
 - `/privacy/`
 - `/terms/`
 
+Source presence is not live-domain verification.
+
 ## Feature truth table
 
 | Feature | Status | Notes |
 | --- | --- | --- |
-| Static homepage | LIVE / VERIFIED IN SOURCE | `index.html` exists and links to real pages. |
-| Required public routes | LIVE / VERIFIED IN SOURCE | All required route folders contain `index.html`. |
-| Sitemap | LIVE / VERIFIED IN SOURCE | Includes homepage and required static routes. |
-| Contact | LIVE / VERIFIED IN SOURCE | Mailto and GitHub Issues only. No backend form. |
-| Privacy notice | LIVE / VERIFIED IN SOURCE | Static-site notice. No accounts/forms/persistence in this repo. |
-| Terms notice | LIVE / VERIFIED IN SOURCE | Conservative documentation usage notice. |
-| Route validation | LIVE / VERIFIED IN SOURCE | `scripts/validate-routes.py`; wording was patched after operator receipts exposed false-positive forbidden snippets. |
-| Unit tests | LIVE / VERIFIED IN SOURCE | `tests/test_validate_docs.py`, `tests/test_validate_routes.py`, and `tests/test_smoke_live_routes.py`. |
-| Live route smoke test | WIRED BUT NEEDS EXTERNAL VERIFICATION | `scripts/smoke-live-routes.py` checks homepage, all required routes, sitemap, and rejects wrong-host responses. |
-| GitHub Actions checks | WIRED | Runs checks on push and pull request. |
-| GitHub Pages Actions deploy | WIRED BUT NEEDS EXTERNAL VERIFICATION | `.github/workflows/pages.yml` validates then deploys static root via GitHub Pages Actions. |
-| GitHub Pages static serving | WIRED | `.nojekyll` is present to disable Jekyll processing. |
-| GitHub Pages custom domain | WIRED BUT NEEDS EXTERNAL VERIFICATION | `CNAME` contains `uraifoundation.org`. |
-| Live domain DNS and HTTPS | NEEDS EXTERNAL ENV | Operator receipts show the live domain is still on the old host and must be moved to GitHub Pages. |
-| Backend persistence | NOT PRESENT | No backend form, database, CRM, or API. |
-| Donations/grants/programs | NOT PRESENT | Must not be claimed live. |
-| Official partnerships | NOT PRESENT | Must not be claimed without evidence. |
-| Clinical/therapy/medical services | DISABLED / NOT PRESENT | Must not be claimed. |
+| Static homepage and routes | VERIFIED COMPLETE IN SOURCE | Required HTML files exist. |
+| Formation-era claim boundaries | VERIFIED COMPLETE IN SOURCE | Public pages avoid legal/program/clinical/partner/certification claims. |
+| Sitemap/robots/manifest/favicon | VERIFIED COMPLETE IN SOURCE | Files exist; live delivery remains unverified. |
+| Contact | PARTIAL | Mailto and public issues only; mailbox delivery and private sensitive-report path are unverified. |
+| Privacy notice | PARTIAL | Accurate for repository code; host logging/retention requires provider-specific review. |
+| Terms notice | REQUIRES LEGAL REVIEW | Conservative informational copy, not legal approval. |
+| Core governance/ethics/transparency/risk docs | PARTIAL / FORMATION-DRAFT | Expanded on audit branch; external review and constituted authority remain absent. |
+| Standards registry | IMPLEMENTED ON AUDIT BRANCH | Machine-readable draft; no conformance/certification program. |
+| Unit and source validation | IMPLEMENTED, NOT YET VERIFIED ON AUDIT BRANCH | `make check` includes tests, docs, routes, and registry validation. |
+| Curated public artifact | IMPLEMENTED ON AUDIT BRANCH | Explicit allowlist prevents whole-repository Pages publication. |
+| GitHub Pages workflow | IMPLEMENTED, NOT VERIFIED | Requires Pages settings/environment and successful run proof. |
+| Firebase fallback | REPORTED, NOT REPRODUCIBLE HERE | Issue #10 reports `urai-4dc1d` / `urai-foundation`; no Firebase config is present. |
+| Canonical host | BLOCKED | Owner decision required. |
+| Exact deployed SHA | MISSING | Must be recorded after canonical deployment. |
+| Rollback SHA | MISSING | Must be recorded and tested. |
+| DNS/HTTPS/custom-domain routes | BLOCKED / REQUIRES USER ACTION | Must be verified without disrupting unrelated DNS/email records. |
+| Backend persistence | NOT PRESENT | No forms, API, database, CRM, payments, donations, grants, or accounts. |
+| Official programs/partners/studies | NOT PRESENT | Planning and concept documents are not operating evidence. |
+| Certification/conformance | NOT ESTABLISHED | Do not use approval/certification claims. |
+| Legal/nonprofit/tax status | REQUIRES LEGAL REVIEW | No authoritative proof established by this repository audit. |
 
 ## Validation commands
 
-Run from a normal clone with network access:
-
 ```bash
-git pull --ff-only origin main
-git rev-parse HEAD
 make check
-make verify-live
+make build-site
 ```
 
-If `make` is unavailable, run the underlying commands directly:
+Underlying checks:
 
 ```bash
 python3 -m unittest discover -s tests
 python3 scripts/validate-docs.py
 python3 scripts/validate-routes.py
-python3 scripts/verify-live-domain.py
-python3 scripts/smoke-live-routes.py
+python3 scripts/validate-standards-registry.py
+python3 scripts/build-public-site.py
 ```
 
-`make check` runs:
+## Canonical deployment recommendation
 
-```bash
-python3 -m unittest discover -s tests
-python3 scripts/validate-docs.py
-python3 scripts/validate-routes.py
-```
+For the current static standards site, the recommended architecture is:
 
-`make verify-live` runs:
+- source: `main`;
+- required check: `Check` workflow;
+- artifact: allowlisted `_site` directory;
+- production: GitHub Pages `github-pages` environment;
+- preview/review: PR artifact, and a preview mechanism only if maintenance cost is justified;
+- custom domain: `uraifoundation.org` plus `www`;
+- fallback: Firebase site remains temporary until explicitly retained or decommissioned;
+- evidence: release record with exact deployed and rollback SHAs.
 
-```bash
-python3 scripts/verify-live-domain.py
-python3 scripts/smoke-live-routes.py
-```
+This recommendation does not authorize DNS changes or deployment. Firebase may instead be selected only after its configuration and workflow become reproducible from this repository and competing Pages automation is disabled.
 
-## Deployment target
+## P0 launch blockers
 
-- Static hosting target: GitHub Pages
-- Deploy workflow: `.github/workflows/pages.yml`
-- Source: branch `main`, root folder `/`
-- Custom domain: `uraifoundation.org`
-- Custom domain config file: `CNAME`
-- Static serving marker: `.nojekyll`
+1. Select and record one canonical host.
+2. Obtain a green required check for the release SHA.
+3. Inspect the curated public artifact.
+4. Record exact deployed SHA and prior rollback SHA.
+5. Verify apex and `www` DNS, HTTPS, required routes, canonical metadata, and content marker.
+6. Establish and test a private security/sensitive-report channel.
+7. Preserve formation-stage legal and program boundaries.
 
-## Remaining external blockers
+## P1 credible-launch requirements
 
-1. Pull latest `main` after commit `c5af9613ba83d8c26ef3e661b90ce1565e12970c`.
-2. Re-run source verification: `make check` or the direct Python commands above.
-3. Confirm GitHub Pages is enabled for this repository.
-4. Confirm GitHub Pages source/deployment mode allows GitHub Actions deploys, or intentionally use `main` root if Actions deploy is not selected.
-5. Confirm custom domain is set to `uraifoundation.org` in GitHub Pages settings.
-6. Replace old-host DNS records with GitHub Pages DNS records.
-7. Enable/verify HTTPS.
-8. Run `make verify-live` from an environment with normal GitHub and DNS access.
-9. Record proof in `launch-proof/urai-foundation-production-lock/<timestamp>/`.
+- consistent metadata on all routes;
+- real Open Graph/social preview asset;
+- branch protection and required-review evidence;
+- explicit standards/content/code license after legal/IP review;
+- formation-stage governance approvals, conflicts, recusals, appeals, and public-comment rules;
+- accessibility automated/manual review and public known-gap statement;
+- provider-specific privacy notice;
+- release/tag/version process with rollback drill.
 
-## Proof locations
+## Release evidence record
 
-- `launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/`
-- `launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md`
-- `docs/final-live-cutover-runbook.md`
-- GitHub issue: `#9 P0: Final live verification for URAI Foundation`
+A release is verified only when a record under `launch-proof/urai-foundation-production-lock/<timestamp>/` includes:
 
-## Coordinator summary
+- repository/branch/source SHA;
+- green check/workflow;
+- artifact manifest/digest;
+- provider project/site and deployment receipt;
+- deployed SHA;
+- prior rollback SHA;
+- DNS and TLS evidence;
+- all required route results;
+- metadata and accessibility smoke results;
+- operator approval;
+- known exceptions and expiry;
+- rollback procedure and result.
 
-`urai-foundation` is source-complete and production-safe after latest validation/test patches. Mark as DONE BUT NEEDS EXTERNAL ENV until the owner pulls latest, source checks pass, DNS is moved to GitHub Pages, HTTPS works, and `make verify-live` passes.
+## Final decision
+
+**NOT VERIFIED COMPLETE FOR CUSTOM-DOMAIN LAUNCH.**
+
+Safe current description: a substantial formation-stage public standards repository and static-site source with a reported fallback deployment, pending canonical hosting, exact release evidence, custom-domain verification, security intake, governance maturity, accessibility review, and legal/institutional verification.
