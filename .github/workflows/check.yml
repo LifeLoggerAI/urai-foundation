@@ -9,9 +9,13 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
-    name: Validate documentation and static site
+    name: Validate documentation, standards, tests, and static routes
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -25,5 +29,13 @@ jobs:
       - name: Run repository checks
         run: make check
 
-      - name: Validate required static routes
-        run: python3 scripts/validate-routes.py
+      - name: Build curated public artifact
+        run: python3 scripts/build-public-site.py --source-sha "${GITHUB_SHA}"
+
+      - name: Upload public artifact for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: urai-foundation-public-site
+          path: _site
+          if-no-files-found: error
+          retention-days: 14
