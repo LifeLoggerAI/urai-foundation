@@ -1,222 +1,187 @@
 # URAI Foundation
 
-URAI Foundation is an active formation-era public-interest standards project dedicated to ethical, transparent, and human-centered development across the URAI ecosystem. This repository and website do not claim formal organization status, public programs, services, donations, grants, clinical support, or official partnerships unless separately verified and documented.
+URAI Foundation is a formation-stage public-interest standards project for ethical, transparent, accessible, and accountable technology across the URAI ecosystem.
 
-The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion, not generic claims about more intelligence.
+This repository and website do **not** claim formal nonprofit or tax-exempt status, charity registration, public programs, services, donations, grants, clinical support, certification, official partnerships, active research studies, or institutional authority unless separate authoritative evidence is published.
 
-Website: [uraifoundation.org](https://uraifoundation.org/)
-
----
+Intended public domain: `uraifoundation.org`
 
 ## Mission
 
-Advance responsible AI through open research, ethical frameworks, governance standards, transparency practices, and public accountability.
+Advance responsible AI through open standards, evidence-based review, governance, transparency, accessibility, and public accountability while protecting dignity, consent, memory, identity, relationships, and community.
 
----
+## Repository role
 
-## Website
+This is a documentation-first public-interest repository with a lightweight static website. It is not a product runtime, backend API, database, CRM, donation system, grant intake, certification service, clinical resource, or research-participant platform.
 
-This repository includes a lightweight static public website:
+The repository contains:
 
-- `index.html` — production homepage for `uraifoundation.org`.
-- `accessibility/index.html` — accessibility standards page.
-- `deaf-community/index.html` — Deaf community considerations page.
-- `emotional-wellness/index.html` — emotional wellness standards/safety page.
-- `responsible-ai/index.html` — responsible AI standards page.
-- `research/index.html` — research intent and open standards page.
-- `partners/index.html` — partner-interest boundary page.
-- `contact/index.html` — mailto and GitHub issue contact page.
-- `privacy/index.html` — static-site privacy notice.
-- `terms/index.html` — conservative terms and usage notice.
-- `styles.css` — responsive visual system and layout styling.
-- `favicon.svg` — site icon and compact brand mark.
-- `CNAME` — GitHub Pages custom domain configuration.
-- `robots.txt` and `sitemap.xml` — crawl and indexing support.
-- `site.webmanifest` — site metadata for installable browser contexts.
+- static public website source;
+- governance, ethical AI, transparency, and risk-review drafts;
+- a formation-stage machine-readable standards registry;
+- public-accountability templates;
+- product integration guidance;
+- contribution, security, versioning, and release materials;
+- validation and curated publication tooling.
 
-The website should communicate the Foundation as professional, warm, grounded, and human. Avoid generic AI hype. The preferred framing is cohesion, real-life human experience, community benefit, consent, accountability, and trustworthy public standards.
+## Production truth
 
----
+Canonical source:
 
-## Repository status
+- repository: `LifeLoggerAI/urai-foundation`
+- branch: `main`
+- website source: repository root and required route directories
 
-This repository is a documentation-first public-interest project with a static website layer. It contains governance, ethics, transparency, security, contribution materials, public route pages, and the public-facing site for the Foundation.
+Production hosting is **not yet canonically verified**.
 
-Use the documents here as living standards. Changes should be reviewed, versioned, and traceable through pull requests.
+- GitHub Pages configuration and a `CNAME` exist in this repository.
+- Issue #10 reports a Firebase Hosting fallback under project `urai-4dc1d`, site ID `urai-foundation`.
+- Firebase configuration is not present in this repository.
+- The exact current deployed SHA, rollback SHA, custom-domain DNS destination, and HTTPS/route proof are not recorded for the current head.
 
-See the [Implementation Map](docs/implementation-map.md) for the current repository surface, integration boundaries, validation requirements, known limitations, and future hardening candidates.
+See [Canonical Production Truth](docs/canonical-production-truth.md). Do not describe the custom-domain site as verified until one host is selected and the release evidence gate passes.
 
----
+## Public routes
 
-## Public route map
-
-| Route | Purpose | Runtime status |
+| Route | Purpose | Source status |
 | --- | --- | --- |
-| `/` | Homepage and route map | Static HTML |
-| `/accessibility/` | Accessibility standards | Static HTML |
-| `/deaf-community/` | Deaf community considerations | Static HTML |
-| `/emotional-wellness/` | Emotional wellness standards/safety | Static HTML |
-| `/responsible-ai/` | Responsible AI standards | Static HTML |
-| `/research/` | Research intent and open standards | Static HTML |
-| `/partners/` | Partner-interest boundaries | Static HTML |
-| `/contact/` | Mailto and public GitHub issue paths | Static HTML, no backend form |
-| `/privacy/` | Static-site privacy notice | Static HTML |
-| `/terms/` | Usage notice for public docs | Static HTML |
+| `/` | Homepage and public route map | Static HTML present |
+| `/accessibility/` | Accessibility standards framing | Static HTML present |
+| `/deaf-community/` | Deaf-community considerations and non-representation boundary | Static HTML present |
+| `/emotional-wellness/` | Non-clinical emotional-safety framing | Static HTML present |
+| `/responsible-ai/` | Responsible AI standards entry | Static HTML present |
+| `/research/` | Research intent and boundaries | Static HTML present |
+| `/partners/` | Partner-interest boundaries | Static HTML present |
+| `/contact/` | Mailto and public issue paths | Static HTML present; no backend form |
+| `/privacy/` | Static-site privacy notice | Static HTML present |
+| `/terms/` | Conservative informational usage notice | Static HTML present; legal review required |
 
-The site has no backend forms, accounts, donation flow, grant intake, partner database, analytics script, CRM, or persistent contact workflow in this repository.
+Source presence is not live-domain verification.
 
----
+## Core standards and operating documents
 
-## Scope of work
+- [Governance Charter](docs/governance-charter.md)
+- [Ethical AI Principles](docs/ethical-ai-principles.md)
+- [Transparency Framework](docs/transparency-framework.md)
+- [Risk Review Process](docs/risk-review-process.md)
+- [Product Integration Contract](docs/product-integration-contract.md)
+- [Publication, Evidence, Corrections, and External Review Policy](docs/publication-and-review-policy.md)
+- [Public Accountability Template Suite](docs/templates/public-accountability-templates.md)
+- [Standards Registry](standards/registry.json)
+- [Implementation Map](docs/implementation-map.md)
+- [Foundation v1 Audit and Roadmap](docs/audits/foundation-v1-audit-2026-07-06.md)
 
-The URAI Foundation supports and maintains:
-
-- Ethical principles and guidelines for AI systems.
-- Public-interest research framing and publications when evidence exists.
-- Governance and transparency standards.
-- Open documentation and explainability practices.
-- Standards review paths for researchers, nonprofits, builders, and institutions.
-- Oversight frameworks that prioritize human well-being.
-- Public-facing communication for the Foundation and its standards.
-
----
-
-## Core documents
-
-- [Governance Charter](docs/governance-charter.md): decision-making structure, review standards, and escalation paths.
-- [Ethical AI Principles](docs/ethical-ai-principles.md): required principles for human-centered AI work.
-- [Transparency Framework](docs/transparency-framework.md): disclosure, reporting, and accountability expectations.
-- [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
-- [Implementation Map](docs/implementation-map.md): repository role, implemented components, integration boundaries, validation requirements, and limitations.
-- [System-of-Systems Integration Contract](docs/system-of-systems-integration.md): canonical integration status, DNS blocker, and cross-URAI handoff contract.
-- [Live Deployment Runbook](docs/live-deployment-runbook.md): DNS cutover, GitHub Pages settings, live-domain verification, and rollback process.
-- [Versioning and Change Policy](VERSIONING.md): standards versioning, change categories, changelog rules, and release-note expectations.
-- [Changelog](CHANGELOG.md): public trace of material standards, governance, process, and website changes.
-- [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md): responsive, accessibility, metadata, and release-verification checklist for public website work.
-- [Decision Record Template](docs/templates/decision-record.md): reusable template for significant governance decisions.
-- [Risk Review Record Template](docs/templates/risk-review-record.md): reusable template for documenting AI, privacy, safety, or public-interest risk reviews.
-- [Security Policy](SECURITY.md): how to report security, privacy, or safety issues.
-- [Contributing Guide](CONTRIBUTING.md): how to propose changes and participate constructively.
-- [Code of Conduct](CODE_OF_CONDUCT.md): behavior expectations for project spaces.
-
----
-
-## Independence
-
-The URAI Foundation publishes independent standards for the URAI ecosystem.
-
-While URAI Labs and affiliated organizations may build products and services, the Foundation standards surface:
-
-- Maintains independent governance expectations.
-- Publishes openly and transparently.
-- Advocates for user rights and autonomy.
-- Prioritizes societal benefit over commercial outcomes.
-
-No commercial entity may override the ethical standards defined by the Foundation.
-
----
+All registry entries remain `formation-draft`. No conformance or certification program exists.
 
 ## Relationship to the URAI ecosystem
 
 - **URAI Labs** — commercial product development.
-- **URAI IP Holdings** — intellectual property stewardship.
-- **URAI Privacy** — data protection and consent constraints.
-- **URAI Foundation** — ethics, research, and public accountability standards.
+- **URAI IP Holdings LLC** — intended intellectual-property stewardship.
+- **URAI Privacy** — privacy and consent enforcement systems.
+- **URAI Foundation** — formation-stage public-interest ethics, governance, accessibility, research, and accountability standards.
 
-The Foundation serves as the ethical and governance standards anchor for the ecosystem.
+The Foundation repository should remain standards-based. Commercial applications belong in their own repositories and should publish evidence against named standards through the [Product Integration Contract](docs/product-integration-contract.md).
 
----
+No commercial entity may claim Foundation approval or certification without a separately authorized process. The current Foundation has no certification program.
+
+## Public action boundaries
+
+The current source has:
+
+- no backend form;
+- no user account;
+- no CRM or ticket database;
+- no donation or grant flow;
+- no analytics script;
+- no public-program enrollment;
+- no partner database;
+- no research-participant intake;
+- no clinical or crisis service.
+
+Public GitHub issues are inappropriate for secrets, personal data, vulnerabilities, active abuse paths, or sensitive complaints. A verified private security-reporting channel is still required.
 
 ## Local validation
 
-No package installation is required for the current static/documentation repository.
+No package installation is required.
 
-Run all local checks before opening a pull request:
+Run:
 
 ```bash
 make check
 ```
 
-If `make` is unavailable, run the commands directly:
+This runs:
 
 ```bash
 python3 -m unittest discover -s tests
 python3 scripts/validate-docs.py
+python3 scripts/validate-routes.py
+python3 scripts/validate-standards-registry.py
 ```
 
-The script checks Markdown and repository text files for:
-
-- Missing final newlines.
-- Trailing whitespace.
-- Broken relative Markdown links, image links, reference-style links, and Markdown heading anchors.
-- Broken root-relative static-site links and HTML anchors.
-- Empty text files.
-- Invalid UTF-8 in text files.
-- Unsupported or unsafe URI schemes in Markdown and HTML links.
-
-Pull requests and pushes to `main` also run these checks through GitHub Actions.
-
----
-
-## Live deployment verification
-
-Run:
+Build the curated public artifact:
 
 ```bash
-python3 scripts/verify-live-domain.py
+make build-site
 ```
 
-Or through Make:
+The publication script creates `_site` from an explicit allowlist and writes `public-build-manifest.json`. It intentionally excludes operational proof folders, tests, scripts, internal/advisor planning files, and other non-publication content from the hosting artifact. The repository itself remains public.
 
-```bash
-make verify-live
-```
+## Deployment verification
 
-This check fails intentionally while `uraifoundation.org` resolves to Squarespace. The site is live on GitHub Pages only after the live-domain verifier passes.
+After the owner selects a canonical host and configures the custom domain, run the provider-appropriate checks and record:
 
----
+- exact source and deployed SHA;
+- prior rollback SHA;
+- provider project/site;
+- artifact digest/manifest;
+- workflow run;
+- apex and `www` DNS;
+- HTTPS/TLS;
+- required route and metadata smoke results;
+- accessibility smoke results;
+- operator approval and known exceptions.
 
-## Website launch checklist
+The existing live-domain scripts were originally written around GitHub Pages and must not be treated as provider-neutral proof if Firebase is selected.
 
-Before launch or major website changes:
+## Governance and change process
 
-1. Confirm GitHub Pages is enabled for the repository and points to the branch/folder that contains `index.html`.
-2. Confirm DNS for `uraifoundation.org` points to GitHub Pages.
-3. Verify the homepage loads over HTTPS.
-4. Complete the [Accessibility and Site Quality Checklist](docs/accessibility-and-site-quality-checklist.md).
-5. Test navigation, document links, GitHub links, issue link, email link, and all static route pages.
-6. Confirm the page title, meta description, canonical URL, Open Graph tags, favicon, `robots.txt`, `site.webmanifest`, and `sitemap.xml` are correct.
-7. Run `make check`.
-8. Run `make verify-live` after DNS cutover.
+1. Open an issue or proposal for material policy/standards changes.
+2. Identify decision category, owner role, affected populations, required reviewers, and conflicts.
+3. Draft on a focused branch.
+4. Run `make check` and build the public artifact.
+5. Use public comment for material standards when safe and feasible.
+6. Record comment dispositions and decision authority.
+7. Update the registry, changelog, and version when applicable.
+8. Link affected product implementation, exception, incident, and release records.
+9. Preserve corrections, superseded versions, and minority opinions.
 
----
+Roles that are not appointed must be marked vacant. Missing authority or expert review is a blocker, not permission to invent approval.
 
-## Change process
+## Legal and institutional boundary
 
-1. Open an issue or discussion for substantial policy changes.
-2. Draft edits in a focused branch.
-3. Run `make check`.
-4. Open a pull request using the PR template.
-5. Request review from Foundation maintainers and relevant subject-matter reviewers.
-6. Update `CHANGELOG.md` for material standards, governance, process, or website changes.
-7. Record accepted changes in public version history.
-8. Use the decision or risk-review templates for significant governance changes or high-impact AI reviews.
+The following require qualified legal, tax, accounting, research, accessibility, security, or other external review as applicable:
 
----
+- entity and nonprofit/tax status;
+- bylaws and governing authority;
+- conflict policy and board/steward operations;
+- IP, trademark, copyright, standards, and contributor licensing;
+- privacy/terms obligations;
+- human-subject research and ethics review;
+- donations, grants, fundraising, and fiscal sponsorship;
+- insurance, financial controls, record retention, and annual reporting;
+- formal conformance, assessment, or certification.
 
-## Transparency and accountability
+Do not activate these capabilities from planning documents alone.
 
-All materials in this repository are intended to be:
+## Current status
 
-- Publicly accessible.
-- Versioned.
-- Open to review and discussion.
-- Clear about scope, assumptions, risks, and limitations.
+- Source repository and required route files: **VERIFIED COMPLETE**.
+- Formation-era claim boundaries: **VERIFIED IN SOURCE**.
+- Core standards: **PARTIAL / FORMATION-DRAFT**.
+- Standards registry and publication boundary: **IMPLEMENTED ON AUDIT BRANCH, REQUIRES REVIEW**.
+- Current `main` checks: **IMPLEMENTED, NOT VERIFIED AT AUDIT-START HEAD**.
+- Canonical hosting, deployed SHA, rollback SHA, DNS, and HTTPS: **BLOCKED / REQUIRES USER ACTION**.
+- Legal/institutional status: **REQUIRES LEGAL REVIEW**.
 
-Changes to ethical standards or governance documents should be documented and traceable.
-
----
-
-## Current formation status
-
-The URAI Foundation is in active formation. Documents and public route pages in this repository represent living standards and may evolve through research, review, and public dialogue.
+See [Production Status](PRODUCTION_STATUS.md) for the release gate.
