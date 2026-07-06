@@ -1,11 +1,10 @@
-name: Documentation validation
+name: Documentation validation (legacy manual)
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - work
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   validate-docs:
@@ -17,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
-      - name: Run local checks
+      - name: Run canonical repository checks
         run: make check
