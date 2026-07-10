@@ -1,8 +1,8 @@
 # URAI Foundation
 
-URAI Foundation is the official public-interest standards and governance organization within the URAI ecosystem. This repository and website do not claim federal tax-exempt recognition, tax-deductible donations, public programs, services, grants, clinical support, or official partnerships unless separately verified and documented.
+URAI Foundation is the official public-interest standards and governance initiative within the URAI ecosystem. This repository and website do not by themselves establish that URAI Foundation is a separately incorporated legal entity, federally tax-exempt organization, registered charity, or donation-eligible organization. Exact legal and tax status will be published only from authoritative records.
 
-The Foundation exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion, not generic claims about more intelligence.
+The Foundation initiative exists to ensure that powerful technology supports real human life: dignity, consent, memory, relationships, community, and public trust. Its focus is cohesion, not generic claims about more intelligence.
 
 Website: [uraifoundation.org](https://uraifoundation.org/)
 
@@ -18,8 +18,8 @@ Advance responsible AI through open research, ethical frameworks, governance sta
 
 This repository includes a lightweight static public website:
 
-- `index.html` — production homepage for `uraifoundation.org`.
-- `status/index.html` — public organizational, legal-status, and ecosystem relationship disclosure.
+- `index.html` — production homepage candidate for `uraifoundation.org`.
+- `status/index.html` — public status, legal-boundary, and ecosystem-relationship disclosure.
 - `accessibility/index.html` — accessibility standards page.
 - `deaf-community/index.html` — Deaf community considerations page.
 - `emotional-wellness/index.html` — emotional wellness standards/safety page.
@@ -35,13 +35,13 @@ This repository includes a lightweight static public website:
 - `robots.txt` and `sitemap.xml` — crawl and indexing support.
 - `site.webmanifest` — site metadata for installable browser contexts.
 
-The website should communicate the Foundation as professional, warm, grounded, and human. Avoid generic AI hype. The preferred framing is cohesion, real-life human experience, community benefit, consent, accountability, and trustworthy public standards.
+The website should communicate the Foundation initiative as professional, warm, grounded, and human. Avoid generic AI hype. The preferred framing is cohesion, real-life human experience, community benefit, consent, accountability, and trustworthy public standards.
 
 ---
 
 ## Repository status
 
-This repository is a documentation-first public-interest organization surface with a static website layer. It contains governance, ethics, transparency, security, contribution materials, public route pages, and the public-facing site for the Foundation.
+This repository is a documentation-first public-interest initiative surface with a static website layer. It contains governance proposals, ethics standards, transparency materials, security and contribution guidance, public route pages, and the public-facing site for the Foundation initiative.
 
 Use the documents here as living standards. Changes should be reviewed, versioned, and traceable through pull requests.
 
@@ -54,7 +54,7 @@ See the [Implementation Map](docs/implementation-map.md) for the current reposit
 | Route | Purpose | Runtime status |
 | --- | --- | --- |
 | `/` | Homepage and route map | Static HTML |
-| `/status/` | Organizational status, legal boundaries, and ecosystem relationship | Static HTML |
+| `/status/` | Public status, legal boundaries, and ecosystem relationship | Static HTML |
 | `/accessibility/` | Accessibility standards | Static HTML |
 | `/deaf-community/` | Deaf community considerations | Static HTML |
 | `/emotional-wellness/` | Emotional wellness standards/safety | Static HTML |
@@ -71,7 +71,7 @@ The site has no backend forms, accounts, donation flow, grant intake, partner da
 
 ## Scope of work
 
-The URAI Foundation supports and maintains:
+The URAI Foundation initiative supports and maintains:
 
 - Ethical principles and guidelines for AI systems.
 - Public-interest research framing and publications when evidence exists.
@@ -79,13 +79,13 @@ The URAI Foundation supports and maintains:
 - Open documentation and explainability practices.
 - Standards review paths for researchers, nonprofits, builders, and institutions.
 - Oversight frameworks that prioritize human well-being.
-- Public-facing communication for the Foundation and its standards.
+- Public-facing communication for the Foundation initiative and its standards.
 
 ---
 
 ## Core documents
 
-- [Governance Charter](docs/governance-charter.md): decision-making structure, review standards, and escalation paths.
+- [Governance Charter](docs/governance-charter.md): proposed decision-making structure, review standards, and escalation paths.
 - [Ethical AI Principles](docs/ethical-ai-principles.md): required principles for human-centered AI work.
 - [Transparency Framework](docs/transparency-framework.md): disclosure, reporting, and accountability expectations.
 - [Risk Review Process](docs/risk-review-process.md): intake, classification, mitigation, and approval workflow for AI risks.
@@ -103,18 +103,18 @@ The URAI Foundation supports and maintains:
 
 ---
 
-## Independence
+## Governance and independence boundary
 
-The URAI Foundation publishes independent standards for the URAI ecosystem.
+The URAI Foundation initiative is designed to publish standards that can be reviewed separately from commercial product claims.
 
-While URAI Labs and affiliated organizations may build products and services, the Foundation standards surface:
+While URAI Labs LLC and affiliated product teams may build products and services, the Foundation standards surface is intended to:
 
-- Maintains independent governance expectations.
-- Publishes openly and transparently.
-- Advocates for user rights and autonomy.
-- Prioritizes societal benefit over commercial outcomes.
+- Maintain independent review expectations.
+- Publish openly and transparently.
+- Advocate for user rights and autonomy.
+- Prioritize societal benefit over commercial outcomes.
 
-No commercial entity may override the ethical standards defined by the Foundation unless the Foundation's governing documents are formally amended through its authorized process.
+Commercial product teams should not describe deviations from these standards as Foundation-approved unless an authorized, documented review process says so. Final governance authority, legal independence, board authority, and amendment procedures are not claimed by this repository and require adopted governing documents.
 
 ---
 
@@ -123,9 +123,9 @@ No commercial entity may override the ethical standards defined by the Foundatio
 - **URAI Labs LLC** — operating and technology-development company.
 - **URAI IP Holdings LLC** — designated intellectual-property stewardship and licensing.
 - **URAI Privacy** — data protection and consent constraints.
-- **URAI Foundation** — ethics, research, public-interest, and accountability standards.
+- **URAI Foundation** — public-interest standards and governance initiative.
 
-The Foundation serves as the ethical and governance standards anchor for the ecosystem while remaining organizationally distinct from commercial product operations.
+The Foundation initiative serves as the ethical and governance standards anchor for the ecosystem and is functionally separate from commercial product operations. This repository does not claim that the initiative is legally independent from URAI Labs LLC or any other entity.
 
 ---
 
@@ -221,6 +221,6 @@ Changes to ethical standards or governance documents should be documented and tr
 
 ## Public legal and tax-status boundary
 
-URAI Foundation has been established as an official organization within the URAI ecosystem. This repository does not by itself establish federal tax-exempt recognition, charitable-registration status, or donation deductibility. Those claims require separate authoritative documentation.
+URAI Foundation currently operates publicly as the official public-interest standards and governance initiative within the URAI ecosystem. This repository does not establish separate legal entity status, incorporation, federal tax-exempt recognition, charitable-registration status, or donation deductibility.
 
-Formation jurisdiction, filing identifiers, governing officers or directors, and any applicable tax-exemption status will be published on the public status page only after final verification against governing records. Until then, no visitor should infer 501(c)(3) recognition or tax-deductible contribution eligibility from the Foundation name or `.org` domain.
+Exact entity type, jurisdiction, formation date, filing identifiers, governing officers or directors, adopted bylaws, and any applicable tax-exemption status will be published only after verification against authoritative records. Until then, no visitor should infer separate incorporation, 501(c)(3) recognition, registered-charity status, or tax-deductible contribution eligibility from the Foundation name or `.org` domain.
