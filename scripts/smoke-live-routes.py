@@ -11,6 +11,7 @@ from dataclasses import dataclass
 DOMAIN = "https://uraifoundation.org"
 REQUIRED_PATHS = [
     "/",
+    "/status/",
     "/accessibility/",
     "/deaf-community/",
     "/emotional-wellness/",

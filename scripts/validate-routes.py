@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = "https://uraifoundation.org"
 REQUIRED_ROUTES = [
     "/",
+    "/status/",
     "/accessibility/",
     "/deaf-community/",
     "/emotional-wellness/",
@@ -21,11 +22,15 @@ REQUIRED_ROUTES = [
     "/privacy/",
     "/terms/",
 ]
-REQUIRED_TEXT = "formation"
+REQUIRED_BOUNDARY_SNIPPETS = (
+    "does not claim",
+    "does not create",
+    "should not infer",
+    "unless separately verified",
+)
 FORBIDDEN_SNIPPETS = [
     "donate now",
     "make a donation",
-    "501(c)(3)",
     "tax exempt",
     "tax-exempt organization",
     "apply for a grant",
@@ -70,8 +75,8 @@ def main() -> int:
             continue
 
         body = text(path).lower()
-        if REQUIRED_TEXT not in body:
-            errors.append(f"route does not include formation-era boundary language: {path.relative_to(ROOT)}")
+        if not any(snippet in body for snippet in REQUIRED_BOUNDARY_SNIPPETS):
+            errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
         for snippet in FORBIDDEN_SNIPPETS:
             if snippet in body:
