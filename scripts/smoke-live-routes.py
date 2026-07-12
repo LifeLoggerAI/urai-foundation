@@ -15,6 +15,7 @@ DEFAULT_BASE_URL = os.environ.get("URAI_FOUNDATION_BASE_URL", "https://uraifound
 DOMAIN = DEFAULT_BASE_URL  # Backward-compatible alias for existing tests and scripts.
 REQUIRED_PATHS = [
     "/",
+    "/status/",
     "/accessibility/",
     "/deaf-community/",
     "/emotional-wellness/",
