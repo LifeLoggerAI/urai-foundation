@@ -28,6 +28,8 @@ def load_registry(path: Path = REGISTRY_PATH) -> dict:
 
 def validate_registry(registry: dict, root: Path = ROOT) -> list[str]:
     errors: list[str] = []
+    root = root.resolve()
+    docs_root = (root / "docs").resolve()
     required_root = {
         "schema_version",
         "registry_status",
@@ -92,12 +94,12 @@ def validate_registry(registry: dict, root: Path = ROOT) -> list[str]:
         else:
             resolved = (root / path_value).resolve()
             try:
-                resolved.relative_to(root.resolve())
+                relative = resolved.relative_to(docs_root)
             except ValueError:
-                errors.append(f"{prefix}.path escapes repository: {path_value}")
+                errors.append(f"{prefix}.path escapes docs/: {path_value}")
             else:
-                if not resolved.is_file():
-                    errors.append(f"{prefix}.path does not exist: {path_value}")
+                if not relative.parts or resolved.is_symlink() or not resolved.is_file():
+                    errors.append(f"{prefix}.path does not exist as a regular Markdown file under docs/: {path_value}")
         if path_value in seen_paths:
             errors.append(f"duplicate standard path: {path_value}")
         seen_paths.add(str(path_value))
