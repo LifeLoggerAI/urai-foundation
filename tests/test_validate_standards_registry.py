@@ -33,6 +33,39 @@ class StandardsRegistryValidationTests(unittest.TestCase):
         errors = MODULE.validate_registry(registry)
         self.assertTrue(any("does not exist" in error for error in errors))
 
+    def test_rejects_path_that_lexically_starts_with_docs_but_escapes_docs(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "docs").mkdir()
+            (root / "standards").mkdir()
+            outside = root / "standards" / "outside.md"
+            outside.write_text("outside\n", encoding="utf-8")
+            registry = copy.deepcopy(self.registry)
+            registry["standards"] = [copy.deepcopy(self.registry["standards"][0])]
+            registry["standards"][0]["path"] = "docs/../standards/outside.md"
+            errors = MODULE.validate_registry(registry, root)
+            self.assertTrue(any("escapes docs/" in error for error in errors))
+
+    def test_rejects_symlinked_markdown_outside_docs(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            docs = root / "docs"
+            outside = root / "outside"
+            docs.mkdir()
+            outside.mkdir()
+            target = outside / "target.md"
+            target.write_text("outside\n", encoding="utf-8")
+            link = docs / "linked.md"
+            try:
+                link.symlink_to(target)
+            except OSError:
+                self.skipTest("symlink support unavailable")
+            registry = copy.deepcopy(self.registry)
+            registry["standards"] = [copy.deepcopy(self.registry["standards"][0])]
+            registry["standards"][0]["path"] = "docs/linked.md"
+            errors = MODULE.validate_registry(registry, root)
+            self.assertTrue(any("escapes docs/" in error or "regular Markdown" in error for error in errors))
+
     def test_rejects_certification_claim(self) -> None:
         registry = copy.deepcopy(self.registry)
         registry["certification_program"] = "active"
