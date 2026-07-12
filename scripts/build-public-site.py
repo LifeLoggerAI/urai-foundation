@@ -47,6 +47,8 @@ PUBLIC_FILES = [
     "standards/registry.schema.json",
 ]
 
+PROTECTED_ROOT_NAMES = {"docs", "standards", "scripts", "tests", ".github"}
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -56,18 +58,43 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def validate_output_boundary(root: Path, output: Path) -> None:
+    root = root.resolve()
+    output = output.resolve(strict=False)
+    protected = {root, *(root / name for name in PROTECTED_ROOT_NAMES)}
+
+    if output == root or output in root.parents:
+        raise ValueError("output directory must not replace the repository or any repository parent")
+
+    for protected_path in protected:
+        if output == protected_path or protected_path in output.parents:
+            raise ValueError("output directory must not replace or be inside a protected source directory")
+
+    current = output
+    while current != current.parent:
+        if current.exists() and current.is_symlink():
+            raise ValueError("output directory path must not contain symbolic links")
+        if current == root:
+            break
+        current = current.parent
+
+
 def build_site(root: Path, output: Path, source_sha: str) -> dict:
     root = root.resolve()
-    output = output.resolve()
-    if output == root or root in output.parents and output.name in {"docs", "standards"}:
-        raise ValueError("output directory must not replace a source directory")
+    output = output.resolve(strict=False)
+    validate_output_boundary(root, output)
 
     missing = [relative for relative in PUBLIC_FILES if not (root / relative).is_file()]
     if missing:
         raise FileNotFoundError(f"missing required public files: {', '.join(missing)}")
 
-    if output.exists():
-        shutil.rmtree(output)
+    if output.exists() or output.is_symlink():
+        if output.is_symlink():
+            raise ValueError("output path must not be a symbolic link")
+        if output.is_dir():
+            shutil.rmtree(output)
+        else:
+            output.unlink()
     output.mkdir(parents=True)
 
     entries: list[dict[str, str | int]] = []
