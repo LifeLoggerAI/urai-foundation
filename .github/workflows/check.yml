@@ -10,32 +10,67 @@ permissions:
   contents: read
 
 concurrency:
-  group: check-${{ github.ref }}
+  group: foundation-check-${{ github.event.pull_request.number || github.ref }}-${{ github.event.pull_request.head.sha || github.sha }}
   cancel-in-progress: true
+
+env:
+  TARGET_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
 
 jobs:
   validate:
     name: Validate documentation, standards, tests, and static routes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - name: Check out exact candidate
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ env.TARGET_SHA }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Prove exact clean candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$TARGET_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
 
       - name: Run repository checks
-        run: make check
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/foundation-check
+          make check 2>&1 | tee /tmp/foundation-check/make-check.log
 
       - name: Build curated public artifact
-        run: python3 scripts/build-public-site.py --source-sha "${GITHUB_SHA}"
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/build-public-site.py --source-sha "$TARGET_SHA" 2>&1 | tee /tmp/foundation-check/build-public-site.log
+          test -s _site/public-build-manifest.json
 
-      - name: Upload public artifact for review
-        uses: actions/upload-artifact@v4
+      - name: Prove artifact and source identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -F "$TARGET_SHA" _site/public-build-manifest.json >/dev/null
+          test "$(git rev-parse HEAD)" = "$TARGET_SHA"
+          git status --porcelain=v1 --untracked-files=all | grep -v '^?? _site/' | tee /tmp/foundation-check/final-source-status.log
+          test ! -s /tmp/foundation-check/final-source-status.log
+
+      - name: Upload exact-head public artifact and logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: urai-foundation-public-site
-          path: _site
-          if-no-files-found: error
-          retention-days: 14
+          name: urai-foundation-public-site-${{ env.TARGET_SHA }}
+          path: |
+            _site/**
+            /tmp/foundation-check/**
+          if-no-files-found: warn
+          retention-days: 90
