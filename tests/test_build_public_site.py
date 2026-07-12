@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -56,6 +57,46 @@ class PublicSiteBuildTests(unittest.TestCase):
 
             with self.assertRaises(FileNotFoundError):
                 MODULE.build_site(root, output, "abc123")
+
+    def test_rejects_repository_parent_and_protected_source_outputs(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "repo"
+            root.mkdir()
+            self.make_fixture(root)
+            for output in [root, root.parent, root / "docs", root / "docs" / "nested", root / "standards"]:
+                with self.subTest(output=output):
+                    with self.assertRaises(ValueError):
+                        MODULE.build_site(root, output, "abc123")
+
+    def test_rejects_symlink_output_without_touching_target(self) -> None:
+        if not hasattr(os, "symlink"):
+            self.skipTest("symlink support unavailable")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "repo"
+            target = Path(directory) / "outside"
+            output = Path(directory) / "site-link"
+            root.mkdir()
+            target.mkdir()
+            self.make_fixture(root)
+            marker = target / "keep.txt"
+            marker.write_text("keep\n", encoding="utf-8")
+            output.symlink_to(target, target_is_directory=True)
+
+            with self.assertRaises(ValueError):
+                MODULE.build_site(root, output, "abc123")
+            self.assertEqual("keep\n", marker.read_text(encoding="utf-8"))
+
+    def test_replaces_existing_regular_file_output_safely(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "repo"
+            output = Path(directory) / "site"
+            root.mkdir()
+            self.make_fixture(root)
+            output.write_text("old file\n", encoding="utf-8")
+
+            MODULE.build_site(root, output, "abc123")
+            self.assertTrue(output.is_dir())
+            self.assertTrue((output / "index.html").is_file())
 
 
 if __name__ == "__main__":
