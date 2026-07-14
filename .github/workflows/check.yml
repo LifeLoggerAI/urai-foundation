@@ -61,7 +61,8 @@ jobs:
           set -euo pipefail
           grep -F "$TARGET_SHA" _site/public-build-manifest.json >/dev/null
           test "$(git rev-parse HEAD)" = "$TARGET_SHA"
-          git status --porcelain=v1 --untracked-files=all | grep -v '^?? _site/' | tee /tmp/foundation-check/final-source-status.log
+          git status --porcelain=v1 --untracked-files=all > /tmp/foundation-check/all-source-status.log
+          grep -v '^?? _site/' /tmp/foundation-check/all-source-status.log > /tmp/foundation-check/final-source-status.log || true
           test ! -s /tmp/foundation-check/final-source-status.log
 
       - name: Upload exact-head public artifact and logs
