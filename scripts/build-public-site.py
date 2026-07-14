@@ -60,29 +60,33 @@ def sha256(path: Path) -> str:
 
 def validate_output_boundary(root: Path, output: Path) -> None:
     root = root.resolve()
-    output = output.resolve(strict=False)
+
+    # Inspect the requested path before resolving it. Resolving first would follow
+    # an existing symlink and erase the evidence that the caller supplied one.
+    requested = Path(os.path.abspath(output))
+    current = requested
+    while True:
+        if current.exists() and current.is_symlink():
+            raise ValueError("output directory path must not contain symbolic links")
+        if current == current.parent:
+            break
+        current = current.parent
+
+    resolved_output = requested.resolve(strict=False)
     protected = {root, *(root / name for name in PROTECTED_ROOT_NAMES)}
 
-    if output == root or output in root.parents:
+    if resolved_output == root or resolved_output in root.parents:
         raise ValueError("output directory must not replace the repository or any repository parent")
 
     for protected_path in protected:
-        if output == protected_path or protected_path in output.parents:
+        if resolved_output == protected_path or protected_path in resolved_output.parents:
             raise ValueError("output directory must not replace or be inside a protected source directory")
-
-    current = output
-    while current != current.parent:
-        if current.exists() and current.is_symlink():
-            raise ValueError("output directory path must not contain symbolic links")
-        if current == root:
-            break
-        current = current.parent
 
 
 def build_site(root: Path, output: Path, source_sha: str) -> dict:
     root = root.resolve()
-    output = output.resolve(strict=False)
     validate_output_boundary(root, output)
+    output = Path(os.path.abspath(output)).resolve(strict=False)
 
     missing = [relative for relative in PUBLIC_FILES if not (root / relative).is_file()]
     if missing:
