@@ -73,7 +73,7 @@ def validate_output_boundary(root: Path, output: Path) -> None:
         current = current.parent
 
     resolved_output = requested.resolve(strict=False)
-    protected = {root, *(root / name for name in PROTECTED_ROOT_NAMES)}
+    protected = {root / name for name in PROTECTED_ROOT_NAMES}
 
     if resolved_output == root or resolved_output in root.parents:
         raise ValueError("output directory must not replace the repository or any repository parent")
