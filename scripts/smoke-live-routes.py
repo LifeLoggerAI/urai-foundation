@@ -3,12 +3,16 @@
 
 from __future__ import annotations
 
+import argparse
+import os
 import sys
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from urllib.parse import urlparse
 
-DOMAIN = "https://uraifoundation.org"
+DEFAULT_BASE_URL = os.environ.get("URAI_FOUNDATION_BASE_URL", "https://uraifoundation.org").rstrip("/")
+DOMAIN = DEFAULT_BASE_URL  # Backward-compatible alias for existing tests and scripts.
 REQUIRED_PATHS = [
     "/",
     "/status/",
@@ -21,10 +25,15 @@ REQUIRED_PATHS = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/robots.txt",
     "/sitemap.xml",
+    "/site.webmanifest",
+    "/public-build-manifest.json",
+    "/standards/registry.json",
 ]
 TIMEOUT_SECONDS = 15
 FORBIDDEN_SERVER_MARKERS = ("squarespace",)
+EXPECTED_HOME_MARKER = "URAI Foundation"
 
 
 @dataclass(frozen=True)
@@ -35,8 +44,15 @@ class SmokeResult:
     detail: str
 
 
-def request_url(url: str) -> SmokeResult:
-    request = urllib.request.Request(url, method="GET", headers={"User-Agent": "urai-foundation-smoke/1.0"})
+def validate_base_url(base_url: str) -> str:
+    parsed = urlparse(base_url)
+    if parsed.scheme != "https" or not parsed.netloc or parsed.path not in {"", "/"}:
+        raise ValueError("base URL must be an HTTPS origin without a path")
+    return base_url.rstrip("/")
+
+
+def request_url(url: str, expected_marker: str | None = None) -> SmokeResult:
+    request = urllib.request.Request(url, method="GET", headers={"User-Agent": "urai-foundation-smoke/2.0"})
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
             status = response.getcode()
@@ -44,10 +60,16 @@ def request_url(url: str) -> SmokeResult:
             server = response.headers.get("server", "")
             lower_server = server.lower()
             wrong_host = any(marker in lower_server for marker in FORBIDDEN_SERVER_MARKERS)
-            ok = 200 <= status < 400 and not wrong_host
+            body = response.read(512_000) if expected_marker else b""
+            marker_ok = True
+            if expected_marker:
+                marker_ok = expected_marker.encode("utf-8") in body
+            ok = 200 <= status < 400 and not wrong_host and marker_ok
             detail = f"status={status} content-type={content_type!r} server={server!r}"
             if wrong_host:
                 detail = f"{detail} wrong-host=true"
+            if not marker_ok:
+                detail = f"{detail} expected-marker-missing=true"
             return SmokeResult(url=url, ok=ok, status=status, detail=detail)
     except urllib.error.HTTPError as exc:
         return SmokeResult(url=url, ok=False, status=exc.code, detail=f"http error: {exc}")
@@ -57,8 +79,17 @@ def request_url(url: str) -> SmokeResult:
         return SmokeResult(url=url, ok=False, status=None, detail=f"timeout: {exc}")
 
 
-def main() -> int:
-    results = [request_url(f"{DOMAIN}{path}") for path in REQUIRED_PATHS]
+def main(base_url: str = DEFAULT_BASE_URL) -> int:
+    try:
+        origin = validate_base_url(base_url)
+    except ValueError as exc:
+        print(f"Live route smoke test configuration failed: {exc}")
+        return 2
+
+    results = [
+        request_url(f"{origin}{path}", expected_marker=EXPECTED_HOME_MARKER if path == "/" else None)
+        for path in REQUIRED_PATHS
+    ]
     failures = [result for result in results if not result.ok]
 
     for result in results:
@@ -69,9 +100,12 @@ def main() -> int:
         print(f"Live route smoke test failed for {len(failures)} route(s).")
         return 1
 
-    print(f"Live route smoke test passed for {len(results)} route(s).")
+    print(f"Live route smoke test passed for {len(results)} route(s) at {origin}.")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--base-url", default=DEFAULT_BASE_URL)
+    arguments = parser.parse_args()
+    sys.exit(main(arguments.base_url))

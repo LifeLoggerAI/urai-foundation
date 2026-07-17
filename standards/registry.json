@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1",
+  "registry_status": "formation-draft",
+  "last_reviewed": "2026-07-06",
+  "controlling_language": "en",
+  "conformance_program": "not-established",
+  "certification_program": "not-established",
+  "standards": [
+    {
+      "id": "URAI-GOV-001",
+      "title": "Governance Charter",
+      "version": "2026.05",
+      "status": "formation-draft",
+      "normative_strength": "guidance",
+      "path": "docs/governance-charter.md",
+      "owner_role": "Foundation Governance Steward (vacant)",
+      "review_required": ["governance", "legal"],
+      "public_comment": "not-open",
+      "conformance": "not-available"
+    },
+    {
+      "id": "URAI-ETH-001",
+      "title": "Ethical AI Principles",
+      "version": "2026.05",
+      "status": "formation-draft",
+      "normative_strength": "guidance",
+      "path": "docs/ethical-ai-principles.md",
+      "owner_role": "Ethical AI Standards Editor (vacant)",
+      "review_required": ["ethics", "privacy", "accessibility", "affected-community"],
+      "public_comment": "not-open",
+      "conformance": "not-available"
+    },
+    {
+      "id": "URAI-TRN-001",
+      "title": "Transparency Framework",
+      "version": "2026.05",
+      "status": "formation-draft",
+      "normative_strength": "guidance",
+      "path": "docs/transparency-framework.md",
+      "owner_role": "Transparency Editor (vacant)",
+      "review_required": ["transparency", "privacy", "security"],
+      "public_comment": "not-open",
+      "conformance": "not-available"
+    },
+    {
+      "id": "URAI-RSK-001",
+      "title": "Risk Review Process",
+      "version": "2026.05",
+      "status": "formation-draft",
+      "normative_strength": "guidance",
+      "path": "docs/risk-review-process.md",
+      "owner_role": "Risk Review Chair (vacant)",
+      "review_required": ["safety", "privacy", "security", "accessibility"],
+      "public_comment": "not-open",
+      "conformance": "not-available"
+    },
+    {
+      "id": "URAI-INT-001",
+      "title": "Product Integration Contract",
+      "version": "2026.07-draft",
+      "status": "formation-draft",
+      "normative_strength": "guidance",
+      "path": "docs/product-integration-contract.md",
+      "owner_role": "Ecosystem Assurance Lead (vacant)",
+      "review_required": ["architecture", "privacy", "security", "accessibility"],
+      "public_comment": "not-open",
+      "conformance": "not-available"
+    }
+  ]
+}
