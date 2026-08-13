@@ -25,8 +25,10 @@ REQUIRED_ROUTES = [
 REQUIRED_BOUNDARY_SNIPPETS = (
     "does not claim",
     "does not create",
+    "does not represent",
     "should not infer",
     "unless separately verified",
+    "unless those are separately verified",
 )
 FORBIDDEN_SNIPPETS = [
     "donate now",
@@ -42,6 +44,12 @@ FORBIDDEN_SNIPPETS = [
     "clinical service",
     "diagnostic service",
 ]
+
+NEGATED_NONCLAIMS = {
+    "clinical service": (
+        "does not represent separate tax-exempt status, donation deductibility, grants, clinical services, or confirmed institutional partnerships",
+    ),
+}
 
 
 def route_file(route: str) -> Path:
@@ -64,6 +72,10 @@ def sitemap_urls() -> set[str]:
     return urls
 
 
+def has_allowed_negated_nonclaim(body: str, snippet: str) -> bool:
+    return any(phrase in body for phrase in NEGATED_NONCLAIMS.get(snippet, ()))
+
+
 def main() -> int:
     errors: list[str] = []
     urls = sitemap_urls()
@@ -79,7 +91,7 @@ def main() -> int:
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
         for snippet in FORBIDDEN_SNIPPETS:
-            if snippet in body:
+            if snippet in body and not has_allowed_negated_nonclaim(body, snippet):
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
 
         expected_url = f"{DOMAIN}{route}"
