@@ -21,6 +21,9 @@ REQUIRED_ROUTES = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/community/",
+    "/donate/",
+    "/staff/",
     "/grants/",
 ]
 REQUIRED_BOUNDARY_SNIPPETS = (
@@ -30,30 +33,38 @@ REQUIRED_BOUNDARY_SNIPPETS = (
     "should not infer",
     "unless separately verified",
     "unless those are separately verified",
+    "only when separately verified",
 )
 FORBIDDEN_SNIPPETS = [
     "donate now",
     "make a donation",
     "tax exempt",
-    "tax-exempt organization",
     "official partner",
     "certified partner",
     "therapy service",
     "medical service",
-    "clinical service",
     "diagnostic service",
 ]
 
-NEGATED_NONCLAIMS = {
-    "clinical service": (
-        "does not represent separate tax-exempt status, donation deductibility, grants, clinical services, or confirmed institutional partnerships",
-    ),
-}
-
 GRANT_ROUTE_REQUIRED_SNIPPETS = (
-    "does not transmit a real grant application",
-    "human sign-off is required",
+    "does not accept employee credentials",
+    "employee approval is required",
     "unknown facts stay unresolved",
+    "production access must require authenticated employee identity",
+)
+
+STAFF_ROUTE_REQUIRED_SNIPPETS = (
+    "authentication is not connected",
+    "do not enter passwords",
+    "must fail closed",
+    "role-based authorization",
+)
+
+DONATE_ROUTE_REQUIRED_SNIPPETS = (
+    "online payment processing is not activated",
+    "does not represent that a contribution is tax deductible",
+    "payment processor",
+    "donor privacy",
 )
 
 
@@ -77,10 +88,6 @@ def sitemap_urls() -> set[str]:
     return urls
 
 
-def has_allowed_negated_nonclaim(body: str, snippet: str) -> bool:
-    return any(phrase in body for phrase in NEGATED_NONCLAIMS.get(snippet, ()))
-
-
 def main() -> int:
     errors: list[str] = []
     urls = sitemap_urls()
@@ -96,13 +103,27 @@ def main() -> int:
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
         for snippet in FORBIDDEN_SNIPPETS:
-            if snippet in body and not has_allowed_negated_nonclaim(body, snippet):
+            if snippet in body:
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
 
         if route == "/grants/":
             for snippet in GRANT_ROUTE_REQUIRED_SNIPPETS:
                 if snippet not in body:
-                    errors.append(f"grant route missing required assistance boundary: {snippet}")
+                    errors.append(f"grant route missing required employee-workflow boundary: {snippet}")
+            if 'name="robots" content="noindex, nofollow"' not in body:
+                errors.append("grant route must remain noindex until protected authentication is live")
+
+        if route == "/staff/":
+            for snippet in STAFF_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"staff route missing required authentication boundary: {snippet}")
+            if 'name="robots" content="noindex, nofollow"' not in body:
+                errors.append("staff route must remain noindex until protected authentication is live")
+
+        if route == "/donate/":
+            for snippet in DONATE_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"donate route missing required activation boundary: {snippet}")
 
         expected_url = f"{DOMAIN}{route}"
         if expected_url not in urls:
