@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase-admin/app';
 import { FieldValue, getFirestore } from 'firebase-admin/firestore';
-import { HttpsError, onCall } from 'firebase-functions/v2/https';
+import { CallableRequest, HttpsError, onCall } from 'firebase-functions/v2/https';
 
 initializeApp();
 const db = getFirestore();
@@ -24,7 +24,7 @@ function tokenMfaFactor(token: Record<string, unknown>): string | null {
 }
 
 async function requireStaff(
-  request: Parameters<Parameters<typeof onCall>[1]>[0],
+  request: CallableRequest<unknown>,
   allowedRoles: StaffRole[],
   privileged = false,
 ): Promise<AuthContext> {
