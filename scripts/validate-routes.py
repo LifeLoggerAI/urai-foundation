@@ -21,6 +21,7 @@ REQUIRED_ROUTES = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/grants/",
 ]
 REQUIRED_BOUNDARY_SNIPPETS = (
     "does not claim",
@@ -35,8 +36,6 @@ FORBIDDEN_SNIPPETS = [
     "make a donation",
     "tax exempt",
     "tax-exempt organization",
-    "apply for a grant",
-    "grant application",
     "official partner",
     "certified partner",
     "therapy service",
@@ -50,6 +49,12 @@ NEGATED_NONCLAIMS = {
         "does not represent separate tax-exempt status, donation deductibility, grants, clinical services, or confirmed institutional partnerships",
     ),
 }
+
+GRANT_ROUTE_REQUIRED_SNIPPETS = (
+    "does not transmit a real grant application",
+    "human sign-off is required",
+    "unknown facts stay unresolved",
+)
 
 
 def route_file(route: str) -> Path:
@@ -93,6 +98,11 @@ def main() -> int:
         for snippet in FORBIDDEN_SNIPPETS:
             if snippet in body and not has_allowed_negated_nonclaim(body, snippet):
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
+
+        if route == "/grants/":
+            for snippet in GRANT_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"grant route missing required assistance boundary: {snippet}")
 
         expected_url = f"{DOMAIN}{route}"
         if expected_url not in urls:
