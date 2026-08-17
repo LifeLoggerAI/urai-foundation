@@ -18,7 +18,7 @@ env:
 
 jobs:
   validate:
-    name: Validate documentation, standards, tests, and static routes
+    name: Validate documentation, standards, tests, static routes, and backend types
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -47,6 +47,23 @@ jobs:
           set -euo pipefail
           mkdir -p /tmp/foundation-check
           make check 2>&1 | tee /tmp/foundation-check/make-check.log
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Cloud Functions dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix functions --ignore-scripts --no-audit --no-fund 2>&1 | tee /tmp/foundation-check/functions-install.log
+
+      - name: Typecheck Cloud Functions
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm --prefix functions run typecheck 2>&1 | tee /tmp/foundation-check/functions-typecheck.log
 
       - name: Build curated public artifact
         shell: bash
