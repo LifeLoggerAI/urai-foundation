@@ -20,11 +20,19 @@ class ValidateRoutesTests(unittest.TestCase):
             with self.subTest(route=route):
                 self.assertTrue(validate_routes.route_file(route).exists())
 
-    def test_required_routes_are_in_sitemap(self) -> None:
+    def test_public_routes_are_in_sitemap(self) -> None:
         urls = validate_routes.sitemap_urls()
         for route in validate_routes.REQUIRED_ROUTES:
+            if route in validate_routes.PRIVATE_NOINDEX_ROUTES:
+                continue
             with self.subTest(route=route):
                 self.assertIn(f"{validate_routes.DOMAIN}{route}", urls)
+
+    def test_private_noindex_routes_are_not_in_sitemap(self) -> None:
+        urls = validate_routes.sitemap_urls()
+        for route in validate_routes.PRIVATE_NOINDEX_ROUTES:
+            with self.subTest(route=route):
+                self.assertNotIn(f"{validate_routes.DOMAIN}{route}", urls)
 
     def test_route_validator_passes_current_repository(self) -> None:
         self.assertEqual(validate_routes.main(), 0)
