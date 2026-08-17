@@ -26,6 +26,7 @@ REQUIRED_ROUTES = [
     "/staff/",
     "/grants/",
 ]
+PRIVATE_NOINDEX_ROUTES = {"/staff/", "/grants/"}
 REQUIRED_BOUNDARY_SNIPPETS = (
     "does not claim",
     "does not create",
@@ -52,14 +53,12 @@ GRANT_ROUTE_REQUIRED_SNIPPETS = (
     "unknown facts stay unresolved",
     "production access must require authenticated employee identity",
 )
-
 STAFF_ROUTE_REQUIRED_SNIPPETS = (
     "authentication is not connected",
     "do not enter passwords",
     "must fail closed",
     "role-based authorization",
 )
-
 DONATE_ROUTE_REQUIRED_SNIPPETS = (
     "online payment processing is not activated",
     "does not represent that a contribution is tax deductible",
@@ -69,9 +68,7 @@ DONATE_ROUTE_REQUIRED_SNIPPETS = (
 
 
 def route_file(route: str) -> Path:
-    if route == "/":
-        return ROOT / "index.html"
-    return ROOT / route.strip("/") / "index.html"
+    return ROOT / "index.html" if route == "/" else ROOT / route.strip("/") / "index.html"
 
 
 def text(path: Path) -> str:
@@ -81,11 +78,7 @@ def text(path: Path) -> str:
 def sitemap_urls() -> set[str]:
     tree = ElementTree.parse(ROOT / "sitemap.xml")
     namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    urls: set[str] = set()
-    for loc in tree.findall(".//sm:loc", namespace):
-        if loc.text:
-            urls.add(loc.text.strip())
-    return urls
+    return {loc.text.strip() for loc in tree.findall(".//sm:loc", namespace) if loc.text}
 
 
 def main() -> int:
@@ -106,28 +99,30 @@ def main() -> int:
             if snippet in body:
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
 
+        if route in PRIVATE_NOINDEX_ROUTES:
+            if 'name="robots" content="noindex, nofollow"' not in body:
+                errors.append(f"private route must remain noindex until protected authentication is live: {route}")
+            if f"{DOMAIN}{route}" in urls:
+                errors.append(f"private noindex route must not be published in sitemap: {route}")
+        else:
+            expected_url = f"{DOMAIN}{route}"
+            if expected_url not in urls:
+                errors.append(f"sitemap missing route URL: {expected_url}")
+
         if route == "/grants/":
             for snippet in GRANT_ROUTE_REQUIRED_SNIPPETS:
                 if snippet not in body:
                     errors.append(f"grant route missing required employee-workflow boundary: {snippet}")
-            if 'name="robots" content="noindex, nofollow"' not in body:
-                errors.append("grant route must remain noindex until protected authentication is live")
 
         if route == "/staff/":
             for snippet in STAFF_ROUTE_REQUIRED_SNIPPETS:
                 if snippet not in body:
                     errors.append(f"staff route missing required authentication boundary: {snippet}")
-            if 'name="robots" content="noindex, nofollow"' not in body:
-                errors.append("staff route must remain noindex until protected authentication is live")
 
         if route == "/donate/":
             for snippet in DONATE_ROUTE_REQUIRED_SNIPPETS:
                 if snippet not in body:
                     errors.append(f"donate route missing required activation boundary: {snippet}")
-
-        expected_url = f"{DOMAIN}{route}"
-        if expected_url not in urls:
-            errors.append(f"sitemap missing route URL: {expected_url}")
 
     if errors:
         print("Route validation failed:")
