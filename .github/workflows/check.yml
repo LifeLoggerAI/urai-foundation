@@ -57,7 +57,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          npm install --prefix functions --ignore-scripts --no-audit --no-fund 2>&1 | tee /tmp/foundation-check/functions-install.log
+          npm ci --prefix functions --ignore-scripts --no-audit --no-fund 2>&1 | tee /tmp/foundation-check/functions-install.log
 
       - name: Typecheck Cloud Functions
         shell: bash
