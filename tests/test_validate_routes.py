@@ -52,6 +52,13 @@ class ValidateRoutesTests(unittest.TestCase):
         self.assertIn("const payload = state.approvedPayload", script)
         self.assertIn("invalidateApproval()", script)
 
+    def test_approved_versions_survive_receipt_invalidation(self) -> None:
+        script = (validate_routes.ROOT / "grants/grants.js").read_text(encoding="utf-8")
+        self.assertIn("approvedVersions: new Set()", script)
+        self.assertIn("state.approvedVersions.has(state.version)", script)
+        self.assertIn("state.approvedVersions.add(state.version)", script)
+        self.assertNotIn("lastApprovedVersion", script)
+
     def test_grant_preview_requires_rebuild_and_explicit_answer_review(self) -> None:
         script = (validate_routes.ROOT / "grants/grants.js").read_text(encoding="utf-8")
         self.assertIn("builtForOpportunity", script)
