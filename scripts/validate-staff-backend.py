@@ -50,6 +50,8 @@ def main() -> int:
         "hasUnresolvedAnswers(value)",
         "value.lastEditedBy === actor.uid",
         "value.reviewedBy === actor.uid",
+        "validateAnswerProvenance(tx, answers)",
+        "AUTHORITATIVE_PROVENANCE_COLLECTIONS",
         "reviewedVersion !== expectedVersion",
         "assertStaffInTransaction",
         "await db.runTransaction",
