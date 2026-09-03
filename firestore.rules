@@ -13,7 +13,8 @@ service cloud.firestore {
         && exists(/databases/$(database)/documents/foundationStaff/$(request.auth.uid))
         && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.isActive == true
         && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.role
-          == request.auth.token.foundation_role;
+          == request.auth.token.foundation_role
+        && request.auth.token.foundation_role in ['owner', 'admin', 'reviewer', 'grant_writer', 'staff'];
     }
 
     function role() {
