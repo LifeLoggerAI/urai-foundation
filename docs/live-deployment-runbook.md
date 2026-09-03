@@ -36,7 +36,7 @@ Use the repository `Check` workflow and the allowlisted `_site` artifact built b
 
 ### Firebase Hosting option
 
-Before selection, add reviewed `firebase.json`, `.firebaserc` or target mapping, a curated public directory, preview channels, deployment workflow, ownership/access evidence, and rollback procedure. Disable competing Pages deployment.
+The checked-in `firebase.json` currently configures Functions, Firestore, and Storage only. Before selecting Firebase Hosting, extend that reviewed configuration with Hosting, add `.firebaserc` or an environment-specific target mapping, a curated public directory, preview channels, deployment workflow, ownership/access evidence, and rollback procedure. Disable competing Pages deployment.
 
 ## 2. Protect unrelated DNS and email
 
