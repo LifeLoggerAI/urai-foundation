@@ -22,7 +22,8 @@ The repository contains:
 - public-accountability templates;
 - product integration guidance;
 - contribution, security, versioning, and release materials;
-- validation and curated-publication tooling;\n- protected Firebase Functions, Firestore rules, and validation contracts for the undeployed staff grant and donation backends.
+- validation and curated-publication tooling;
+- protected Firebase Functions, Firestore rules, and validation contracts for the undeployed staff grant and donation backends.
 
 ## Production truth
 
