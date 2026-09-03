@@ -137,3 +137,15 @@ Consider a split only after evidence shows a need for separate release cycles or
 - developer schemas/integration tooling.
 
 A split requires a migration plan, canonical-link strategy, ownership, versioning, CI, archive, and rollback. Do not split solely to increase repository count.
+
+
+## Portal routes added by the integrated candidate
+
+| Route | Audience | Current authority |
+| --- | --- | --- |
+| `/community/` | Public | Outreach and participation information |
+| `/donate/` | Public | Support information only; payment and tax claims remain gated |
+| `/staff/` | Employees | Noindex, fail-closed authentication gateway preview |
+| `/grants/` | Employees | Noindex Grant Desk demonstration; no external submission |
+
+These routes are present in the curated artifact. Staff authentication, confidential records, processor activation, and real grant submission remain unimplemented production capabilities.
