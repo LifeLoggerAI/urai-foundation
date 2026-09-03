@@ -65,7 +65,7 @@ def validate_base_url(base_url: str) -> str:
     return base_url.rstrip("/")
 
 
-def request_url(url: str, expected_marker: str | None = None) -> SmokeResult:
+def request_url(url: str, expected_marker: str | tuple[str, ...] | None = None) -> SmokeResult:
     request = urllib.request.Request(url, method="GET", headers={"User-Agent": "urai-foundation-smoke/2.0"})
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
