@@ -44,6 +44,15 @@ class SmokeLiveRoutesTests(unittest.TestCase):
             {"/", "/community/", "/donate/", "/staff/", "/grants/"},
         )
 
+    def test_grant_route_requires_public_demo_boundary_and_noindex(self) -> None:
+        self.assertEqual(
+            smoke_live_routes.EXPECTED_ROUTE_MARKERS["/grants/"],
+            (
+                "This public branch contains a demonstration workflow only.",
+                '<meta name="robots" content="noindex, nofollow">',
+            ),
+        )
+
     def test_request_url_marks_2xx_response_ok(self) -> None:
         response = MagicMock()
         response.__enter__.return_value = response
