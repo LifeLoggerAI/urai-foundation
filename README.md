@@ -12,7 +12,7 @@ Advance responsible AI through open standards, evidence-based review, ethical fr
 
 ## Repository role
 
-This is a documentation-first public-interest repository with a lightweight static website. It is not a product runtime, backend API, database, CRM, donation system, grant intake, certification service, clinical resource, or research-participant platform.
+This is a public-interest Foundation repository with a lightweight static website plus protected, undeployed Firebase source for staff grant operations and gated donation processing. It is not a deployed product runtime, CRM, certification service, clinical resource, or research-participant platform; backend source remains nonproduction until its protected provider and governance gates are proven.
 
 The repository contains:
 
@@ -22,7 +22,7 @@ The repository contains:
 - public-accountability templates;
 - product integration guidance;
 - contribution, security, versioning, and release materials;
-- validation and curated-publication tooling.
+- validation and curated-publication tooling;\n- protected Firebase Functions, Firestore rules, and validation contracts for the undeployed staff grant and donation backends.
 
 ## Production truth
 
