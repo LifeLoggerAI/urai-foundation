@@ -41,7 +41,7 @@ class SmokeLiveRoutesTests(unittest.TestCase):
     def test_new_routes_require_route_specific_live_markers(self) -> None:
         self.assertEqual(
             set(smoke_live_routes.EXPECTED_ROUTE_MARKERS),
-            {"/", "/community/", "/donate/", "/staff/", "/grants/"},
+            {"/", "/community/", "/donate/", "/staff/", "/grants/", "/grants/grants.js"},
         )
 
     def test_grant_route_requires_public_demo_boundary_and_noindex(self) -> None:
