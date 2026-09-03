@@ -83,6 +83,19 @@ function requireInteger(data: Record<string, unknown>, key: string): number {
   return Number(value);
 }
 
+function hasUnresolvedAnswers(value: Record<string, unknown>): boolean {
+  const answers = value.answers;
+  if (!Array.isArray(answers) || answers.length === 0) return true;
+
+  return answers.some((answer) => {
+    if (!answer || typeof answer !== 'object' || Array.isArray(answer)) return true;
+    const item = answer as Record<string, unknown>;
+    return item.state !== 'verified'
+      || typeof item.value !== 'string'
+      || item.value.trim().length === 0;
+  });
+}
+
 export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (request) => {
   const actor = await requireStaff(request, ['owner', 'admin', 'reviewer'], true);
   if (!PRIVILEGED_ROLES.has(actor.role)) throw new HttpsError('permission-denied', 'Reviewer access is required.');
@@ -107,7 +120,10 @@ export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (
     if (value.version !== expectedVersion) {
       throw new HttpsError('aborted', 'The application changed. Refresh and review the latest version.');
     }
-    if (value.unresolvedCount !== 0) {
+    if (value.createdBy === actor.uid) {
+      throw new HttpsError('permission-denied', 'An application author cannot approve their own work.');
+    }
+    if (hasUnresolvedAnswers(value)) {
       throw new HttpsError('failed-precondition', 'Unresolved facts must be cleared before approval.');
     }
 
@@ -160,7 +176,9 @@ export const upsertFoundationProfileField = onCall({ enforceAppCheck: true }, as
   }
 
   const ref = db.collection('foundationProfile').doc(fieldId);
-  await ref.set({
+  const auditRef = db.collection('foundationAuditLogs').doc();
+  const batch = db.batch();
+  batch.set(ref, {
     value,
     state: 'verified',
     sourceRef,
@@ -169,7 +187,7 @@ export const upsertFoundationProfileField = onCall({ enforceAppCheck: true }, as
     updatedAt: FieldValue.serverTimestamp(),
   }, { merge: true });
 
-  await db.collection('foundationAuditLogs').add({
+  batch.create(auditRef, {
     actorUid: actor.uid,
     actorEmail: actor.email,
     actorRole: actor.role,
@@ -178,6 +196,7 @@ export const upsertFoundationProfileField = onCall({ enforceAppCheck: true }, as
     metadata: { sourceRef },
     createdAt: FieldValue.serverTimestamp(),
   });
+  await batch.commit();
 
   return { ok: true, fieldId };
 });

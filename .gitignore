@@ -21,6 +21,7 @@ Thumbs.db
 
 # Node/Python build artifacts, if added later
 node_modules/
+functions/lib/
 dist/
 build/
 coverage/

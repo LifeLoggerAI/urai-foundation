@@ -20,11 +20,13 @@ def main() -> int:
     rules = (ROOT / "firestore.rules").read_text(encoding="utf-8")
     functions = (ROOT / "functions/src/index.ts").read_text(encoding="utf-8")
     bootstrap = (ROOT / "functions/scripts/bootstrap-owner.mjs").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github/workflows/check.yml").read_text(encoding="utf-8")
 
     required_rules = [
         "allow read, write: if false;",
         "request.auth.token.foundation_staff == true",
         "request.auth.token.email_verified == true",
+        "== request.auth.token.foundation_role",
         "match /foundationStaff/{uid}",
         "match /grantApplications/{applicationId}",
         "match /grantApprovals/{approvalId}",
@@ -41,7 +43,10 @@ def main() -> int:
         "sign_in_second_factor",
         "foundation_staff",
         "foundation_role",
-        "unresolvedCount !== 0",
+        "hasUnresolvedAnswers(value)",
+        "value.createdBy === actor.uid",
+        "const batch = db.batch()",
+        "await batch.commit()",
         "grant.application.approved",
     ]
     for snippet in required_functions:
@@ -57,6 +62,15 @@ def main() -> int:
     for snippet in forbidden_functions:
         if snippet in functions or snippet in bootstrap:
             errors.append(f"backend contains forbidden credential/bypass marker: {snippet}")
+
+    required_workflow = [
+        "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+        "npm --prefix functions run build",
+        "test -s functions/lib/index.js",
+    ]
+    for snippet in required_workflow:
+        if snippet not in workflow:
+            errors.append(f"check workflow missing deployable-build control: {snippet}")
 
     required_bootstrap = [
         "URAI_FOUNDATION_OWNER_EMAIL",

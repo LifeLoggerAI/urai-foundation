@@ -49,7 +49,7 @@ jobs:
           make check 2>&1 | tee /tmp/foundation-check/make-check.log
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '20'
 
@@ -59,11 +59,12 @@ jobs:
           set -euo pipefail
           npm ci --prefix functions --ignore-scripts --no-audit --no-fund 2>&1 | tee /tmp/foundation-check/functions-install.log
 
-      - name: Typecheck Cloud Functions
+      - name: Build deployable Cloud Functions
         shell: bash
         run: |
           set -euo pipefail
-          npm --prefix functions run typecheck 2>&1 | tee /tmp/foundation-check/functions-typecheck.log
+          npm --prefix functions run build 2>&1 | tee /tmp/foundation-check/functions-build.log
+          test -s functions/lib/index.js
 
       - name: Build curated public artifact
         shell: bash

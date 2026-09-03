@@ -166,7 +166,10 @@ Fields written by `approveGrantApplication`:
 - `attestation`
 - `createdAt`
 
-Approval requires `ready_for_review`, matching expected version, and `unresolvedCount == 0`.
+Approval requires `ready_for_review`, a matching expected version, a different
+application author and approver, and a non-empty `answers` array whose every
+answer has a non-empty value and `state == verified`. `unresolvedCount` is a
+client-facing summary only and is never approval authority.
 
 ### `grantSubmissions/{submissionId}`
 

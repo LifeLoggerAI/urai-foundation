@@ -11,7 +11,9 @@ service cloud.firestore {
         && request.auth.token.email_verified == true
         && request.auth.token.foundation_staff == true
         && exists(/databases/$(database)/documents/foundationStaff/$(request.auth.uid))
-        && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.isActive == true;
+        && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.isActive == true
+        && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.role
+          == request.auth.token.foundation_role;
     }
 
     function role() {

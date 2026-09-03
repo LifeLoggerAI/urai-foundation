@@ -6,7 +6,10 @@
   "functions": [
     {
       "source": "functions",
-      "codebase": "foundation-staff"
+      "codebase": "foundation-staff",
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
     }
   ]
 }
