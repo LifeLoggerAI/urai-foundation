@@ -67,7 +67,7 @@ def main() -> int:
         if snippet not in functions:
             errors.append(f"functions/src/index.ts missing privileged-action control: {snippet}")
 
-    if r"\\n" in functions:
+    if r"\n" in functions:
         errors.append("functions/src/index.ts contains literal escaped newline markers")
 
     required_readme = [
@@ -78,7 +78,7 @@ def main() -> int:
     for snippet in required_readme:
         if snippet not in readme:
             errors.append(f"README.md missing truthful repository-role boundary: {snippet}")
-    if r"\\n" in readme:
+    if r"\n" in readme:
         errors.append("README.md contains literal escaped newline markers")
 
     forbidden_functions = [
