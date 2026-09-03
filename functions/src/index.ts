@@ -230,11 +230,20 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
     throw new HttpsError('invalid-argument', 'expectedVersion must be a non-negative integer.');
   }
   const answers = normalizedDraftAnswers(payload, actor);
-  const applicationRef = db.collection('grantApplications').doc(applicationId);\n  const opportunityRef = db.collection('grantOpportunities').doc(opportunityId);\n  const auditRef = db.collection('foundationAuditLogs').doc();
+  const applicationRef = db.collection('grantApplications').doc(applicationId);
+  const opportunityRef = db.collection('grantOpportunities').doc(opportunityId);
+  const auditRef = db.collection('foundationAuditLogs').doc();
 
   await db.runTransaction(async (tx) => {
     await assertStaffInTransaction(tx, actor, ['owner', 'admin', 'reviewer', 'grant_writer']);
-    const [application, opportunity] = await Promise.all([\n      tx.get(applicationRef),\n      tx.get(opportunityRef),\n    ]);\n    if (!opportunity.exists) {\n      throw new HttpsError('failed-precondition', 'The referenced grant opportunity does not exist.');\n    }\n    const current = application.data() ?? {};
+    const [application, opportunity] = await Promise.all([
+      tx.get(applicationRef),
+      tx.get(opportunityRef),
+    ]);
+    if (!opportunity.exists) {
+      throw new HttpsError('failed-precondition', 'The referenced grant opportunity does not exist.');
+    }
+    const current = application.data() ?? {};
     if (!application.exists && expectedVersion !== 0) {
       throw new HttpsError('aborted', 'A new application must start at expectedVersion 0.');
     }
