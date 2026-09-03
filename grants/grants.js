@@ -29,10 +29,16 @@
   const byId = (id) => document.getElementById(id);
   const escapeHtml = (value) => String(value || "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
   function profile() { return Object.fromEntries(fields.map((id) => [id, byId(id)?.value.trim() || ""])); }
-  function invalidateApproval() {
+  function resetSignoffInputs() {
+    if (byId("attestAccuracy")) byId("attestAccuracy").checked = false;
+    if (byId("attestAuthority")) byId("attestAuthority").checked = false;
+    if (byId("signatureName")) byId("signatureName").value = "";
+  }
+  function invalidateApproval({ clearSignoff = true } = {}) {
     state.signed = false;
     state.signedAt = null;
     state.approvedPayload = null;
+    if (clearSignoff) resetSignoffInputs();
     if (byId("signoffReceipt")) byId("signoffReceipt").hidden = true;
     if (byId("exportButton")) byId("exportButton").disabled = true;
   }
@@ -49,7 +55,8 @@
     state.stage = name;
     document.querySelectorAll("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === name));
     document.querySelectorAll("[data-stage]").forEach((button) => button.classList.toggle("is-active", button.dataset.stage === name));
-    window.scrollTo({ top: Math.max(0, document.querySelector(".grant-workspace").offsetTop - 90), behavior: "smooth" });
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: Math.max(0, document.querySelector(".grant-workspace").offsetTop - 90), behavior: reduceMotion ? "auto" : "smooth" });
   }
   function formatValue(question, value) {
     if (!value) return "";
@@ -62,12 +69,25 @@
     }
     return value;
   }
+  function profileIsValid() {
+    const form = byId("profileForm");
+    const p = profile();
+    const amountInput = byId("amount");
+    const amountValid = Boolean(formatValue({ format: "currency" }, p.amount));
+    amountInput?.setCustomValidity(amountValid ? "" : "Enter a valid amount, for example 25000 or 25000.50.");
+    return Boolean(form?.checkValidity()) && requiredProfileFields.every((field) => Boolean(p[field])) && amountValid;
+  }
   function generatedDraft(question, p) {
     if (question.id === "impact" && p.project) return "This draft should be replaced with Foundation-approved, measurable outcome targets supported by program and budget records. URAI may help shape the narrative, but it must not invent participant counts, impact metrics, demographics, partnerships, or prior results.";
     if (question.id === "access" && p.project) return "This draft should explain the specific access barriers the approved program addresses, the accessibility methods it uses, and the population served using Foundation-confirmed facts rather than inferred demographics or unsupported impact claims.";
     return "";
   }
   function buildApplication() {
+    if (!profileIsValid()) {
+      byId("profileForm")?.reportValidity();
+      showStage("profile");
+      return;
+    }
     const p = profile(); const template = opportunityTemplates[state.opportunity];
     state.version += state.answers.length ? 1 : 0; invalidateApproval();
     state.builtForOpportunity = state.opportunity; state.draftStale = false;
@@ -105,7 +125,9 @@
   }
   function confirmReviewedAnswer(index) {
     const answer = state.answers[index];
-    if (!answer?.value.trim()) return;
+    const reviewedValue = answer ? formatValue(answer, answer.value.trim()) : "";
+    if (!reviewedValue) return;
+    answer.value = reviewedValue;
     answer.status = "verified";
     answer.provenance = "Employee reviewed and confirmed for this demonstration draft";
     invalidateApproval(); renderApplication(); renderReview();
@@ -115,8 +137,8 @@
     byId("reviewSummary").innerHTML = `<div class="summary-card"><strong>${verified.length}</strong><span>Foundation or employee-confirmed answers</span></div><div class="summary-card"><strong>${generated.length}</strong><span>generated drafts to review</span></div><div class="summary-card"><strong>${missing.length}</strong><span>unresolved items blocking approval</span></div>`;
     const items = [...generated, ...missing];
     const staleNotice = state.draftStale ? `<div class="review-item missing"><strong>Rebuild required.</strong><p>The selected opportunity or profile changed after this draft was built. Rebuild before review or approval.</p></div>` : "";
-    byId("reviewItems").innerHTML = staleNotice + (items.length ? items.map((answer) => { const index = state.answers.indexOf(answer); return `<article class="review-item ${answer.status}"><div class="answer-topline"><strong>${escapeHtml(answer.prompt)}</strong><span class="source-badge ${answer.status}">${answer.status === "generated" ? "Review draft" : "Required before approval"}</span></div><textarea data-review-index="${index}" aria-label="Review ${escapeHtml(answer.prompt)}">${escapeHtml(answer.value)}</textarea><p>${escapeHtml(answer.provenance)}</p><button type="button" data-confirm-review="${index}"${answer.value.trim() ? "" : " disabled"}>Mark reviewed</button></article>`; }).join("") : `<div class="review-item"><strong>Everything is resolved.</strong><p>There are no generated or missing answers left in this demonstration application.</p></div>`);
-    byId("reviewItems").querySelectorAll("textarea").forEach((textarea) => textarea.addEventListener("input", (event) => { const index = Number(event.target.dataset.reviewIndex); updateAnswer(index, event.target.value, false); const button = byId("reviewItems").querySelector(`[data-confirm-review="${index}"]`); if (button) button.disabled = !event.target.value.trim(); }));
+    byId("reviewItems").innerHTML = staleNotice + (items.length ? items.map((answer) => { const index = state.answers.indexOf(answer); return `<article class="review-item ${answer.status}"><div class="answer-topline"><strong>${escapeHtml(answer.prompt)}</strong><span class="source-badge ${answer.status}">${answer.status === "generated" ? "Review draft" : "Required before approval"}</span></div><textarea data-review-index="${index}" aria-label="Review ${escapeHtml(answer.prompt)}">${escapeHtml(answer.value)}</textarea><p>${escapeHtml(answer.provenance)}</p><button type="button" data-confirm-review="${index}"${formatValue(answer, answer.value.trim()) ? "" : " disabled"}>Mark reviewed</button></article>`; }).join("") : `<div class="review-item"><strong>Everything is resolved.</strong><p>There are no generated or missing answers left in this demonstration application.</p></div>`);
+    byId("reviewItems").querySelectorAll("textarea").forEach((textarea) => textarea.addEventListener("input", (event) => { const index = Number(event.target.dataset.reviewIndex); updateAnswer(index, event.target.value, false); const button = byId("reviewItems").querySelector(`[data-confirm-review="${index}"]`); if (button) button.disabled = !formatValue(state.answers[index], event.target.value.trim()); }));
     byId("reviewItems").querySelectorAll("[data-confirm-review]").forEach((button) => button.addEventListener("click", () => confirmReviewedAnswer(Number(button.dataset.confirmReview))));
     byId("toSignoff").disabled = state.draftStale || items.length > 0; updateSignButton();
   }
@@ -146,7 +168,7 @@
     fields.forEach((id) => byId(id)?.addEventListener("input", () => { invalidateApproval(); updateCompletion(); markDraftStale(); }));
     byId("loadExample").addEventListener("click", loadExample);
     document.querySelectorAll("[data-opportunity]").forEach((card) => card.addEventListener("click", () => { invalidateApproval(); state.opportunity = card.dataset.opportunity; if (state.builtForOpportunity && state.builtForOpportunity !== state.opportunity) markDraftStale(); document.querySelectorAll("[data-opportunity]").forEach((item) => item.classList.toggle("is-selected", item === card)); }));
-    byId("prefillButton").addEventListener("click", buildApplication); byId("toSignoff").addEventListener("click", () => showStage("signoff")); ["attestAccuracy", "attestAuthority", "signatureName"].forEach((id) => byId(id).addEventListener("input", () => { invalidateApproval(); updateSignButton(); })); byId("signButton").addEventListener("click", signApplication); byId("exportButton").addEventListener("click", exportApplication);
+    byId("prefillButton").addEventListener("click", buildApplication); byId("toSignoff").addEventListener("click", () => showStage("signoff")); ["attestAccuracy", "attestAuthority", "signatureName"].forEach((id) => byId(id).addEventListener("input", () => { invalidateApproval({ clearSignoff: false }); updateSignButton(); })); byId("signButton").addEventListener("click", signApplication); byId("exportButton").addEventListener("click", exportApplication);
     if (state.answers.length) { renderApplication(); renderReview(); byId("versionChip").textContent = `Draft v${state.version}`; }
     document.querySelectorAll("[data-opportunity]").forEach((card) => card.classList.toggle("is-selected", card.dataset.opportunity === state.opportunity));
   });
