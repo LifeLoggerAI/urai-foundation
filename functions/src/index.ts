@@ -123,7 +123,8 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
     const questionId = String(item.questionId ?? '').trim();
     const answerValue = String(item.value ?? '').trim();
     const provenanceType = String(item.provenanceType ?? '');
-    if (provenanceType === 'generated') {
+    if (provenanceType === 'generated'
+      || (typeof item.generatedByModel === 'string' && item.generatedByModel.trim().length > 0)) {
       throw new HttpsError('failed-precondition', `answers[${index}] contains generated factual language that must remain unresolved or be rebound to authoritative provenance.`);
     }
     const collection = AUTHORITATIVE_PROVENANCE_COLLECTIONS[provenanceType];
@@ -183,6 +184,49 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
         }
       }
     }
+  }
+}
+
+function assertAnswersMatchOpportunity(
+  answers: Record<string, unknown>[],
+  opportunityData: Record<string, unknown>,
+) {
+  if (!Array.isArray(opportunityData.questions) || opportunityData.questions.length === 0) {
+    throw new HttpsError('failed-precondition', 'The referenced grant opportunity has no validated questions.');
+  }
+
+  const definedQuestionIds = new Set<string>();
+  const requiredQuestionIds = new Set<string>();
+  for (const [index, question] of opportunityData.questions.entries()) {
+    const questionId = typeof question === 'string'
+      ? question.trim()
+      : question && typeof question === 'object' && !Array.isArray(question)
+        ? String((question as Record<string, unknown>).questionId ?? (question as Record<string, unknown>).id ?? '').trim()
+        : '';
+    if (!questionId || definedQuestionIds.has(questionId)) {
+      throw new HttpsError('failed-precondition', `grant opportunity questions[${index}] has a missing or duplicate identifier.`);
+    }
+    definedQuestionIds.add(questionId);
+    if (!(question && typeof question === 'object' && !Array.isArray(question)
+      && (question as Record<string, unknown>).required === false)) {
+      requiredQuestionIds.add(questionId);
+    }
+  }
+
+  const submittedQuestionIds = new Set<string>();
+  for (const [index, answer] of answers.entries()) {
+    const questionId = String(answer.questionId ?? '').trim();
+    if (!definedQuestionIds.has(questionId)) {
+      throw new HttpsError('failed-precondition', `answers[${index}] does not belong to the referenced grant opportunity.`);
+    }
+    if (submittedQuestionIds.has(questionId)) {
+      throw new HttpsError('failed-precondition', `answers[${index}] duplicates a grant opportunity question.`);
+    }
+    submittedQuestionIds.add(questionId);
+  }
+  const missing = [...requiredQuestionIds].filter((questionId) => !submittedQuestionIds.has(questionId));
+  if (missing.length > 0) {
+    throw new HttpsError('failed-precondition', 'Every required grant opportunity question must have exactly one answer.');
   }
 }
 
@@ -246,6 +290,7 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
     if (!opportunity.exists) {
       throw new HttpsError('failed-precondition', 'The referenced grant opportunity does not exist.');
     }
+    assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
     const current = application.data() ?? {};
     if (!application.exists && expectedVersion !== 0) {
       throw new HttpsError('aborted', 'A new application must start at expectedVersion 0.');
