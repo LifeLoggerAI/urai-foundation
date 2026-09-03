@@ -54,8 +54,10 @@
   function formatValue(question, value) {
     if (!value) return "";
     if (question.format === "currency") {
-      const number = Number(String(value).replace(/[^0-9.]/g, ""));
-      return Number.isFinite(number) ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(number) : value;
+      const cleaned = String(value).replace(/[^0-9.]/g, "");
+      if (!cleaned || !/^\\d+(\\.\\d{1,2})?$/.test(cleaned)) return "";
+      const number = Number(cleaned);
+      return Number.isFinite(number) ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(number) : "";
     }
     return value;
   }
@@ -129,7 +131,7 @@
   }
   function loadExample() {
     const example = { applicantName: "Foundation Grant Writer", email: "grants@example.org", organization: "URAI Foundation", organizationType: "Public-interest organization", mission: "Advance responsible, accessible, accountable technology and public-interest standards while preserving human dignity, agency, consent, and community participation.", project: "Demonstration community accessibility program requiring verified program scope, approved budget, measurable outcomes, and supporting records before any real funding application.", amount: "25000", location: "Demonstration location" };
-    invalidateApproval(); Object.entries(example).forEach(([id, value]) => { if (byId(id)) byId(id).value = value; }); updateCompletion();
+    invalidateApproval(); Object.entries(example).forEach(([id, value]) => { if (byId(id)) byId(id).value = value; }); updateCompletion(); markDraftStale();
   }
   document.addEventListener("DOMContentLoaded", () => {
     updateCompletion();
