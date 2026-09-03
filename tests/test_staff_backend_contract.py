@@ -27,6 +27,14 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertIn("claimsAlreadyOwner", bootstrap)
         self.assertIn("validateAnswerProvenance(tx, answers)", functions)
         self.assertIn("AUTHORITATIVE_PROVENANCE_COLLECTIONS", functions)
+        self.assertIn("fieldId !== questionId", functions)
+        self.assertIn("String(sourceData.value ?? '').trim() !== answerValue", functions)
+        self.assertIn("priorData.approvedVersion !== applicationVersion", functions)
+        self.assertIn("priorItem.questionId === questionId", functions)
+        self.assertIn("priorItem.state === 'verified'", functions)
+        self.assertIn("const opportunityRef = db.collection('grantOpportunities').doc(opportunityId)", functions)
+        self.assertIn("if (!opportunity.exists)", functions)
+        self.assertNotIn(r"\\n", functions)
 
 
 if __name__ == "__main__":
