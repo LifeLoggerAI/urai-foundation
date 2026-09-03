@@ -26,6 +26,8 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertIn("const existingStaff = await staffRef.get()", bootstrap)
         self.assertIn("claimsAlreadyOwner", bootstrap)
         self.assertIn("validateAnswerProvenance(tx, answers)", functions)
+        self.assertIn("contains generated factual language that must remain unresolved", functions)
+        self.assertIn("await validateAnswerProvenance(tx, Array.isArray(value.answers) ? value.answers : [])", functions)
         self.assertIn("AUTHORITATIVE_PROVENANCE_COLLECTIONS", functions)
         self.assertIn("fieldId !== questionId", functions)
         self.assertIn("String(sourceData.value ?? '').trim() !== answerValue", functions)
