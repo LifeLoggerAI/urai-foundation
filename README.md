@@ -255,3 +255,13 @@ Do not activate these capabilities from planning documents alone. No visitor sho
 - Legal and institutional status: **REQUIRES QUALIFIED REVIEW AND AUTHORITATIVE RECORDS**.
 
 See [Production Status](PRODUCTION_STATUS.md) for the release gate.
+
+
+## Current portal route inventory
+
+- `/community/` — public community outreach and participation information.
+- `/donate/` — public support information; payments, tax treatment, and donation receipts remain inactive pending verified legal and provider authority.
+- `/staff/` — noindex, fail-closed employee access gateway; production authentication is not connected in this source candidate.
+- `/grants/` — noindex internal Grant Desk demonstration; it produces reviewable drafts only and cannot submit to funders.
+
+The repository therefore contains a public demonstration workflow for community, support, and staff/grant operations, but no activated payment backend, authenticated production staff system, or external grant-submission flow.
