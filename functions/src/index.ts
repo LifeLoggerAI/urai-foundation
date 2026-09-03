@@ -187,10 +187,18 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
   }
 }
 
+function stableDefinition(value: unknown): string {
+  if (value === null || typeof value !== 'object') return JSON.stringify(value);
+  if (Array.isArray(value)) return `[${value.map(stableDefinition).join(',')}]`;
+  const entries = Object.entries(value as Record<string, unknown>)
+    .sort(([left], [right]) => left.localeCompare(right));
+  return `{${entries.map(([key, item]) => `${JSON.stringify(key)}:${stableDefinition(item)}`).join(',')}}`;
+}
+
 function assertAnswersMatchOpportunity(
   answers: Record<string, unknown>[],
   opportunityData: Record<string, unknown>,
-) {
+): string {
   if (!Array.isArray(opportunityData.questions) || opportunityData.questions.length === 0) {
     throw new HttpsError('failed-precondition', 'The referenced grant opportunity has no validated questions.');
   }
@@ -228,6 +236,7 @@ function assertAnswersMatchOpportunity(
   if (missing.length > 0) {
     throw new HttpsError('failed-precondition', 'Every required grant opportunity question must have exactly one answer.');
   }
+  return stableDefinition(opportunityData.questions);
 }
 
 async function validateCurrentApplicationOpportunity(
@@ -245,7 +254,11 @@ async function validateCurrentApplicationOpportunity(
   const answers = Array.isArray(application.answers)
     ? application.answers as Record<string, unknown>[]
     : [];
-  assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
+  const currentDefinition = assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
+  if (typeof application.opportunityQuestionDefinition !== 'string'
+    || application.opportunityQuestionDefinition !== currentDefinition) {
+    throw new HttpsError('failed-precondition', 'The grant opportunity question definition changed after this application was saved.');
+  }
 }
 
 function normalizedDraftAnswers(data: Record<string, unknown>, actor: AuthContext): Record<string, unknown>[] {
@@ -308,7 +321,7 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
     if (!opportunity.exists) {
       throw new HttpsError('failed-precondition', 'The referenced grant opportunity does not exist.');
     }
-    assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
+    const opportunityQuestionDefinition = assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
     const current = application.data() ?? {};
     if (!application.exists && expectedVersion !== 0) {
       throw new HttpsError('aborted', 'A new application must start at expectedVersion 0.');
@@ -322,6 +335,7 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
     const nextVersion = expectedVersion + 1;
     tx.set(applicationRef, {
       opportunityId,
+      opportunityQuestionDefinition,
       status: 'draft',
       version: nextVersion,
       answers,
