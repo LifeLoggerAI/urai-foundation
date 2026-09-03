@@ -115,7 +115,7 @@ Smoke-test:
 /community/
 /donate/ (verify donations remain disabled)
 /staff/ (verify authentication remains disabled until configured)
-/grants/ (verify private noindex demonstration boundary)
+/grants/ (verify publicly accessible, noindex demonstration boundary; no authenticated protection is active)
 /robots.txt
 /sitemap.xml
 /site.webmanifest
