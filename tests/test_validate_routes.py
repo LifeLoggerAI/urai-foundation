@@ -60,6 +60,8 @@ class ValidateRoutesTests(unittest.TestCase):
         self.assertIn("confirmReviewedAnswer", script)
         self.assertIn('answer.status !== "verified"', script)
         self.assertIn("Employee-modified draft; explicit employee review required", script)
+        self.assertIn("updateCompletion(); markDraftStale();", script)
+        self.assertIn('if (!cleaned || !/^\\d+(\\.\\d{1,2})?$/.test(cleaned)) return "";', script)
 
     def test_operator_route_inventories_cover_new_surfaces(self) -> None:
         routes = ["/community/", "/donate/", "/staff/", "/grants/"]
