@@ -32,6 +32,8 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertIn("definedQuestionIds.has(questionId)", functions)
         self.assertIn("submittedQuestionIds.has(questionId)", functions)
         self.assertIn("Every required grant opportunity question must have exactly one answer.", functions)
+        self.assertGreaterEqual(functions.count("await validateCurrentApplicationOpportunity(tx, value)"), 2)
+        self.assertIn("Grant application is missing its opportunity binding.", functions)
         self.assertIn("await validateAnswerProvenance(tx, Array.isArray(value.answers) ? value.answers : [])", functions)
         self.assertIn("AUTHORITATIVE_PROVENANCE_COLLECTIONS", functions)
         self.assertIn("fieldId !== questionId", functions)
