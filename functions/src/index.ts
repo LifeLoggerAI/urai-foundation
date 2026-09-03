@@ -120,6 +120,8 @@ const AUTHORITATIVE_PROVENANCE_COLLECTIONS: Record<string, string> = {
 async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
   for (const [index, answer] of answers.entries()) {
     const item = answer as Record<string, unknown>;
+    const questionId = String(item.questionId ?? '').trim();
+    const answerValue = String(item.value ?? '').trim();
     const provenanceType = String(item.provenanceType ?? '');
     const collection = AUTHORITATIVE_PROVENANCE_COLLECTIONS[provenanceType];
     if (!collection) continue;
@@ -136,12 +138,46 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
         throw new HttpsError('failed-precondition', `answers[${index}] references missing authoritative evidence.`);
       }
       const sourceData = source.data() ?? {};
-      if (provenanceType === 'profile' && !['verified', 'confirmed'].includes(String(sourceData.state))) {
-        throw new HttpsError('failed-precondition', `answers[${index}] references an unverified Foundation profile fact.`);
+      if (provenanceType === 'profile') {
+        const fieldId = sourceRef.split('/')[1];
+        if (!['verified', 'confirmed'].includes(String(sourceData.state))
+          || fieldId !== questionId
+          || String(sourceData.value ?? '').trim() !== answerValue) {
+          throw new HttpsError('failed-precondition', `answers[${index}] is not bound to the exact verified Foundation profile fact.`);
+        }
       }
-      if (provenanceType === 'document'
-        && (typeof sourceData.sha256 !== 'string' || !sourceData.sha256 || !sourceData.verifiedAt)) {
-        throw new HttpsError('failed-precondition', `answers[${index}] references an unverified Foundation document.`);
+      if (provenanceType === 'document') {
+        const bindings = sourceData.answerBindings;
+        const boundValue = bindings && typeof bindings === 'object' && !Array.isArray(bindings)
+          ? (bindings as Record<string, unknown>)[questionId]
+          : undefined;
+        if (typeof sourceData.sha256 !== 'string' || !sourceData.sha256 || !sourceData.verifiedAt
+          || String(boundValue ?? '').trim() !== answerValue) {
+          throw new HttpsError('failed-precondition', `answers[${index}] is not bound to the exact verified Foundation document fact.`);
+        }
+      }
+      if (provenanceType === 'prior_approved_answer') {
+        const applicationId = String(sourceData.applicationId ?? '');
+        const applicationVersion = Number(sourceData.applicationVersion);
+        if (!applicationId || !Number.isInteger(applicationVersion)) {
+          throw new HttpsError('failed-precondition', `answers[${index}] references an invalid prior approval.`);
+        }
+        const priorApplication = await tx.get(db.collection('grantApplications').doc(applicationId));
+        const priorData = priorApplication.data() ?? {};
+        const priorAnswers = Array.isArray(priorData.answers) ? priorData.answers : [];
+        const exactPriorAnswer = priorAnswers.some((prior) => {
+          if (!prior || typeof prior !== 'object' || Array.isArray(prior)) return false;
+          const priorItem = prior as Record<string, unknown>;
+          return priorItem.questionId === questionId
+            && String(priorItem.value ?? '').trim() === answerValue
+            && priorItem.state === 'verified';
+        });
+        if (!priorApplication.exists
+          || priorData.status !== 'approved'
+          || priorData.approvedVersion !== applicationVersion
+          || !exactPriorAnswer) {
+          throw new HttpsError('failed-precondition', `answers[${index}] does not match the cited approved answer.`);
+        }
       }
     }
   }
@@ -194,13 +230,11 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
     throw new HttpsError('invalid-argument', 'expectedVersion must be a non-negative integer.');
   }
   const answers = normalizedDraftAnswers(payload, actor);
-  const applicationRef = db.collection('grantApplications').doc(applicationId);
-  const auditRef = db.collection('foundationAuditLogs').doc();
+  const applicationRef = db.collection('grantApplications').doc(applicationId);\n  const opportunityRef = db.collection('grantOpportunities').doc(opportunityId);\n  const auditRef = db.collection('foundationAuditLogs').doc();
 
   await db.runTransaction(async (tx) => {
     await assertStaffInTransaction(tx, actor, ['owner', 'admin', 'reviewer', 'grant_writer']);
-    const application = await tx.get(applicationRef);
-    const current = application.data() ?? {};
+    const [application, opportunity] = await Promise.all([\n      tx.get(applicationRef),\n      tx.get(opportunityRef),\n    ]);\n    if (!opportunity.exists) {\n      throw new HttpsError('failed-precondition', 'The referenced grant opportunity does not exist.');\n    }\n    const current = application.data() ?? {};
     if (!application.exists && expectedVersion !== 0) {
       throw new HttpsError('aborted', 'A new application must start at expectedVersion 0.');
     }
