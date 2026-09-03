@@ -54,9 +54,9 @@
   function formatValue(question, value) {
     if (!value) return "";
     if (question.format === "currency") {
-      const cleaned = String(value).replace(/[^0-9.]/g, "");
-      if (!cleaned || !/^\\d+(\\.\\d{1,2})?$/.test(cleaned)) return "";
-      const number = Number(cleaned);
+      const normalized = String(value).trim();
+      if (!/^\\$?\\s*\\d+(?:,\\d{3})*(?:\\.\\d{1,2})?$/.test(normalized)) return "";
+      const number = Number(normalized.replace(/[$,\\s]/g, ""));
       return Number.isFinite(number) ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(number) : "";
     }
     return value;
@@ -72,7 +72,7 @@
     state.builtForOpportunity = state.opportunity; state.draftStale = false;
     state.answers = template.questions.map((question) => {
       const raw = question.source ? p[question.source] : "";
-      if (question.kind === "profile") { const value = formatValue(question, raw); return { ...question, value, sourceValue: value, status: raw ? "verified" : "missing", provenance: raw ? `Foundation profile · ${question.source}` : "Missing Foundation fact" }; }
+      if (question.kind === "profile") { const value = formatValue(question, raw); const verified = Boolean(value); return { ...question, value, sourceValue: value, status: verified ? "verified" : "missing", provenance: verified ? `Foundation profile · ${question.source}` : "Missing or invalid Foundation fact" }; }
       if (question.kind === "generated") { const draft = generatedDraft(question, p); return { ...question, value: draft, status: draft ? "generated" : "missing", provenance: draft ? "URAI-generated draft from approved program description; employee review required" : "Missing source information" }; }
       return { ...question, value: "", status: "missing", provenance: "Authorized employee review required" };
     });
