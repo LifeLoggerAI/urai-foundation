@@ -146,7 +146,8 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
         const fieldId = sourceRef.split('/')[1];
         if (!['verified', 'confirmed'].includes(String(sourceData.state))
           || fieldId !== questionId
-          || String(sourceData.value ?? '').trim() !== answerValue) {
+          || typeof sourceData.value !== 'string'
+          || sourceData.value.trim() !== answerValue) {
           throw new HttpsError('failed-precondition', `answers[${index}] is not bound to the exact verified Foundation profile fact.`);
         }
       }
