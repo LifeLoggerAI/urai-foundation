@@ -27,6 +27,7 @@ def main() -> int:
         "request.auth.token.foundation_staff == true",
         "request.auth.token.email_verified == true",
         "== request.auth.token.foundation_role",
+        "foundation_role in ['owner', 'admin', 'reviewer', 'grant_writer', 'staff']",
         "match /foundationStaff/{uid}",
         "match /grantApplications/{applicationId}",
         "Application content and verification state are server-owned",
@@ -50,8 +51,8 @@ def main() -> int:
         "value.lastEditedBy === actor.uid",
         "value.reviewedBy === actor.uid",
         "reviewedVersion !== expectedVersion",
-        "const batch = db.batch()",
-        "await batch.commit()",
+        "assertStaffInTransaction",
+        "await db.runTransaction",
         "grant.application.approved",
     ]
     for snippet in required_functions:
@@ -83,6 +84,9 @@ def main() -> int:
         "Refusing to guess a Firebase project",
         "foundation_role: 'owner'",
         "...(user.customClaims ?? {})",
+        "const existingStaff = await staffRef.get()",
+        "claimsAlreadyOwner",
+        "Refusing to activate owner claims for an already-active staff record",
         "const batch = db.batch()",
         "batch.create(auditRef",
         "await batch.commit()",
