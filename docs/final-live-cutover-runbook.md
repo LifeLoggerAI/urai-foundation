@@ -57,7 +57,7 @@ This checklist intentionally does not prescribe GitHub Pages DNS records or Fire
 - [ ] `/community/`
 - [ ] `/donate/` (must visibly remain disabled until receiving-entity and processor facts are verified)
 - [ ] `/staff/` (must preserve the authentication-disabled boundary until configured)
-- [ ] `/grants/` (private/noindex employee demonstration)
+- [ ] `/grants/` (publicly accessible, noindex demonstration; no authenticated protection is active)
 - [ ] `/robots.txt`
 - [ ] `/sitemap.xml`
 - [ ] `/site.webmanifest`
