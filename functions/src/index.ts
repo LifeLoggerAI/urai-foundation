@@ -230,6 +230,24 @@ function assertAnswersMatchOpportunity(
   }
 }
 
+async function validateCurrentApplicationOpportunity(
+  tx: Transaction,
+  application: Record<string, unknown>,
+) {
+  const opportunityId = String(application.opportunityId ?? '').trim();
+  if (!opportunityId) {
+    throw new HttpsError('failed-precondition', 'Grant application is missing its opportunity binding.');
+  }
+  const opportunity = await tx.get(db.collection('grantOpportunities').doc(opportunityId));
+  if (!opportunity.exists) {
+    throw new HttpsError('failed-precondition', 'The referenced grant opportunity no longer exists.');
+  }
+  const answers = Array.isArray(application.answers)
+    ? application.answers as Record<string, unknown>[]
+    : [];
+  assertAnswersMatchOpportunity(answers, opportunity.data() ?? {});
+}
+
 function normalizedDraftAnswers(data: Record<string, unknown>, actor: AuthContext): Record<string, unknown>[] {
   const answers = data.answers;
   if (!Array.isArray(answers) || answers.length === 0 || answers.length > 100) {
@@ -356,6 +374,7 @@ export const reviewGrantApplicationVersion = onCall({ enforceAppCheck: true }, a
     })) {
       throw new HttpsError('failed-precondition', 'Every answer needs a non-empty value before verification.');
     }
+    await validateCurrentApplicationOpportunity(tx, value);
     await validateAnswerProvenance(tx, answers);
     const verifiedAt = Timestamp.now();
     const verifiedAnswers = answers.map((answer) => ({
@@ -419,6 +438,7 @@ export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (
     if (value.reviewedVersion !== expectedVersion) {
       throw new HttpsError('failed-precondition', 'The exact application version has not completed protected answer review.');
     }
+    await validateCurrentApplicationOpportunity(tx, value);
     await validateAnswerProvenance(tx, Array.isArray(value.answers) ? value.answers : []);
     if (hasUnresolvedAnswers(value)) {
       throw new HttpsError('failed-precondition', 'Unresolved facts must be cleared before approval.');
