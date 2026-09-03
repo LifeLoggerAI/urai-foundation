@@ -43,13 +43,20 @@ if (!user.emailVerified) {
   process.exit(1);
 }
 
+const staffRef = db.collection('foundationStaff').doc(user.uid);
+const existingStaff = await staffRef.get();
+const claimsAlreadyOwner = user.customClaims?.foundation_staff === true
+  && user.customClaims?.foundation_role === 'owner';
+if (existingStaff.data()?.isActive === true && !claimsAlreadyOwner) {
+  console.error('Refusing to activate owner claims for an already-active staff record without an atomic audit boundary. Deactivate the record through the approved recovery process first.');
+  process.exit(1);
+}
+
 await auth.setCustomUserClaims(user.uid, {
   ...(user.customClaims ?? {}),
   foundation_staff: true,
   foundation_role: 'owner',
 });
-
-const staffRef = db.collection('foundationStaff').doc(user.uid);
 const auditRef = db.collection('foundationAuditLogs').doc();
 const batch = db.batch();
 batch.set(staffRef, {
