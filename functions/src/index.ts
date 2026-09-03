@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase-admin/app';
-import { FieldValue, Timestamp, getFirestore } from 'firebase-admin/firestore';
+import { FieldValue, Timestamp, Transaction, getFirestore } from 'firebase-admin/firestore';
 import { CallableRequest, HttpsError, onCall } from 'firebase-functions/v2/https';
 
 initializeApp();
@@ -58,6 +58,20 @@ async function requireStaff(
 
   const email = typeof token.email === 'string' ? token.email : '';
   return { uid: request.auth.uid, email, role: role as StaffRole };
+}
+
+async function assertStaffInTransaction(
+  tx: Transaction,
+  actor: AuthContext,
+  allowedRoles: StaffRole[],
+) {
+  if (!allowedRoles.includes(actor.role)) {
+    throw new HttpsError('permission-denied', 'Your Foundation role cannot perform this action.');
+  }
+  const staffSnap = await tx.get(db.collection('foundationStaff').doc(actor.uid));
+  if (!staffSnap.exists || staffSnap.data()?.isActive !== true || staffSnap.data()?.role !== actor.role) {
+    throw new HttpsError('permission-denied', 'Foundation staff access changed before the protected write.');
+  }
 }
 
 function requireObject(data: unknown): Record<string, unknown> {
@@ -149,6 +163,7 @@ export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async
   const auditRef = db.collection('foundationAuditLogs').doc();
 
   await db.runTransaction(async (tx) => {
+    await assertStaffInTransaction(tx, actor, ['owner', 'admin', 'reviewer', 'grant_writer']);
     const application = await tx.get(applicationRef);
     const current = application.data() ?? {};
     if (!application.exists && expectedVersion !== 0) {
@@ -197,6 +212,7 @@ export const reviewGrantApplicationVersion = onCall({ enforceAppCheck: true }, a
   const auditRef = db.collection('foundationAuditLogs').doc();
 
   await db.runTransaction(async (tx) => {
+    await assertStaffInTransaction(tx, actor, ['owner', 'admin', 'reviewer']);
     const application = await tx.get(applicationRef);
     if (!application.exists) throw new HttpsError('not-found', 'Grant application was not found.');
     const value = application.data() ?? {};
@@ -259,6 +275,7 @@ export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (
   const auditRef = db.collection('foundationAuditLogs').doc();
 
   await db.runTransaction(async (tx) => {
+    await assertStaffInTransaction(tx, actor, ['owner', 'admin', 'reviewer']);
     const application = await tx.get(applicationRef);
     if (!application.exists) throw new HttpsError('not-found', 'Grant application was not found.');
 
@@ -329,26 +346,27 @@ export const upsertFoundationProfileField = onCall({ enforceAppCheck: true }, as
 
   const ref = db.collection('foundationProfile').doc(fieldId);
   const auditRef = db.collection('foundationAuditLogs').doc();
-  const batch = db.batch();
-  batch.set(ref, {
-    value,
-    state: 'verified',
-    sourceRef,
-    confirmedAt: FieldValue.serverTimestamp(),
-    confirmedBy: actor.uid,
-    updatedAt: FieldValue.serverTimestamp(),
-  }, { merge: true });
+  await db.runTransaction(async (tx) => {
+    await assertStaffInTransaction(tx, actor, ['owner', 'admin']);
+    tx.set(ref, {
+      value,
+      state: 'verified',
+      sourceRef,
+      confirmedAt: FieldValue.serverTimestamp(),
+      confirmedBy: actor.uid,
+      updatedAt: FieldValue.serverTimestamp(),
+    }, { merge: true });
 
-  batch.create(auditRef, {
-    actorUid: actor.uid,
-    actorEmail: actor.email,
-    actorRole: actor.role,
-    action: 'foundation.profile.verified',
-    target: { type: 'foundationProfile', id: fieldId },
-    metadata: { sourceRef },
-    createdAt: FieldValue.serverTimestamp(),
+    tx.create(auditRef, {
+      actorUid: actor.uid,
+      actorEmail: actor.email,
+      actorRole: actor.role,
+      action: 'foundation.profile.verified',
+      target: { type: 'foundationProfile', id: fieldId },
+      metadata: { sourceRef },
+      createdAt: FieldValue.serverTimestamp(),
+    });
   });
-  await batch.commit();
 
   return { ok: true, fieldId };
 });
