@@ -55,9 +55,10 @@
     if (!value) return "";
     if (question.format === "currency") {
       const normalized = String(value).trim();
-      if (!/^\\$?\\s*\\d+(?:,\\d{3})*(?:\\.\\d{1,2})?$/.test(normalized)) return "";
-      const number = Number(normalized.replace(/[$,\\s]/g, ""));
-      return Number.isFinite(number) ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(number) : "";
+      if (!/^\$?\s*\d+(?:,\d{3})*(?:\.\d{1,2})?$/.test(normalized)) return "";
+      const number = Number(normalized.replace(/[$,\s]/g, ""));
+      const fractionDigits = normalized.includes(".") ? normalized.split(".")[1].length : 0;
+      return Number.isFinite(number) ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: fractionDigits, maximumFractionDigits: 2 }).format(number) : "";
     }
     return value;
   }
