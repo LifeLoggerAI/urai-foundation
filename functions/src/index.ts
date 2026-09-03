@@ -123,6 +123,9 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
     const questionId = String(item.questionId ?? '').trim();
     const answerValue = String(item.value ?? '').trim();
     const provenanceType = String(item.provenanceType ?? '');
+    if (provenanceType === 'generated') {
+      throw new HttpsError('failed-precondition', `answers[${index}] contains generated factual language that must remain unresolved or be rebound to authoritative provenance.`);
+    }
     const collection = AUTHORITATIVE_PROVENANCE_COLLECTIONS[provenanceType];
     if (!collection) continue;
     const sourceRefs = Array.isArray(item.sourceRefs) ? item.sourceRefs : [];
@@ -371,6 +374,7 @@ export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (
     if (value.reviewedVersion !== expectedVersion) {
       throw new HttpsError('failed-precondition', 'The exact application version has not completed protected answer review.');
     }
+    await validateAnswerProvenance(tx, Array.isArray(value.answers) ? value.answers : []);
     if (hasUnresolvedAnswers(value)) {
       throw new HttpsError('failed-precondition', 'Unresolved facts must be cleared before approval.');
     }
