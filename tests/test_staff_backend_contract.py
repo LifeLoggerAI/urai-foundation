@@ -25,6 +25,8 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertGreaterEqual(functions.count("await assertStaffInTransaction(tx, actor"), 4)
         self.assertIn("const existingStaff = await staffRef.get()", bootstrap)
         self.assertIn("claimsAlreadyOwner", bootstrap)
+        self.assertIn("validateAnswerProvenance(tx, answers)", functions)
+        self.assertIn("AUTHORITATIVE_PROVENANCE_COLLECTIONS", functions)
 
 
 if __name__ == "__main__":
