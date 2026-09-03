@@ -13,7 +13,7 @@ The custom-domain production state is not yet verified because:
 
 - repository files configure GitHub Pages;
 - issue #10 reports a separate Firebase Hosting fallback;
-- Firebase deployment configuration is absent from this repository;
+- Functions/Firestore Firebase configuration is checked in, but project binding, Hosting target, provider environment, and deployment evidence are absent;
 - exact current deployed and rollback SHAs are not recorded;
 - exact-current custom-domain DNS/TLS/route proof is not tied to the current head;
 - the audit-start head has no attached check status.
