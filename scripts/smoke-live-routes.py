@@ -43,7 +43,10 @@ EXPECTED_ROUTE_MARKERS = {
     "/community/": "Community outreach",
     "/donate/": "Online payment processing is not activated",
     "/staff/": "Authentication is not connected",
-    "/grants/": "Foundation Grant Desk",
+    "/grants/": (
+        "This public branch contains a demonstration workflow only.",
+        '<meta name="robots" content="noindex, nofollow">',
+    ),
 }
 
 
@@ -71,16 +74,16 @@ def request_url(url: str, expected_marker: str | None = None) -> SmokeResult:
             server = response.headers.get("server", "")
             lower_server = server.lower()
             wrong_host = any(marker in lower_server for marker in FORBIDDEN_SERVER_MARKERS)
-            body = response.read(512_000) if expected_marker else b""
-            marker_ok = True
-            if expected_marker:
-                marker_ok = expected_marker.encode("utf-8") in body
+            markers = (expected_marker,) if isinstance(expected_marker, str) else tuple(expected_marker or ())
+            body = response.read(512_000) if markers else b""
+            missing_markers = [marker for marker in markers if marker.encode("utf-8") not in body]
+            marker_ok = not missing_markers
             ok = 200 <= status < 400 and not wrong_host and marker_ok
             detail = f"status={status} content-type={content_type!r} server={server!r}"
             if wrong_host:
                 detail = f"{detail} wrong-host=true"
             if not marker_ok:
-                detail = f"{detail} expected-marker-missing=true"
+                detail = f"{detail} expected-marker-missing={missing_markers!r}"
             return SmokeResult(url=url, ok=ok, status=status, detail=detail)
     except urllib.error.HTTPError as exc:
         return SmokeResult(url=url, ok=False, status=exc.code, detail=f"http error: {exc}")
