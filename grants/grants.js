@@ -109,7 +109,14 @@
     container.querySelectorAll("textarea").forEach((textarea) => textarea.addEventListener("input", (event) => updateAnswer(Number(event.target.dataset.answerIndex), event.target.value)));
   }
   function updateAnswer(index, value, renderReviewAfter = true) {
-    const answer = state.answers[index]; answer.value = value.trim();
+    const answer = state.answers[index];
+    const nextValue = value.trim();
+    const changedApprovedDraft = nextValue !== answer.value && Boolean(state.signed || state.approvedPayload);
+    if (changedApprovedDraft) {
+      state.version += 1;
+      byId("versionChip").textContent = `Draft v${state.version}`;
+    }
+    answer.value = nextValue;
     if (!answer.value) {
       answer.status = "missing";
       answer.provenance = answer.kind === "profile" ? "Missing Foundation fact" : "Authorized employee review required";
