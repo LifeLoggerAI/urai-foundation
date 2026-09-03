@@ -78,9 +78,13 @@
     });
     renderApplication(); renderReview(); byId("versionChip").textContent = `Draft v${state.version}`; showStage("application");
   }
+  function answerBadge(answer) {
+    if (answer.status !== "verified") return answer.status === "generated" ? "Generated draft" : "Needs employee";
+    return answer.kind === "profile" && answer.value === answer.sourceValue ? "Foundation fact" : "Employee confirmed";
+  }
   function renderApplication() {
     const container = byId("applicationFields");
-    container.innerHTML = state.answers.map((answer, index) => `<article class="application-answer"><div class="answer-topline"><strong>${escapeHtml(answer.prompt)}</strong><span class="source-badge ${answer.status}">${answer.status === "verified" ? "Foundation fact" : answer.status === "generated" ? "Generated draft" : "Needs employee"}</span></div><textarea data-answer-index="${index}" aria-label="${escapeHtml(answer.prompt)}">${escapeHtml(answer.value)}</textarea><p>${escapeHtml(answer.provenance)}</p></article>`).join("");
+    container.innerHTML = state.answers.map((answer, index) => `<article class="application-answer"><div class="answer-topline"><strong>${escapeHtml(answer.prompt)}</strong><span class="source-badge ${answer.status}">${answerBadge(answer)}</span></div><textarea data-answer-index="${index}" aria-label="${escapeHtml(answer.prompt)}">${escapeHtml(answer.value)}</textarea><p>${escapeHtml(answer.provenance)}</p></article>`).join("");
     container.querySelectorAll("textarea").forEach((textarea) => textarea.addEventListener("input", (event) => updateAnswer(Number(event.target.dataset.answerIndex), event.target.value)));
   }
   function updateAnswer(index, value, renderReviewAfter = true) {
