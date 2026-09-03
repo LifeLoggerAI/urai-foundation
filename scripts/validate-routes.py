@@ -40,12 +40,20 @@ FORBIDDEN_SNIPPETS = [
     "donate now",
     "make a donation",
     "tax exempt",
+    "tax-exempt organization",
+    "apply for a grant",
+    "grant application",
+    "clinical service",
     "official partner",
     "certified partner",
     "therapy service",
     "medical service",
     "diagnostic service",
 ]
+
+ROUTE_ALLOWED_SNIPPETS = {
+    "/grants/": {"grant application"},
+}
 
 GRANT_ROUTE_REQUIRED_SNIPPETS = (
     "does not accept employee credentials",
@@ -96,7 +104,7 @@ def main() -> int:
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
         for snippet in FORBIDDEN_SNIPPETS:
-            if snippet in body:
+            if snippet in body and snippet not in ROUTE_ALLOWED_SNIPPETS.get(route, set()):
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
 
         if route in PRIVATE_NOINDEX_ROUTES:

@@ -25,6 +25,10 @@ REQUIRED_PATHS = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/community/",
+    "/donate/",
+    "/staff/",
+    "/grants/",
     "/robots.txt",
     "/sitemap.xml",
     "/site.webmanifest",
@@ -34,6 +38,13 @@ REQUIRED_PATHS = [
 TIMEOUT_SECONDS = 15
 FORBIDDEN_SERVER_MARKERS = ("squarespace",)
 EXPECTED_HOME_MARKER = "URAI Foundation"
+EXPECTED_ROUTE_MARKERS = {
+    "/": EXPECTED_HOME_MARKER,
+    "/community/": "Community outreach",
+    "/donate/": "Online payment processing is not activated",
+    "/staff/": "Authentication is not connected",
+    "/grants/": "Foundation Grant Desk",
+}
 
 
 @dataclass(frozen=True)
@@ -87,7 +98,7 @@ def main(base_url: str = DEFAULT_BASE_URL) -> int:
         return 2
 
     results = [
-        request_url(f"{origin}{path}", expected_marker=EXPECTED_HOME_MARKER if path == "/" else None)
+        request_url(f"{origin}{path}", expected_marker=EXPECTED_ROUTE_MARKERS.get(path))
         for path in REQUIRED_PATHS
     ]
     failures = [result for result in results if not result.ok]
