@@ -21,6 +21,7 @@ def main() -> int:
     functions = (ROOT / "functions/src/index.ts").read_text(encoding="utf-8")
     bootstrap = (ROOT / "functions/scripts/bootstrap-owner.mjs").read_text(encoding="utf-8")
     workflow = (ROOT / ".github/workflows/check.yml").read_text(encoding="utf-8")
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
     required_rules = [
         "allow read, write: if false;",
@@ -65,6 +66,20 @@ def main() -> int:
     for snippet in required_functions:
         if snippet not in functions:
             errors.append(f"functions/src/index.ts missing privileged-action control: {snippet}")
+
+    if r"\\n" in functions:
+        errors.append("functions/src/index.ts contains literal escaped newline markers")
+
+    required_readme = [
+        "protected, undeployed Firebase source for staff grant operations",
+        "protected Firebase Functions, Firestore rules, and validation contracts",
+        "backend source remains nonproduction",
+    ]
+    for snippet in required_readme:
+        if snippet not in readme:
+            errors.append(f"README.md missing truthful repository-role boundary: {snippet}")
+    if r"\\n" in readme:
+        errors.append("README.md contains literal escaped newline markers")
 
     forbidden_functions = [
         "serviceAccount",
