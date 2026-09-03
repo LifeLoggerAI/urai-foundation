@@ -34,7 +34,7 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertIn("priorItem.state === 'verified'", functions)
         self.assertIn("const opportunityRef = db.collection('grantOpportunities').doc(opportunityId)", functions)
         self.assertIn("if (!opportunity.exists)", functions)
-        self.assertNotIn(r"\\n", functions)
+        self.assertNotIn(r"\n", functions)
 
 
 if __name__ == "__main__":
