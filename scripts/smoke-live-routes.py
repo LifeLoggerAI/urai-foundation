@@ -29,6 +29,7 @@ REQUIRED_PATHS = [
     "/donate/",
     "/staff/",
     "/grants/",
+    "/grants/grants.js",
     "/robots.txt",
     "/sitemap.xml",
     "/site.webmanifest",
@@ -47,6 +48,7 @@ EXPECTED_ROUTE_MARKERS = {
         "This public branch contains a demonstration workflow only.",
         '<meta name="robots" content="noindex, nofollow">',
     ),
+    "/grants/grants.js": "foundation-staff-grant-desk-demo-v1",
 }
 
 
