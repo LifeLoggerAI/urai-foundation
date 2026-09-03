@@ -7,7 +7,7 @@ Last reviewed: 2026-07-06
 
 `LifeLoggerAI/urai-foundation` is a documentation-first public-interest standards repository with a lightweight static website.
 
-It is not a service runtime, SDK, database, backend form processor, donation/grant platform, certification service, research-participant system, clinical resource, or commercial product repository.
+It contains a static public site plus protected, undeployed Firebase source for authenticated staff grant operations. It is not a deployed service runtime, SDK, donation platform, certification service, research-participant system, clinical resource, or commercial product repository.
 
 ## Canonical source surfaces
 
@@ -88,7 +88,7 @@ Current evidence is conflicting:
 
 - GitHub Pages source configuration exists;
 - issue #10 reports a Firebase fallback;
-- Firebase config is absent from this repository;
+- `firebase.json`, Firestore rules/indexes, and a Functions codebase are present for the protected staff grant backend, without a project binding or Hosting target;
 - exact deployed/rollback SHAs and custom-domain proof are missing.
 
 The recommended architecture is repository-native GitHub Pages using the curated artifact, but owner approval and external verification are required. See `docs/canonical-production-truth.md`.
@@ -101,10 +101,10 @@ Product-side records should include system cards, providers, data flows, consent
 
 ## Out of scope without an approved architectural decision
 
-- backend APIs or long-running services;
-- databases, migrations, accounts, or private intake;
+- deployed backend APIs or long-running services;
+- deployed staff accounts, database migrations, or public/private intake;
 - product SDKs or commercial application code;
-- payment, donation, grant, or fundraising systems;
+- deployed payment, donation, grant, or fundraising systems;
 - research participant enrollment;
 - certification/assessment operations;
 - confidential partner/advisor/legal/incident data;
