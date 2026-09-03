@@ -17,6 +17,15 @@ class StaffBackendContractTests(unittest.TestCase):
     def test_staff_backend_security_contract_passes(self) -> None:
         self.assertEqual(validate_staff_backend.main(), 0)
 
+    def test_supported_roles_and_transactional_authority_rechecks_are_locked(self) -> None:
+        rules = (validate_staff_backend.ROOT / "firestore.rules").read_text(encoding="utf-8")
+        functions = (validate_staff_backend.ROOT / "functions/src/index.ts").read_text(encoding="utf-8")
+        bootstrap = (validate_staff_backend.ROOT / "functions/scripts/bootstrap-owner.mjs").read_text(encoding="utf-8")
+        self.assertIn("foundation_role in ['owner', 'admin', 'reviewer', 'grant_writer', 'staff']", rules)
+        self.assertGreaterEqual(functions.count("await assertStaffInTransaction(tx, actor"), 4)
+        self.assertIn("const existingStaff = await staffRef.get()", bootstrap)
+        self.assertIn("claimsAlreadyOwner", bootstrap)
+
 
 if __name__ == "__main__":
     unittest.main()
