@@ -62,6 +62,7 @@ class ValidateRoutesTests(unittest.TestCase):
         self.assertIn("Employee-modified draft; explicit employee review required", script)
         self.assertIn("updateCompletion(); markDraftStale();", script)
         self.assertIn('if (!/^\\$?\\s*\\d+(?:,\\d{3})*(?:\\.\\d{1,2})?$/.test(normalized)) return "";', script)
+        self.assertIn('minimumFractionDigits: fractionDigits, maximumFractionDigits: 2', script)
         self.assertIn('status: verified ? "verified" : "missing"', script)
         self.assertIn('answer.value === answer.sourceValue ? "Foundation fact" : "Employee confirmed"', script)
 
