@@ -71,27 +71,12 @@ service cloud.firestore {
       allow create, update, delete: if false;
     }
 
-    // Writers can create and edit draft applications, but cannot self-approve,
-    // mark an application submitted, or rewrite immutable identity fields.
+    // Application content and verification state are server-owned. Staff clients
+    // use App-Check-protected callables so no client can forge answer verification,
+    // rewrite editor identity, or bypass the audit trail.
     match /grantApplications/{applicationId} {
       allow read: if activeStaff();
-
-      allow create: if writerOrAbove()
-        && sameCreatorOnCreate()
-        && request.resource.data.status == 'draft'
-        && request.resource.data.version == 1
-        && request.resource.data.keys().hasAll([
-          'opportunityId', 'status', 'version', 'answers', 'unresolvedCount',
-          'createdBy', 'createdAt', 'updatedAt'
-        ]);
-
-      allow update: if writerOrAbove()
-        && immutableIdentityFields()
-        && request.resource.data.version == resource.data.version + 1
-        && request.resource.data.status in ['draft', 'ready_for_review']
-        && !(resource.data.status in ['approved', 'submitted', 'awarded', 'closed']);
-
-      allow delete: if adminOrOwner() && resource.data.status == 'draft';
+      allow create, update, delete: if false;
     }
 
     // Approvals, submission receipts, and audit history are server-only writes.

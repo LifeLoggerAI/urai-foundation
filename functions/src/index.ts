@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase-admin/app';
-import { FieldValue, getFirestore } from 'firebase-admin/firestore';
+import { FieldValue, Timestamp, getFirestore } from 'firebase-admin/firestore';
 import { CallableRequest, HttpsError, onCall } from 'firebase-functions/v2/https';
 
 initializeApp();
@@ -96,6 +96,155 @@ function hasUnresolvedAnswers(value: Record<string, unknown>): boolean {
   });
 }
 
+const PROVENANCE_TYPES = new Set(['profile', 'document', 'prior_approved_answer', 'generated', 'employee_entered']);
+
+function normalizedDraftAnswers(data: Record<string, unknown>, actor: AuthContext): Record<string, unknown>[] {
+  const answers = data.answers;
+  if (!Array.isArray(answers) || answers.length === 0 || answers.length > 100) {
+    throw new HttpsError('invalid-argument', 'answers must contain between 1 and 100 items.');
+  }
+
+  const editedAt = Timestamp.now();
+  return answers.map((answer, index) => {
+    if (!answer || typeof answer !== 'object' || Array.isArray(answer)) {
+      throw new HttpsError('invalid-argument', `answers[${index}] must be an object.`);
+    }
+    const item = answer as Record<string, unknown>;
+    const questionId = requireString(item, 'questionId');
+    const value = typeof item.value === 'string' ? item.value.trim() : '';
+    const provenanceType = requireString(item, 'provenanceType');
+    if (!PROVENANCE_TYPES.has(provenanceType)) {
+      throw new HttpsError('invalid-argument', `answers[${index}].provenanceType is invalid.`);
+    }
+    const sourceRefs = item.sourceRefs;
+    if (!Array.isArray(sourceRefs) || sourceRefs.some((entry) => typeof entry !== 'string')) {
+      throw new HttpsError('invalid-argument', `answers[${index}].sourceRefs must be a string array.`);
+    }
+    return {
+      questionId,
+      value,
+      state: 'unresolved',
+      provenanceType,
+      sourceRefs: sourceRefs.map((entry) => entry.trim()).filter(Boolean),
+      ...(typeof item.generatedByModel === 'string' && item.generatedByModel.trim()
+        ? { generatedByModel: item.generatedByModel.trim() }
+        : {}),
+      lastEditedBy: actor.uid,
+      lastEditedAt: editedAt,
+    };
+  });
+}
+
+export const saveGrantApplicationDraft = onCall({ enforceAppCheck: true }, async (request) => {
+  const actor = await requireStaff(request, ['owner', 'admin', 'reviewer', 'grant_writer']);
+  const payload = requireObject(request.data);
+  const applicationId = requireString(payload, 'applicationId');
+  const opportunityId = requireString(payload, 'opportunityId');
+  const expectedVersion = Number(payload.expectedVersion);
+  if (!Number.isInteger(expectedVersion) || expectedVersion < 0) {
+    throw new HttpsError('invalid-argument', 'expectedVersion must be a non-negative integer.');
+  }
+  const answers = normalizedDraftAnswers(payload, actor);
+  const applicationRef = db.collection('grantApplications').doc(applicationId);
+  const auditRef = db.collection('foundationAuditLogs').doc();
+
+  await db.runTransaction(async (tx) => {
+    const application = await tx.get(applicationRef);
+    const current = application.data() ?? {};
+    if (!application.exists && expectedVersion !== 0) {
+      throw new HttpsError('aborted', 'A new application must start at expectedVersion 0.');
+    }
+    if (application.exists) {
+      if (current.version !== expectedVersion) throw new HttpsError('aborted', 'The application changed. Refresh before saving.');
+      if (['approved', 'submitted', 'awarded', 'closed'].includes(String(current.status))) {
+        throw new HttpsError('failed-precondition', 'A terminal application cannot be edited.');
+      }
+    }
+    const nextVersion = expectedVersion + 1;
+    tx.set(applicationRef, {
+      opportunityId,
+      status: 'draft',
+      version: nextVersion,
+      answers,
+      unresolvedCount: answers.length,
+      createdBy: application.exists ? current.createdBy : actor.uid,
+      createdAt: application.exists ? current.createdAt : FieldValue.serverTimestamp(),
+      lastEditedBy: actor.uid,
+      lastEditedAt: FieldValue.serverTimestamp(),
+      updatedAt: FieldValue.serverTimestamp(),
+    });
+    tx.create(auditRef, {
+      actorUid: actor.uid,
+      actorEmail: actor.email,
+      actorRole: actor.role,
+      action: 'grant.application.draft_saved',
+      target: { type: 'grantApplication', id: applicationId, version: nextVersion },
+      metadata: { unresolvedCount: answers.length },
+      createdAt: FieldValue.serverTimestamp(),
+    });
+  });
+
+  return { ok: true, applicationId, version: expectedVersion + 1 };
+});
+
+export const reviewGrantApplicationVersion = onCall({ enforceAppCheck: true }, async (request) => {
+  const actor = await requireStaff(request, ['owner', 'admin', 'reviewer'], true);
+  const payload = requireObject(request.data);
+  const applicationId = requireString(payload, 'applicationId');
+  const expectedVersion = requireInteger(payload, 'expectedVersion');
+  const attestation = requireString(payload, 'attestation');
+  const applicationRef = db.collection('grantApplications').doc(applicationId);
+  const auditRef = db.collection('foundationAuditLogs').doc();
+
+  await db.runTransaction(async (tx) => {
+    const application = await tx.get(applicationRef);
+    if (!application.exists) throw new HttpsError('not-found', 'Grant application was not found.');
+    const value = application.data() ?? {};
+    if (value.version !== expectedVersion || value.status !== 'draft') {
+      throw new HttpsError('aborted', 'Only the exact current draft version can be reviewed.');
+    }
+    if (value.createdBy === actor.uid || value.lastEditedBy === actor.uid) {
+      throw new HttpsError('permission-denied', 'An application editor cannot verify their own work.');
+    }
+    const answers = value.answers;
+    if (!Array.isArray(answers) || answers.length === 0 || answers.some((answer) => {
+      if (!answer || typeof answer !== 'object' || Array.isArray(answer)) return true;
+      const answerValue = (answer as Record<string, unknown>).value;
+      return typeof answerValue !== 'string' || !answerValue.trim();
+    })) {
+      throw new HttpsError('failed-precondition', 'Every answer needs a non-empty value before verification.');
+    }
+    const verifiedAt = Timestamp.now();
+    const verifiedAnswers = answers.map((answer) => ({
+      ...(answer as Record<string, unknown>),
+      state: 'verified',
+      verifiedBy: actor.uid,
+      verifiedAt,
+    }));
+    tx.update(applicationRef, {
+      answers: verifiedAnswers,
+      unresolvedCount: 0,
+      status: 'ready_for_review',
+      reviewedVersion: expectedVersion,
+      reviewedBy: actor.uid,
+      reviewedAt: FieldValue.serverTimestamp(),
+      reviewAttestation: attestation,
+      updatedAt: FieldValue.serverTimestamp(),
+    });
+    tx.create(auditRef, {
+      actorUid: actor.uid,
+      actorEmail: actor.email,
+      actorRole: actor.role,
+      action: 'grant.application.answers_verified',
+      target: { type: 'grantApplication', id: applicationId, version: expectedVersion },
+      metadata: { attestation },
+      createdAt: FieldValue.serverTimestamp(),
+    });
+  });
+
+  return { ok: true, applicationId, reviewedVersion: expectedVersion };
+});
+
 export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (request) => {
   const actor = await requireStaff(request, ['owner', 'admin', 'reviewer'], true);
   if (!PRIVILEGED_ROLES.has(actor.role)) throw new HttpsError('permission-denied', 'Reviewer access is required.');
@@ -120,8 +269,11 @@ export const approveGrantApplication = onCall({ enforceAppCheck: true }, async (
     if (value.version !== expectedVersion) {
       throw new HttpsError('aborted', 'The application changed. Refresh and review the latest version.');
     }
-    if (value.createdBy === actor.uid) {
-      throw new HttpsError('permission-denied', 'An application author cannot approve their own work.');
+    if (value.createdBy === actor.uid || value.lastEditedBy === actor.uid || value.reviewedBy === actor.uid) {
+      throw new HttpsError('permission-denied', 'An application author, editor, or answer reviewer cannot approve their own work.');
+    }
+    if (value.reviewedVersion !== expectedVersion) {
+      throw new HttpsError('failed-precondition', 'The exact application version has not completed protected answer review.');
     }
     if (hasUnresolvedAnswers(value)) {
       throw new HttpsError('failed-precondition', 'Unresolved facts must be cleared before approval.');

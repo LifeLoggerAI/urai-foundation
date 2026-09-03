@@ -52,6 +52,23 @@ class ValidateRoutesTests(unittest.TestCase):
         self.assertIn("const payload = state.approvedPayload", script)
         self.assertIn("invalidateApproval()", script)
 
+    def test_grant_preview_requires_rebuild_and_explicit_answer_review(self) -> None:
+        script = (validate_routes.ROOT / "grants/grants.js").read_text(encoding="utf-8")
+        self.assertIn("builtForOpportunity", script)
+        self.assertIn("draftStale", script)
+        self.assertIn("data-confirm-review", script)
+        self.assertIn("confirmReviewedAnswer", script)
+        self.assertIn('answer.status !== "verified"', script)
+        self.assertIn("Employee-modified draft; explicit employee review required", script)
+
+    def test_operator_route_inventories_cover_new_surfaces(self) -> None:
+        routes = ["/community/", "/donate/", "/staff/", "/grants/"]
+        for filename in ("docs/final-live-cutover-runbook.md", "docs/live-deployment-runbook.md"):
+            content = (validate_routes.ROOT / filename).read_text(encoding="utf-8")
+            for route in routes:
+                with self.subTest(filename=filename, route=route):
+                    self.assertIn(route, content)
+
 
 if __name__ == "__main__":
     unittest.main()

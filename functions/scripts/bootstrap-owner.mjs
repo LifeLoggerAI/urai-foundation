@@ -44,11 +44,15 @@ if (!user.emailVerified) {
 }
 
 await auth.setCustomUserClaims(user.uid, {
+  ...(user.customClaims ?? {}),
   foundation_staff: true,
   foundation_role: 'owner',
 });
 
-await db.collection('foundationStaff').doc(user.uid).set({
+const staffRef = db.collection('foundationStaff').doc(user.uid);
+const auditRef = db.collection('foundationAuditLogs').doc();
+const batch = db.batch();
+batch.set(staffRef, {
   email,
   role: 'owner',
   isActive: true,
@@ -57,7 +61,7 @@ await db.collection('foundationStaff').doc(user.uid).set({
   provisionedBy: 'functions/scripts/bootstrap-owner.mjs',
 }, { merge: true });
 
-await db.collection('foundationAuditLogs').add({
+batch.create(auditRef, {
   actorUid: user.uid,
   actorEmail: email,
   actorRole: 'owner',
@@ -66,6 +70,7 @@ await db.collection('foundationAuditLogs').add({
   metadata: { projectId },
   createdAt: FieldValue.serverTimestamp(),
 });
+await batch.commit();
 
 console.log(`Bootstrapped Foundation owner ${email} (${user.uid}) in ${projectId}.`);
 console.log('The user must refresh their Firebase ID token before the new custom claims take effect.');

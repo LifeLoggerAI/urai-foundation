@@ -112,6 +112,10 @@ Smoke-test:
 /contact/
 /privacy/
 /terms/
+/community/
+/donate/ (verify donations remain disabled)
+/staff/ (verify authentication remains disabled until configured)
+/grants/ (verify private noindex demonstration boundary)
 /robots.txt
 /sitemap.xml
 /site.webmanifest

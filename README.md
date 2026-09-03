@@ -35,7 +35,7 @@ Canonical source:
 Production hosting is **not yet canonically verified**.
 
 - GitHub Pages configuration and a `CNAME` exist in this repository.
-- A Firebase Hosting fallback has been referenced under project `urai-4dc1d`, site ID `urai-foundation`, but Firebase configuration is not present in this repository.
+- `firebase.json` now defines only the Foundation Functions codebase and Firestore rules/indexes; it deliberately contains no project binding or Hosting target. The separately reported `urai-4dc1d` / `urai-foundation` Hosting fallback is still not reproducible from this configuration.
 - The exact current deployed SHA, rollback SHA, selected canonical host, custom-domain DNS destination, HTTPS proof, and route proof are not recorded for the current candidate.
 - Live-domain verification is expected to fail while `uraifoundation.org` resolves to Squarespace or another non-canonical host.
 

@@ -43,7 +43,7 @@ Issue #10 reports:
 
 Classification: **IMPLEMENTED, NOT VERIFIED FROM REPOSITORY SOURCE**.
 
-This repository contains no `firebase.json`, `.firebaserc`, hosting target, or Firebase deployment workflow. Therefore the fallback is not reproducible or auditable from this repository and must not silently become canonical.
+This repository now contains `firebase.json` for the Foundation staff Functions codebase and Firestore rules/indexes only. It contains no `.firebaserc`, project mapping, Hosting target, or Hosting deployment workflow. Therefore the reported Hosting fallback remains unreproducible and must not silently become canonical; the staff backend also remains unconfigured and undeployed until its protected project authority is verified.
 
 ### Legacy or current DNS target
 

@@ -124,7 +124,7 @@ Only authoritative program sources should determine eligibility, deadlines, awar
 
 Versioned Foundation application working record.
 
-Required client-create fields enforced by rules:
+Fields maintained through the App-Check-protected draft callable:
 
 - `opportunityId`
 - `status`
@@ -132,12 +132,13 @@ Required client-create fields enforced by rules:
 - `answers`
 - `unresolvedCount`
 - `createdBy`
+- `lastEditedBy`
 - `createdAt`
 - `updatedAt`
 
-Client-created applications begin at `status = draft`, `version = 1`, with `createdBy` equal to the authenticated employee UID.
+Clients cannot write application documents directly. `saveGrantApplicationDraft` creates or updates the exact expected version, stamps the authenticated editor, forces every submitted answer to `state = unresolved`, and writes its audit event transactionally.
 
-Allowed client editing states are `draft` and `ready_for_review`. Each edit increments the version by exactly one. An approved/submitted/awarded/closed application cannot be rewritten by a client.
+Draft edits increment the version by exactly one. `reviewGrantApplicationVersion` is the only path that changes answer state to `verified` and requires a different privileged reviewer from the author and last editor. Approved/submitted/awarded/closed applications cannot be rewritten.
 
 Each answer should include:
 
@@ -166,10 +167,7 @@ Fields written by `approveGrantApplication`:
 - `attestation`
 - `createdAt`
 
-Approval requires `ready_for_review`, a matching expected version, a different
-application author and approver, and a non-empty `answers` array whose every
-answer has a non-empty value and `state == verified`. `unresolvedCount` is a
-client-facing summary only and is never approval authority.
+Approval requires `ready_for_review`, a matching protected `reviewedVersion`, an approver distinct from the author, last substantive editor, and answer reviewer, and a non-empty `answers` array whose every answer has a non-empty value and server-maintained `state == verified`. `unresolvedCount` remains a summary and is never approval authority.
 
 ### `grantSubmissions/{submissionId}`
 
@@ -200,6 +198,19 @@ Append-only server-written security and workflow history. Clients cannot update 
 
 ## Current callable functions
 
+### `saveGrantApplicationDraft`
+
+- App Check required.
+- Creates or updates only the exact expected version.
+- Stamps `lastEditedBy` from authenticated identity and forces submitted answers to unresolved.
+- Writes an audit event in the same transaction.
+
+### `reviewGrantApplicationVersion`
+
+- App Check, MFA, and recent authentication required.
+- Requires a reviewer distinct from the author and last editor.
+- Server-maintains verified answer state for the exact version and writes an audit event.
+
 ### `approveGrantApplication`
 
 - App Check required.
@@ -229,7 +240,7 @@ URAI_FOUNDATION_OWNER_EMAIL="<verified-owner-email>" \
 npm --prefix functions run bootstrap:owner
 ```
 
-It uses Application Default Credentials. It refuses to guess a project ID, refuses placeholder identities, requires an existing Firebase Auth user, and requires that user's email to already be verified.
+It uses Application Default Credentials. It refuses to guess a project ID, refuses placeholder identities, requires an existing Firebase Auth user, requires that user's email to already be verified, preserves unrelated custom claims, and batches the active staff record with its audit event. If the Firestore batch fails after claims are set, authorization still fails closed because every request also requires the active staff record.
 
 After custom claims change, the employee must refresh their Firebase ID token.
 

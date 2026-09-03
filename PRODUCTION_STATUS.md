@@ -50,12 +50,13 @@ Source presence is not live-domain verification.
 | Unit and source validation | IMPLEMENTED, NOT YET VERIFIED ON AUDIT BRANCH | `make check` includes tests, docs, routes, and registry validation. |
 | Curated public artifact | IMPLEMENTED ON AUDIT BRANCH | Explicit allowlist prevents whole-repository Pages publication. |
 | GitHub Pages workflow | IMPLEMENTED, NOT VERIFIED | Requires Pages settings/environment and successful run proof. |
-| Firebase fallback | REPORTED, NOT REPRODUCIBLE HERE | Issue #10 reports `urai-4dc1d` / `urai-foundation`; no Firebase config is present. |
+| Firebase staff backend | IMPLEMENTED IN SOURCE, NOT CONFIGURED | `firebase.json` defines Functions and Firestore only, without a project binding; authenticated live behavior remains unverified. |
+| Firebase Hosting fallback | REPORTED, NOT REPRODUCIBLE HERE | Issue #10 reports `urai-4dc1d` / `urai-foundation`; the repository has no Hosting target or project mapping. |
 | Canonical host | BLOCKED | Owner decision required. |
 | Exact deployed SHA | MISSING | Must be recorded after canonical deployment. |
 | Rollback SHA | MISSING | Must be recorded and tested. |
 | DNS/HTTPS/custom-domain routes | BLOCKED / REQUIRES USER ACTION | Must be verified without disrupting unrelated DNS/email records. |
-| Backend persistence | NOT PRESENT | No forms, API, database, CRM, payments, donations, grants, or accounts. |
+| Backend persistence | IMPLEMENTED IN SOURCE, NOT ACTIVE | Protected staff/grant Functions and Firestore rules are present; no project, Auth, IAM, data migration, or live deployment is verified. Payments and donations remain disabled. |
 | Official programs/partners/studies | NOT PRESENT | Planning and concept documents are not operating evidence. |
 | Certification/conformance | NOT ESTABLISHED | Do not use approval/certification claims. |
 | Legal/nonprofit/tax status | REQUIRES LEGAL REVIEW | No authoritative proof established by this repository audit. |

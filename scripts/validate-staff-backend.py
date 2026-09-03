@@ -29,6 +29,7 @@ def main() -> int:
         "== request.auth.token.foundation_role",
         "match /foundationStaff/{uid}",
         "match /grantApplications/{applicationId}",
+        "Application content and verification state are server-owned",
         "match /grantApprovals/{approvalId}",
         "match /foundationAuditLogs/{eventId}",
         "allow create, update, delete: if false;",
@@ -43,8 +44,12 @@ def main() -> int:
         "sign_in_second_factor",
         "foundation_staff",
         "foundation_role",
+        "saveGrantApplicationDraft",
+        "reviewGrantApplicationVersion",
         "hasUnresolvedAnswers(value)",
-        "value.createdBy === actor.uid",
+        "value.lastEditedBy === actor.uid",
+        "value.reviewedBy === actor.uid",
+        "reviewedVersion !== expectedVersion",
         "const batch = db.batch()",
         "await batch.commit()",
         "grant.application.approved",
@@ -77,6 +82,10 @@ def main() -> int:
         "URAI_FOUNDATION_FIREBASE_PROJECT_ID",
         "Refusing to guess a Firebase project",
         "foundation_role: 'owner'",
+        "...(user.customClaims ?? {})",
+        "const batch = db.batch()",
+        "batch.create(auditRef",
+        "await batch.commit()",
     ]
     for snippet in required_bootstrap:
         if snippet not in bootstrap:
