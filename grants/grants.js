@@ -1,5 +1,5 @@
 (() => {
-  const state = { stage: "profile", opportunity: "community-access", builtForOpportunity: null, draftStale: false, version: 1, signed: false, signedAt: null, approvedPayload: null, answers: [] };
+  const state = { stage: "profile", opportunity: "community-access", builtForOpportunity: null, draftStale: false, version: 1, lastApprovedVersion: null, signed: false, signedAt: null, approvedPayload: null, answers: [] };
   const fields = ["applicantName", "email", "organization", "organizationType", "mission", "project", "amount", "location"];
   const requiredProfileFields = ["applicantName", "email", "organization", "project", "amount"];
   const opportunityTemplates = {
@@ -111,7 +111,7 @@
   function updateAnswer(index, value, renderReviewAfter = true) {
     const answer = state.answers[index];
     const nextValue = value.trim();
-    const changedApprovedDraft = nextValue !== answer.value && Boolean(state.signed || state.approvedPayload);
+    const changedApprovedDraft = nextValue !== answer.value && state.lastApprovedVersion === state.version;
     if (changedApprovedDraft) {
       state.version += 1;
       byId("versionChip").textContent = `Draft v${state.version}`;
@@ -155,7 +155,7 @@
   }
   function signApplication() {
     if (state.draftStale || state.builtForOpportunity !== state.opportunity || state.answers.some((answer) => answer.status !== "verified" || !answer.value.trim())) return;
-    const signer = byId("signatureName").value.trim(); state.signed = true; state.signedAt = new Date().toISOString(); state.approvedPayload = createExportPayload(signer, state.signedAt); const template = opportunityTemplates[state.opportunity]; const receipt = byId("signoffReceipt"); receipt.hidden = false;
+    const signer = byId("signatureName").value.trim(); state.signed = true; state.signedAt = new Date().toISOString(); state.lastApprovedVersion = state.version; state.approvedPayload = createExportPayload(signer, state.signedAt); const template = opportunityTemplates[state.opportunity]; const receipt = byId("signoffReceipt"); receipt.hidden = false;
     receipt.innerHTML = `<strong>Approved demonstration application</strong><p>${escapeHtml(template.title)} · Draft v${state.version}<br>Approved by ${escapeHtml(signer)} at ${escapeHtml(new Date(state.signedAt).toLocaleString())}.</p><p>This browser-only demonstration receipt is not production authentication, an electronic-signature service, or proof of external submission.</p>`; byId("exportButton").disabled = false;
   }
   function exportApplication() {
