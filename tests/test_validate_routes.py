@@ -37,6 +37,21 @@ class ValidateRoutesTests(unittest.TestCase):
     def test_route_validator_passes_current_repository(self) -> None:
         self.assertEqual(validate_routes.main(), 0)
 
+    def test_unsupported_claims_keep_only_narrow_private_route_exception(self) -> None:
+        self.assertIn("tax-exempt organization", validate_routes.FORBIDDEN_SNIPPETS)
+        self.assertIn("apply for a grant", validate_routes.FORBIDDEN_SNIPPETS)
+        self.assertIn("grant application", validate_routes.FORBIDDEN_SNIPPETS)
+        self.assertIn("clinical service", validate_routes.FORBIDDEN_SNIPPETS)
+        self.assertEqual(validate_routes.ROUTE_ALLOWED_SNIPPETS, {"/grants/": {"grant application"}})
+
+    def test_grant_preview_is_nonpersistent_and_exports_only_approved_snapshot(self) -> None:
+        script = (validate_routes.ROOT / "grants/grants.js").read_text(encoding="utf-8")
+        self.assertNotIn("localStorage", script)
+        self.assertNotIn("sessionStorage", script)
+        self.assertIn("approvedPayload", script)
+        self.assertIn("const payload = state.approvedPayload", script)
+        self.assertIn("invalidateApproval()", script)
+
 
 if __name__ == "__main__":
     unittest.main()
