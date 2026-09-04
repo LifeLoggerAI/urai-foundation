@@ -25,6 +25,11 @@ REQUIRED_PATHS = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/community/",
+    "/donate/",
+    "/staff/",
+    "/grants/",
+    "/grants/grants.js",
     "/robots.txt",
     "/sitemap.xml",
     "/site.webmanifest",
@@ -34,6 +39,17 @@ REQUIRED_PATHS = [
 TIMEOUT_SECONDS = 15
 FORBIDDEN_SERVER_MARKERS = ("squarespace",)
 EXPECTED_HOME_MARKER = "URAI Foundation"
+EXPECTED_ROUTE_MARKERS = {
+    "/": EXPECTED_HOME_MARKER,
+    "/community/": "Community outreach",
+    "/donate/": "Online payment processing is not activated",
+    "/staff/": "Authentication is not connected",
+    "/grants/": (
+        "This public branch contains a demonstration workflow only.",
+        '<meta name="robots" content="noindex, nofollow">',
+    ),
+    "/grants/grants.js": "foundation-staff-grant-desk-demo-v1",
+}
 
 
 @dataclass(frozen=True)
@@ -51,7 +67,7 @@ def validate_base_url(base_url: str) -> str:
     return base_url.rstrip("/")
 
 
-def request_url(url: str, expected_marker: str | None = None) -> SmokeResult:
+def request_url(url: str, expected_marker: str | tuple[str, ...] | None = None) -> SmokeResult:
     request = urllib.request.Request(url, method="GET", headers={"User-Agent": "urai-foundation-smoke/2.0"})
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
@@ -60,16 +76,16 @@ def request_url(url: str, expected_marker: str | None = None) -> SmokeResult:
             server = response.headers.get("server", "")
             lower_server = server.lower()
             wrong_host = any(marker in lower_server for marker in FORBIDDEN_SERVER_MARKERS)
-            body = response.read(512_000) if expected_marker else b""
-            marker_ok = True
-            if expected_marker:
-                marker_ok = expected_marker.encode("utf-8") in body
+            markers = (expected_marker,) if isinstance(expected_marker, str) else tuple(expected_marker or ())
+            body = response.read(512_000) if markers else b""
+            missing_markers = [marker for marker in markers if marker.encode("utf-8") not in body]
+            marker_ok = not missing_markers
             ok = 200 <= status < 400 and not wrong_host and marker_ok
             detail = f"status={status} content-type={content_type!r} server={server!r}"
             if wrong_host:
                 detail = f"{detail} wrong-host=true"
             if not marker_ok:
-                detail = f"{detail} expected-marker-missing=true"
+                detail = f"{detail} expected-marker-missing={missing_markers!r}"
             return SmokeResult(url=url, ok=ok, status=status, detail=detail)
     except urllib.error.HTTPError as exc:
         return SmokeResult(url=url, ok=False, status=exc.code, detail=f"http error: {exc}")
@@ -87,7 +103,7 @@ def main(base_url: str = DEFAULT_BASE_URL) -> int:
         return 2
 
     results = [
-        request_url(f"{origin}{path}", expected_marker=EXPECTED_HOME_MARKER if path == "/" else None)
+        request_url(f"{origin}{path}", expected_marker=EXPECTED_ROUTE_MARKERS.get(path))
         for path in REQUIRED_PATHS
     ]
     failures = [result for result in results if not result.ok]

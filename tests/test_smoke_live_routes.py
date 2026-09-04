@@ -30,9 +30,28 @@ class SmokeLiveRoutesTests(unittest.TestCase):
             "/contact/",
             "/privacy/",
             "/terms/",
+            "/community/",
+            "/donate/",
+            "/staff/",
+            "/grants/",
             "/sitemap.xml",
         }
         self.assertTrue(expected_paths.issubset(set(smoke_live_routes.REQUIRED_PATHS)))
+
+    def test_new_routes_require_route_specific_live_markers(self) -> None:
+        self.assertEqual(
+            set(smoke_live_routes.EXPECTED_ROUTE_MARKERS),
+            {"/", "/community/", "/donate/", "/staff/", "/grants/", "/grants/grants.js"},
+        )
+
+    def test_grant_route_requires_public_demo_boundary_and_noindex(self) -> None:
+        self.assertEqual(
+            smoke_live_routes.EXPECTED_ROUTE_MARKERS["/grants/"],
+            (
+                "This public branch contains a demonstration workflow only.",
+                '<meta name="robots" content="noindex, nofollow">',
+            ),
+        )
 
     def test_request_url_marks_2xx_response_ok(self) -> None:
         response = MagicMock()

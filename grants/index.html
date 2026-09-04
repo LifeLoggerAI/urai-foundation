@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Foundation Grant Desk | URAI Foundation</title>
+  <meta name="description" content="Internal grant operations workflow preview for authorized URAI Foundation employees.">
+  <meta name="theme-color" content="#0d1427">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://uraifoundation.org/grants/">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/grants/grants.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to grant workspace</a>
+  <header class="site-header" aria-label="Primary">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">UF</span><span>URAI Foundation</span></a>
+      <div class="nav-links"><a href="/staff/">Staff Login</a><a href="/grants/" aria-current="page">Grant Desk Preview</a><a href="/status/">Status</a></div>
+    </nav>
+  </header>
+
+  <main id="main" class="grant-main">
+    <section class="grant-hero shell" aria-labelledby="grant-title">
+      <div>
+        <p class="eyebrow">Employee grant operations · workflow preview</p>
+        <h1 id="grant-title">Build the Foundation profile once. Reuse verified facts across every funding application.</h1>
+        <p class="lead">The Grant Desk is designed for authorized URAI Foundation employees: qualify outside funding opportunities, prefill applications from verified Foundation records, review generated narratives, resolve missing facts, and obtain internal sign-off before submission.</p>
+        <div class="trust-strip" aria-label="Grant Desk safeguards"><span>Foundation facts are reused</span><span>Generated text is labeled</span><span>Unknown facts stay unresolved</span><span>Employee approval is required</span></div>
+      </div>
+      <aside class="boundary-card" aria-label="Current service boundary"><p class="card-kicker">Current boundary</p><p>This public branch contains a demonstration workflow only. It does not accept employee credentials or real Foundation grant records, does not transmit an application, does not guarantee funding, and does not establish any legal or tax status unless separately verified. Production access must require authenticated employee identity and role-based authorization.</p></aside>
+    </section>
+
+    <section class="shell grant-workspace" aria-label="Grant application workspace">
+      <aside class="workspace-rail" aria-label="Application stages">
+        <button class="stage-button is-active" data-stage="profile" type="button"><span>1</span><span><strong>Foundation profile</strong><small>Reusable verified facts</small></span></button>
+        <button class="stage-button" data-stage="opportunity" type="button"><span>2</span><span><strong>Opportunity</strong><small>Outside funder fit</small></span></button>
+        <button class="stage-button" data-stage="application" type="button"><span>3</span><span><strong>Application</strong><small>Prefilled answers</small></span></button>
+        <button class="stage-button" data-stage="review" type="button"><span>4</span><span><strong>Internal review</strong><small>Changes + missing facts</small></span></button>
+        <button class="stage-button" data-stage="signoff" type="button"><span>5</span><span><strong>Approve</strong><small>Exact application version</small></span></button>
+        <div class="rail-status" aria-live="polite"><strong id="completionValue">0%</strong><span>profile complete</span></div>
+      </aside>
+
+      <div class="workspace-panel">
+        <section class="grant-stage is-active" id="stage-profile" data-panel="profile" aria-labelledby="profile-title">
+          <div class="stage-heading"><div><p class="eyebrow">Reusable Foundation profile</p><h2 id="profile-title">Confirm the facts the Grant Desk may safely reuse.</h2></div><button class="text-button" id="loadExample" type="button">Load demonstration Foundation profile</button></div>
+          <p class="stage-copy">Production fields will carry an authoritative source, confirmation date, reviewer, access scope, and change history. This preview keeps demonstration data only in memory for the current tab and discards it on reload; do not enter real tax, banking, employee, funder-login, or confidential grant data.</p>
+          <form id="profileForm" class="field-grid" novalidate>
+            <label>Employee / authorized reviewer<input id="applicantName" name="applicantName" autocomplete="name" required><span class="field-meta">Required · employee confirmed</span></label>
+            <label>Work email<input id="email" name="email" type="email" autocomplete="email" required><span class="field-meta">Required · demonstration only</span></label>
+            <label>Applicant organization<input id="organization" name="organization" autocomplete="organization" required><span class="field-meta">Foundation record</span></label>
+            <label>Organization classification<select id="organizationType" name="organizationType"><option value="">Select verified record</option><option>Public-interest organization</option><option>Nonprofit organization</option><option>Other verified classification</option></select><span class="field-meta">Never infer legal or tax status</span></label>
+            <label class="wide">Foundation mission / purpose<textarea id="mission" name="mission" rows="3"></textarea><span class="field-meta">Reusable approved narrative</span></label>
+            <label class="wide">Program or project seeking support<textarea id="project" name="project" rows="4" required placeholder="Describe the Foundation program, people served, intended result, and approved scope."></textarea><span class="field-meta">Program-owner supplied</span></label>
+            <label>Amount requested<input id="amount" name="amount" inputmode="decimal" placeholder="25000" required><span class="field-meta">Required · budget-supported</span></label>
+            <label>Primary program location<input id="location" name="location" autocomplete="address-level2"><span class="field-meta">Verified program record</span></label>
+          </form>
+          <div class="stage-actions"><button class="button primary" type="button" data-next="opportunity">Save profile &amp; continue</button></div>
+        </section>
+
+        <section class="grant-stage" id="stage-opportunity" data-panel="opportunity" aria-labelledby="opportunity-title">
+          <div class="stage-heading"><div><p class="eyebrow">Funding pipeline</p><h2 id="opportunity-title">Choose an outside funding template.</h2></div></div>
+          <p class="stage-copy">These are demonstration templates, not live funding opportunities. Production opportunities must be ingested from official funder sources with retrieval time, deadline, eligibility rules, required documents, owner, submission method, and reporting obligations.</p>
+          <div class="opportunity-grid" id="opportunityGrid">
+            <button class="opportunity-card is-selected" type="button" data-opportunity="community-access"><span class="opportunity-status">Demonstration template</span><strong>Community Access Funding</strong><span>Outside support for accessible community programs, services, and participation.</span><dl><div><dt>Example ceiling</dt><dd>$50,000</dd></div><div><dt>Questions</dt><dd>6</dd></div></dl></button>
+            <button class="opportunity-card" type="button" data-opportunity="digital-inclusion"><span class="opportunity-status">Demonstration template</span><strong>Digital Inclusion Funding</strong><span>Outside support for access, assistive technology, digital literacy, and inclusive tools.</span><dl><div><dt>Example ceiling</dt><dd>$75,000</dd></div><div><dt>Questions</dt><dd>6</dd></div></dl></button>
+          </div>
+          <div class="stage-actions"><button class="button secondary" type="button" data-back="profile">Back</button><button class="button primary" id="prefillButton" type="button">Build prefilled application</button></div>
+        </section>
+
+        <section class="grant-stage" id="stage-application" data-panel="application" aria-labelledby="application-title"><div class="stage-heading"><div><p class="eyebrow">Prefilled funding application</p><h2 id="application-title">URAI assembled what the Foundation record supports.</h2></div><span class="version-chip" id="versionChip">Draft v1</span></div><div class="provenance-legend"><span><i class="dot verified"></i>Foundation fact</span><span><i class="dot generated"></i>Generated draft</span><span><i class="dot missing"></i>Needs employee review</span></div><div id="applicationFields" class="application-fields"></div><div class="stage-actions"><button class="button secondary" type="button" data-back="opportunity">Back</button><button class="button primary" type="button" data-next="review">Review what needs attention</button></div></section>
+
+        <section class="grant-stage" id="stage-review" data-panel="review" aria-labelledby="review-title"><div class="stage-heading"><div><p class="eyebrow">Internal review</p><h2 id="review-title">Resolve what automation should never decide for the Foundation.</h2></div></div><div class="review-summary" id="reviewSummary" aria-live="polite"></div><div id="reviewItems" class="review-items"></div><div class="stage-actions"><button class="button secondary" type="button" data-back="application">Back to full application</button><button class="button primary" id="toSignoff" type="button">Continue to approval</button></div></section>
+
+        <section class="grant-stage" id="stage-signoff" data-panel="signoff" aria-labelledby="signoff-title">
+          <div class="stage-heading"><div><p class="eyebrow">Internal approval</p><h2 id="signoff-title">Nothing is approved or submitted silently.</h2></div></div>
+          <div class="attestation"><p>I reviewed this exact application version. To the best of my knowledge, the factual statements I am approving are supported by Foundation records, and I understand that generated draft language remains subject to human review before external submission.</p><label class="check-row"><input id="attestAccuracy" type="checkbox"> <span>I reviewed the factual answers and generated drafts.</span></label><label class="check-row"><input id="attestAuthority" type="checkbox"> <span>I am authorized to approve this demonstration application.</span></label><label>Type your full name to approve<input id="signatureName" autocomplete="name" placeholder="Authorized employee name"></label></div>
+          <div class="signoff-receipt" id="signoffReceipt" hidden></div>
+          <div class="stage-actions"><button class="button secondary" type="button" data-back="review">Back</button><button class="button primary" id="signButton" type="button" disabled>Approve this version</button><button class="button secondary" id="exportButton" type="button" disabled>Export demonstration JSON</button></div>
+          <p class="submission-boundary">External submission is not enabled in this preview. Production submission must require authenticated staff, authorized funder terms, exact-version approval, secure credential handling, immutable audit records, confirmation capture, and post-award reporting tracking.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="shell section grant-principles" aria-labelledby="principles-title"><div class="section-heading"><p class="eyebrow">Production Grant Desk</p><h2 id="principles-title">Automation handles repetition. Foundation staff retain judgment and accountability.</h2></div><div class="cards three"><article class="card"><h3>One verified Foundation profile</h3><p>Store reusable organization, program, budget, people, policy, document, and impact facts with source and review metadata.</p></article><article class="card"><h3>Provenance on every answer</h3><p>Show whether an answer came from an authoritative Foundation record, approved document, prior approved response, or generated draft.</p></article><article class="card"><h3>Application-to-award lifecycle</h3><p>Approval is only the midpoint: submission confirmation, award status, reporting deadlines, renewals, reimbursements, and closeout stay in the same operational record.</p></article></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">UF</span><span>URAI Foundation</span></a><p>Protected employee grant operations for Foundation funding work.</p></div><nav aria-label="Footer navigation"><a href="/staff/">Staff Login</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></nav></div></footer>
+  <script src="/grants/grants.js" defer></script>
+</body>
+</html>

@@ -12,7 +12,7 @@ Advance responsible AI through open standards, evidence-based review, ethical fr
 
 ## Repository role
 
-This is a documentation-first public-interest repository with a lightweight static website. It is not a product runtime, backend API, database, CRM, donation system, grant intake, certification service, clinical resource, or research-participant platform.
+This is a documentation-first public-interest repository with a lightweight static website. It is not a product runtime, backend API, database, CRM, production donation system, authenticated grant-intake system, certification service, clinical resource, or research-participant platform.
 
 The repository contains:
 
@@ -47,6 +47,10 @@ See [Canonical Production Truth](docs/canonical-production-truth.md). Do not des
 | --- | --- | --- |
 | `/` | Homepage and public route map | Static HTML present |
 | `/status/` | Public status, legal boundaries, and ecosystem relationship | Static HTML present |
+| `/community/` | Public community outreach and participation information | Static HTML present |
+| `/donate/` | Public support information with payments/tax treatment explicitly inactive | Static HTML present; no active payment backend |
+| `/staff/` | Publicly reachable, noindex staff gateway that fails closed until authentication is activated | Static HTML present; authentication inactive |
+| `/grants/` | Publicly reachable, noindex Grant Desk demonstration for in-memory draft/review only | Static HTML/JS present; no external submission |
 | `/accessibility/` | Accessibility standards framing | Static HTML present |
 | `/deaf-community/` | Deaf-community considerations and non-representation boundary | Static HTML present |
 | `/emotional-wellness/` | Non-clinical emotional-safety framing | Static HTML present |
@@ -57,7 +61,7 @@ See [Canonical Production Truth](docs/canonical-production-truth.md). Do not des
 | `/privacy/` | Static-site privacy notice | Static HTML present |
 | `/terms/` | Conservative informational usage notice | Static HTML present; legal review required |
 
-Supporting publication files include `styles.css`, `favicon.svg`, `CNAME`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, and the generated `public-build-manifest.json` in the curated artifact.
+Supporting publication files include `styles.css`, `favicon.svg`, `CNAME`, `robots.txt`, `sitemap.xml`, `site.webmanifest`, and the generated `public-build-manifest.json` in the curated artifact. The Grant Desk also publishes its required `/grants/grants.js` client asset.
 
 Source presence is not live-domain verification.
 
@@ -65,10 +69,11 @@ Source presence is not live-domain verification.
 
 The current source has:
 
-- no backend form;
-- no user account;
+- no backend contact/intake form;
+- no activated user account or employee authentication;
 - no CRM or ticket database;
-- no donation or grant flow;
+- a public donation-information route, but no activated payment processor, receipt/tax treatment, or settlement flow;
+- a public noindex Grant Desk demonstration, but no authenticated production grant system or external funder-submission flow;
 - no analytics script;
 - no public-program enrollment;
 - no partner database;
@@ -202,7 +207,7 @@ Before launch or major website changes:
 
 1. Select one canonical host and record its project/site authority.
 2. Confirm the custom-domain DNS destination and HTTPS certificate.
-3. Verify the homepage and every required route, including `/status/`.
+3. Verify the homepage and every required route, including `/status/`, `/community/`, `/donate/`, `/staff/`, and `/grants/` plus the Grant Desk script asset.
 4. Complete the accessibility and site-quality checklist.
 5. Test navigation, document links, issue/email paths, metadata, favicon, robots, sitemap, manifest, and standards registry.
 6. Run `make check` and `make build-site` on the exact candidate.
@@ -251,7 +256,17 @@ Do not activate these capabilities from planning documents alone. No visitor sho
 - Formation-era claim boundaries: **VERIFIED IN SOURCE**.
 - Core standards: **PARTIAL / FORMATION-DRAFT**.
 - Standards registry and curated publication boundary: **IMPLEMENTED ON CANDIDATE, REQUIRES EXACT-HEAD REVIEW**.
+- Portal information/demo surfaces (`/community/`, `/donate/`, `/staff/`, `/grants/`): **IMPLEMENTED IN SOURCE; PAYMENT, AUTH, AND EXTERNAL SUBMISSION REMAIN INACTIVE**.
 - Canonical hosting, deployed SHA, rollback SHA, DNS, HTTPS, monitoring, and recovery: **BLOCKED / NOT VERIFIED**.
 - Legal and institutional status: **REQUIRES QUALIFIED REVIEW AND AUTHORITATIVE RECORDS**.
 
 See [Production Status](PRODUCTION_STATUS.md) for the release gate.
+
+## Current portal route inventory
+
+- `/community/` — public community outreach and participation information.
+- `/donate/` — public support information; payments, tax treatment, and donation receipts remain inactive pending verified legal and provider authority.
+- `/staff/` — publicly reachable, noindex, fail-closed employee gateway; production authentication is not connected in this source candidate.
+- `/grants/` — publicly reachable, noindex Grant Desk demonstration; data remains in-memory, it produces reviewable drafts only, and it cannot submit to funders.
+
+The repository therefore contains public information/demonstration workflows for community, support, staff gateway, and grant drafting, but no activated payment backend, authenticated production staff system, or external grant-submission flow.

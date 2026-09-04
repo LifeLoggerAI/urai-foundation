@@ -21,7 +21,12 @@ REQUIRED_ROUTES = [
     "/contact/",
     "/privacy/",
     "/terms/",
+    "/community/",
+    "/donate/",
+    "/staff/",
+    "/grants/",
 ]
+PRIVATE_NOINDEX_ROUTES = {"/staff/", "/grants/"}
 REQUIRED_BOUNDARY_SNIPPETS = (
     "does not claim",
     "does not create",
@@ -29,6 +34,7 @@ REQUIRED_BOUNDARY_SNIPPETS = (
     "should not infer",
     "unless separately verified",
     "unless those are separately verified",
+    "only when separately verified",
 )
 FORBIDDEN_SNIPPETS = [
     "donate now",
@@ -37,25 +43,40 @@ FORBIDDEN_SNIPPETS = [
     "tax-exempt organization",
     "apply for a grant",
     "grant application",
+    "clinical service",
     "official partner",
     "certified partner",
     "therapy service",
     "medical service",
-    "clinical service",
     "diagnostic service",
 ]
 
-NEGATED_NONCLAIMS = {
-    "clinical service": (
-        "does not represent separate tax-exempt status, donation deductibility, grants, clinical services, or confirmed institutional partnerships",
-    ),
+ROUTE_ALLOWED_SNIPPETS = {
+    "/grants/": {"grant application"},
 }
+
+GRANT_ROUTE_REQUIRED_SNIPPETS = (
+    "does not accept employee credentials",
+    "employee approval is required",
+    "unknown facts stay unresolved",
+    "production access must require authenticated employee identity",
+)
+STAFF_ROUTE_REQUIRED_SNIPPETS = (
+    "authentication is not connected",
+    "do not enter passwords",
+    "must fail closed",
+    "role-based authorization",
+)
+DONATE_ROUTE_REQUIRED_SNIPPETS = (
+    "online payment processing is not activated",
+    "does not represent that a contribution is tax deductible",
+    "payment processor",
+    "donor privacy",
+)
 
 
 def route_file(route: str) -> Path:
-    if route == "/":
-        return ROOT / "index.html"
-    return ROOT / route.strip("/") / "index.html"
+    return ROOT / "index.html" if route == "/" else ROOT / route.strip("/") / "index.html"
 
 
 def text(path: Path) -> str:
@@ -65,15 +86,7 @@ def text(path: Path) -> str:
 def sitemap_urls() -> set[str]:
     tree = ElementTree.parse(ROOT / "sitemap.xml")
     namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    urls: set[str] = set()
-    for loc in tree.findall(".//sm:loc", namespace):
-        if loc.text:
-            urls.add(loc.text.strip())
-    return urls
-
-
-def has_allowed_negated_nonclaim(body: str, snippet: str) -> bool:
-    return any(phrase in body for phrase in NEGATED_NONCLAIMS.get(snippet, ()))
+    return {loc.text.strip() for loc in tree.findall(".//sm:loc", namespace) if loc.text}
 
 
 def main() -> int:
@@ -91,12 +104,33 @@ def main() -> int:
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
         for snippet in FORBIDDEN_SNIPPETS:
-            if snippet in body and not has_allowed_negated_nonclaim(body, snippet):
+            if snippet in body and snippet not in ROUTE_ALLOWED_SNIPPETS.get(route, set()):
                 errors.append(f"forbidden unsupported claim snippet in {path.relative_to(ROOT)}: {snippet}")
 
-        expected_url = f"{DOMAIN}{route}"
-        if expected_url not in urls:
-            errors.append(f"sitemap missing route URL: {expected_url}")
+        if route in PRIVATE_NOINDEX_ROUTES:
+            if 'name="robots" content="noindex, nofollow"' not in body:
+                errors.append(f"private route must remain noindex until protected authentication is live: {route}")
+            if f"{DOMAIN}{route}" in urls:
+                errors.append(f"private noindex route must not be published in sitemap: {route}")
+        else:
+            expected_url = f"{DOMAIN}{route}"
+            if expected_url not in urls:
+                errors.append(f"sitemap missing route URL: {expected_url}")
+
+        if route == "/grants/":
+            for snippet in GRANT_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"grant route missing required employee-workflow boundary: {snippet}")
+
+        if route == "/staff/":
+            for snippet in STAFF_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"staff route missing required authentication boundary: {snippet}")
+
+        if route == "/donate/":
+            for snippet in DONATE_ROUTE_REQUIRED_SNIPPETS:
+                if snippet not in body:
+                    errors.append(f"donate route missing required activation boundary: {snippet}")
 
     if errors:
         print("Route validation failed:")

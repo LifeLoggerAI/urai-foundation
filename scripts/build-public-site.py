@@ -31,6 +31,12 @@ PUBLIC_FILES = [
     "contact/index.html",
     "privacy/index.html",
     "terms/index.html",
+    "community/index.html",
+    "donate/index.html",
+    "staff/index.html",
+    "grants/index.html",
+    "grants/grants.css",
+    "grants/grants.js",
     "docs/governance-charter.md",
     "docs/ethical-ai-principles.md",
     "docs/transparency-framework.md",
@@ -60,9 +66,6 @@ def sha256(path: Path) -> str:
 
 def validate_output_boundary(root: Path, output: Path) -> None:
     root = root.resolve()
-
-    # Inspect the requested path before resolving it. Resolving first would follow
-    # an existing symlink and erase the evidence that the caller supplied one.
     requested = Path(os.path.abspath(output))
     current = requested
     while True:
@@ -74,10 +77,8 @@ def validate_output_boundary(root: Path, output: Path) -> None:
 
     resolved_output = requested.resolve(strict=False)
     protected = {root / name for name in PROTECTED_ROOT_NAMES}
-
     if resolved_output == root or resolved_output in root.parents:
         raise ValueError("output directory must not replace the repository or any repository parent")
-
     for protected_path in protected:
         if resolved_output == protected_path or protected_path in resolved_output.parents:
             raise ValueError("output directory must not replace or be inside a protected source directory")
@@ -87,7 +88,6 @@ def build_site(root: Path, output: Path, source_sha: str) -> dict:
     root = root.resolve()
     validate_output_boundary(root, output)
     output = Path(os.path.abspath(output)).resolve(strict=False)
-
     missing = [relative for relative in PUBLIC_FILES if not (root / relative).is_file()]
     if missing:
         raise FileNotFoundError(f"missing required public files: {', '.join(missing)}")
@@ -107,20 +107,9 @@ def build_site(root: Path, output: Path, source_sha: str) -> dict:
         destination = output / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, destination)
-        entries.append(
-            {
-                "path": relative,
-                "sha256": sha256(destination),
-                "bytes": destination.stat().st_size,
-            }
-        )
+        entries.append({"path": relative, "sha256": sha256(destination), "bytes": destination.stat().st_size})
 
-    manifest = {
-        "schema_version": "1",
-        "source_sha": source_sha or "unknown",
-        "publication_boundary": "explicit-allowlist",
-        "files": entries,
-    }
+    manifest = {"schema_version": "1", "source_sha": source_sha or "unknown", "publication_boundary": "explicit-allowlist", "files": entries}
     manifest_path = output / "public-build-manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return manifest
@@ -132,13 +121,11 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--source-sha", default=os.environ.get("GITHUB_SHA", "unknown"))
     args = parser.parse_args()
-
     try:
         manifest = build_site(args.root, args.output, args.source_sha)
     except (OSError, ValueError) as exc:
         print(f"Public site build failed: {exc}")
         return 1
-
     print(f"Public site build passed for {len(manifest['files'])} allowlisted files at {args.output}.")
     return 0
 
