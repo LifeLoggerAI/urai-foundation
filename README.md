@@ -23,7 +23,7 @@ The repository contains:
 - product integration guidance;
 - contribution, security, versioning, and release materials;
 - validation and curated-publication tooling;
-- protected Firebase Functions, Firestore rules/indexes, and validation contracts for the undeployed staff grant backend.
+- protected Firebase Functions, Firestore rules, and validation contracts for the undeployed staff grant backend, with `firestore.indexes.json` retained as part of that protected backend source.
 
 ## Production truth
 
