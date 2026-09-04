@@ -157,7 +157,8 @@ async function validateAnswerProvenance(tx: Transaction, answers: unknown[]) {
           ? (bindings as Record<string, unknown>)[questionId]
           : undefined;
         if (typeof sourceData.sha256 !== 'string' || !sourceData.sha256 || !sourceData.verifiedAt
-          || String(boundValue ?? '').trim() !== answerValue) {
+          || typeof boundValue !== 'string'
+          || boundValue.trim() !== answerValue) {
           throw new HttpsError('failed-precondition', `answers[${index}] is not bound to the exact verified Foundation document fact.`);
         }
       }
