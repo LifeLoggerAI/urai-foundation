@@ -41,7 +41,11 @@ class StaffBackendContractTests(unittest.TestCase):
         self.assertIn("await validateAnswerProvenance(tx, Array.isArray(value.answers) ? value.answers : [])", functions)
         self.assertIn("AUTHORITATIVE_PROVENANCE_COLLECTIONS", functions)
         self.assertIn("fieldId !== questionId", functions)
-        self.assertIn("String(sourceData.value ?? '').trim() !== answerValue", functions)
+        # Profile provenance must reject both non-string stored values and values
+        # that do not exactly match the reviewed application answer. This is
+        # stricter than the superseded String(...).trim() coercion contract.
+        self.assertIn("typeof sourceData.value !== 'string'", functions)
+        self.assertIn("sourceData.value.trim() !== answerValue", functions)
         self.assertIn("priorData.approvedVersion !== applicationVersion", functions)
         self.assertIn("priorItem.questionId === questionId", functions)
         self.assertIn("priorItem.state === 'verified'", functions)
