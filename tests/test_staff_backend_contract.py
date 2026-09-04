@@ -46,6 +46,13 @@ class StaffBackendContractTests(unittest.TestCase):
         # stricter than the superseded String(...).trim() coercion contract.
         self.assertIn("typeof sourceData.value !== 'string'", functions)
         self.assertIn("sourceData.value.trim() !== answerValue", functions)
+        # Document provenance has the same type-preserving boundary. Structured
+        # trusted bindings must not collapse through String(...) to a value such
+        # as "[object Object]" and accidentally satisfy exact-value review.
+        self.assertIn("typeof boundValue !== 'string'", functions)
+        self.assertIn("boundValue.trim() !== answerValue", functions)
+        document_branch = functions.split("if (provenanceType === 'document')", 1)[1].split("if (provenanceType === 'prior_approved_answer')", 1)[0]
+        self.assertNotIn("String(boundValue", document_branch)
         self.assertIn("priorData.approvedVersion !== applicationVersion", functions)
         self.assertIn("priorItem.questionId === questionId", functions)
         self.assertIn("priorItem.state === 'verified'", functions)
