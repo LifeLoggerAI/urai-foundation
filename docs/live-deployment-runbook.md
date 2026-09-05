@@ -1,7 +1,7 @@
 # Live Deployment and Rollback Runbook
 
 Status: formation-stage operator runbook
-Last reviewed: 2026-07-06
+Last reviewed: 2026-09-05
 
 ## Governing rule
 
@@ -103,6 +103,8 @@ Smoke-test:
 
 ```text
 /
+/status/ (verify formation-stage legal/authority boundary)
+/governance/ (verify formation-stage governance/transparency boundary)
 /accessibility/
 /deaf-community/
 /emotional-wellness/
@@ -123,7 +125,7 @@ Smoke-test:
 /standards/registry.json
 ```
 
-Verify expected Foundation content markers and ensure no old-host or wrong-site content is returned.
+Verify expected Foundation content markers and ensure no old-host or wrong-site content is returned. Governance must remain explicitly formation-stage and must not imply constituted governing bodies, legal independence, charity status, or tax exemption.
 
 ## 6. Verify metadata and accessibility smoke
 
@@ -177,7 +179,7 @@ Include:
 - prior rollback SHA/release;
 - DNS before/after;
 - TLS/HTTPS proof;
-- route and content-marker results;
+- route and content-marker results, including `/status/` and `/governance/`;
 - metadata/accessibility smoke results;
 - known exceptions and expiry;
 - approval;
@@ -219,7 +221,7 @@ The custom-domain release is **VERIFIED COMPLETE** only when:
 - deployed and prior rollback SHAs/releases are recorded;
 - apex and `www` DNS are correct;
 - HTTPS is valid;
-- all required routes and content markers pass;
+- all required routes and content markers pass, including `/status/` and `/governance/`;
 - metadata/crawl files pass;
 - no unsupported claim or sensitive artifact is exposed;
 - private security reporting remains available;
