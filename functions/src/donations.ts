@@ -2,6 +2,7 @@ import { FieldValue, Timestamp, getFirestore } from 'firebase-admin/firestore';
 import { defineSecret, defineString } from 'firebase-functions/params';
 import { HttpsError, onCall, onRequest } from 'firebase-functions/v2/https';
 import Stripe from 'stripe';
+import { resolveDonationStatusTransition } from './donation-status';
 
 const db = getFirestore();
 
@@ -252,38 +253,6 @@ async function donationIntentFromCharge(stripe: Stripe, chargeValue: unknown): P
     ?? donationIntentFromInvoicePayment(stripe, paymentIntentId);
 }
 
-const STATUS_PRECEDENCE: Record<string, number> = {
-  creating_checkout: 0,
-  checkout_created: 1,
-  payment_pending: 2,
-  recurring_active: 3,
-  recurring_trialing: 3,
-  recurring_incomplete: 2,
-  recurring_incomplete_expired: 4,
-  recurring_past_due: 4,
-  recurring_unpaid: 4,
-  recurring_paused: 4,
-  completed: 3,
-  expired: 4,
-  payment_failed: 4,
-  recurring_payment_failed: 4,
-  partially_refunded: 5,
-  refunded: 6,
-  recurring_cancelled: 6,
-};
-
-const TERMINAL_DISPUTE_STATUSES = new Set(['dispute_won', 'dispute_lost', 'dispute_warning_closed']);
-
-function statusPrecedence(status: unknown): number {
-  if (typeof status !== 'string') return -1;
-  if (TERMINAL_DISPUTE_STATUSES.has(status)) return 8;
-  if (status.startsWith('dispute_')) return 7;
-  return STATUS_PRECEDENCE[status] ?? -1;
-}
-
-const RETRY_SUCCESS_STATUSES = new Set(['completed', 'recurring_active']);
-const RETRY_FAILURE_STATUSES = new Set(['payment_failed', 'recurring_payment_failed']);
-
 async function setIntentStatus(
   donationIntentId: string | null,
   event: Stripe.Event,
@@ -298,33 +267,34 @@ async function setIntentStatus(
     const priorCreated = typeof data.lastProcessorEventCreated === 'number'
       ? data.lastProcessorEventCreated
       : -1;
-    const requestedStatus = values.status;
-    const preserveRecurringCancellation = data.status === 'recurring_cancelled'
-      && (requestedStatus === 'recurring_active' || requestedStatus === 'recurring_payment_failed');
-    const nextStatus = preserveRecurringCancellation ? 'recurring_cancelled' : requestedStatus;
-    const nextValues = preserveRecurringCancellation ? { ...values, status: nextStatus } : values;
     const priorAmountRefunded = typeof data.amountRefunded === 'number' ? data.amountRefunded : -1;
     const nextAmountRefunded = typeof values.amountRefunded === 'number' ? values.amountRefunded : null;
-    const decreasesRefundTotal = (nextStatus === 'partially_refunded' || nextStatus === 'refunded')
-      && nextAmountRefunded !== null
-      && nextAmountRefunded < priorAmountRefunded;
-    const staleByTime = event.created < priorCreated;
-    const sameTime = event.created === priorCreated;
-    const successfulRetryAtSameTime = sameTime
-      && RETRY_SUCCESS_STATUSES.has(String(nextStatus))
-      && RETRY_FAILURE_STATUSES.has(String(data.status));
-    const staleFailureAfterSameTimeSuccess = sameTime
-      && RETRY_FAILURE_STATUSES.has(String(nextStatus))
-      && RETRY_SUCCESS_STATUSES.has(String(data.status));
-    const lowerPriorityAtSameTime = sameTime
-      && statusPrecedence(nextStatus) < statusPrecedence(data.status)
-      && !successfulRetryAtSameTime;
-    if (staleByTime || staleFailureAfterSameTimeSuccess || lowerPriorityAtSameTime || decreasesRefundTotal) return false;
+    const decision = resolveDonationStatusTransition({
+      currentStatus: data.status,
+      priorEventCreated: priorCreated,
+      priorEventId: typeof data.lastProcessorEventId === 'string' ? data.lastProcessorEventId : null,
+      requestedStatus: values.status,
+      eventCreated: event.created,
+      eventId: event.id,
+      priorAmountRefunded,
+      nextAmountRefunded,
+    });
+    if (!decision.apply) return false;
 
+    const nextValues = decision.preserveRecurringCancellation
+      ? { ...values, status: decision.status }
+      : values;
     transaction.set(ref, {
       ...nextValues,
-      lastProcessorEventCreated: event.created,
-      lastProcessorEventId: event.id,
+      status: decision.status,
+      lastProcessorEventCreated: decision.watermarkCreated,
+      lastProcessorEventId: decision.watermarkEventId,
+      ...(decision.staleRecurringCancellationOverride
+        ? {
+            recurringCancellationEventCreated: event.created,
+            recurringCancellationEventId: event.id,
+          }
+        : {}),
       updatedAt: FieldValue.serverTimestamp(),
     }, { merge: true });
     return true;
