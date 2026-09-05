@@ -16,6 +16,8 @@ This repository uses date-based standards versions for material Foundation chang
 - Publication, evidence, corrections, retractions, research-boundary, and external-review policy.
 - Public-accountability template suite for system cards, transparency reports, accessibility statements, conflicts, public comments, incidents, standards proposals, implementation reports, corrections, and releases.
 - Curated public-site build script, manifest, tests, and CI artifact.
+- Formation-stage public `/governance/` transparency surface, public-build/sitemap coverage, navigation links, and branded noindex 404 route.
+- Operator deployment/cutover smoke coverage for `/status/` and `/governance/`, with regression tests locking those published routes into both inventories.
 
 ### Changed
 
@@ -27,6 +29,7 @@ This repository uses date-based standards versions for material Foundation chang
 - Replaced stale README and production status language with evidence-gated hosting and launch truth.
 - Updated Pages deployment to publish only the allowlisted `_site` artifact rather than the repository root.
 - Consolidated the required `Check` workflow and added a reviewable public-site artifact.
+- Updated deployment runbooks to require the public Status and Governance authority boundaries during provider and custom-domain smoke verification.
 
 ### Removed
 

@@ -12,6 +12,7 @@ DOMAIN = "https://uraifoundation.org"
 REQUIRED_ROUTES = [
     "/",
     "/status/",
+    "/governance/",
     "/accessibility/",
     "/deaf-community/",
     "/emotional-wellness/",
@@ -132,13 +133,16 @@ def main() -> int:
                 if snippet not in body:
                     errors.append(f"donate route missing required activation boundary: {snippet}")
 
+    if not (ROOT / "404.html").exists():
+        errors.append("missing public 404.html")
+
     if errors:
         print("Route validation failed:")
         for error in errors:
             print(f"- {error}")
         return 1
 
-    print(f"Route validation passed for {len(REQUIRED_ROUTES)} required routes.")
+    print(f"Route validation passed for {len(REQUIRED_ROUTES)} required routes plus the public 404 state.")
     return 0
 
 

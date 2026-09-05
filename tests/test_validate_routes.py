@@ -74,7 +74,7 @@ class ValidateRoutesTests(unittest.TestCase):
         self.assertIn('answer.value === answer.sourceValue ? "Foundation fact" : "Employee confirmed"', script)
 
     def test_operator_route_inventories_cover_new_surfaces(self) -> None:
-        routes = ["/community/", "/donate/", "/staff/", "/grants/"]
+        routes = ["/status/", "/governance/", "/community/", "/donate/", "/staff/", "/grants/"]
         for filename in ("docs/final-live-cutover-runbook.md", "docs/live-deployment-runbook.md"):
             content = (validate_routes.ROOT / filename).read_text(encoding="utf-8")
             for route in routes:
