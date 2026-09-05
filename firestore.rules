@@ -1,0 +1,109 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function activeStaff() {
+      return signedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.foundation_staff == true
+        && exists(/databases/$(database)/documents/foundationStaff/$(request.auth.uid))
+        && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.isActive == true
+        && get(/databases/$(database)/documents/foundationStaff/$(request.auth.uid)).data.role
+          == request.auth.token.foundation_role
+        && request.auth.token.foundation_role in ['owner', 'admin', 'reviewer', 'grant_writer', 'staff'];
+    }
+
+    function role() {
+      return request.auth.token.foundation_role;
+    }
+
+    function writerOrAbove() {
+      return activeStaff() && role() in ['owner', 'admin', 'grant_writer', 'reviewer'];
+    }
+
+    function reviewerOrAbove() {
+      return activeStaff() && role() in ['owner', 'admin', 'reviewer'];
+    }
+
+    function adminOrOwner() {
+      return activeStaff() && role() in ['owner', 'admin'];
+    }
+
+    function sameCreatorOnCreate() {
+      return request.resource.data.createdBy == request.auth.uid;
+    }
+
+    function immutableIdentityFields() {
+      return request.resource.data.createdBy == resource.data.createdBy
+        && request.resource.data.createdAt == resource.data.createdAt;
+    }
+
+    // Deny everything unless a narrower rule below explicitly permits it.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Staff membership is provisioned by trusted server-side/admin tooling only.
+    match /foundationStaff/{uid} {
+      allow read: if activeStaff() && (request.auth.uid == uid || adminOrOwner());
+      allow create, update, delete: if false;
+    }
+
+    // Canonical Foundation facts may contain sensitive operational/legal data.
+    // Client access is read-only; mutations go through trusted server-side code.
+    match /foundationProfile/{fieldId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    match /foundationDocuments/{documentId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    // Grant opportunities are curated from official sources. Staff may read;
+    // only trusted server code writes ingestion and retrieval metadata.
+    match /grantOpportunities/{opportunityId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    // Application content and verification state are server-owned. Staff clients
+    // use App-Check-protected callables so no client can forge answer verification,
+    // rewrite editor identity, or bypass the audit trail.
+    match /grantApplications/{applicationId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    // Approvals, submission receipts, and audit history are server-only writes.
+    match /grantApprovals/{approvalId} {
+      allow read: if reviewerOrAbove();
+      allow create, update, delete: if false;
+    }
+
+    match /grantSubmissions/{submissionId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    match /grantAwards/{awardId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    match /grantReportingObligations/{obligationId} {
+      allow read: if activeStaff();
+      allow create, update, delete: if false;
+    }
+
+    match /foundationAuditLogs/{eventId} {
+      allow read: if reviewerOrAbove();
+      allow create, update, delete: if false;
+    }
+  }
+}

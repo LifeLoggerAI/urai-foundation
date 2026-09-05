@@ -25,7 +25,7 @@ Production hosting is unresolved:
 
 - GitHub Pages configuration exists in source;
 - issue #10 reports a Firebase fallback under `urai-4dc1d` / `urai-foundation`;
-- Firebase config is absent from this repository;
+- backend Firebase configuration is checked in for Functions and Firestore; the protected Storage vault and Storage rules/configuration remain absent; Firebase Hosting and environment-specific project/target mapping remain absent;
 - custom-domain DNS/TLS and exact deployed/rollback SHAs are not verified at current head.
 
 Do not describe the custom-domain integration as live/verified until the release gate in `PRODUCTION_STATUS.md` passes.

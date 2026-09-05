@@ -1,6 +1,6 @@
-.PHONY: check test validate validate-routes validate-standards build-site smoke-live verify-live
+.PHONY: check test validate validate-routes validate-standards validate-staff-backend build-site smoke-live verify-live
 
-check: test validate validate-routes validate-standards
+check: test validate validate-routes validate-standards validate-staff-backend
 
 test:
 	python3 -m unittest discover -s tests
@@ -13,6 +13,9 @@ validate-routes:
 
 validate-standards:
 	python3 scripts/validate-standards-registry.py
+
+validate-staff-backend:
+	python3 scripts/validate-staff-backend.py
 
 build-site:
 	python3 scripts/build-public-site.py

@@ -12,7 +12,7 @@ Advance responsible AI through open standards, evidence-based review, ethical fr
 
 ## Repository role
 
-This is a documentation-first public-interest repository with a lightweight static website. It is not a product runtime, backend API, database, CRM, production donation system, authenticated grant-intake system, certification service, clinical resource, or research-participant platform.
+This is a public-interest Foundation repository with a lightweight static website plus protected, undeployed Firebase source for staff grant operations. It is not a deployed product runtime, CRM, production donation system, certification service, clinical resource, or research-participant platform. The backend source remains nonproduction until its protected provider, identity, governance, and runtime gates are proven.
 
 The repository contains:
 
@@ -22,7 +22,8 @@ The repository contains:
 - public-accountability templates;
 - product integration guidance;
 - contribution, security, versioning, and release materials;
-- validation and curated-publication tooling.
+- validation and curated-publication tooling;
+- protected Firebase Functions, Firestore rules, and validation contracts for the undeployed staff grant backend, with `firestore.indexes.json` retained as part of that protected backend source.
 
 ## Production truth
 
@@ -35,7 +36,7 @@ Canonical source:
 Production hosting is **not yet canonically verified**.
 
 - GitHub Pages configuration and a `CNAME` exist in this repository.
-- A Firebase Hosting fallback has been referenced under project `urai-4dc1d`, site ID `urai-foundation`, but Firebase configuration is not present in this repository.
+- `firebase.json` defines the protected Foundation Functions codebase and Firestore rules/indexes but deliberately contains no Firebase project binding or Hosting target. The separately reported `urai-4dc1d` / `urai-foundation` Hosting fallback is therefore not reproducible from this backend configuration.
 - The exact current deployed SHA, rollback SHA, selected canonical host, custom-domain DNS destination, HTTPS proof, and route proof are not recorded for the current candidate.
 - Live-domain verification is expected to fail while `uraifoundation.org` resolves to Squarespace or another non-canonical host.
 
@@ -74,6 +75,7 @@ The current source has:
 - no CRM or ticket database;
 - a public donation-information route, but no activated payment processor, receipt/tax treatment, or settlement flow;
 - a public noindex Grant Desk demonstration, but no authenticated production grant system or external funder-submission flow;
+- protected staff-backend source that is not deployed, project-bound, or authorized for production data;
 - no analytics script;
 - no public-program enrollment;
 - no partner database;
@@ -81,6 +83,12 @@ The current source has:
 - no clinical or crisis service.
 
 Public GitHub issues are inappropriate for secrets, personal data, vulnerabilities, active abuse paths, or sensitive complaints. A verified private security-reporting channel is still required.
+
+## Protected staff-backend boundary
+
+The staff-backend candidate adds source contracts for employee roles, grant opportunities, applications, exact-version approvals, submissions, awards, reporting obligations, Foundation profile provenance, staff records, documents, and audit records. It also includes deny-by-default Firestore rules, guarded initial-owner provisioning, recent-auth/MFA/App Check requirements for protected approval operations, and deterministic validation/tests.
+
+That source does **not** activate employee identities, bind a production Firebase project, authorize confidential Foundation data, ingest real grant opportunities, submit to external funders, or establish legal/provider authority. Those remain separate protected activation gates.
 
 ## Scope of work
 
@@ -106,6 +114,7 @@ The Foundation initiative supports and maintains:
 - [Standards Registry](standards/registry.json)
 - [Implementation Map](docs/implementation-map.md)
 - [System-of-Systems Integration Contract](docs/system-of-systems-integration.md)
+- [Staff Backend Contract](docs/staff-backend-contract.md)
 - [Foundation v1 Audit and Roadmap](docs/audits/foundation-v1-audit-2026-07-06.md)
 - [Live Deployment Runbook](docs/live-deployment-runbook.md)
 - [Versioning and Change Policy](VERSIONING.md)
@@ -140,22 +149,13 @@ Commercial applications belong in their own repositories and should publish evid
 
 ## Local validation
 
-No package installation is required.
-
 Run:
 
 ```bash
 make check
 ```
 
-The complete source validation includes:
-
-```bash
-python3 -m unittest discover -s tests
-python3 scripts/validate-docs.py
-python3 scripts/validate-routes.py
-python3 scripts/validate-standards-registry.py
-```
+The complete source validation includes repository tests and validators plus the protected Functions typecheck when backend source is present.
 
 Build the curated public artifact:
 
@@ -163,9 +163,7 @@ Build the curated public artifact:
 make build-site
 ```
 
-The publication script creates `_site` from an explicit allowlist and writes `public-build-manifest.json`. It intentionally excludes operational proof folders, tests, scripts, internal/advisor planning files, and other non-publication content from the hosting artifact. The repository itself remains public.
-
-Validation covers final newlines, trailing whitespace, relative Markdown links and anchors, root-relative static links, empty text files, UTF-8, unsafe URI schemes, required routes, standards-registry schema, and curated-artifact behavior.
+The publication script creates `_site` from an explicit allowlist and writes `public-build-manifest.json`. It intentionally excludes operational proof folders, tests, scripts, internal/advisor planning files, Firebase backend source, and other non-publication content from the hosting artifact. The repository itself remains public.
 
 Pull requests and pushes to `main` run repository checks through GitHub Actions. Workflow badges are not release evidence unless they bind the exact reviewed SHA and retained artifacts are inspected.
 
@@ -230,10 +228,6 @@ Before launch or major website changes:
 
 Roles that are not appointed must be marked vacant. Missing authority or expert review is a blocker, not permission to invent approval.
 
-## Transparency and accountability
-
-All materials in this repository are intended to be publicly accessible, versioned, open to review, and clear about scope, assumptions, risks, and limitations. Changes to ethical standards or governance documents should be traceable through pull requests and public version history.
-
 ## Legal and institutional boundary
 
 The following require qualified legal, tax, accounting, research, accessibility, security, or other external review as applicable:
@@ -257,6 +251,7 @@ Do not activate these capabilities from planning documents alone. No visitor sho
 - Core standards: **PARTIAL / FORMATION-DRAFT**.
 - Standards registry and curated publication boundary: **IMPLEMENTED ON CANDIDATE, REQUIRES EXACT-HEAD REVIEW**.
 - Portal information/demo surfaces (`/community/`, `/donate/`, `/staff/`, `/grants/`): **IMPLEMENTED IN SOURCE; PAYMENT, AUTH, AND EXTERNAL SUBMISSION REMAIN INACTIVE**.
+- Protected staff backend: **IMPLEMENTED IN SOURCE; UNDEPLOYED / PROJECT-UNBOUND / REQUIRES PROTECTED RUNTIME AND INDEPENDENT REVIEW**.
 - Canonical hosting, deployed SHA, rollback SHA, DNS, HTTPS, monitoring, and recovery: **BLOCKED / NOT VERIFIED**.
 - Legal and institutional status: **REQUIRES QUALIFIED REVIEW AND AUTHORITATIVE RECORDS**.
 
@@ -269,4 +264,4 @@ See [Production Status](PRODUCTION_STATUS.md) for the release gate.
 - `/staff/` — publicly reachable, noindex, fail-closed employee gateway; production authentication is not connected in this source candidate.
 - `/grants/` — publicly reachable, noindex Grant Desk demonstration; data remains in-memory, it produces reviewable drafts only, and it cannot submit to funders.
 
-The repository therefore contains public information/demonstration workflows for community, support, staff gateway, and grant drafting, but no activated payment backend, authenticated production staff system, or external grant-submission flow.
+The repository therefore contains public information/demonstration workflows for community, support, staff gateway, and grant drafting plus separate protected staff-backend source, but no activated payment backend, authenticated production staff system, confidential production records, or external grant-submission flow.
