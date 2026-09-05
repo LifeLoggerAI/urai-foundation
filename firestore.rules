@@ -42,19 +42,15 @@ service cloud.firestore {
         && request.resource.data.createdAt == resource.data.createdAt;
     }
 
-    // Deny everything unless a narrower rule below explicitly permits it.
     match /{document=**} {
       allow read, write: if false;
     }
 
-    // Staff membership is provisioned by trusted server-side/admin tooling only.
     match /foundationStaff/{uid} {
       allow read: if activeStaff() && (request.auth.uid == uid || adminOrOwner());
       allow create, update, delete: if false;
     }
 
-    // Canonical Foundation facts may contain sensitive operational/legal data.
-    // Client access is read-only; mutations go through trusted server-side code.
     match /foundationProfile/{fieldId} {
       allow read: if activeStaff();
       allow create, update, delete: if false;
@@ -65,8 +61,6 @@ service cloud.firestore {
       allow create, update, delete: if false;
     }
 
-    // Grant opportunities are curated from official sources. Staff may read;
-    // only trusted server code writes ingestion and retrieval metadata.
     match /grantOpportunities/{opportunityId} {
       allow read: if activeStaff();
       allow create, update, delete: if false;
@@ -80,7 +74,6 @@ service cloud.firestore {
       allow create, update, delete: if false;
     }
 
-    // Approvals, submission receipts, and audit history are server-only writes.
     match /grantApprovals/{approvalId} {
       allow read: if reviewerOrAbove();
       allow create, update, delete: if false;
@@ -103,6 +96,28 @@ service cloud.firestore {
 
     match /foundationAuditLogs/{eventId} {
       allow read: if reviewerOrAbove();
+      allow create, update, delete: if false;
+    }
+
+    // Donation checkout, processor events, and transaction ledger are server-owned.
+    // No public or employee client can create or alter payment records directly.
+    match /donationIntents/{intentId} {
+      allow read: if adminOrOwner();
+      allow create, update, delete: if false;
+    }
+
+    match /donationTransactions/{transactionId} {
+      allow read: if adminOrOwner();
+      allow create, update, delete: if false;
+    }
+
+    match /stripeWebhookEvents/{eventId} {
+      allow read: if adminOrOwner();
+      allow create, update, delete: if false;
+    }
+
+    match /donationReconciliationEvents/{eventId} {
+      allow read: if adminOrOwner();
       allow create, update, delete: if false;
     }
   }

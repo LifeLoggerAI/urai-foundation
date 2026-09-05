@@ -5,12 +5,13 @@
   "engines": { "node": "20" },
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/test-donation-status.mjs",
     "bootstrap:owner": "node scripts/bootstrap-owner.mjs"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0",
-    "firebase-functions": "^5.0.1"
+    "firebase-functions": "^5.0.1",
+    "stripe": "22.3.2"
   },
   "devDependencies": {
     "typescript": "5.5.4"

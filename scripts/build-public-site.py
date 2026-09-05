@@ -33,6 +33,7 @@ PUBLIC_FILES = [
     "terms/index.html",
     "community/index.html",
     "donate/index.html",
+    "donate/thanks/index.html",
     "staff/index.html",
     "grants/index.html",
     "grants/grants.css",
