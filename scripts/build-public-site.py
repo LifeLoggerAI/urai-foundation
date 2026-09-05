@@ -23,6 +23,7 @@ PUBLIC_FILES = [
     "robots.txt",
     "sitemap.xml",
     "site.webmanifest",
+    "status/index.html",
     "governance/index.html",
     "accessibility/index.html",
     "deaf-community/index.html",
