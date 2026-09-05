@@ -393,9 +393,9 @@ The public Foundation estate already includes or references:
 
 Connected Drive records additionally include a Foundation advisor packet, grant opportunity tracker, source inventory/whitepaper/paperwork tracker, entity-jurisdiction recovery record, banking preparation packet, launch-control records, repository/release inventory, web-property matrix, IP/legal architecture records, and broader system architecture records.
 
-The wider LifeLoggerAI repository estate supplies implementation proof across the core URAI app, privacy, admin, analytics, spatial, studio, jobs, content, storytime, communications, B2B, asset generation, development, production, marketing, and related surfaces.
+Connected records identify a wider LifeLoggerAI repository inventory spanning the core URAI app, privacy, admin, analytics, spatial, studio, jobs, content, storytime, communications, B2B, asset generation, development, production, marketing, and related surfaces. This inventory is not implementation proof: this document does not bind those repositories to exact inspected revisions, reproducible verification records, deployments, or live behavior. Any implementation claim must instead cite the relevant repository, exact commit, evidence grade, and reproducible result.
 
-The result is a Foundation attached to a real technical estate, not a standalone public-interest brand disconnected from implementation.
+The Foundation is designed to govern against that recorded technical estate, but the relationship remains an unverified inventory here rather than evidence that every listed system is implemented, deployed, or operational.
 
 ---
 
