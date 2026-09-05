@@ -21,6 +21,7 @@ class SmokeLiveRoutesTests(unittest.TestCase):
     def test_required_paths_include_all_public_routes_and_sitemap(self) -> None:
         expected_paths = {
             "/",
+            "/governance/",
             "/accessibility/",
             "/deaf-community/",
             "/emotional-wellness/",
@@ -41,7 +42,21 @@ class SmokeLiveRoutesTests(unittest.TestCase):
     def test_new_routes_require_route_specific_live_markers(self) -> None:
         self.assertEqual(
             set(smoke_live_routes.EXPECTED_ROUTE_MARKERS),
-            {"/", "/community/", "/donate/", "/staff/", "/grants/", "/grants/grants.js"},
+            {
+                "/",
+                "/governance/",
+                "/community/",
+                "/donate/",
+                "/staff/",
+                "/grants/",
+                "/grants/grants.js",
+            },
+        )
+
+    def test_governance_route_requires_formation_stage_authority_marker(self) -> None:
+        self.assertEqual(
+            smoke_live_routes.EXPECTED_ROUTE_MARKERS["/governance/"],
+            "These public governance materials are formation-stage drafts.",
         )
 
     def test_grant_route_requires_public_demo_boundary_and_noindex(self) -> None:
