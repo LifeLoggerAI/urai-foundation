@@ -16,6 +16,7 @@ This repository uses date-based standards versions for material Foundation chang
 - Publication, evidence, corrections, retractions, research-boundary, and external-review policy.
 - Public-accountability template suite for system cards, transparency reports, accessibility statements, conflicts, public comments, incidents, standards proposals, implementation reports, corrections, and releases.
 - Curated public-site build script, manifest, tests, and CI artifact.
+- Formation-stage advisor governance and operations process covering restricted intake, credential and conflict verification, appointment authority, least-privilege access, review independence, and publication-permission gates.
 
 ### Changed
 
