@@ -1,7 +1,7 @@
 # Final Live Cutover Checklist
 
 Status: blocked pending canonical hosting decision
-Last reviewed: 2026-07-06
+Last reviewed: 2026-09-05
 
 Use the full [Live Deployment and Rollback Runbook](live-deployment-runbook.md) and [Canonical Production Truth](canonical-production-truth.md).
 
@@ -45,6 +45,8 @@ This checklist intentionally does not prescribe GitHub Pages DNS records or Fire
 ## Custom-domain smoke
 
 - [ ] `/`
+- [ ] `/status/` (verify formation-stage legal/authority boundary remains visible)
+- [ ] `/governance/` (verify formation-stage governance/transparency boundary remains visible)
 - [ ] `/accessibility/`
 - [ ] `/deaf-community/`
 - [ ] `/emotional-wellness/`
@@ -67,6 +69,7 @@ This checklist intentionally does not prescribe GitHub Pages DNS records or Fire
 ## Safety and truthfulness
 
 - [ ] Formation-era status language remains visible.
+- [ ] Governance materials remain explicitly formation-stage and do not imply constituted governing bodies, legal independence, charity status, or tax exemption.
 - [ ] No unsupported nonprofit, tax, charity, donation, grant, program, partner, research, certification, impact, clinical, or service claim is present.
 - [ ] A verified private security/sensitive-reporting channel is published and tested.
 - [ ] Contact and privacy language matches the selected host and actual operations.
