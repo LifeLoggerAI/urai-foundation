@@ -3,8 +3,8 @@
 
 from __future__ import annotations
 
-import sys
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def main() -> int:
     errors: list[str] = []
     donations = (ROOT / "functions/src/donations.ts").read_text(encoding="utf-8")
+    status_model = (ROOT / "functions/src/donation-status.ts").read_text(encoding="utf-8")
+    behavior_test = (ROOT / "functions/scripts/test-donation-status.mjs").read_text(encoding="utf-8")
+    package = (ROOT / "functions/package.json").read_text(encoding="utf-8")
     index = (ROOT / "functions/src/index.ts").read_text(encoding="utf-8")
     rules = (ROOT / "firestore.rules").read_text(encoding="utf-8")
 
@@ -38,8 +41,6 @@ def main() -> int:
         "const webhookSecret = stripeWebhookSecret.value().trim()",
         "if (!webhookSecret)",
         "webhooks.constructEvent(request.rawBody, signature, webhookSecret)",
-        "TERMINAL_DISPUTE_STATUSES",
-        "if (TERMINAL_DISPUTE_STATUSES.has(status)) return 8",
         "stripeWebhookEvents",
         "checkout.session.async_payment_succeeded",
         "checkout.session.async_payment_failed",
@@ -47,9 +48,10 @@ def main() -> int:
         "invoice.parent?.subscription_details?.subscription",
         "stripe.invoicePayments.list",
         "lastProcessorEventCreated",
-        "STATUS_PRECEDENCE",
-        "RETRY_SUCCESS_STATUSES",
-        "staleFailureAfterSameTimeSuccess",
+        "resolveDonationStatusTransition",
+        "staleRecurringCancellationOverride",
+        "recurringCancellationEventCreated",
+        "recurringCancellationEventId",
         "const recurringDonationIntentId = await donationIntentFromInvoicePayment",
         "kind: recurring ? 'recurring_payment_failed' : 'one_time_payment_failed'",
         "status: subscription.status === 'canceled'",
@@ -70,8 +72,43 @@ def main() -> int:
         if snippet not in donations:
             errors.append(f"donations backend missing activation/security control: {snippet}")
 
-    if r"\n" in donations:
-        errors.append("donations backend contains literal escaped newline markers")
+    required_status_controls = [
+        "STATUS_PRECEDENCE",
+        "TERMINAL_DISPUTE_STATUSES",
+        "if (TERMINAL_DISPUTE_STATUSES.has(status)) return 8",
+        "RETRY_SUCCESS_STATUSES",
+        "RETRY_FAILURE_STATUSES",
+        "RECURRING_CANCELLATION_OVERRIDABLE_STATUSES",
+        "requestedStatus === 'recurring_cancelled'",
+        "staleRecurringCancellationOverride",
+        "(!staleByTime || staleRecurringCancellationOverride)",
+        "watermarkCreated: staleRecurringCancellationOverride",
+        "watermarkEventId: staleRecurringCancellationOverride",
+        "input.priorEventId || input.eventId",
+        "decreasesRefundTotal",
+    ]
+    for snippet in required_status_controls:
+        if snippet not in status_model:
+            errors.append(f"donation status model missing ordering/precedence control: {snippet}")
+
+    required_behavior = [
+        "cancellation is stored first",
+        "a newer failure arrives first",
+        "staleCancellationAfterRefund",
+        "staleCancellationAfterDispute",
+        "ordinaryStaleEvent",
+        "assert.equal(failureFirst.status, 'recurring_cancelled')",
+        "assert.equal(failureFirst.watermarkCreated, 110)",
+    ]
+    for snippet in required_behavior:
+        if snippet not in behavior_test:
+            errors.append(f"donation ordering behavior test missing case/assertion: {snippet}")
+
+    if "tsc -p tsconfig.json && node scripts/test-donation-status.mjs" not in package:
+        errors.append("functions build must execute the compiled donation ordering behavior test")
+
+    if r"\n" in donations or r"\n" in status_model:
+        errors.append("donation source contains literal escaped newline markers")
 
     required_exports = ["createDonationCheckout", "stripeDonationWebhook", "./donations"]
     for snippet in required_exports:
@@ -110,7 +147,7 @@ def main() -> int:
         "501(c)(3)",
         "FOUNDATION_DONATIONS_ENABLED', { default: 'true'",
     ]
-    combined = donations + index
+    combined = donations + status_model + index
     for snippet in forbidden:
         if snippet in combined:
             errors.append(f"donation source contains forbidden activation/claim/secret marker: {snippet}")
