@@ -23,6 +23,9 @@ on:
 permissions:
   contents: read
 
+env:
+  CANDIDATE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+
 jobs:
   browser-proof:
     runs-on: ubuntu-24.04
@@ -30,10 +33,12 @@ jobs:
     steps:
       - name: Checkout exact reviewed head
         uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CANDIDATE_SHA }}
 
       - name: Prove exact clean head
         run: |
-          test "$(git rev-parse HEAD)" = "${GITHUB_SHA}"
+          test "$(git rev-parse HEAD)" = "${CANDIDATE_SHA}"
           test -z "$(git status --porcelain)"
 
       - name: Locate runner Chrome
@@ -81,7 +86,7 @@ jobs:
           "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=1440,1000 --screenshot=visual-proof/screens/status-1440.png http://127.0.0.1:4173/status/
           "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=430,932 --screenshot=visual-proof/screens/accessibility-430.png http://127.0.0.1:4173/accessibility/
           "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=1440,1000 --screenshot=visual-proof/screens/governance-1440.png http://127.0.0.1:4173/governance/
-          printf '{"sha":"%s","capturedAt":"%s","viewports":[375,430,768,1024,1440],"reducedMotion":true,"scale2":true}\n' "$GITHUB_SHA" "$(date -u +%FT%TZ)" > visual-proof/manifest.json
+          printf '{"sha":"%s","capturedAt":"%s","viewports":[375,430,768,1024,1440],"reducedMotion":true,"scale2":true}\n' "$CANDIDATE_SHA" "$(date -u +%FT%TZ)" > visual-proof/manifest.json
 
       - name: Static accessibility and responsive guards
         run: |
@@ -104,7 +109,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: foundation-visual-proof-${{ github.sha }}
+          name: foundation-visual-proof-${{ env.CANDIDATE_SHA }}
           path: visual-proof/
           if-no-files-found: error
           retention-days: 90
