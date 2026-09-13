@@ -26,7 +26,7 @@ permissions:
 jobs:
   browser-proof:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
       - name: Checkout exact reviewed head
         uses: actions/checkout@v4
@@ -41,13 +41,15 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install browser harness
+      - name: Install lightweight browser harness
         run: |
+          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME_BIN"
+          echo "FOUNDATION_CHROME_BIN=$CHROME_BIN" >> "$GITHUB_ENV"
           mkdir -p .visual-proof
           cd .visual-proof
-          npm init -y >/dev/null 2>&1
-          npm install --no-save playwright@1.55.0 axe-core@4.10.3
-          npx playwright install --with-deps chromium
+          npm_config_userconfig=/dev/null npm init -y >/dev/null 2>&1
+          npm_config_userconfig=/dev/null npm_config_registry=https://registry.npmjs.org npm install --no-save --ignore-scripts --no-audit --no-fund playwright-core@1.55.0
 
       - name: Start exact-head static server
         run: |
@@ -63,8 +65,7 @@ jobs:
       - name: Render and inspect exact-head routes
         run: |
           cat > .visual-proof/run.mjs <<'EOF'
-          import { chromium } from 'playwright';
-          import AxeBuilder from 'axe-core';
+          import { chromium } from 'playwright-core';
           import fs from 'node:fs/promises';
           import path from 'node:path';
 
@@ -72,7 +73,7 @@ jobs:
           const base = 'http://127.0.0.1:4173';
           const out = path.resolve('visual-proof');
           await fs.mkdir(out, { recursive: true });
-          const browser = await chromium.launch({ headless: true });
+          const browser = await chromium.launch({ headless: true, executablePath: process.env.FOUNDATION_CHROME_BIN, args: ['--no-sandbox'] });
           const routes = ['/', '/status/', '/accessibility/', '/community/', '/research/', '/responsible-ai/', '/contact/', '/staff/', '/governance/'];
           const viewports = [
             ['375', 375, 900],
@@ -96,6 +97,11 @@ jobs:
                 h1s: document.querySelectorAll('h1').length,
                 emptyLinks: [...document.querySelectorAll('a')].filter(a => !a.getAttribute('href') || a.getAttribute('href') === '#').length,
                 missingAlt: [...document.querySelectorAll('img')].filter(i => !i.hasAttribute('alt')).length,
+                landmarks: {
+                  main: document.querySelectorAll('main').length,
+                  nav: document.querySelectorAll('nav').length,
+                  footer: document.querySelectorAll('footer').length,
+                },
               }));
               const slug = route === '/' ? 'home' : route.replaceAll('/', '-').replace(/^-|-$/g, '');
               const shot = `${slug}-${label}.png`;
@@ -107,6 +113,7 @@ jobs:
               if (dims.h1s !== 1) report.failures.push(`${route}@${label}: expected 1 H1, got ${dims.h1s}`);
               if (dims.emptyLinks) report.failures.push(`${route}@${label}: ${dims.emptyLinks} empty/# links`);
               if (dims.missingAlt) report.failures.push(`${route}@${label}: ${dims.missingAlt} images missing alt`);
+              if (dims.landmarks.main !== 1) report.failures.push(`${route}@${label}: expected one main landmark`);
               await context.close();
             }
           }
@@ -126,7 +133,6 @@ jobs:
           const firstFocus = await page.evaluate(() => ({ tag: document.activeElement?.tagName, text: document.activeElement?.textContent?.trim() }));
           if (firstFocus.text !== 'Skip to content') report.failures.push(`first focus is not skip link: ${JSON.stringify(firstFocus)}`);
 
-          await page.keyboard.press('Escape');
           const summary = page.locator('.ecosystem-switcher summary');
           if (await summary.count()) {
             await summary.focus();
