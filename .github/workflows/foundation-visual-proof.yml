@@ -1,0 +1,168 @@
+name: Foundation Visual Proof
+
+on:
+  push:
+    branches:
+      - design/public-benefit-web-v1
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'foundation-home.css'
+      - 'accessibility/**'
+      - 'community/**'
+      - 'research/**'
+      - 'responsible-ai/**'
+      - 'contact/**'
+      - 'staff/**'
+      - 'status/**'
+      - 'governance/**'
+      - '.github/workflows/foundation-visual-proof.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-proof:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact reviewed head
+        uses: actions/checkout@v4
+
+      - name: Prove exact clean head
+        run: |
+          test "$(git rev-parse HEAD)" = "${GITHUB_SHA}"
+          test -z "$(git status --porcelain)"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install browser harness
+        run: |
+          mkdir -p .visual-proof
+          cd .visual-proof
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright@1.55.0 axe-core@4.10.3
+          npx playwright install --with-deps chromium
+
+      - name: Start exact-head static server
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/foundation-http.log 2>&1 &
+          echo $! > /tmp/foundation-http.pid
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/foundation-http.log
+          exit 1
+
+      - name: Render and inspect exact-head routes
+        run: |
+          cat > .visual-proof/run.mjs <<'EOF'
+          import { chromium } from 'playwright';
+          import AxeBuilder from 'axe-core';
+          import fs from 'node:fs/promises';
+          import path from 'node:path';
+
+          const sha = process.env.GITHUB_SHA;
+          const base = 'http://127.0.0.1:4173';
+          const out = path.resolve('visual-proof');
+          await fs.mkdir(out, { recursive: true });
+          const browser = await chromium.launch({ headless: true });
+          const routes = ['/', '/status/', '/accessibility/', '/community/', '/research/', '/responsible-ai/', '/contact/', '/staff/', '/governance/'];
+          const viewports = [
+            ['375', 375, 900],
+            ['430', 430, 932],
+            ['768', 768, 1024],
+            ['1024', 1024, 900],
+            ['1440', 1440, 1000],
+          ];
+          const report = { sha, capturedAt: new Date().toISOString(), routes: [], failures: [] };
+
+          for (const route of routes) {
+            for (const [label, width, height] of viewports) {
+              const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'no-preference' });
+              const page = await context.newPage();
+              const res = await page.goto(base + route, { waitUntil: 'networkidle' });
+              const status = res?.status() ?? 0;
+              const dims = await page.evaluate(() => ({
+                scrollWidth: document.documentElement.scrollWidth,
+                clientWidth: document.documentElement.clientWidth,
+                title: document.title,
+                h1s: document.querySelectorAll('h1').length,
+                emptyLinks: [...document.querySelectorAll('a')].filter(a => !a.getAttribute('href') || a.getAttribute('href') === '#').length,
+                missingAlt: [...document.querySelectorAll('img')].filter(i => !i.hasAttribute('alt')).length,
+              }));
+              const slug = route === '/' ? 'home' : route.replaceAll('/', '-').replace(/^-|-$/g, '');
+              const shot = `${slug}-${label}.png`;
+              await page.screenshot({ path: path.join(out, shot), fullPage: true });
+              const row = { route, viewport: `${width}x${height}`, status, ...dims, screenshot: shot };
+              report.routes.push(row);
+              if (status !== 200) report.failures.push(`${route}@${label}: HTTP ${status}`);
+              if (dims.scrollWidth > dims.clientWidth + 1) report.failures.push(`${route}@${label}: horizontal overflow ${dims.scrollWidth}>${dims.clientWidth}`);
+              if (dims.h1s !== 1) report.failures.push(`${route}@${label}: expected 1 H1, got ${dims.h1s}`);
+              if (dims.emptyLinks) report.failures.push(`${route}@${label}: ${dims.emptyLinks} empty/# links`);
+              if (dims.missingAlt) report.failures.push(`${route}@${label}: ${dims.missingAlt} images missing alt`);
+              await context.close();
+            }
+          }
+
+          const context = await browser.newContext({ viewport: { width: 430, height: 932 }, reducedMotion: 'reduce' });
+          const page = await context.newPage();
+          await page.goto(base + '/', { waitUntil: 'networkidle' });
+          await page.screenshot({ path: path.join(out, 'home-430-reduced-motion.png'), fullPage: true });
+          const motion = await page.evaluate(() => ({
+            media: matchMedia('(prefers-reduced-motion: reduce)').matches,
+            overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+          }));
+          if (!motion.media) report.failures.push('reduced-motion media query not active');
+          if (motion.overflow) report.failures.push('reduced-motion mobile overflow');
+
+          await page.keyboard.press('Tab');
+          const firstFocus = await page.evaluate(() => ({ tag: document.activeElement?.tagName, text: document.activeElement?.textContent?.trim() }));
+          if (firstFocus.text !== 'Skip to content') report.failures.push(`first focus is not skip link: ${JSON.stringify(firstFocus)}`);
+
+          await page.keyboard.press('Escape');
+          const summary = page.locator('.ecosystem-switcher summary');
+          if (await summary.count()) {
+            await summary.focus();
+            await page.keyboard.press('Enter');
+            if (!(await page.locator('.ecosystem-switcher').evaluate(el => el.open))) report.failures.push('ecosystem switcher did not open from keyboard');
+            await page.keyboard.press('Escape');
+            if (await page.locator('.ecosystem-switcher').evaluate(el => el.open)) report.failures.push('ecosystem switcher did not close on Escape');
+          }
+
+          await page.evaluate(() => { document.body.style.zoom = '2'; });
+          await page.screenshot({ path: path.join(out, 'home-430-zoom200.png'), fullPage: true });
+          const zoomOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
+          if (zoomOverflow) report.failures.push('200% zoom introduces horizontal overflow');
+
+          await context.close();
+          await browser.close();
+          await fs.writeFile(path.join(out, 'manifest.json'), JSON.stringify(report, null, 2));
+          if (report.failures.length) {
+            console.error(report.failures.join('\n'));
+            process.exit(1);
+          }
+          console.log(`Foundation browser proof passed for ${sha}: ${report.routes.length} route/viewport captures`);
+          EOF
+          node .visual-proof/run.mjs
+
+      - name: Prove source remained clean
+        if: always()
+        run: |
+          rm -rf .visual-proof
+          test -z "$(git status --porcelain)"
+
+      - name: Upload exact-head screenshots and manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-visual-proof-${{ github.sha }}
+          path: visual-proof/
+          if-no-files-found: error
+          retention-days: 90
