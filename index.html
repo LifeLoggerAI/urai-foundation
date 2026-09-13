@@ -23,8 +23,22 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" aria-label="Primary">
     <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">UF</span><span>URAI Foundation</span></a>
-      <div class="nav-links"><a href="/accessibility/">Accessibility</a><a href="/research/">Research</a><a href="/community/">Community</a><a href="/governance/">Governance</a><a href="/status/">Status</a><a href="/contact/">Contact</a></div>
+      <a class="brand" href="/" aria-current="page"><span class="brand-mark" aria-hidden="true">UF</span><span>URAI Foundation</span></a>
+      <div class="nav-links" aria-label="Foundation sections"><a href="/accessibility/">Accessibility</a><a href="/research/">Research</a><a href="/community/">Community</a><a href="/governance/">Governance</a><a href="/status/">Status</a><a href="/contact/">Contact</a></div>
+      <details class="ecosystem-switcher">
+        <summary><span class="switcher-dot" aria-hidden="true"></span><span>URAI universe</span></summary>
+        <div class="ecosystem-panel">
+          <p class="panel-eyebrow">One system of systems</p>
+          <p class="panel-copy">Foundation is a public-benefit institution inside URAI. Public destinations are separated from protected operational systems.</p>
+          <div class="ecosystem-grid">
+            <a href="https://urai.app/" rel="external"><strong>UrAi</strong><span>Personal experience</span></a>
+            <span class="ecosystem-item pending"><strong>URAI Labs</strong><span>Research &amp; engineering · deployment not assumed</span></span>
+            <a href="/" aria-current="page"><strong>Foundation</strong><span>Public benefit</span></a>
+            <a href="#atlas"><strong>System Atlas</strong><span>Capability relationships</span></a>
+          </div>
+          <p class="ecosystem-note">Admin, Jobs Runtime, provider infrastructure, and other protected control surfaces are intentionally not exposed as normal public destinations.</p>
+        </div>
+      </details>
     </nav>
   </header>
   <main id="main">
@@ -33,7 +47,7 @@
         <p class="eyebrow">Public benefit · accessibility · accountability</p>
         <h1 id="foundation-title">Public benefit built into the institution.</h1>
         <p class="lead">URAI Foundation advances accessibility, education, research, community work, governance, and transparent evidence—while keeping legal status, programs, fundraising, and outcomes explicitly bounded by what can be verified.</p>
-        <div class="actions"><a class="button primary" href="/accessibility/">Explore accessibility work</a><a class="button secondary" href="/status/">Read current status</a></div>
+        <div class="actions"><a class="button primary" href="/accessibility/">Explore accessibility work</a><a class="button secondary" href="#atlas">Explore the System Atlas</a><a class="button secondary" href="/status/">Read current status</a></div>
         <div class="status-disclosure" role="note"><strong>Current legal boundary</strong><p>The Texas Secretary of State record currently identifies URAI Foundation as a Domestic Nonprofit Corporation that is <strong>involuntarily terminated</strong> effective April 28, 2026. This site does not claim active/good-standing status, 501(c)(3) recognition, donation deductibility, or current fundraising authority.</p></div>
       </div>
       <aside class="public-standard" aria-label="Foundation public standard"><span class="standard-number">PUBLIC STANDARD 01</span><blockquote>Technology should expand human agency without making dignity, access, consent, or accountability invisible.</blockquote><div class="standard-rule"><span>ACCESS</span><span>AGENCY</span><span>EVIDENCE</span><span>ACCOUNTABILITY</span></div></aside>
@@ -51,6 +65,39 @@
 
     <section class="foundation-band" aria-labelledby="relationship-title"><div class="shell relationship-layout"><div><p class="eyebrow">Institutional relationship</p><h2 id="relationship-title">Separate institutions. Shared capability where authority permits.</h2></div><div class="relationship-list"><div><strong>URAI</strong><p>System-of-systems architecture.</p></div><div><strong>URAI Labs</strong><p>Research and engineering.</p></div><div><strong>URAI Foundation</strong><p>Public benefit and accountability.</p></div><div><strong>URAI IP Holdings</strong><p>IP stewardship only where ownership and licensing are legally verified.</p></div></div></div></section>
 
+    <section id="atlas" class="foundation-section atlas-section" aria-labelledby="atlas-title">
+      <div class="shell atlas-layout">
+        <div class="atlas-copy">
+          <p class="eyebrow">URAI System Atlas · Foundation lens</p>
+          <h2 id="atlas-title">The Foundation can use the machinery without owning the machinery.</h2>
+          <p>URAI composes capabilities around an objective. Identity, privacy, permission, provenance, and evidence remain between intent and action. This diagram describes the architecture; it does not claim every integration is deployed or available to the public.</p>
+          <ol class="atlas-flow">
+            <li><span>01</span><div><strong>Need</strong><p>A real accessibility, education, or community problem enters the institution.</p></div></li>
+            <li><span>02</span><div><strong>Compose</strong><p>Appropriate research, content, creative, spatial, and analytical capabilities are selected.</p></div></li>
+            <li><span>03</span><div><strong>Authorize</strong><p>Purpose, identity, privacy, and permission boundaries determine what may happen.</p></div></li>
+            <li><span>04</span><div><strong>Evidence</strong><p>Outcomes return as inspectable evidence instead of unsupported institutional claims.</p></div></li>
+          </ol>
+        </div>
+        <figure class="capability-wheel" aria-labelledby="atlas-caption">
+          <div class="wheel-ring ring-outer" aria-hidden="true"></div><div class="wheel-ring ring-inner" aria-hidden="true"></div>
+          <div class="wheel-core"><span>URAI</span><small>system of systems</small></div>
+          <div class="wheel-node node-foundation"><strong>Foundation</strong><span>public benefit</span></div>
+          <div class="wheel-node node-labs"><strong>Labs</strong><span>research</span></div>
+          <div class="wheel-node node-content"><strong>Content</strong><span>canonicalize</span></div>
+          <div class="wheel-node node-studio"><strong>Studio</strong><span>compose</span></div>
+          <div class="wheel-node node-assets"><strong>Asset Factory</strong><span>materialize</span></div>
+          <div class="wheel-node node-spatial"><strong>Spatial</strong><span>spatialize</span></div>
+          <div class="wheel-node node-analytics"><strong>Analytics</strong><span>understand</span></div>
+          <div class="wheel-node node-privacy"><strong>Privacy</strong><span>govern</span></div>
+          <figcaption id="atlas-caption">Conceptual Foundation pathway through the URAI capability wheel. Protected systems are shown as architecture, not public control surfaces.</figcaption>
+        </figure>
+        <div class="atlas-list" aria-label="System Atlas semantic fallback">
+          <h3>Capability relationships</h3>
+          <ul><li><strong>URAI</strong><span>Composes authorized capabilities.</span></li><li><strong>Foundation</strong><span>Public benefit and accountability.</span></li><li><strong>Labs</strong><span>Research and engineering.</span></li><li><strong>Content</strong><span>Canonicalize and publish.</span></li><li><strong>Studio</strong><span>Compose experiences.</span></li><li><strong>Asset Factory</strong><span>Materialize governed media.</span></li><li><strong>Spatial</strong><span>Spatialize experiences.</span></li><li><strong>Analytics</strong><span>Understand authorized outcomes.</span></li><li><strong>Privacy</strong><span>Govern data use and consent.</span></li></ul>
+        </div>
+      </div>
+    </section>
+
     <section class="foundation-section shell" aria-labelledby="access-title"><div class="accessibility-proof"><div><p class="eyebrow">Accessibility demonstrated</p><h2 id="access-title">The site itself should model the standard.</h2><p>Readable contrast, keyboard navigation, strong focus, reduced-motion support, semantic structure, large targets, and low-stimulation presentation are part of the public experience—not a compliance footnote.</p></div><ul><li>Keyboard reachable navigation and actions</li><li>Visible focus and 44px targets</li><li>No essential meaning carried by motion or color alone</li><li>Plain-language status and authority disclosures</li><li>Document-first fallbacks for visual material</li></ul></div></section>
 
     <section class="foundation-section shell" aria-labelledby="evidence-title"><div class="evidence-ledger"><div><p class="eyebrow">Transparency ledger</p><h2 id="evidence-title">Say what is known. Say what is not.</h2></div><div class="ledger-rows"><a href="/status/"><span>LEGAL STATUS</span><strong>Current public disclosure</strong><em>Open record →</em></a><a href="/responsible-ai/"><span>PRINCIPLES</span><strong>Responsible technology boundaries</strong><em>Review →</em></a><a href="/research/"><span>RESEARCH</span><strong>Evidence and participant standards</strong><em>Review →</em></a><a href="/contact/"><span>CORRECTIONS</span><strong>Report inaccurate public information</strong><em>Contact →</em></a></div></div></section>
@@ -58,5 +105,20 @@
     <section class="foundation-section shell callout" aria-labelledby="participate-title"><div><p class="eyebrow">Participation</p><h2 id="participate-title">Start with the need, not the technology.</h2><p>Accessibility concerns, public-interest research questions, education needs, community collaboration, and corrections can enter through the public contact path. Funding or donation requests remain bounded by current legal authority.</p></div><div class="actions"><a class="button primary" href="/contact/">Contact the Foundation</a><a class="button secondary" href="/status/">Verify status first</a></div></section>
   </main>
   <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">UF</span><span>URAI Foundation</span></a><p>Public benefit, accessibility, and accountability for human-centered technology.</p></div><nav aria-label="Footer navigation"><a href="/accessibility/">Accessibility</a><a href="/research/">Research</a><a href="/governance/">Governance</a><a href="/status/">Status</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></nav></div></footer>
+  <script>
+    (() => {
+      const switcher = document.querySelector('.ecosystem-switcher');
+      if (!switcher) return;
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && switcher.open) {
+          switcher.open = false;
+          switcher.querySelector('summary')?.focus();
+        }
+      });
+      document.addEventListener('pointerdown', (event) => {
+        if (switcher.open && !switcher.contains(event.target)) switcher.open = false;
+      });
+    })();
+  </script>
 </body>
 </html>
