@@ -1,0 +1,119 @@
+name: Foundation Visual Proof
+
+on:
+  push:
+    branches:
+      - design/public-benefit-web-v1
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'foundation-home.css'
+      - 'foundation-interior.css'
+      - 'accessibility/**'
+      - 'community/**'
+      - 'research/**'
+      - 'responsible-ai/**'
+      - 'contact/**'
+      - 'staff/**'
+      - 'status/**'
+      - 'governance/**'
+      - '.github/workflows/foundation-visual-proof.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CANDIDATE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+
+jobs:
+  browser-proof:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exact reviewed head
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ env.CANDIDATE_SHA }}
+
+      - name: Prove exact clean head
+        run: |
+          test "$(git rev-parse HEAD)" = "${CANDIDATE_SHA}"
+          test -z "$(git status --porcelain)"
+
+      - name: Locate runner Chrome
+        run: |
+          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME_BIN"
+          echo "FOUNDATION_CHROME_BIN=$CHROME_BIN" >> "$GITHUB_ENV"
+          "$CHROME_BIN" --version
+
+      - name: Start exact-head static server
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/foundation-http.log 2>&1 &
+          echo $! > /tmp/foundation-http.pid
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/foundation-http.log
+          exit 1
+
+      - name: Verify route contracts
+        run: |
+          mkdir -p visual-proof/dom
+          routes='/ status accessibility community research responsible-ai contact staff governance'
+          : > visual-proof/route-status.tsv
+          for r in $routes; do
+            if [ "$r" = "/" ]; then url="http://127.0.0.1:4173/"; slug="home"; else url="http://127.0.0.1:4173/$r/"; slug="$r"; fi
+            code="$(curl -sS -o /tmp/route.html -w '%{http_code}' "$url")"
+            printf '%s\t%s\n' "$url" "$code" >> visual-proof/route-status.tsv
+            test "$code" = "200"
+            test "$(grep -io '<h1\b' /tmp/route.html | wc -l | tr -d ' ')" = "1"
+            ! grep -Eiq 'href="#"|href=""' /tmp/route.html
+            "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --virtual-time-budget=1200 --dump-dom "$url" > "visual-proof/dom/$slug.html"
+          done
+
+      - name: Capture exact-head pixels
+        run: |
+          mkdir -p visual-proof/screens
+          for spec in '375,900' '430,932' '768,1024' '1024,900' '1440,1000'; do
+            width="${spec%,*}"; height="${spec#*,}"
+            "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size="$width,$height" --screenshot="visual-proof/screens/home-${width}.png" http://127.0.0.1:4173/
+          done
+          for route in status accessibility community research responsible-ai contact staff governance; do
+            "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=430,932 --screenshot="visual-proof/screens/${route}-430.png" "http://127.0.0.1:4173/${route}/"
+            "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=1440,1000 --screenshot="visual-proof/screens/${route}-1440.png" "http://127.0.0.1:4173/${route}/"
+          done
+          "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=430,932 --force-prefers-reduced-motion=reduce --screenshot=visual-proof/screens/home-430-reduced-motion.png http://127.0.0.1:4173/
+          "$FOUNDATION_CHROME_BIN" --headless=new --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=1800 --window-size=430,932 --force-device-scale-factor=2 --screenshot=visual-proof/screens/home-430-scale2.png http://127.0.0.1:4173/
+          printf '{"sha":"%s","capturedAt":"%s","homeViewports":[375,430,768,1024,1440],"interiorViewports":[430,1440],"routes":["/","/status/","/accessibility/","/community/","/research/","/responsible-ai/","/contact/","/staff/","/governance/"],"reducedMotion":true,"scale2":true}\n' "$CANDIDATE_SHA" "$(date -u +%FT%TZ)" > visual-proof/manifest.json
+
+      - name: Static accessibility and authority guards
+        run: |
+          grep -q 'class="skip-link"' index.html
+          grep -q 'prefers-reduced-motion' styles.css
+          grep -q 'prefers-reduced-motion' foundation-home.css
+          grep -q 'prefers-reduced-motion' foundation-interior.css
+          grep -q 'aria-label="System Atlas semantic fallback"' index.html
+          grep -q 'ecosystem-switcher' index.html
+          grep -q "event.key === 'Escape'" index.html
+          grep -q 'Current legal boundary' index.html
+          grep -q 'involuntarily terminated' index.html
+          grep -q 'NOT CONNECTED' staff/index.html
+          ! grep -Eiq 'active good standing|tax-deductible donation|501\(c\)\(3\) approved' index.html
+          ! grep -Eiq 'href="/donate/"' community/index.html staff/index.html
+
+      - name: Prove tracked source remained clean
+        if: always()
+        run: test -z "$(git status --porcelain --untracked-files=no)"
+
+      - name: Upload exact-head screenshots and manifest
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: foundation-visual-proof-${{ env.CANDIDATE_SHA }}
+          path: visual-proof/
+          if-no-files-found: error
+          retention-days: 90
