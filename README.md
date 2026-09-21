@@ -1,8 +1,8 @@
 # URAI Foundation
 
-URAI Foundation is the official formation-stage public-interest standards and governance initiative within the URAI ecosystem. It exists to advance ethical, transparent, accessible, accountable technology that protects dignity, consent, memory, identity, relationships, community, and public trust.
+URAI Foundation is a Texas domestic nonprofit corporation and the public-interest standards and governance initiative within the URAI ecosystem. It exists to advance ethical, transparent, accessible, accountable technology that protects dignity, consent, memory, identity, relationships, community, and public trust.
 
-This repository and website do **not** by themselves establish that URAI Foundation is a separately incorporated legal entity, federally tax-exempt organization, registered charity, donation-eligible organization, certification body, clinical service, active research institution, or provider of public programs. Exact legal, tax, governance, and institutional status will be published only from authoritative records.
+Authoritative Texas Secretary of State evidence identifies filing number 806421687, original filing date February 2, 2026, and current status **involuntarily terminated effective April 28, 2026**. This repository and website do **not** claim current active/good-standing status, federal 501(c)(3) recognition, registered-charity status, donation deductibility, current fundraising authority, certification authority, clinical-service authority, active research-institution status, or public-program authority unless separately proven from authoritative records.
 
 Website candidate: [uraifoundation.org](https://uraifoundation.org/)
 
@@ -248,7 +248,7 @@ Do not activate these capabilities from planning documents alone. No visitor sho
 ## Current status
 
 - Source repository and required route files: **VERIFIED COMPLETE IN SOURCE**.
-- Formation-era claim boundaries: **VERIFIED IN SOURCE**.
+- Texas formation/termination status boundary: **VERIFIED IN SOURCE**.
 - Core standards: **PARTIAL / FORMATION-DRAFT**.
 - Standards registry and curated publication boundary: **IMPLEMENTED ON CANDIDATE, REQUIRES EXACT-HEAD REVIEW**.
 - Public Status and Governance surfaces: **IMPLEMENTED IN SOURCE; FORMATION-STAGE AUTHORITY BOUNDARIES REQUIRED IN DEPLOYMENT SMOKE**.
