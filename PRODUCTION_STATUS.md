@@ -93,6 +93,12 @@ For the current static standards site, the recommended architecture is:
 
 This recommendation does not authorize DNS changes or deployment. Firebase may instead be selected only after its configuration and workflow become reproducible from this repository and competing Pages automation is disabled.
 
+## Texas reinstatement-process evidence
+
+PARTIALLY COMPLETE — On September 20, 2026, the Texas Comptroller Exempt Organizations unit acknowledged receipt of the Foundation's exemption-status correspondence and stated that exemption applications/correspondence are normally processed within six weeks, in received order. This acknowledgement is not an exemption determination, tax-clearance letter, reinstatement receipt, active-status proof, fundraising authority, or federal tax-exemption evidence.
+
+Current legal truth remains unchanged: the Texas Secretary of State record is involuntarily terminated until an authoritative reinstatement receipt proves otherwise. Form 811 remains the identified Secretary of State reinstatement instrument, but the correct filing branch depends on the pending Comptroller determination/status response.
+
 ## P0 launch blockers
 
 1. Select and record one canonical host.
