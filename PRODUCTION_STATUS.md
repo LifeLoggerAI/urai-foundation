@@ -1,6 +1,6 @@
 # URAI Foundation Production Status
 
-Last reviewed: 2026-07-06
+Last reviewed: 2026-09-21
 Repository: `LifeLoggerAI/urai-foundation`
 Audit-start `main` SHA: `a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea`
 Status: **SOURCE IMPLEMENTED / CUSTOM-DOMAIN PRODUCTION NOT VERIFIED**
@@ -40,7 +40,7 @@ Source presence is not live-domain verification.
 | Feature | Status | Notes |
 | --- | --- | --- |
 | Static homepage and routes | VERIFIED COMPLETE IN SOURCE | Required HTML files exist. |
-| Formation-era claim boundaries | VERIFIED COMPLETE IN SOURCE | Public pages avoid legal/program/clinical/partner/certification claims. |
+| Texas legal-status boundary | VERIFIED COMPLETE IN SOURCE | Public status records Texas domestic nonprofit formation and current involuntary termination; no active/good-standing, 501(c)(3), fundraising, or deductibility claim is made. |
 | Sitemap/robots/manifest/favicon | VERIFIED COMPLETE IN SOURCE | Files exist; live delivery remains unverified. |
 | Contact | PARTIAL | Mailto and public issues only; mailbox delivery and private sensitive-report path are unverified. |
 | Privacy notice | PARTIAL | Accurate for repository code; host logging/retention requires provider-specific review. |
@@ -59,7 +59,7 @@ Source presence is not live-domain verification.
 | Backend persistence | IMPLEMENTED IN SOURCE, NOT ACTIVE | Protected staff/grant Functions and Firestore rules are present; no project, Auth, IAM, data migration, or live deployment is verified. Payments and donations remain disabled. |
 | Official programs/partners/studies | NOT PRESENT | Planning and concept documents are not operating evidence. |
 | Certification/conformance | NOT ESTABLISHED | Do not use approval/certification claims. |
-| Legal/nonprofit/tax status | REQUIRES LEGAL REVIEW | No authoritative proof established by this repository audit. |
+| Legal/nonprofit/tax status | PARTIALLY COMPLETE | Texas formation and involuntary termination are authoritatively established. Reinstatement, federal tax exemption, fundraising authority, governing-body execution, and related legal/tax authority remain separately blocked/review-gated. |
 
 ## Validation commands
 
@@ -101,7 +101,7 @@ This recommendation does not authorize DNS changes or deployment. Firebase may i
 4. Record exact deployed SHA and prior rollback SHA.
 5. Verify apex and `www` DNS, HTTPS, required routes, canonical metadata, and content marker.
 6. Establish and test a private security/sensitive-report channel.
-7. Preserve formation-stage legal and program boundaries.
+7. Preserve the verified Texas involuntary-termination boundary and keep reinstatement/tax/fundraising claims fail-closed until authoritative receipts exist.
 
 ## P1 credible-launch requirements
 
