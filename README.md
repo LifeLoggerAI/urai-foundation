@@ -245,6 +245,10 @@ The following require qualified legal, tax, accounting, research, accessibility,
 
 Do not activate these capabilities from planning documents alone. No visitor should infer separate incorporation, 501(c)(3) recognition, registered-charity status, or tax-deductible contribution eligibility from the Foundation name or `.org` domain.
 
+## Reinstatement-process status
+
+As of September 20, 2026, the Texas Comptroller Exempt Organizations unit has acknowledged receipt of the Foundation's exemption-status correspondence and stated that such correspondence is normally processed within six weeks. No substantive exemption determination or tax-clearance letter has been received. The Foundation therefore remains publicly described as involuntarily terminated, and no active/good-standing, fundraising, deductibility, or 501(c)(3) claim is authorized by that acknowledgement.
+
 ## Current status
 
 - Source repository and required route files: **VERIFIED COMPLETE IN SOURCE**.
