@@ -1,8 +1,8 @@
 # URAI Accessibility Standards Authority
 
-Status: current standards authority candidate  
-Date: 2026-09-25  
-Owner: URAI Foundation standards/governance layer  
+Status: current standards authority candidate
+Date: 2026-09-25
+Owner: URAI Foundation standards/governance layer
 Implementation evidence owners: each product repository, with `urai-spatial` owning the canonical consumer spatial evidence program
 
 ## Purpose
