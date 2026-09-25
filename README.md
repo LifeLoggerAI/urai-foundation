@@ -1,8 +1,8 @@
 # URAI Foundation
 
-URAI Foundation is the official formation-stage public-interest standards and governance initiative within the URAI ecosystem. It exists to advance ethical, transparent, accessible, accountable technology that protects dignity, consent, memory, identity, relationships, community, and public trust.
+URAI Foundation is a Texas domestic nonprofit corporation and the public-interest standards and governance initiative within the URAI ecosystem. It exists to advance ethical, transparent, accessible, accountable technology that protects dignity, consent, memory, identity, relationships, community, and public trust.
 
-This repository and website do **not** by themselves establish that URAI Foundation is a separately incorporated legal entity, federally tax-exempt organization, registered charity, donation-eligible organization, certification body, clinical service, active research institution, or provider of public programs. Exact legal, tax, governance, and institutional status will be published only from authoritative records.
+Authoritative Texas Secretary of State evidence identifies filing number 806421687, original filing date February 2, 2026, and current status **involuntarily terminated effective April 28, 2026**. This repository and website do **not** claim current active/good-standing status, federal 501(c)(3) recognition, registered-charity status, donation deductibility, current fundraising authority, certification authority, clinical-service authority, active research-institution status, or public-program authority unless separately proven from authoritative records.
 
 Website candidate: [uraifoundation.org](https://uraifoundation.org/)
 
@@ -48,6 +48,7 @@ See [Canonical Production Truth](docs/canonical-production-truth.md). Do not des
 | --- | --- | --- |
 | `/` | Homepage and public route map | Static HTML present |
 | `/status/` | Public status, legal boundaries, and ecosystem relationship | Static HTML present |
+| `/governance/` | Formation-stage governance, transparency, review, and corrections framework | Static HTML present; does not establish governing authority |
 | `/community/` | Public community outreach and participation information | Static HTML present |
 | `/donate/` | Public support information with payments/tax treatment explicitly inactive | Static HTML present; no active payment backend |
 | `/staff/` | Publicly reachable, noindex staff gateway that fails closed until authentication is activated | Static HTML present; authentication inactive |
@@ -205,7 +206,7 @@ Before launch or major website changes:
 
 1. Select one canonical host and record its project/site authority.
 2. Confirm the custom-domain DNS destination and HTTPS certificate.
-3. Verify the homepage and every required route, including `/status/`, `/community/`, `/donate/`, `/staff/`, and `/grants/` plus the Grant Desk script asset.
+3. Verify the homepage and every required route, including `/status/`, `/governance/`, `/community/`, `/donate/`, `/staff/`, and `/grants/` plus the Grant Desk script asset.
 4. Complete the accessibility and site-quality checklist.
 5. Test navigation, document links, issue/email paths, metadata, favicon, robots, sitemap, manifest, and standards registry.
 6. Run `make check` and `make build-site` on the exact candidate.
@@ -244,12 +245,17 @@ The following require qualified legal, tax, accounting, research, accessibility,
 
 Do not activate these capabilities from planning documents alone. No visitor should infer separate incorporation, 501(c)(3) recognition, registered-charity status, or tax-deductible contribution eligibility from the Foundation name or `.org` domain.
 
+## Reinstatement-process status
+
+As of September 20, 2026, the Texas Comptroller Exempt Organizations unit has acknowledged receipt of the Foundation's exemption-status correspondence and stated that such correspondence is normally processed within six weeks. No substantive exemption determination or tax-clearance letter has been received. The Foundation therefore remains publicly described as involuntarily terminated, and no active/good-standing, fundraising, deductibility, or 501(c)(3) claim is authorized by that acknowledgement.
+
 ## Current status
 
 - Source repository and required route files: **VERIFIED COMPLETE IN SOURCE**.
-- Formation-era claim boundaries: **VERIFIED IN SOURCE**.
+- Texas formation/termination status boundary: **VERIFIED IN SOURCE**.
 - Core standards: **PARTIAL / FORMATION-DRAFT**.
 - Standards registry and curated publication boundary: **IMPLEMENTED ON CANDIDATE, REQUIRES EXACT-HEAD REVIEW**.
+- Public Status and Governance surfaces: **IMPLEMENTED IN SOURCE; FORMATION-STAGE AUTHORITY BOUNDARIES REQUIRED IN DEPLOYMENT SMOKE**.
 - Portal information/demo surfaces (`/community/`, `/donate/`, `/staff/`, `/grants/`): **IMPLEMENTED IN SOURCE; PAYMENT, AUTH, AND EXTERNAL SUBMISSION REMAIN INACTIVE**.
 - Protected staff backend: **IMPLEMENTED IN SOURCE; UNDEPLOYED / PROJECT-UNBOUND / REQUIRES PROTECTED RUNTIME AND INDEPENDENT REVIEW**.
 - Canonical hosting, deployed SHA, rollback SHA, DNS, HTTPS, monitoring, and recovery: **BLOCKED / NOT VERIFIED**.
@@ -259,9 +265,11 @@ See [Production Status](PRODUCTION_STATUS.md) for the release gate.
 
 ## Current portal route inventory
 
+- `/status/` — public legal, ecosystem-role, and institutional authority boundary.
+- `/governance/` — formation-stage governance/transparency framework; no constituted governing-body or legal-status claim.
 - `/community/` — public community outreach and participation information.
 - `/donate/` — public support information; payments, tax treatment, and donation receipts remain inactive pending verified legal and provider authority.
 - `/staff/` — publicly reachable, noindex, fail-closed employee gateway; production authentication is not connected in this source candidate.
 - `/grants/` — publicly reachable, noindex Grant Desk demonstration; data remains in-memory, it produces reviewable drafts only, and it cannot submit to funders.
 
-The repository therefore contains public information/demonstration workflows for community, support, staff gateway, and grant drafting plus separate protected staff-backend source, but no activated payment backend, authenticated production staff system, confidential production records, or external grant-submission flow.
+The repository therefore contains public information/demonstration workflows for status, governance, community, support, staff gateway, and grant drafting plus separate protected staff-backend source, but no activated payment backend, authenticated production staff system, confidential production records, or external grant-submission flow.

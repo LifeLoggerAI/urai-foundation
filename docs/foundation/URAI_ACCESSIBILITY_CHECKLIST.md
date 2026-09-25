@@ -2,7 +2,7 @@
 
 ## Accessibility target
 
-URAI should aim for WCAG-aligned accessibility where feasible, plus cognitive accessibility and low-stimulation design for users with disability access needs.
+URAI's current web engineering target is WCAG 2.2 Level AA for applicable web surfaces, plus cognitive accessibility, low-stimulation design, and product-specific sensory, motor, speech, motion, and spatial requirements. This target is not itself a conformance or legal-compliance claim. See `URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md` for standards-versus-law boundaries.
 
 ## Visual
 
