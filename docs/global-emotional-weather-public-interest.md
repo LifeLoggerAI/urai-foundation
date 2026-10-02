@@ -1,7 +1,7 @@
 # Global Emotional Weather and Humanitarian Attention
 
-Status: formation-draft  
-Evidence class: E1/E2 depending on linked exact-SHA implementation evidence  
+Status: formation-draft
+Evidence class: E1/E2 depending on linked exact-SHA implementation evidence
 Program status: not an active Foundation research program
 
 ## Purpose
