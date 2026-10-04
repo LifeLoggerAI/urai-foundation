@@ -621,3 +621,161 @@ a:focus-visible {
     transition: none !important;
   }
 }
+
+
+/* 2026-09-21 whole-estate UI/UX authority reconciliation.
+   Foundation is the warm civic/public-interest room of URAI, not a sci-fi product surface. */
+:root {
+  color-scheme: light;
+  --bg: #f4efe5;
+  --bg-deep: #ece4d7;
+  --surface: #fffaf2;
+  --surface-soft: #f7f1e7;
+  --surface-strong: #eee4d5;
+  --ink: #27231d;
+  --muted: #655f56;
+  --line: rgba(69, 60, 48, .18);
+  --accent: #9a6842;
+  --accent-strong: #71462e;
+  --accent-cool: #2f5a50;
+  --accent-soft: rgba(154, 104, 66, .09);
+  --shadow: 0 20px 60px rgba(71, 55, 36, .08);
+  --radius: 8px;
+}
+
+html { background: var(--bg-deep); }
+
+body {
+  background:
+    radial-gradient(circle at 86% 0%, rgba(180, 147, 105, .10), transparent 28rem),
+    linear-gradient(180deg, #f7f2e9 0%, var(--bg) 48%, var(--bg-deep) 100%);
+  color: var(--ink);
+}
+
+body::before { content: none; }
+
+.site-header {
+  background: rgba(247, 242, 233, .96);
+  border-bottom-color: var(--line);
+  backdrop-filter: none;
+}
+
+.brand-mark {
+  border-radius: 4px;
+  border-color: rgba(113, 70, 46, .22);
+  background: #2f5a50;
+  color: #fffaf2;
+  box-shadow: none;
+}
+
+.nav-links { color: var(--muted); }
+.nav-links a:hover,
+.site-footer nav a:hover { color: var(--accent-strong); }
+
+.eyebrow,
+.card-kicker,
+.card-number,
+.principles span {
+  color: var(--accent-strong);
+}
+
+h1, h2, h3 { letter-spacing: -0.04em; }
+h1 { font-weight: 570; }
+h2 { font-weight: 600; }
+
+.hero {
+  min-height: auto;
+  padding-block: clamp(4.5rem, 9vw, 7.2rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-card,
+.card,
+.contact-panel {
+  background: rgba(255, 250, 242, .76);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+.hero-card::after { content: none; }
+
+/* The old decorative product orb contradicted Foundation's civic identity. */
+.orb { display: none !important; }
+
+.primary {
+  background: #2f5a50;
+  color: #fffdf8;
+  box-shadow: none;
+}
+
+.secondary {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.secondary:hover {
+  border-color: rgba(47, 90, 80, .35);
+  background: rgba(47, 90, 80, .05);
+}
+
+.button {
+  border-radius: 999px;
+  min-height: 46px;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+
+.button:hover,
+.link-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(154, 104, 66, .35);
+  outline-offset: 3px;
+}
+
+.trust-list li {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.muted,
+.proof-band {
+  background: rgba(255, 250, 242, .42);
+}
+
+.proof-band {
+  background:
+    linear-gradient(180deg, rgba(255,250,242,.55), rgba(238,228,213,.55));
+}
+
+.commitment-grid div {
+  background: rgba(255, 250, 242, .55);
+  border-radius: 6px;
+}
+
+.link-card {
+  border-radius: 6px;
+}
+
+.quote {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3d352b;
+}
+
+.site-footer {
+  background: transparent;
+}
+
+@media (forced-colors: active) {
+  .hero-card,
+  .card,
+  .contact-panel,
+  .commitment-grid div {
+    border: 1px solid CanvasText;
+    box-shadow: none;
+  }
+}

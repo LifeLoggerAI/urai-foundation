@@ -16,6 +16,7 @@ DOMAIN = DEFAULT_BASE_URL  # Backward-compatible alias for existing tests and sc
 REQUIRED_PATHS = [
     "/",
     "/status/",
+    "/governance/",
     "/accessibility/",
     "/deaf-community/",
     "/emotional-wellness/",
@@ -41,6 +42,7 @@ FORBIDDEN_SERVER_MARKERS = ("squarespace",)
 EXPECTED_HOME_MARKER = "URAI Foundation"
 EXPECTED_ROUTE_MARKERS = {
     "/": EXPECTED_HOME_MARKER,
+    "/governance/": "These public governance materials are formation-stage drafts.",
     "/community/": "Community outreach",
     "/donate/": "Online payment processing is not activated",
     "/staff/": "Authentication is not connected",
