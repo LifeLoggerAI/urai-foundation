@@ -92,7 +92,7 @@ Human-readable and machine-readable records should identify:
 
 ## Accessibility transparency
 
-Accessibility statements should identify target standards, methods, assistive technologies, viewports, user/community review, known barriers, critical-flow impact, workarounds, remediation ownership, and review date.
+Accessibility statements should identify target standards and exact versions, methods, assistive technologies, viewports, user/community review, known barriers, critical-flow impact, workarounds, remediation ownership, and review date. The current cross-ecosystem standards/legal boundary is defined in `docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md`.
 
 `Accessible`, `WCAG conformant`, or similar claims require evidence. A checklist or automated scan alone is not conformance.
 
