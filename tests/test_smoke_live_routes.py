@@ -23,6 +23,7 @@ class SmokeLiveRoutesTests(unittest.TestCase):
             "/",
             "/governance/",
             "/accessibility/",
+            "/security/",
             "/deaf-community/",
             "/emotional-wellness/",
             "/responsible-ai/",
