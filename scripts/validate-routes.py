@@ -16,6 +16,7 @@ REQUIRED_ROUTES = [
     "/status/",
     "/governance/",
     "/accessibility/",
+    "/security/",
     "/deaf-community/",
     "/emotional-wellness/",
     "/responsible-ai/",
