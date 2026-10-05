@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 from xml.etree import ElementTree
@@ -101,6 +102,9 @@ def main() -> int:
             continue
 
         body = text(path).lower()
+        for mailto in re.findall(r'href=["\\\'](mailto:[^"\\\']+)["\\\']', body):
+            if mailto.count("?") > 1 or mailto.count("?subject=") > 1:
+                errors.append(f"malformed mailto query in {path.relative_to(ROOT)}: {mailto}")
         if not any(snippet in body for snippet in REQUIRED_BOUNDARY_SNIPPETS):
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
