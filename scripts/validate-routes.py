@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
+from urllib.parse import parse_qsl, urlsplit
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -101,6 +103,10 @@ def main() -> int:
             continue
 
         body = text(path).lower()
+        for mailto in re.findall(r'href=["\\\'](mailto:[^"\\\']+)["\\\']', body):
+            query_keys = [key.lower() for key, _ in parse_qsl(urlsplit(mailto).query, keep_blank_values=True)]
+            if mailto.count("?") > 1 or query_keys.count("subject") > 1:
+                errors.append(f"malformed mailto query in {path.relative_to(ROOT)}: {mailto}")
         if not any(snippet in body for snippet in REQUIRED_BOUNDARY_SNIPPETS):
             errors.append(f"route does not include conservative legal/status boundary language: {path.relative_to(ROOT)}")
 
