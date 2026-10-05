@@ -44,6 +44,7 @@ EXPECTED_HOME_MARKER = "URAI Foundation"
 EXPECTED_ROUTE_MARKERS = {
     "/": EXPECTED_HOME_MARKER,
     "/governance/": "These public governance materials are formation-stage drafts.",
+    "/security/": "Security reporting",
     "/community/": "Community outreach",
     "/donate/": "Online payment processing is not activated",
     "/staff/": "Authentication is not connected",

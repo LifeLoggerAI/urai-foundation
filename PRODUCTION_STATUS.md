@@ -42,7 +42,7 @@ Source presence is not live-domain verification.
 | Static homepage and routes | VERIFIED COMPLETE IN SOURCE | Required HTML files exist. |
 | Texas legal-status boundary | VERIFIED COMPLETE IN SOURCE | Public status records Texas domestic nonprofit formation and current involuntary termination; no active/good-standing, 501(c)(3), fundraising, or deductibility claim is made. |
 | Sitemap/robots/manifest/favicon | VERIFIED COMPLETE IN SOURCE | Files exist; live delivery remains unverified. |
-| Contact | PARTIAL | Mailto and public issues only; mailbox delivery and private sensitive-report path are unverified. |
+| Contact | PARTIAL | `security@urailabs.com` and `accessibility@urailabs.com` have controlled Google Workspace routing canaries present in the connected mailbox with SENT + INBOX evidence on October 4–5, 2026. This proves current internal Workspace role routing only; external-recipient deliverability, confidential case handling, and provider-independent monitoring remain separate gates. |
 | Privacy notice | PARTIAL | Accurate for repository code; host logging/retention requires provider-specific review. |
 | Terms notice | REQUIRES LEGAL REVIEW | Conservative informational copy, not legal approval. |
 | Core governance/ethics/transparency/risk docs | PARTIAL / FORMATION-DRAFT | Expanded on audit branch; external review and constituted authority remain absent. |
@@ -106,7 +106,7 @@ Current legal truth remains unchanged: the Texas Secretary of State record is in
 3. Inspect the curated public artifact.
 4. Record exact deployed SHA and prior rollback SHA.
 5. Verify apex and `www` DNS, HTTPS, required routes, canonical metadata, and content marker.
-6. Establish and test a private security/sensitive-report channel.
+6. Preserve the verified Workspace role-routing canaries for security/accessibility and establish a confidential sensitive-report handling path beyond ordinary mailbox routing.
 7. Preserve the verified Texas involuntary-termination boundary and keep reinstatement/tax/fundraising claims fail-closed until authoritative receipts exist.
 
 ## P1 credible-launch requirements
