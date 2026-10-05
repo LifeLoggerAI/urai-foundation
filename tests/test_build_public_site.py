@@ -40,6 +40,7 @@ class PublicSiteBuildTests(unittest.TestCase):
             self.assertEqual("abc123", manifest["source_sha"])
             self.assertTrue((output / "index.html").is_file())
             self.assertTrue((output / "404.html").is_file())
+            self.assertTrue((output / "foundation-interior.css").is_file())
             self.assertTrue((output / "governance" / "index.html").is_file())
             self.assertTrue((output / "status" / "index.html").is_file())
             self.assertTrue((output / "standards" / "registry.json").is_file())
