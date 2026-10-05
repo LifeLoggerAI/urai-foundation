@@ -19,6 +19,7 @@ PUBLIC_FILES = [
     "index.html",
     "404.html",
     "styles.css",
+    "foundation-interior.css",
     "favicon.svg",
     "robots.txt",
     "sitemap.xml",
