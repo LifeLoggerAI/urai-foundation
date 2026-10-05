@@ -46,6 +46,7 @@ class SmokeLiveRoutesTests(unittest.TestCase):
             {
                 "/",
                 "/governance/",
+                "/security/",
                 "/community/",
                 "/donate/",
                 "/staff/",
@@ -58,6 +59,12 @@ class SmokeLiveRoutesTests(unittest.TestCase):
         self.assertEqual(
             smoke_live_routes.EXPECTED_ROUTE_MARKERS["/governance/"],
             "These public governance materials are formation-stage drafts.",
+        )
+
+    def test_security_route_requires_route_specific_marker(self) -> None:
+        self.assertEqual(
+            smoke_live_routes.EXPECTED_ROUTE_MARKERS["/security/"],
+            "Security reporting",
         )
 
     def test_grant_route_requires_public_demo_boundary_and_noindex(self) -> None:
