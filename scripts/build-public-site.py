@@ -26,6 +26,7 @@ PUBLIC_FILES = [
     "status/index.html",
     "governance/index.html",
     "accessibility/index.html",
+    "security/index.html",
     "deaf-community/index.html",
     "emotional-wellness/index.html",
     "responsible-ai/index.html",

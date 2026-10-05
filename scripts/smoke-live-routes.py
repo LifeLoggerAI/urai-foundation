@@ -18,6 +18,7 @@ REQUIRED_PATHS = [
     "/status/",
     "/governance/",
     "/accessibility/",
+    "/security/",
     "/deaf-community/",
     "/emotional-wellness/",
     "/responsible-ai/",
