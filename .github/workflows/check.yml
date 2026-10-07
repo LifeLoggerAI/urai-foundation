@@ -51,7 +51,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install Cloud Functions dependencies
         shell: bash
@@ -65,6 +65,16 @@ jobs:
           set -euo pipefail
           npm --prefix functions run build 2>&1 | tee /tmp/foundation-check/functions-build.log
           test -s functions/lib/index.js
+
+      - name: Verify installed SDK compatibility and dependency audits
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm --prefix functions run typecheck 2>&1 | tee /tmp/foundation-check/functions-typecheck.log
+          npm --prefix functions test 2>&1 | tee /tmp/foundation-check/functions-test.log
+          npm audit --prefix functions --audit-level=low --json | tee /tmp/foundation-check/audit-all.json
+          npm audit --prefix functions --omit=dev --audit-level=low --json | tee /tmp/foundation-check/audit-prod.json
+          sha256sum functions/package.json functions/package-lock.json functions/test/sdk-compatibility.test.cjs functions/lib/index.js > /tmp/foundation-check/dependency-source-build-sha256.txt
 
       - name: Build curated public artifact
         shell: bash
@@ -90,6 +100,7 @@ jobs:
           name: urai-foundation-public-site-${{ env.TARGET_SHA }}
           path: |
             _site/**
+            functions/lib/**
             /tmp/foundation-check/**
           if-no-files-found: warn
           retention-days: 90
