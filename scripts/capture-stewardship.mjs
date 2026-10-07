@@ -102,6 +102,20 @@ try {
         if (!section) throw new Error('Missing stewardship section');
         section.scrollIntoView({ behavior: 'instant', block: 'start' });
         await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        const header = document.querySelector('.site-header');
+        if (!header) throw new Error('Missing actual site header');
+        const headerBottom = Math.max(0, header.getBoundingClientRect().bottom);
+        const sectionTop = section.getBoundingClientRect().top + scrollY;
+        // Keep the actual sticky navigation above the capture target. Geometry
+        // alone would otherwise accept a heading visibly covered by the header.
+        scrollTo({ top: Math.max(0, sectionTop - headerBottom - 16), behavior: 'instant' });
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        const observedHeaderBottom = header.getBoundingClientRect().bottom;
+        const headingElement = section.querySelector('h2');
+        if (!headingElement || headingElement.getBoundingClientRect().top < observedHeaderBottom + 1) throw new Error('Sticky header obscures the stewardship heading');
+        const probe = headingElement.getBoundingClientRect();
+        const painted = document.elementFromPoint(Math.min(innerWidth - 1, probe.left + probe.width / 2), Math.min(innerHeight - 1, probe.top + Math.min(probe.height / 2, 12)));
+        if (!painted || !(painted === headingElement || headingElement.contains(painted))) throw new Error('Stewardship heading is occluded');
         const geometry = element => {
           const rect = element.getBoundingClientRect(), style = getComputedStyle(element);
           if (!element.getClientRects().length || rect.width <= 0 || rect.height <= 0 || style.display === 'none' || style.visibility !== 'visible' || Number(style.opacity) <= 0) throw new Error('Invisible stewardship content');
@@ -109,8 +123,8 @@ try {
         };
         const clip = geometry(section);
         const cards = [...section.querySelectorAll('.foundation-card')].map(card => ({ title: card.querySelector('h3')?.textContent.trim(), ...geometry(card) }));
-        const heading = section.querySelector('h2')?.textContent.trim();
-        return { heading, clip, cards, viewport: { width: innerWidth, height: innerHeight }, scrollY, documentHeight: document.documentElement.scrollHeight };
+        const heading = headingElement.textContent.trim();
+        return { heading, clip, cards, headerBottom: observedHeaderBottom, headingViewportTop: probe.top, headingOcclusionChecked: true, viewport: { width: innerWidth, height: innerHeight }, scrollY, documentHeight: document.documentElement.scrollHeight };
       })()`,
     }, sessionId);
     assert(!observed.exceptionDetails, JSON.stringify(observed.exceptionDetails));
@@ -119,6 +133,8 @@ try {
     assert.deepEqual(evidence.viewport, viewport);
     assert.deepEqual(evidence.cards.map(card => card.title), ['Preserve the mission', 'Carry responsibility forward', 'Ground succession in authority', 'Make responsibility traceable']);
     assert(evidence.scrollY > 0, 'Capture must leave the hero');
+    assert.equal(evidence.headingOcclusionChecked, true);
+    assert(evidence.headingViewportTop > evidence.headerBottom, 'Heading must clear actual sticky navigation');
     const clip = { ...evidence.clip, scale: 1 };
     assert(Object.values(clip).every(Number.isFinite));
     assert(clip.x >= 0 && clip.y > 0 && clip.width > 0 && clip.height > 0 && clip.y + clip.height <= evidence.documentHeight + 1);
@@ -132,7 +148,7 @@ try {
     captures.push({ ...evidence, screenshot: filename, imageWidth: bytes.readUInt32BE(16), imageHeight: bytes.readUInt32BE(20), sha256: crypto.createHash('sha256').update(bytes).digest('hex') });
     await command('Target.closeTarget', { targetId });
   }
-  const receipt = { sourceSha, capturedAt: new Date().toISOString(), browser: browser.product, node: process.version, method: 'Explicit actual-section scroll, four visible-card geometry guards and CDP full-section clipping at ordinary viewport heights', captures, scope: 'Source browser section observation only; no physical-device, native zoom, full accessibility, deployed-domain, legal or release acceptance' };
+  const receipt = { sourceSha, capturedAt: new Date().toISOString(), browser: browser.product, node: process.version, method: 'Explicit actual-section scroll below actual sticky header, painted heading occlusion check, four visible-card geometry guards and CDP full-section clipping at ordinary viewport heights', captures, scope: 'Source browser section observation only; no physical-device, native zoom, full accessibility, deployed-domain, legal or release acceptance' };
   await fs.writeFile(path.join(destination, 'stewardship-capture.json'), `${JSON.stringify(receipt, null, 2)}\n`);
   console.log(JSON.stringify({ sourceSha, sectionCaptures: captures.length, cardsPerCapture: 4, viewports: captures.map(item => item.viewport), scope: receipt.scope }));
 } finally {
