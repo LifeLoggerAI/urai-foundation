@@ -88,7 +88,7 @@ try {
     assert(!navigation.errorText, navigation.errorText);
     let ready = false;
     for (let attempt = 0; attempt < 100; attempt++) {
-      const result = await command('Runtime.evaluate', { expression: "document.readyState === 'complete'", returnByValue: true }, sessionId);
+      const result = await command('Runtime.evaluate', { expression: `location.origin === ${JSON.stringify(baseUrl)} && location.pathname === '/governance/' && document.readyState === 'complete' && document.getElementById('stewardship') !== null`, returnByValue: true }, sessionId);
       if (result.result?.value === true) { ready = true; break; }
       await delay(100);
     }
