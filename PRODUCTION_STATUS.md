@@ -16,7 +16,7 @@ The custom-domain production state is not yet verified because:
 - Functions/Firestore Firebase configuration is checked in, but project binding, Hosting target, provider environment, and deployment evidence are absent;
 - exact current deployed and rollback SHAs are not recorded;
 - exact-current custom-domain DNS/TLS/route proof is not tied to the current head;
-- the observed canonical head's Check and Pages workflows remain queued; retained donor success is not current-main or deployment proof.
+- the observed canonical head's Check passed, but its Pages workflow remains queued; source-check success is not deployment proof, and this documentation successor requires its own verification.
 
 See `docs/canonical-production-truth.md`.
 
@@ -52,8 +52,8 @@ Source presence is not live-domain verification.
 | Terms notice | REQUIRES LEGAL REVIEW | Conservative informational copy, not legal approval. |
 | Core governance/ethics/transparency/risk docs | PARTIAL / FORMATION-DRAFT | Public source includes governance and bounded stewardship principles; external review and constituted authority remain absent. |
 | Standards registry | IMPLEMENTED IN CANONICAL SOURCE | Machine-readable draft; no conformance/certification program. |
-| Unit and source validation | RETAINED DONOR VERIFIED / CURRENT MAIN PENDING | Exact donor `1192586bcef32bd68bd8e1d4223ee7248e217042` passed 58 repository tests and 41 installed-SDK/compiled-handler tests. The observed canonical main Check remains queued; this document change also requires fresh exact-head verification. |
-| Curated public artifact | RETAINED DONOR INSPECTED / CURRENT MAIN PENDING | Explicit allowlist prevents whole-repository Pages publication. The exact donor artifact was downloaded, rehashed, and inspected; no deployment receipt follows from it. |
+| Unit and source validation | OBSERVED CANONICAL MAIN VERIFIED / SUCCESSOR PENDING | Canonical main `8ee8036b649ae9c9e73ae374a7247f0bb34c4c03` passed Check run `37683147407`: 58 repository tests and 41 installed-SDK/compiled-handler tests. This document change requires fresh exact-head verification. |
+| Curated public artifact | OBSERVED CANONICAL MAIN INSPECTED / SUCCESSOR PENDING | Explicit allowlist prevents whole-repository Pages publication. Artifact `11510931447` names canonical main `8ee8036b649ae9c9e73ae374a7247f0bb34c4c03` and was independently downloaded, rehashed, and inspected; no deployment receipt follows from it. |
 | GitHub Pages workflow | IMPLEMENTED, NOT VERIFIED | Requires Pages settings/environment and successful run proof. |
 | Firebase staff backend | IMPLEMENTED IN SOURCE, NOT CONFIGURED | `firebase.json` defines Functions and Firestore only, without a project binding; authenticated live behavior remains unverified. |
 | Firebase Hosting fallback | REPORTED, NOT REPRODUCIBLE HERE | Issue #10 reports `urai-4dc1d` / `urai-foundation`; the repository has no Hosting target or project mapping. |
@@ -90,9 +90,10 @@ PR [#59](https://github.com/LifeLoggerAI/urai-foundation/pull/59) was deliberate
 
 - Donor [Check run 37673909111](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37673909111) and [Visual Proof run 37673909104](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37673909104) completed successfully. The Check log records 58 repository tests and 41 installed-SDK/compiled-handler authorization and App Check tests. Full and production dependency audit JSONs both report zero vulnerabilities.
 - Retained artifact `foundation-1192586-native-proof.zip`, artifact ID `11507234395`, was independently downloaded as 105091 bytes. SHA-256: `be237dc753d3d8b23224cc08f556c3b8cbbb00d1b3326c06d6b5e60f4a98f749`. Its 54 ZIP entries passed bounded path, size, and CRC inspection; the public-build manifest names the exact donor source above.
-- At this observation, canonical-main [Check run 37683147407](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37683147407) and [Pages run 37683147388](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37683147388) are queued. The repository reports `has_pages=false`. Historical Pages failures report `Resource not accessible by integration`; repository administration must establish Pages availability before a deployment can be proven.
+- Canonical-main [Check run 37683147407](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37683147407) completed successfully at 20:55 UTC. Its exact-source job `113004066061` records 58 repository tests, 41 installed-SDK/compiled-handler tests, zero full and production dependency vulnerabilities, and a clean 42-file curated public build. Artifact `11510931447` was independently downloaded as 105096 bytes with SHA-256 `c6b5832017f67a1e331d1aefc783c00dd97dbf41227f83ef3f15179894752683`. Its 54 entries passed bounded path, size, and CRC inspection; its public-build manifest names canonical source `8ee8036b649ae9c9e73ae374a7247f0bb34c4c03`.
+- At the October 7, 2026 observation, canonical-main [Pages run 37683147388](https://github.com/LifeLoggerAI/urai-foundation/actions/runs/37683147388) remains queued. The repository reports `has_pages=false`. Historical Pages failures report `Resource not accessible by integration`; repository administration must establish Pages availability before a deployment can be proven.
 
-These are retained observations bound to the named source identities. They do not transfer PASS to this documentation change, establish current-main acceptance, publish the site, or prove legal review, reinstatement, tax recognition, or fundraising authority.
+These observations are bound to the named source identities. Canonical-main Check success establishes the stated machine-check scope for that exact source. It does not transfer PASS to this documentation change, publish the site, or prove legal review, reinstatement, tax recognition, or fundraising authority.
 
 ## Canonical deployment recommendation
 
