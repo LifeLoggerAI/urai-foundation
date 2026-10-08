@@ -112,9 +112,9 @@ This recommendation does not authorize DNS changes or deployment. Firebase may i
 
 ## Texas reinstatement-process evidence
 
-PARTIALLY COMPLETE — On September 20, 2026, the Texas Comptroller Exempt Organizations unit acknowledged receipt of the Foundation's exemption-status correspondence and stated that exemption applications/correspondence are normally processed within six weeks, in received order. This acknowledgement is not an exemption determination, tax-clearance letter, reinstatement receipt, active-status proof, fundraising authority, or federal tax-exemption evidence.
+PREPARED / EXTERNALLY BLOCKED — The retained Comptroller response now includes exemption-application guidance dated October 2, 2026, beyond the earlier September 20 acknowledgement. It does not determine current exemption status, issue tax clearance, accept reinstatement, or establish fundraising or federal tax-exemption authority.
 
-Current legal truth remains unchanged: the Texas Secretary of State record is involuntarily terminated until an authoritative reinstatement receipt proves otherwise. Form 811 remains the identified Secretary of State reinstatement instrument, but the correct filing branch depends on the pending Comptroller determination/status response.
+Current legal truth remains unchanged: the Texas Secretary of State record is involuntarily terminated until authoritative state acceptance and current-status evidence prove otherwise. The unsigned Form 811 package is prepared, not filed. The [current Secretary of State instructions](https://www.sos.texas.gov/corp/instructions/811.shtml) (revision 09/26) exempt nonprofit corporations from the tax-clearance attachment requirement; the retained case-specific reply described a conditional clearance branch. The authorized representative must ask the Secretary of State to reconcile that instruction for this record and confirm the outstanding-charge cure/payment/submission order. Comptroller clearance is a dependency only if the agency confirms it is required. Current registered-agent eligibility, consent, office details and filing-signature authority also require confirmation. A prepared portal record or checkout screen proves none of payment, filing, acceptance, reinstatement, adopted governance, or tax status.
 
 ## P0 launch blockers
 

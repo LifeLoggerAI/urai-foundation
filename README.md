@@ -247,7 +247,9 @@ Do not activate these capabilities from planning documents alone. No visitor sho
 
 ## Reinstatement-process status
 
-As of September 20, 2026, the Texas Comptroller Exempt Organizations unit has acknowledged receipt of the Foundation's exemption-status correspondence and stated that such correspondence is normally processed within six weeks. No substantive exemption determination or tax-clearance letter has been received. The Foundation therefore remains publicly described as involuntarily terminated, and no active/good-standing, fundraising, deductibility, or 501(c)(3) claim is authorized by that acknowledgement.
+As of October 8, 2026, the retained Comptroller response includes exemption-application guidance dated October 2. That guidance is not an exemption determination, tax-clearance letter, reinstatement receipt, or active-status proof. The Foundation remains publicly described as involuntarily terminated; no active/good-standing, fundraising, deductibility, or 501(c)(3) claim follows from the correspondence.
+
+The unsigned Form 811 preparation remains separate from filing and acceptance. The [current Secretary of State instructions](https://www.sos.texas.gov/corp/instructions/811.shtml) (revision 09/26) exempt nonprofit corporations from the tax-clearance attachment requirement, while the retained case-specific reply described a conditional clearance branch. The authorized representative must obtain the Secretary of State's clarification for this record and the outstanding-charge cure/submission sequence, confirm current registered-agent consent and office details, and use an actually authorized signer. No payment, signature, submission, agency acceptance, or reinstatement is established by prepared documents or a checkout screen.
 
 ## Current status
 
