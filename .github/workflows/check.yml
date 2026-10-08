@@ -93,13 +93,42 @@ jobs:
           grep -v '^?? _site/' /tmp/foundation-check/all-source-status.log > /tmp/foundation-check/final-source-status.log || true
           test ! -s /tmp/foundation-check/final-source-status.log
 
-      - name: Upload exact-head public artifact and logs
-        if: always()
+      - name: Verify allowlisted public bytes before upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/verify-public-artifact.py --site _site --source-sha "$TARGET_SHA" | tee /tmp/foundation-check/public-preupload.json
+
+      - name: Upload exact-head allowlisted public artifact
+        id: public_artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: urai-foundation-public-site-${{ env.TARGET_SHA }}
+          path: _site/
+          # Only the verified publication allowlist may contain hidden files.
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Download the actual uploaded public artifact
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          artifact-ids: ${{ steps.public_artifact.outputs.artifact-id }}
+          path: ${{ runner.temp }}/foundation-public-roundtrip
+          merge-multiple: true
+
+      - name: Verify downloaded public bytes against the manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/verify-public-artifact.py --site "$RUNNER_TEMP/foundation-public-roundtrip" --source-sha "$TARGET_SHA" | tee /tmp/foundation-check/public-download.json
+
+      - name: Retain exact-head diagnostic logs and Functions build
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: urai-foundation-check-diagnostics-${{ env.TARGET_SHA }}
           path: |
-            _site/**
             functions/lib/**
             /tmp/foundation-check/**
           if-no-files-found: warn
