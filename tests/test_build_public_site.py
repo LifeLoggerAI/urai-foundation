@@ -5,7 +5,9 @@ import json
 import os
 import tempfile
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "build-public-site.py"
 SPEC = importlib.util.spec_from_file_location("build_public_site", SCRIPT)
@@ -15,6 +17,32 @@ SPEC.loader.exec_module(MODULE)
 
 
 class PublicSiteBuildTests(unittest.TestCase):
+    def test_actual_public_artifact_preserves_local_page_dependencies(self) -> None:
+        """Inspect shipped HTML, not an allowlist-derived synthetic fixture."""
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "site"
+            MODULE.build_site(SCRIPT.parents[1], output, "source-dependency-check")
+            missing: list[str] = []
+
+            class LocalReferenceParser(HTMLParser):
+                def handle_starttag(parser, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+                    for name, value in attrs:
+                        if name not in {"href", "src"} or not value:
+                            continue
+                        parsed = urlsplit(value)
+                        if parsed.scheme or parsed.netloc or not parsed.path:
+                            continue
+                        local_path = unquote(parsed.path)
+                        target = output / local_path.lstrip("/") if local_path.startswith("/") else page.parent / local_path
+                        if target.is_dir():
+                            target = target / "index.html"
+                        if not target.is_file():
+                            missing.append(f"{page.relative_to(output)}: {tag} {name}={value}")
+
+            for page in output.rglob("*.html"):
+                LocalReferenceParser().feed(page.read_text(encoding="utf-8"))
+            self.assertEqual([], missing, "Published pages must retain their local assets and navigation destinations")
+
     def make_fixture(self, root: Path) -> None:
         for relative in MODULE.PUBLIC_FILES:
             path = root / relative
