@@ -93,14 +93,52 @@ jobs:
           grep -v '^?? _site/' /tmp/foundation-check/all-source-status.log > /tmp/foundation-check/final-source-status.log || true
           test ! -s /tmp/foundation-check/final-source-status.log
 
-      - name: Upload exact-head public artifact and logs
+      - name: Prepare explicit artifact upload paths
+        id: artifact_paths
         if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/public-artifact-contract.py prepare --source-sha "$TARGET_SHA"
+
+      - name: Upload exact-head allowlisted artifact
+        id: public_artifact
+        if: always() && steps.artifact_paths.outcome == 'success'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: urai-foundation-public-site-${{ env.TARGET_SHA }}
-          path: |
-            _site/**
-            functions/lib/**
-            /tmp/foundation-check/**
+          # Explicit, byte-validated files only. The sole admitted hidden file
+          # is the builder's .nojekyll marker; no hidden directory is selected.
+          path: ${{ steps.artifact_paths.outputs.paths }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Download the actual uploaded artifact
+        if: always() && steps.public_artifact.outcome == 'success'
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          artifact-ids: ${{ steps.public_artifact.outputs.artifact-id }}
+          path: ${{ runner.temp }}/downloaded-foundation-public
+
+      - name: Verify downloaded bytes against the original manifest
+        if: always() && steps.public_artifact.outcome == 'success'
+        shell: bash
+        env:
+          ORIGINAL_MANIFEST_SHA256: ${{ steps.artifact_paths.outputs.manifest_sha256 }}
+        run: |
+          set -euo pipefail
+          python3 scripts/public-artifact-contract.py verify-download \
+            --source-sha "$TARGET_SHA" \
+            --manifest-sha256 "$ORIGINAL_MANIFEST_SHA256" \
+            --download-root "$RUNNER_TEMP/downloaded-foundation-public" \
+            2>&1 | tee /tmp/foundation-check/downloaded-artifact-contract.log
+
+      - name: Retain diagnostics including download verification
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: urai-foundation-check-diagnostics-${{ env.TARGET_SHA }}
+          path: /tmp/foundation-check/**
           if-no-files-found: warn
           retention-days: 90
