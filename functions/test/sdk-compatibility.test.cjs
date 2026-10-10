@@ -71,6 +71,13 @@ for (const name of names) {
   if (name !== 'saveGrantApplicationDraft') {
     for (const [label, token] of [
       ['expired recent authentication', { auth_time: 1 }],
+      ['missing authentication time', { auth_time: undefined }],
+      ['non-numeric authentication time', { auth_time: 'recent' }],
+      ['non-finite authentication time', { auth_time: Number.NaN }],
+      ['positive infinite authentication time', { auth_time: Number.POSITIVE_INFINITY }],
+      ['negative infinite authentication time', { auth_time: Number.NEGATIVE_INFINITY }],
+      ['future authentication time', { auth_time: Math.floor(Date.now() / 1000) + 60 }],
+      ['fractional authentication time', { auth_time: Math.floor(Date.now() / 1000) - 0.5 }],
       ['missing multi-factor authentication', { firebase: {} }],
     ]) {
       test(`${name} rejects ${label}`, async () => {

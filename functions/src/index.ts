@@ -48,7 +48,9 @@ async function requireStaff(
 
   if (privileged) {
     const authTime = token.auth_time;
-    if (typeof authTime !== 'number' || Math.floor(Date.now() / 1000) - authTime > RECENT_AUTH_SECONDS) {
+    const authAge = typeof authTime === 'number' ? Math.floor(Date.now() / 1000) - authTime : Number.NaN;
+    if (typeof authTime !== 'number' || !Number.isSafeInteger(authTime)
+      || authAge < 0 || authAge > RECENT_AUTH_SECONDS) {
       throw new HttpsError('failed-precondition', 'Re-authentication is required for this sensitive action.');
     }
     if (!tokenMfaFactor(token)) {
