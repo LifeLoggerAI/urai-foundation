@@ -1,0 +1,121 @@
+{
+  "range": [
+    42,
+    56
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "4a7dce79cc49f7ca60c1f6a3f75c613e2f0d2418",
+      "bytes": 7031,
+      "path": "docs/live-deployment-runbook.md",
+      "source_commit": "b4d0e2d06637f717dfe20c9cb3f739e1090b8a41",
+      "sha256": "ffe7b5cf0424dd4f8378411987c0abeaea031538d93753d4d126c36279e01508",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "4b85a3aaff3af954eb802156df5ecd0094456f10",
+      "bytes": 5899,
+      "path": "docs/system-of-systems-integration.md",
+      "source_commit": "a731e81528c63cbb6e241c911dce8e9a7eb4232a",
+      "sha256": "9b5a4f42437356d484562ade68972b7d24774e8ad3526fa592675f2a4033d954",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "4d867f86bb41232fd53795fbdb027648693cadce",
+      "bytes": 8112,
+      "path": "index.html",
+      "source_commit": "8180d27937b524909a4655d73c6874586fd68558",
+      "sha256": "f783c7701d419e5f639a750badb02e41486bc4f964f4449c9266fed44c810d1a",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "4dac9b2fd42f2bf62f8d8886ec885f459620c06b",
+      "bytes": 8137,
+      "path": "README.md",
+      "source_commit": "f974782b0e46d06cabcbc5a885d8ddbe499b79b9",
+      "sha256": "523db6ee024c9d231ae36dd7759db6134d7a6a8d2b232eabf7b6254ecbf434fe",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "50ce08cb7d8b8c4db76b1eaaa222122f0f05d864",
+      "bytes": 5819,
+      "path": "foundation-home.css",
+      "source_commit": "35d7605f6b1095a1908a9f42f6fa5a343044f28b",
+      "sha256": "188afc074d36b36eb968584e03b62fbe8f1af70ed30f690ee0d8c1a251f6da75",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "5267cfb1a947b7c43af91990d3245c88383d0efb",
+      "bytes": 3930,
+      "path": "tests/test_donation_backend_contract.py",
+      "source_commit": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "sha256": "c67acec1018bd699305155aea5ca03a459910f607b9b31eca087afb3cc9b2f4f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "5662c63597832fcc0b32bdd812005538b7b2d592",
+      "bytes": 2248,
+      "path": "docs/release-and-versioning.md",
+      "source_commit": "5b0a35bd603dcdf1ce125beb5bf380fa4c506fc4",
+      "sha256": "263b02557a162f2ecc6c4b6cfa07a84d3f549d4f30b84b28447dbb4c204d004d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "5783c27dbff597f2949529974adb2f1d86e56130",
+      "bytes": 14163,
+      "path": "grants/grants.js",
+      "source_commit": "0644bb0abfda14c6d771c2f52841f0c8246b8951",
+      "sha256": "db7207ccf9c375d0785c48b3d33693123a5e1526724166ec4d52dedb0c40ee64",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "61a2c16d94a9d821a169969284503c1848945f1f",
+      "bytes": 7186,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "5daf427de1603c25c22e61af8824ccdb9240238a",
+      "sha256": "88a62d18775b0f9dcde9465fe9c67162a2d455cdb117a52e828cb250ebba0513",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "63ffd12ca53e13e8a041703ddb4b699eec5ebe14",
+      "bytes": 197,
+      "path": "firebase.json",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "5f198114ab145a0b6401e5ca7b25edbedcb476ac6cc4410ad480fbf63c6b0b7a",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "66298579f51f1232767134747092c324d2d6824f",
+      "bytes": 12931,
+      "path": "grants/grants.js",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "97035e920116da7d563b6a767c6bafbeb00b8f4c3014164efd61cfcf99f94cef",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "69eb33eff1e36f8d79c98773de0250ff4decc769",
+      "bytes": 7466,
+      "path": "README.md",
+      "source_commit": "86a098213b6c722c05dd32eaaa07d919bf7a3e78",
+      "sha256": "1b357963594a5895a6c33479ac4b307ea43448fd7d9a9b3c7301fc19632d15f1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6bf5e7f57f05a20796260bfc8615792e8a650d09",
+      "bytes": 20164,
+      "path": "functions/src/index.ts",
+      "source_commit": "fc6960ef8d94c6e7162846c8f85b6ccc798d933b",
+      "sha256": "15273135a92a3897feaae42e84233e6f61c356fbaeed26ceb57d24fa68f74620",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6c59629a8fc7c356b0565d3f4513cabf6c0895ba",
+      "bytes": 3610,
+      "path": "firestore.rules",
+      "source_commit": "4137474726111fd214dce2b022780ffbfa8ff2c7",
+      "sha256": "1b4cfea6705bf9edb56e3e90cdce3fcd1eed316640c8d329b5fd14b086eed406",
+      "verified": true
+    }
+  ]
+}
