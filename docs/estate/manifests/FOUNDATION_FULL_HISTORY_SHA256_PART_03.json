@@ -1,0 +1,121 @@
+{
+  "range": [
+    28,
+    42
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "3446db528ae52b01234757967858cd79431db25e",
+      "bytes": 3358,
+      "path": "index.html",
+      "source_commit": "33c14f7cbe6d47146eba7c9b7915e9f9c105f119",
+      "sha256": "c97a9545b6a1577179ff27d7ec591283bb6b4b12c6da761ec30a18988b5b4eb4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "351e20a3e70bfa7aa028aeb1453579b602694e23",
+      "bytes": 6455,
+      "path": "docs/implementation-map.md",
+      "source_commit": "c21e25bb7d67dbcfa4f6e42d5763524f7a0b0901",
+      "sha256": "245ea2541171a0c040fa864b6d4a12b3ee22468143bc91224055d74d1b698b85",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "35a1e1308e0e8306bad6b9884d78ac248314afb2",
+      "bytes": 2120,
+      "path": "functions/scripts/bootstrap-owner.mjs",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "b3319d64a1873a8fc0ec7e44453548d0578c0292419ce80261352395c1e1c677",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "37d196313d270682e693d958eb31a3d002e04fdf",
+      "bytes": 17574,
+      "path": "functions/src/index.ts",
+      "source_commit": "4637ef7f7e61d6ff535c25d30825ac347e01b623",
+      "sha256": "78ac9b32de0b2f412329daeada2c5226fc1888b88878d038f2a136b4679a3dc6",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "3826ed9eb6deed799f049415aacfc3ba82f3b857",
+      "bytes": 3140,
+      "path": ".github/workflows/check.yml",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "16f086db04118b76ad0f73d5d02de42984aa98a89d6ea08c7813a1ac70f78cf3",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "38dbc61979b12dd805024c0efc9f7d743258ce6b",
+      "bytes": 15211,
+      "path": "grants/grants.js",
+      "source_commit": "eda8ed3409f362b8982618ca06d5df982d65f854",
+      "sha256": "71b1acac0e35bba7e17e34012ed0db653db5cbf537c16c345493e5b10f05e81e",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "3d20e35cf46bac1c810167ef1e0e5f67c2db57e6",
+      "bytes": 2265,
+      "path": "functions/scripts/bootstrap-owner.mjs",
+      "source_commit": "64673dba18ca1b02aa2c54d00032ac9ed0200f47",
+      "sha256": "a1fb5f20a6e4a576a0d431ae2521c36e4b973db179994698b7a2460adc4da64e",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "3d522dc7de658d4d48a36c5978369617c8f4d1de",
+      "bytes": 4023,
+      "path": "docs/implementation-map.md",
+      "source_commit": "c8529e94708dc8e33dacedd6464a1362ab32e87e",
+      "sha256": "2bf375b01222d5c357adc9cf674934e3ccbb9d55db892923801ff9bc0cbb249f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "3fa3cc82113c69f1cb96229ab7ed1a7a561d9320",
+      "bytes": 2688,
+      "path": "terms/index.html",
+      "source_commit": "b3996b2a39a14d98c11fef4b742a383e16ee75ef",
+      "sha256": "17c33c2bca39502a93bf50dac987dbca671366fb1fbe0ba4d56f12f6422adffa",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "417da76bf5ead627d5dce92e6b0e006a83609fbc",
+      "bytes": 10687,
+      "path": "README.md",
+      "source_commit": "8180d27937b524909a4655d73c6874586fd68558",
+      "sha256": "e8480ecf4514d9752072bac5b5c73b0b5c4bb6429275979953f0677bfdf5897c",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "426e0540f910744339631cb698b58559a1a6341f",
+      "bytes": 4251,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "6faa0b7a4d220dd325bf10e9aad40622160e512c",
+      "sha256": "7b82d16a9195d0259ee217d948183a94eb39569991cfee4ed318610ccb0b2cb3",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "43ade69eb5f47ff328ebe6a568ba34e8dc4dcd10",
+      "bytes": 19846,
+      "path": "functions/src/index.ts",
+      "source_commit": "3269806c91b079e207e3e3666d747137830ff90d",
+      "sha256": "b35c6f423e9528f5e5c8bc56bf65b81430829391d95f5e19000db8f32ba1c7ae",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "4416a7f55fc1e155d4b0b1b078114cee6eae8f57",
+      "bytes": 4888,
+      "path": "scripts/build-public-site.py",
+      "source_commit": "7888f77bb15586ccaa48428038226b529ddcaab5",
+      "sha256": "0d90c928c3c0651a24f392de2cc7eab9bbb1acbff689813314d413750ae038b4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "46f71db737c6578ac35f89608ffc125e1711122d",
+      "bytes": 4933,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "0f5ea20c6a933c3e0f08d3953730cdc0684e908a",
+      "sha256": "09258bd188f3e6de50f8d734794185a74f916f93c89c73b97f5d08861b00929a",
+      "verified": true
+    }
+  ]
+}
