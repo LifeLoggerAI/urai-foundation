@@ -1,0 +1,186 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 10,
+  "end": 20,
+  "branches": [
+    {
+      "name": "complete-urai-foundation-system",
+      "head": "edf1dfa8d366b36ee6a0f7d92310eea3a9451119",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 356,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "converge/foundation-current-main-terminal-20260921",
+      "head": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 26,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "converge/foundation-terminal-governance-design-20260914",
+      "head": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 39,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "design/foundation-institution-ui-20260913",
+      "head": "8c172842a476149069ada0a854c9f00440728696",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 80,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "ad1accc97802604959f88d6c0c9456347f17874c",
+          "subject": "Design: establish Foundation institution experience",
+          "date": "2026-09-13T17:29:32Z"
+        },
+        {
+          "sha": "8c172842a476149069ada0a854c9f00440728696",
+          "subject": "Design: add Foundation institution visual system",
+          "date": "2026-09-13T17:30:19Z"
+        }
+      ],
+      "file_diff_count": 2
+    },
+    {
+      "name": "design/public-benefit-web-v1",
+      "head": "890c37961cab380ce4f01147fb910236fbee3dfe",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 55,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "docs/genesis-estate-handoff-20261106",
+      "head": "653705252063e7d369b3ddce6278f478f5b25a1e",
+      "status": "ahead",
+      "ahead": 1,
+      "behind": 0,
+      "total": 1,
+      "returned": 1,
+      "commits": [
+        {
+          "sha": "653705252063e7d369b3ddce6278f478f5b25a1e",
+          "subject": "docs(estate): add shared Genesis knowledge handoff entrypoint",
+          "date": "2026-11-07T04:46:01Z"
+        }
+      ],
+      "file_diff_count": 1
+    },
+    {
+      "name": "feat/foundation-donations-v1",
+      "head": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "status": "diverged",
+      "ahead": 9,
+      "behind": 84,
+      "total": 9,
+      "returned": 9,
+      "commits": [
+        {
+          "sha": "171555fc2d71a9a78b327fee95d397e642d6e462",
+          "subject": "reconcile donations onto current staff backend",
+          "date": "2026-09-05T00:52:46Z"
+        },
+        {
+          "sha": "6f348828d02b68b79cabc7bb173226b4d3d1e8e3",
+          "subject": "wire donation functions through reconciled staff entrypoint",
+          "date": "2026-09-05T00:53:55Z"
+        },
+        {
+          "sha": "25ae3beb4ef88f2903244218c469ec4614f10239",
+          "subject": "donations: model out-of-order cancellation authority",
+          "date": "2026-09-05T12:43:09Z"
+        },
+        {
+          "sha": "7bb8ffc7d6ec5b7cd5f74a35b89367ee340977e6",
+          "subject": "donations: make cancellation authoritative across event order",
+          "date": "2026-09-05T12:45:05Z"
+        },
+        {
+          "sha": "339fa667eb93ac08ed1d366563390e062fbc013e",
+          "subject": "tests: exercise donation cancellation event order",
+          "date": "2026-09-05T12:45:18Z"
+        },
+        {
+          "sha": "84d3ff4c74f1ea843b3503917c07d62ed76f81b0",
+          "subject": "tests: run donation ordering behavior in build",
+          "date": "2026-09-05T12:46:24Z"
+        },
+        {
+          "sha": "ab0f1e08c84392f86cd0b3649250e8aa559659cd",
+          "subject": "validation: lock donation cancellation ordering contract",
+          "date": "2026-09-05T12:46:43Z"
+        },
+        {
+          "sha": "874fd712f7efe9cd066f682f54cdcc07294a0432",
+          "subject": "tests: lock donation cancellation ordering assertions",
+          "date": "2026-09-05T12:46:59Z"
+        },
+        {
+          "sha": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+          "subject": "Sync post-privacy main into Foundation donations candidate",
+          "date": "2026-09-05T22:42:24Z"
+        }
+      ],
+      "file_diff_count": 15
+    },
+    {
+      "name": "feat/foundation-staff-backend-v1",
+      "head": "aa2bd12dd9af7bb0191e756a67e8bd4f6f1facac",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 86,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "feat/grant-concierge-v1",
+      "head": "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 160,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "feature/adam-presence-entry-20261001",
+      "head": "64edbf743ad547af253e6481fba22d5933de53f4",
+      "status": "diverged",
+      "ahead": 1,
+      "behind": 84,
+      "total": 1,
+      "returned": 1,
+      "commits": [
+        {
+          "sha": "64edbf743ad547af253e6481fba22d5933de53f4",
+          "subject": "feat: add canonical Adam presence entry",
+          "date": "2026-10-02T00:13:25Z"
+        }
+      ],
+      "file_diff_count": 1
+    }
+  ]
+}
