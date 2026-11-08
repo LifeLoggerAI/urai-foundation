@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 0,
+  "end": 14,
+  "files": [
+    {
+      "path": "status/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "000c6bef61dc63577e816f446b9342d02b466788",
+      "bytes": 5528,
+      "sha256": "ecd40ce9a81ca5bbfc736b0645d9ddfd78a1cc5ad746ebbe581620024bfea45e",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "000f82ff4e9c614153641bf35cc07766d59a1887",
+      "bytes": 2458,
+      "sha256": "8e7d98d97afc1f4087d7ea08861f7e8bfdf14b0306b08370183bcd6a4b601179",
+      "verified": true
+    },
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "001f544368b6fff5729b13e575fc13c7bf190df5",
+      "bytes": 6875,
+      "sha256": "bfb313632312610adec5856c6a1a0486eec17dba8e6aeea4e803ee31ad477454",
+      "verified": true
+    },
+    {
+      "path": "docs/transparency-framework.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "02c8c6f30223876ecddaab48b800e5b48bed33f2",
+      "bytes": 8105,
+      "sha256": "eeb8f1ff367c9ad1ad1eaf7d23c904fe73ad2b719c9e4b6cbc37cc79601b423b",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+      "reference_branch": "fix/foundation-community-mailto-20261005",
+      "git_blob_sha": "02f05f9824f676690363779a572cdd8f1f868df2",
+      "bytes": 5122,
+      "sha256": "6646aafa819183b714e01251f601b439c326c71417647e6285b312ecda7dc79b",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-docs.py",
+      "reference_commit": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "reference_branch": "codex/complete-audit-findings-and-polish-repo",
+      "git_blob_sha": "0329112370467055b072f159f480f5e534df16a8",
+      "bytes": 6821,
+      "sha256": "9cff86c966a5c249eb4060eb017b401e8d2e97592b3c31b94c92d3df7f83d5e9",
+      "verified": true
+    },
+    {
+      "path": "partners/index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "0421539a8f3b7a3b244f672a61bf1077c3350902",
+      "bytes": 2658,
+      "sha256": "8e8164ce20741411e650c996de381549ebb66026e239f453bc97db8b33a745f1",
+      "verified": true
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "053baad798d70cdc4e283217b6a16bec339ad589",
+      "bytes": 5859,
+      "sha256": "fbd32310a20b37f34acbbe5451aa1f905991d7db2ec298f557e426f287635fce",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "067676984d1302c0dc83be3f636c7eb1d945d679",
+      "bytes": 4645,
+      "sha256": "fc8787df574889c378494d363308b5d324c49e8df6128840dce79ded1e8e7f31",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "reference_commit": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "reference_branch": "fix/public-security-accessibility-routes-20261005",
+      "git_blob_sha": "07b577a0a12f1d332ee69fd5a992d549fcc933b9",
+      "bytes": 4663,
+      "sha256": "59fe1dcce0dc067b9e96502f13d6a95eec9ac9e42973d596ba1110a761d7ce20",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "0868538b651d35ebfc71f7b316c1296144012b8b",
+      "bytes": 1124,
+      "sha256": "b4adb27c87fa45ba40b1c2609f07141f1316517cd040f00b8bbb77630c86d865",
+      "verified": true
+    },
+    {
+      "path": "PRODUCTION_STATUS.md",
+      "reference_commit": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "reference_branch": "converge/foundation-terminal-governance-design-20260914",
+      "git_blob_sha": "0a506f1cfcde427c47a492066cc0176bb0b7520a",
+      "bytes": 6915,
+      "sha256": "e47b587fc78bc31cb4e87732e2b6b649fc63ad48a9e7e638cb1054c9d5e434a2",
+      "verified": true
+    },
+    {
+      "path": "firestore.rules",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "0b5bde794236582f726cb0b1bc0c90e4ec8786a4",
+      "bytes": 3876,
+      "sha256": "4d0753cc19df708996b6dd6f1c8e436795f7ad8a2159064eec92798b444ae54f",
+      "verified": true
+    },
+    {
+      "path": "PRODUCTION_STATUS.md",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "0b79f7c13ea18f625dcaf3283113dba25138d987",
+      "bytes": 12708,
+      "sha256": "b59cafedbb1484e1425e190ae0fce31e5ac855640070bfea34132a33a9c0388f",
+      "verified": true
+    }
+  ]
+}
