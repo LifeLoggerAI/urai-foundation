@@ -1,0 +1,121 @@
+{
+  "range": [
+    70,
+    84
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "7b095b187d26a9ab9237641f7a7a1fe66931d7c8",
+      "bytes": 15463,
+      "path": "grants/grants.js",
+      "source_commit": "874407c53a95bbfb632515a6b32c2e6903aee970",
+      "sha256": "a23664118299494254589935879c18791afb1661054355302e43a01918cff2f2",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7b60a7de5e22741e8bdf4ec1ba38fbbb397af6e4",
+      "bytes": 15588,
+      "path": "grants/grants.js",
+      "source_commit": "34a6df31e637add2823c0fb937a8f4a7ae6702ac",
+      "sha256": "d5a11c527b8476fb50ad581cc12e05527aac0214477ebae6c1d7996ee986cf75",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7cee1b897e294de7533c2823cda91752dad33a46",
+      "bytes": 2553,
+      "path": "tests/test_validate_routes.py",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "7b7e2c6bedfcdb51464c60c9b58ab88f0ab42281a6f39a7bfa21be02a2ad0ae1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "80556b7fa8f3b061e330b5d0dbd93fee39d2aace",
+      "bytes": 3194,
+      "path": "accessibility/index.html",
+      "source_commit": "b8bdb0bfb5987829c09a1df4be23e387d12e5fd0",
+      "sha256": "9a957e08898c8c08af5b47fea8b3bc24fc513f29c3829c2ada0bab753b2c730d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "81931e4ebd8c864948a7a1750946e0d62356dd14",
+      "bytes": 6828,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "e491a58f491b8f593dbd9873c32b4eeb602abaee",
+      "sha256": "8e7a41ab6635820505bcb49937fb4338226a7a5573cada57544c5e544aa382db",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "81acffe569058392853e0009e9a12590670a31de",
+      "bytes": 4016,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "67c29e63b438978a369c2f5fd8f2e88ee2662575",
+      "sha256": "2d0431ae35dd6bef5ac274154f9b597e1c6186bb3da96810124043fa9dc50043",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "827b88ce1865c49c37137226ebe0c2dfbe3a6b4a",
+      "bytes": 5006,
+      "path": "scripts/validate-donations.py",
+      "source_commit": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "sha256": "fea91e330f07cd8a8921d5fa68a921cf191a880e8a3e934bbc95ce4f4110851f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "82ce8506645ff646b5c1b97be0e6422bba65faa3",
+      "bytes": 3668,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "16841f01d605186834c3524bea58681d09301360",
+      "sha256": "c3c126bfd494a4455f6736a0f504e1b1a2e774fc6994fdedac188d0c686417a6",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "8314641a3ce903f7925703ed44d3eee39f49be8d",
+      "bytes": 15705,
+      "path": "functions/src/index.ts",
+      "source_commit": "fb4c4fc70b3bc2f9c625d3356d4b4edb59ddbf12",
+      "sha256": "39b18f81bef18f17797c82c771927246278341cc29328e138e422334dee48148",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "833fe535fb3dd63b3cdc27debd3df3ae662f30f9",
+      "bytes": 5353,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "34b09a6aea8edbc0c4401c5a3333e415f772f86b",
+      "sha256": "0619d60adc7a7e9ea5111017b8f53e7571079a890e64d4d6630e125274d022bc",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "860d2c85f4de6afde8befa2612dfc458435f3c56",
+      "bytes": 8511,
+      "path": "index.html",
+      "source_commit": "649436402d52eb0479d928231a15ff5f925a5e2f",
+      "sha256": "98f1f50fd0d61e9f66635ca5af538795c59ddeaf8c8e2460959a0cf5f54729af",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "89130c829233d118416da8927960e03057772d18",
+      "bytes": 4006,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "0a87b25266ef3ddbc16465c262dad591813118f5",
+      "sha256": "41253e9b1d8f0ee62effa5f7efa7c8eb2bd2e2381da0619ff1a10e87a8b040c8",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "8c681b0887ed0a0d385b50216080ffbbf53d4e7c",
+      "bytes": 10890,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "5daf427de1603c25c22e61af8824ccdb9240238a",
+      "sha256": "11f12a1083131a57a9145443a391fb4242ccb56aef94920587d2addee0abe1fa",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "97e1a995d83afce23a6760d0c92f25e7bf7d64ed",
+      "bytes": 7624,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "1ce522ba4fe7786bea660291b6d241dbb1c736bf",
+      "sha256": "9fb592504638daaf3f76e5946bd454bcfd57e860815c9857f5d385e94fe722fb",
+      "verified": true
+    }
+  ]
+}
