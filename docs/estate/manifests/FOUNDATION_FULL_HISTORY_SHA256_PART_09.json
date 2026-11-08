@@ -1,0 +1,121 @@
+{
+  "range": [
+    112,
+    126
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "d50aab7c19b9de2c07a80d1259030db09e685d6f",
+      "bytes": 3798,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "1c2d0ae4714581e8104384f5d50efe0777b36f8e",
+      "sha256": "68c48b3677cf36dfb0c9cd5a12247dd9372d89d1621b4421f9962e9eadfd97b3",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d5719b2b50a7898c3831a2ce5a294e6dd3bd3ed2",
+      "bytes": 4890,
+      "path": "status/index.html",
+      "source_commit": "1ca80fa75e63a236ded62be8d7d1b69e894f2571",
+      "sha256": "7d22d33f77c043f48af4304f6849938d43853f313f36d05468e5c962afbc5b4f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d65a923d62363a31c886ee095532e1c34fe79c0a",
+      "bytes": 758,
+      "path": "foundation-responsive-fix.css",
+      "source_commit": "115d6aadc292b461857ebb8b8859775c0d9b82d3",
+      "sha256": "22b6e8ba5edd0c6d9ca4ed519ce577dba98f7bf8bcc8a22677937c2f0942870d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d756a5944a67c74edc1f9a7cabd5877e0bedbd20",
+      "bytes": 4232,
+      "path": "firestore.rules",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "726ad04fc37cb86b40f863cac7adfda62b9ba8dc727641ffc0df011cff239633",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d7ec9f4f85793469fd71083ddb953e4073d813d8",
+      "bytes": 5517,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "45a6c4e53964c68e91e58945af63b48c2acf4501",
+      "sha256": "263d52c0a96cbee9c41fc21a33481f799085f4b8ff23127ad5d61827b7c5d706",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d81820571f0a93e0f97d9f3c389f99e2d8da1911",
+      "bytes": 4593,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "8ebc0f4553409bf315552d568dfc9dfbb1493b93",
+      "sha256": "ab03ef2bfab51a667a11ed25155fb62a4ffc59c4103af2ed0cbbc8f3f140df43",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "d8a0d0189216df8c22b9826e4e5e212fdafd88c7",
+      "bytes": 1432,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "5557eab1742b7a72e499b0f89c977b8e149d0d8a",
+      "sha256": "107252a63016e244b0380eb5fc70dd33d25302e6ebeec1bd166ae3cabe35495f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "dfcfdb8641daa0bbbe11b490007bc9254480a0cf",
+      "bytes": 2392,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "582a067fe4bfe80be9e87d79c20996e8ceb55c73",
+      "sha256": "1103d8d9cd3ee8bae10bdce952639b8b2027c6ccacd4c9f54705d9a459ecb346",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e041cfd65c7252325739888ac9ef3c17859b5afa",
+      "bytes": 6728,
+      "path": "README.md",
+      "source_commit": "4ca6c6a795690a71fc95b6dd0a2f4e75259ac87d",
+      "sha256": "466df60442737b0c43c38be5eebba1b7219fd01baf17338ee7cfa0fd57467190",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e0de0873e3adb0fa68bff4789f0b97c5f4ca6c91",
+      "bytes": 3449,
+      "path": "scripts/validate-routes.py",
+      "source_commit": "dbb3a8e04f3323378cc8194c371d137b31be6fb8",
+      "sha256": "89a29bb92005afd2cd56d0df3909211299e64538bae9dc53a0c20bb28ae45663",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e1836969b50b0c79824eef6d7827f44451114bf3",
+      "bytes": 2657,
+      "path": "partners/index.html",
+      "source_commit": "300ba6d78350ec5989340046c0e1e29a8bb4c938",
+      "sha256": "242544cf202f13bf3d0484ef5934195914b5da9f9c8c7786750cf029a221aead",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e20a46554cb9b748de6af30a28c05908fea80808",
+      "bytes": 292,
+      "path": "Makefile",
+      "source_commit": "47e1b5fc3b9424ccf41520f1da28df9ce42839ea",
+      "sha256": "9ee894d61138bfccfb996f34c6d1d307c0e742e426719d17de8b31b5073231f6",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e2bcfbdf3ce0d024ebfa88d144fa1b11ed020590",
+      "bytes": 3599,
+      "path": "scripts/build-public-site.py",
+      "source_commit": "e9fb0870e08e0fd642c2e5b7a3b134ce368124de",
+      "sha256": "285388d4d5f872e30f0c914644b9ed4ad71da31757529a1348cf2722eaa809a1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e42a7ed1ff93c94eb27b8349c27c52cec634756e",
+      "bytes": 11638,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+      "sha256": "241177c787dd9cd4e553e65c5546293bc4c1a5f26f3b46237a271856edbd7560",
+      "verified": true
+    }
+  ]
+}
