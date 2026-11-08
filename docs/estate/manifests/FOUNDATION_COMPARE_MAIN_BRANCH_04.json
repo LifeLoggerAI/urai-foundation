@@ -1,0 +1,217 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 30,
+  "end": 40,
+  "branches": [
+    {
+      "name": "harden-static-site-validation",
+      "head": "ba9030afc546015ac742d86b8747a6317f379190",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 355,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "713e686eb1a64e57aa5fa2bc928ad6fea966a39f",
+          "subject": "Validate static site files and HTML links",
+          "date": "2026-05-18T02:09:56Z"
+        },
+        {
+          "sha": "ba9030afc546015ac742d86b8747a6317f379190",
+          "subject": "Add static site validation tests",
+          "date": "2026-05-18T02:10:31Z"
+        }
+      ],
+      "file_diff_count": 2
+    },
+    {
+      "name": "hardening/foundation-visual-proof-action-pins-20260914",
+      "head": "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 38,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "hardening/pin-foundation-actions-20261005",
+      "head": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 12,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "cfde2ee6a408140d449e0f157ea6533761af0988",
+          "subject": "Pin Foundation workflow actions",
+          "date": "2026-10-05T10:52:06Z"
+        },
+        {
+          "sha": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+          "subject": "Pin Foundation workflow actions",
+          "date": "2026-10-05T10:52:10Z"
+        }
+      ],
+      "file_diff_count": 2
+    },
+    {
+      "name": "hardening/pin-reviewer-workflow-actions-20261005",
+      "head": "4824ec130180ff1ba080501258f2be14e2424499",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 10,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "launch-readiness-nonprofit-site",
+      "head": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "status": "diverged",
+      "ahead": 12,
+      "behind": 359,
+      "total": 12,
+      "returned": 12,
+      "commits": [
+        {
+          "sha": "23822c789f7b596ec331e9c47335cfc3c7aa470e",
+          "subject": "Add nonprofit about page",
+          "date": "2026-05-17T18:34:39Z"
+        },
+        {
+          "sha": "06fce7fa33444166ac9b0703df4323689cc53dbc",
+          "subject": "Add nonprofit programs page",
+          "date": "2026-05-17T19:21:21Z"
+        },
+        {
+          "sha": "836fe17a4c0cfd819c9f47ddd1f65b69756f5f91",
+          "subject": "Add research initiatives page",
+          "date": "2026-05-17T19:22:56Z"
+        },
+        {
+          "sha": "f556fb883dee6d8152eda131a3e49b3a290dd9af",
+          "subject": "Add impact page",
+          "date": "2026-05-17T19:26:41Z"
+        },
+        {
+          "sha": "0d06b169ee5c7275f4bea197a85d36b2f75a1afa",
+          "subject": "Add support and donations page",
+          "date": "2026-05-17T19:27:02Z"
+        },
+        {
+          "sha": "df972c9c169f02075d721e18d1df14bfa244bae2",
+          "subject": "Add privacy policy page",
+          "date": "2026-05-17T20:15:21Z"
+        },
+        {
+          "sha": "942c408ee9b548378e4429e2f91a1b8b39a1caa6",
+          "subject": "Add terms and safety disclaimer page",
+          "date": "2026-05-18T00:16:39Z"
+        },
+        {
+          "sha": "18351f477c468815b8051cbddc15880929807cbc",
+          "subject": "Add accessibility and inclusion page",
+          "date": "2026-05-18T02:11:09Z"
+        },
+        {
+          "sha": "6ea9a30d169e60027f37d288ef9277b95a7f985b",
+          "subject": "Add contact and participation page",
+          "date": "2026-05-18T02:20:28Z"
+        },
+        {
+          "sha": "c9050350d2c2e5a5bfc74e6c40ecda87214c444e",
+          "subject": "Add governance overview page",
+          "date": "2026-05-18T02:20:48Z"
+        },
+        {
+          "sha": "078ac8fe7078715174e29314dbcdddd5e37be0b2",
+          "subject": "Add custom 404 page",
+          "date": "2026-05-18T02:21:06Z"
+        },
+        {
+          "sha": "84a027c3ca980817a863eed72b7362032f938e5b",
+          "subject": "Harden security policy with private reporting contact",
+          "date": "2026-05-18T02:34:26Z"
+        }
+      ],
+      "file_diff_count": 12
+    },
+    {
+      "name": "legal/foundation-state-status-20260909",
+      "head": "cb66240175789f55ff98ce60f6e948a788cf9eb4",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 82,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "polish-foundation-website",
+      "head": "559b12d772de51aa397c0667f50c98de72ed1d79",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 360,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "polish-foundation-website-v2",
+      "head": "7eff7a7fa8c67d6684fdffa36b68b05787b8eddd",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 369,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "polish/foundation-color-scheme-truth-20260913",
+      "head": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 80,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "33c14f7cbe6d47146eba7c9b7915e9f9c105f119",
+          "subject": "Polish: make Foundation color-scheme metadata match dark-only UI",
+          "date": "2026-09-13T17:22:52Z"
+        },
+        {
+          "sha": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+          "subject": "Fix: restore full Foundation index while keeping truthful dark color scheme",
+          "date": "2026-09-13T17:23:14Z"
+        }
+      ],
+      "file_diff_count": 1
+    },
+    {
+      "name": "privacy/remove-prospective-advisor-outreach-20260905",
+      "head": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4",
+      "status": "diverged",
+      "ahead": 1,
+      "behind": 85,
+      "total": 1,
+      "returned": 1,
+      "commits": [
+        {
+          "sha": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4",
+          "subject": "privacy: remove prospective advisor outreach from public source",
+          "date": "2026-09-05T21:54:40Z"
+        }
+      ],
+      "file_diff_count": 1
+    }
+  ]
+}
