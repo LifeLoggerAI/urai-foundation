@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 36,
+  "end": 48,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+      "bytes": 1583,
+      "blob_sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+      "sha256": "c0747d60389b51ef6602b377591492a1e9af235b272f1f6bf5b1f013606557b5",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+      "bytes": 2490,
+      "blob_sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+      "sha256": "f37ea8a0761c6c9d015c84f16925264bc9f74c3f9f20565519ce740a4b9eedfa",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+      "bytes": 3077,
+      "blob_sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+      "sha256": "d85112eff01988e85eb4d1b74221e498fc92d1b00d0ac0c05a193c34b176bc86",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+      "bytes": 1706,
+      "blob_sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+      "sha256": "1a4a805aaeb07b8a2622c1b6f50a4d5c45182eaf71a0176018b3e0d14a00868f",
+      "state": "verified"
+    },
+    {
+      "path": "docs/global-emotional-weather-public-interest.md",
+      "bytes": 6819,
+      "blob_sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+      "sha256": "d0c97638d5abde9e5114044957c2f2968dd1a2877f1e6e73d346a7b7ec5e09b7",
+      "state": "verified"
+    },
+    {
+      "path": "docs/governance-charter.md",
+      "bytes": 13351,
+      "blob_sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+      "sha256": "3f91e0b3773b822217508f077ff505efd4f411f3f2c750b2a11e089b47bb2d42",
+      "state": "verified"
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "bytes": 10150,
+      "blob_sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+      "sha256": "a97135b03279f2632e8ad5da7346e61c271a1e97f58154d933dca7c0b708c5a5",
+      "state": "verified"
+    },
+    {
+      "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+      "bytes": 719,
+      "blob_sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+      "sha256": "d3780dbb14a3d087361cc6a95dbf46c83c5c6ce99048a1fa27ed541387abb208",
+      "state": "verified"
+    },
+    {
+      "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+      "bytes": 1977,
+      "blob_sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+      "sha256": "22232bbcebaf56ae10e8626c1e18ceeea5546cfa436bed2e58cb54e1f020b863",
+      "state": "verified"
+    },
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "bytes": 7462,
+      "blob_sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+      "sha256": "ee1f6976bf47b75bf91369649ad34bb38b457ea4d20da5bdbc7df09fc25a194d",
+      "state": "verified"
+    },
+    {
+      "path": "docs/product-integration-contract.md",
+      "bytes": 7391,
+      "blob_sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+      "sha256": "c20a71ce7649b12b7dbbabc11417cb0aae7a41dad2723888a3bcf7b42396e440",
+      "state": "verified"
+    },
+    {
+      "path": "docs/publication-and-review-policy.md",
+      "bytes": 7749,
+      "blob_sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+      "sha256": "49b5d42803615242b8791947f96764d62a5e4720a865309ea3f3103fa29d3720",
+      "state": "verified"
+    }
+  ]
+}
