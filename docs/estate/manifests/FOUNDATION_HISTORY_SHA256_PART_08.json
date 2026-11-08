@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 98,
+  "end": 112,
+  "files": [
+    {
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "reference_commit": "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6",
+      "reference_branch": "hardening/foundation-visual-proof-action-pins-20260914",
+      "git_blob_sha": "7718d046051c72a5722d1bc1aafab3f713695377",
+      "bytes": 5828,
+      "sha256": "add5a6e63339dd9d3d163453dfa65a3453f0c494f2c260395b55f931f31e5115",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "782d1774a5c4da1f54601148b1cbe02ab0c59ac7",
+      "bytes": 7773,
+      "sha256": "b675bfe8913a2ba4907f1459d6e01c701b6502eea405a9e960b42ee639cf323a",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "reference_commit": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "reference_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "git_blob_sha": "7982946737819d5146745a2151d056c0d257d68a",
+      "bytes": 1416,
+      "sha256": "0a27fc99ee12c093f9e8f61cef2b39f0365473844423675663a39e42840db39e",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "7e23953ec95df67ab45736ae0d1374997d4ee25f",
+      "bytes": 4706,
+      "sha256": "73545fadba8d6d6aac8a74d986d0e8b5ea39170ff6893e7123faf5142f8d5a44",
+      "verified": true
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "8062b932bfdd7f7f2a3618fd042f93482a90dfba",
+      "bytes": 8562,
+      "sha256": "3b22991b4e4931eb505226084b1e3159191468d49c1733deaac37f9ade1c2410",
+      "verified": true
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_ADVISOR_OPERATIONS_KIT.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "81ac47aafc37be537ee659470897713cfe547983",
+      "bytes": 14426,
+      "sha256": "64fcbd91b6f28cf314df32221680bfe843740a6802964ccf08d8f62ea02d7984",
+      "verified": true
+    },
+    {
+      "path": "community/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "8237cb634f5c8c888d963ce3cb1d4e1eaa9e4e02",
+      "bytes": 4891,
+      "sha256": "4c184f6fa4a9f8734a2cb715197e1b963a5ddef1b5217a975006044a7ba9ffe3",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "82ca5c0f46e00c93b558f50b49b2b04307f7aa67",
+      "bytes": 17830,
+      "sha256": "0bccb2d50c23d2523cfd8bc175c4b029513f0129acb291592d71a8f927318894",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "851f85bb3a586e05733250962895ec3feecc18cf",
+      "bytes": 9527,
+      "sha256": "e999f7752b03d4e61a9781f044f4b5ac8ffc803055478025d6cf5f176b64bdc8",
+      "verified": true
+    },
+    {
+      "path": "contact.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "85450120c8f5798f0b3bad58178b6c9f440dc24b",
+      "bytes": 4141,
+      "sha256": "a70f03e4619f3a6a078616e201d84302cede63192d5bb10c2d1e3dde1d2bd791",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+      "bytes": 8800,
+      "sha256": "61bd88d5bdb4fb98b86084561e9c4a0422e68e973667d7e4b519ef31bbdfe251",
+      "verified": true
+    },
+    {
+      "path": "tests/test_validate_routes.py",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "86f97cbe9e16e20d5a1cf7ef8bdbb2d27132efea",
+      "bytes": 1199,
+      "sha256": "f8ea90eaf5163b916273383f9106520f9ebf8b792f2a3dbc1ce249763fa12faa",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "873449cef1fcf0e3103b4706e0ad4327eae190f1",
+      "bytes": 544,
+      "sha256": "bc0e9a894601c2a7af631b593ae70c83e1904de5760f4a0364c25c7b06529359",
+      "verified": true
+    },
+    {
+      "path": "functions/package.json",
+      "reference_commit": "aa2bd12dd9af7bb0191e756a67e8bd4f6f1facac",
+      "reference_branch": "feat/foundation-staff-backend-v1",
+      "git_blob_sha": "88acd3dbd0c2bc3eba6457ecc20b38802ca237d4",
+      "bytes": 436,
+      "sha256": "46900e41322ffd04971ea38a95e60280ffdfd6ed2603ead8446b4e8ab7fb59df",
+      "verified": true
+    }
+  ]
+}
