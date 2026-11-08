@@ -1,0 +1,4822 @@
+{
+  "scope": "immutable intermediate commit tree metadata; 8 of 430 non-head commits",
+  "commits": [
+    {
+      "sha": "0886d3215d484a62d43a3a771475f96f4fd5ae39",
+      "date": "2026-10-07T09:34:11Z",
+      "subject": "Repair Foundation dependency advisories and verify installed SDK guards",
+      "returned_tree_sha": "0886d3215d484a62d43a3a771475f96f4fd5ae39",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "adf010d3b68aff9c5a9ed816b065f01acf25cedd",
+          "bytes": 3997
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "445bd06dfdc3ca34e4da6cf02113529d383e713d",
+          "bytes": 8513
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "1650dea9bc33da2c0d98aea3ce459ec75dd1c97d",
+          "bytes": 3477
+        },
+        {
+          "path": "community/index.html",
+          "sha": "77668114d797203f972013a03366ff1f058daac8",
+          "bytes": 5091
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "07b9178402d0c1df31cee46f3af32efb4642497f",
+          "bytes": 3555
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "4636c208c5da9e6408a2f36317a10e65ae1907fa",
+          "bytes": 107379
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "e7c77ebe8cbf3c27866f0457d658d1702ae901b9",
+          "bytes": 596
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/test/sdk-compatibility.test.cjs",
+          "sha": "52a01a54fece6f3e502e104c57c0acaea499f1e3",
+          "bytes": 5211
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "285eeb9ea5e6a14e705338a2ef758b6913a1f843",
+          "bytes": 4866
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "8117f9bb2cb2c678a7cdc666707458dc50f0ed1b",
+          "bytes": 4703
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "e8890b0ce1b711dde6aca8f9147ab0e6dbb78437",
+          "bytes": 5140
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "security/index.html",
+          "sha": "0c884dfc3b7650565f3d1904227e1140458fe702",
+          "bytes": 3651
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "3e0654d86e7ece4c7f365080403f39f6eb74afe0",
+          "bytes": 2701
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "d9c57e0e4ec19291dd6052cc21f7f967be6c8656",
+          "bytes": 6911
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "5d6d2e3d6ab54e75dc8b1941fac72917d32eb12d",
+          "bytes": 4782
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "eabfe1306aeab20a0745ff48ef99384a276bd64e",
+          "bytes": 4463
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "8ee276fb9f577c064730967986df452e70ddfb9c",
+      "date": "2026-10-05T21:32:04Z",
+      "subject": "Merge pull request #57 from LifeLoggerAI/fix/labs-tax-standing-status-page-20261005",
+      "returned_tree_sha": "8ee276fb9f577c064730967986df452e70ddfb9c",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "445bd06dfdc3ca34e4da6cf02113529d383e713d",
+          "bytes": 8513
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "1650dea9bc33da2c0d98aea3ce459ec75dd1c97d",
+          "bytes": 3477
+        },
+        {
+          "path": "community/index.html",
+          "sha": "77668114d797203f972013a03366ff1f058daac8",
+          "bytes": 5091
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "07b9178402d0c1df31cee46f3af32efb4642497f",
+          "bytes": 3555
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "285eeb9ea5e6a14e705338a2ef758b6913a1f843",
+          "bytes": 4866
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "8117f9bb2cb2c678a7cdc666707458dc50f0ed1b",
+          "bytes": 4703
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "e8890b0ce1b711dde6aca8f9147ab0e6dbb78437",
+          "bytes": 5140
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "security/index.html",
+          "sha": "0c884dfc3b7650565f3d1904227e1140458fe702",
+          "bytes": 3651
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "3e0654d86e7ece4c7f365080403f39f6eb74afe0",
+          "bytes": 2701
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "d9c57e0e4ec19291dd6052cc21f7f967be6c8656",
+          "bytes": 6911
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "5d6d2e3d6ab54e75dc8b1941fac72917d32eb12d",
+          "bytes": 4782
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "eabfe1306aeab20a0745ff48ef99384a276bd64e",
+          "bytes": 4463
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "735d332ac14bb62cb0a697ad5cfbb5b67b0e8fef",
+      "date": "2026-10-05T18:38:02Z",
+      "subject": "Fix Foundation post-merge security proof gaps (#55)",
+      "returned_tree_sha": "735d332ac14bb62cb0a697ad5cfbb5b67b0e8fef",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "445bd06dfdc3ca34e4da6cf02113529d383e713d",
+          "bytes": 8513
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "1650dea9bc33da2c0d98aea3ce459ec75dd1c97d",
+          "bytes": 3477
+        },
+        {
+          "path": "community/index.html",
+          "sha": "77668114d797203f972013a03366ff1f058daac8",
+          "bytes": 5091
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "07b9178402d0c1df31cee46f3af32efb4642497f",
+          "bytes": 3555
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "285eeb9ea5e6a14e705338a2ef758b6913a1f843",
+          "bytes": 4866
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "8117f9bb2cb2c678a7cdc666707458dc50f0ed1b",
+          "bytes": 4703
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "e8890b0ce1b711dde6aca8f9147ab0e6dbb78437",
+          "bytes": 5140
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "security/index.html",
+          "sha": "0c884dfc3b7650565f3d1904227e1140458fe702",
+          "bytes": 3651
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "3e0654d86e7ece4c7f365080403f39f6eb74afe0",
+          "bytes": 2701
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "5d6d2e3d6ab54e75dc8b1941fac72917d32eb12d",
+          "bytes": 4782
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "eabfe1306aeab20a0745ff48ef99384a276bd64e",
+          "bytes": 4463
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "a11ab119c8877866c3036229cf5c5f96d79041fd",
+      "date": "2026-10-05T17:44:39Z",
+      "subject": "Add Foundation security reporting and accessibility contact routes (#54)",
+      "returned_tree_sha": "a11ab119c8877866c3036229cf5c5f96d79041fd",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "a3af195c68139fe337c05679ea8fd04daf858961",
+          "bytes": 8130
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "1650dea9bc33da2c0d98aea3ce459ec75dd1c97d",
+          "bytes": 3477
+        },
+        {
+          "path": "community/index.html",
+          "sha": "77668114d797203f972013a03366ff1f058daac8",
+          "bytes": 5091
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "07b9178402d0c1df31cee46f3af32efb4642497f",
+          "bytes": 3555
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "117d403d0bff92b7fbe8ccb3503b9234c0848a03",
+          "bytes": 4835
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "07b577a0a12f1d332ee69fd5a992d549fcc933b9",
+          "bytes": 4663
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "e8890b0ce1b711dde6aca8f9147ab0e6dbb78437",
+          "bytes": 5140
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "security/index.html",
+          "sha": "0c884dfc3b7650565f3d1904227e1140458fe702",
+          "bytes": 3651
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "3e0654d86e7ece4c7f365080403f39f6eb74afe0",
+          "bytes": 2701
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+          "bytes": 4706
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "d8d5da2412ac3b615a66cff063ebed5067e9c282",
+          "bytes": 4220
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "f026c6eff71a56eacf27921350a32504069c5d1a",
+      "date": "2026-10-05T12:15:41Z",
+      "subject": "Fix Foundation community contact mailto (#53)",
+      "returned_tree_sha": "f026c6eff71a56eacf27921350a32504069c5d1a",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "a3af195c68139fe337c05679ea8fd04daf858961",
+          "bytes": 8130
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "f446f9d5264d2debd4568ad1b1b2f71e5c66cab4",
+          "bytes": 3196
+        },
+        {
+          "path": "community/index.html",
+          "sha": "77668114d797203f972013a03366ff1f058daac8",
+          "bytes": 5091
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "6086b3e9cc00f6b77450e18e8d56ade0366ec13e",
+          "bytes": 3487
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "519a379269fe64a30b87a1d7a3267cd29577f232",
+          "bytes": 4808
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "067676984d1302c0dc83be3f636c7eb1d945d679",
+          "bytes": 4645
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "02f05f9824f676690363779a572cdd8f1f868df2",
+          "bytes": 5122
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "9c393a1e788f685aa9f685a83c3b4f2e7ae530cd",
+          "bytes": 2584
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+          "bytes": 4706
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "4694d622c8ee6322b427a7263d58ad78028025b3",
+          "bytes": 4194
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "f6bdb8a7cfb825b5f22ca5493f4037d973148ad2",
+      "date": "2026-10-05T10:54:10Z",
+      "subject": "Merge pull request #52 from LifeLoggerAI/hardening/pin-reviewer-workflow-actions-20261005",
+      "returned_tree_sha": "f6bdb8a7cfb825b5f22ca5493f4037d973148ad2",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "0f4fc978c88084284b44d21807b23807290c770c",
+          "bytes": 1725
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "a3af195c68139fe337c05679ea8fd04daf858961",
+          "bytes": 8130
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "f446f9d5264d2debd4568ad1b1b2f71e5c66cab4",
+          "bytes": 3196
+        },
+        {
+          "path": "community/index.html",
+          "sha": "7143ff2c55b866cc1d3ab3f1475f617961f5bec6",
+          "bytes": 5103
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "6086b3e9cc00f6b77450e18e8d56ade0366ec13e",
+          "bytes": 3487
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "519a379269fe64a30b87a1d7a3267cd29577f232",
+          "bytes": 4808
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "067676984d1302c0dc83be3f636c7eb1d945d679",
+          "bytes": 4645
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "7e23953ec95df67ab45736ae0d1374997d4ee25f",
+          "bytes": 4706
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "9c393a1e788f685aa9f685a83c3b4f2e7ae530cd",
+          "bytes": 2584
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+          "bytes": 4706
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "4694d622c8ee6322b427a7263d58ad78028025b3",
+          "bytes": 4194
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "4c847be5131282f90a797eebbb31a917dabd2a62",
+      "date": "2026-10-05T10:52:13Z",
+      "subject": "ci: pin documentation workflow actions",
+      "returned_tree_sha": "4c847be5131282f90a797eebbb31a917dabd2a62",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+          "bytes": 510
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "7982946737819d5146745a2151d056c0d257d68a",
+          "bytes": 1416
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "a3af195c68139fe337c05679ea8fd04daf858961",
+          "bytes": 8130
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "f446f9d5264d2debd4568ad1b1b2f71e5c66cab4",
+          "bytes": 3196
+        },
+        {
+          "path": "community/index.html",
+          "sha": "7143ff2c55b866cc1d3ab3f1475f617961f5bec6",
+          "bytes": 5103
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "6086b3e9cc00f6b77450e18e8d56ade0366ec13e",
+          "bytes": 3487
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "519a379269fe64a30b87a1d7a3267cd29577f232",
+          "bytes": 4808
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "067676984d1302c0dc83be3f636c7eb1d945d679",
+          "bytes": 4645
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "7e23953ec95df67ab45736ae0d1374997d4ee25f",
+          "bytes": 4706
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "9c393a1e788f685aa9f685a83c3b4f2e7ae530cd",
+          "bytes": 2584
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+          "bytes": 4706
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "4694d622c8ee6322b427a7263d58ad78028025b3",
+          "bytes": 4194
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    },
+    {
+      "sha": "77e7375eebc1415e5550fdf134b27dde3885dd4c",
+      "date": "2026-10-04T23:45:22Z",
+      "subject": "Merge pull request #49 from LifeLoggerAI/feature/global-emotional-weather-public-interest-20261002",
+      "returned_tree_sha": "77e7375eebc1415e5550fdf134b27dde3885dd4c",
+      "truncated": false,
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+          "sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+          "bytes": 456
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+          "sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+          "bytes": 639
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+          "sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+          "bytes": 342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+          "bytes": 1088
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "21ddcfe2c69089386a61caf1bc8713f4eea96813",
+          "bytes": 3218
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "bda9cddd4f96cd09353e902dfa3bba93f3afb1ab",
+          "bytes": 420
+        },
+        {
+          "path": ".github/workflows/foundation-visual-proof.yml",
+          "sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+          "bytes": 6196
+        },
+        {
+          "path": ".github/workflows/pages.yml",
+          "sha": "7982946737819d5146745a2151d056c0d257d68a",
+          "bytes": 1416
+        },
+        {
+          "path": ".gitignore",
+          "sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+          "bytes": 321
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "bytes": 0
+        },
+        {
+          "path": "404.html",
+          "sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+          "bytes": 2474
+        },
+        {
+          "path": "CHANGELOG.md",
+          "sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+          "bytes": 4427
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+          "bytes": 2045
+        },
+        {
+          "path": "Makefile",
+          "sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+          "bytes": 675
+        },
+        {
+          "path": "PRODUCTION_STATUS.md",
+          "sha": "a3af195c68139fe337c05679ea8fd04daf858961",
+          "bytes": 8130
+        },
+        {
+          "path": "README.md",
+          "sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+          "bytes": 17191
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "VERSIONING.md",
+          "sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+          "bytes": 3713
+        },
+        {
+          "path": "accessibility/index.html",
+          "sha": "f446f9d5264d2debd4568ad1b1b2f71e5c66cab4",
+          "bytes": 3196
+        },
+        {
+          "path": "community/index.html",
+          "sha": "7143ff2c55b866cc1d3ab3f1475f617961f5bec6",
+          "bytes": 5103
+        },
+        {
+          "path": "contact/index.html",
+          "sha": "6086b3e9cc00f6b77450e18e8d56ade0366ec13e",
+          "bytes": 3487
+        },
+        {
+          "path": "deaf-community/index.html",
+          "sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+          "bytes": 2952
+        },
+        {
+          "path": "docs/EVIDENCE_STATUS.md",
+          "sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+          "bytes": 243
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+          "sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+          "bytes": 34738
+        },
+        {
+          "path": "docs/canonical-production-truth.md",
+          "sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+          "bytes": 6027
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+          "bytes": 9489
+        },
+        {
+          "path": "docs/final-live-cutover-runbook.md",
+          "sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+          "bytes": 3950
+        },
+        {
+          "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+          "sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+          "bytes": 1644
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+          "sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+          "bytes": 1773
+        },
+        {
+          "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+          "sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+          "bytes": 8513
+        },
+        {
+          "path": "docs/foundation/URAI_ADVISOR_ACCOUNT_SETUP.md",
+          "sha": "6b498a052736aba32eea2abb2a9954b5bae6e78f",
+          "bytes": 1583
+        },
+        {
+          "path": "docs/foundation/URAI_CLAIMS_AND_SAFETY_POLICY.md",
+          "sha": "d248e6d54cfbab211a93d6c424617c92021f2197",
+          "bytes": 2490
+        },
+        {
+          "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+          "sha": "88d90d5d013b0db91b61cf3513c2abce4ff288e6",
+          "bytes": 3077
+        },
+        {
+          "path": "docs/foundation/URAI_VETERAN_ACCESSIBILITY_PATHWAY.md",
+          "sha": "2f5cb959aca4b9c942a3af528d4e367ca158cb32",
+          "bytes": 1706
+        },
+        {
+          "path": "docs/global-emotional-weather-public-interest.md",
+          "sha": "8aaafc6693a3f34b425418225e4c00e10956773e",
+          "bytes": 6819
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "ed39d0ab7694e37bbc2c444208bbdb9d3f2db78a",
+          "bytes": 13351
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "591ff1aacee74b49697f9eb117db8776ee38d04a",
+          "bytes": 10150
+        },
+        {
+          "path": "docs/launch/PRODUCTION_HARDENING_CHECKLIST.md",
+          "sha": "b2c35f0c680f95abf962252c54453465e0a9e1f3",
+          "bytes": 719
+        },
+        {
+          "path": "docs/launch/WAVE3_FOUNDATION_LAUNCH_LOCK_EVIDENCE.md",
+          "sha": "3fdad0f81daeb747aceea1b440a617b9b41f0545",
+          "bytes": 1977
+        },
+        {
+          "path": "docs/live-deployment-runbook.md",
+          "sha": "ce8f9f553bc59b561923a285b77ecb7fa26e8a1a",
+          "bytes": 7462
+        },
+        {
+          "path": "docs/product-integration-contract.md",
+          "sha": "724b7f2dfd06bd7acb5ab371dfdb43fb249ca1de",
+          "bytes": 7391
+        },
+        {
+          "path": "docs/publication-and-review-policy.md",
+          "sha": "9e5307fe381e360fc36f397cb24157ef1315abe1",
+          "bytes": 7749
+        },
+        {
+          "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+          "sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+          "bytes": 1436
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+          "bytes": 10054
+        },
+        {
+          "path": "docs/staff-backend-contract.md",
+          "sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+          "bytes": 10027
+        },
+        {
+          "path": "docs/system-of-systems-integration.md",
+          "sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+          "bytes": 8000
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/public-accountability-templates.md",
+          "sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+          "bytes": 5866
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+          "bytes": 8252
+        },
+        {
+          "path": "donate/index.html",
+          "sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+          "bytes": 4589
+        },
+        {
+          "path": "emotional-wellness/index.html",
+          "sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+          "bytes": 2893
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "firebase.json",
+          "sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+          "bytes": 307
+        },
+        {
+          "path": "firestore.indexes.json",
+          "sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+          "bytes": 756
+        },
+        {
+          "path": "firestore.rules",
+          "sha": "061723cfb6edc4931624152103a35cda6283b722",
+          "bytes": 3715
+        },
+        {
+          "path": "foundation-home.css",
+          "sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+          "bytes": 10700
+        },
+        {
+          "path": "foundation-interior.css",
+          "sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+          "bytes": 3304
+        },
+        {
+          "path": "functions/package-lock.json",
+          "sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+          "bytes": 103951
+        },
+        {
+          "path": "functions/package.json",
+          "sha": "1234438f61da291115cb2bfc9878e959cbf956e8",
+          "bytes": 436
+        },
+        {
+          "path": "functions/scripts/bootstrap-owner.mjs",
+          "sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+          "bytes": 2715
+        },
+        {
+          "path": "functions/src/index.ts",
+          "sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+          "bytes": 24213
+        },
+        {
+          "path": "functions/tsconfig.json",
+          "sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+          "bytes": 306
+        },
+        {
+          "path": "governance/index.html",
+          "sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+          "bytes": 5439
+        },
+        {
+          "path": "grants/grants.css",
+          "sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+          "bytes": 6481
+        },
+        {
+          "path": "grants/grants.js",
+          "sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+          "bytes": 17124
+        },
+        {
+          "path": "grants/index.html",
+          "sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+          "bytes": 13016
+        },
+        {
+          "path": "index.html",
+          "sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+          "bytes": 13636
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+          "sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+          "bytes": 7630
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+          "sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+          "bytes": 1725
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+          "sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+          "bytes": 1817
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+          "sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+          "bytes": 2381
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+          "sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+          "bytes": 2511
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+          "sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+          "bytes": 1457
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+          "sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+          "bytes": 2595
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+          "sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+          "bytes": 1886
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+          "sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+          "bytes": 2900
+        },
+        {
+          "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+          "sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+          "bytes": 1930
+        },
+        {
+          "path": "partners/index.html",
+          "sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+          "bytes": 2796
+        },
+        {
+          "path": "privacy/index.html",
+          "sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+          "bytes": 3264
+        },
+        {
+          "path": "research/global-emotional-weather/index.html",
+          "sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+          "bytes": 5690
+        },
+        {
+          "path": "research/index.html",
+          "sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+          "bytes": 3870
+        },
+        {
+          "path": "responsible-ai/index.html",
+          "sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+          "bytes": 3251
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/build-public-site.py",
+          "sha": "519a379269fe64a30b87a1d7a3267cd29577f232",
+          "bytes": 4808
+        },
+        {
+          "path": "scripts/smoke-live-routes.py",
+          "sha": "067676984d1302c0dc83be3f636c7eb1d945d679",
+          "bytes": 4645
+        },
+        {
+          "path": "scripts/urai-production-verify.mjs",
+          "sha": "3af4c46f651aa8188b9b8a83208bebbe09fd0690",
+          "bytes": 742
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "ed9ce187cf4a4167dc01d418a287e8592100ac16",
+          "bytes": 9153
+        },
+        {
+          "path": "scripts/validate-routes.py",
+          "sha": "7e23953ec95df67ab45736ae0d1374997d4ee25f",
+          "bytes": 4706
+        },
+        {
+          "path": "scripts/validate-staff-backend.py",
+          "sha": "c8a3a3241c2359a72526a2900ddcef3a76a01973",
+          "bytes": 4931
+        },
+        {
+          "path": "scripts/validate-standards-registry.py",
+          "sha": "844243b2ac26786b49ee359883e417d4253c7934",
+          "bytes": 5672
+        },
+        {
+          "path": "scripts/verify-live-domain.py",
+          "sha": "3d1a79d4be14dfc96a7dd83566f42ae57b396a73",
+          "bytes": 3601
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "9c393a1e788f685aa9f685a83c3b4f2e7ae530cd",
+          "bytes": 2584
+        },
+        {
+          "path": "staff/index.html",
+          "sha": "3056cfeb8c0b2540d7b4066dc5697492ca8daa08",
+          "bytes": 4610
+        },
+        {
+          "path": "standards/registry.json",
+          "sha": "62632d3519e91b39fb5d48bba2e9fd5343d40537",
+          "bytes": 2422
+        },
+        {
+          "path": "standards/registry.schema.json",
+          "sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+          "bytes": 2224
+        },
+        {
+          "path": "status/index.html",
+          "sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+          "bytes": 6658
+        },
+        {
+          "path": "styles.css",
+          "sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+          "bytes": 13999
+        },
+        {
+          "path": "terms/index.html",
+          "sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+          "bytes": 2933
+        },
+        {
+          "path": "tests/test_accessibility_standards_authority.py",
+          "sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+          "bytes": 2811
+        },
+        {
+          "path": "tests/test_build_public_site.py",
+          "sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+          "bytes": 4706
+        },
+        {
+          "path": "tests/test_smoke_live_routes.py",
+          "sha": "4694d622c8ee6322b427a7263d58ad78028025b3",
+          "bytes": 4194
+        },
+        {
+          "path": "tests/test_staff_backend_contract.py",
+          "sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+          "bytes": 4254
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        },
+        {
+          "path": "tests/test_validate_routes.py",
+          "sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+          "bytes": 4491
+        },
+        {
+          "path": "tests/test_validate_standards_registry.py",
+          "sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+          "bytes": 3644
+        }
+      ]
+    }
+  ]
+}
