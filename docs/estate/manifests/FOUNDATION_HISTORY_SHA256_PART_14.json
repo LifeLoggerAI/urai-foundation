@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 182,
+  "end": 196,
+  "files": [
+    {
+      "path": "public/index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "e7aad52956846cba90bcee5f579c223e5e766a62",
+      "bytes": 1153,
+      "sha256": "07cf0d72e304dbdc9ed31e30f5362e9d4f72387d0f898d1003477425814e6a4b",
+      "verified": true
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "e8b038fe590539b095477c95692e7f5b031e6dfb",
+      "bytes": 5829,
+      "sha256": "5313aed4a292494f6c237f2de23b74403ca6909ce11e336f18ae58ec7b3f87d4",
+      "verified": true
+    },
+    {
+      "path": "functions/package.json",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "e8f9ce65ce780094e3d0eb21fe04e41e5ee7d4a9",
+      "bytes": 501,
+      "sha256": "4b92add57dd96641bb4f69e962e76f4bcf87a89b63667c4868affece8aa56fff",
+      "verified": true
+    },
+    {
+      "path": "docs/final-live-cutover-runbook.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "ea4a492b7d733dc23ac21d0075751f1461cbf70c",
+      "bytes": 3387,
+      "sha256": "06622b83ba72fb7f668193f499394dfcdf104699aa6ef2f6133dd9bcaf456048",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "8c172842a476149069ada0a854c9f00440728696",
+      "reference_branch": "design/foundation-institution-ui-20260913",
+      "git_blob_sha": "ea6ddeae3da823a01597d8483debeebd236ab3af",
+      "bytes": 14083,
+      "sha256": "e19b228dc946647b596f28af0b3aa209a960f37a837cf22b81172b77fa1e0107",
+      "verified": true
+    },
+    {
+      "path": "contact/index.html",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "ebf3abb35b375e2c2f970b1a419b596674e420ac",
+      "bytes": 3465,
+      "sha256": "c7ba860cf8f3dc4cd1602e097983b597460d9d7a3c79bba522bbe2e4fd347718",
+      "verified": true
+    },
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "ec0d92e5f65a3693662fa532c2ef36e74baca688",
+      "bytes": 2930,
+      "sha256": "2d6a8d094f07c1701416b3b3674e67b361308fc08c27d75d3ead589fc8f43c5e",
+      "verified": true
+    },
+    {
+      "path": "site.webmanifest",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+      "bytes": 275,
+      "sha256": "f25880d925527ad5944463bd88e9ef4d76686e7e8fd126a66df86cff0cd58364",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "ecf7567021b65e195d31ccf01d554c9e0238dd94",
+      "bytes": 13509,
+      "sha256": "5acd244214917719c8abe620aaac7fa9f3c92c4877bec0e0aa186db9bb9b3cbd",
+      "verified": true
+    },
+    {
+      "path": "impact.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "ef3d4845a09b3b7ded789e65a70f1f8e35a989f2",
+      "bytes": 3738,
+      "sha256": "c6fe33aa3e3b9591c4b7f4d33aa0490ac51aa9ef10ce7462ea0853b9477e2691",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "reference_branch": "codex/complete-audit-findings-and-polish-repo",
+      "git_blob_sha": "f3047680a692b72a84bcfe4921f1ab036f1ec2d2",
+      "bytes": 4717,
+      "sha256": "5d6dce971de0ecf0434212ae3f1c3701d07210ac9d7c245a105755ad99218b0e",
+      "verified": true
+    },
+    {
+      "path": "accessibility/index.html",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "f446f9d5264d2debd4568ad1b1b2f71e5c66cab4",
+      "bytes": 3196,
+      "sha256": "330a6eca6ffda30f8932ccf7131175dc295ba3a3ccdc3ea94e261d7ea3299bd8",
+      "verified": true
+    },
+    {
+      "path": "governance.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "f6310df12b51bff7d1c47dd747168718424879d3",
+      "bytes": 3682,
+      "sha256": "dbf23ab28708c4dc0390415924230d3e3d9a448d440808500ce2de95165927d0",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+      "reference_branch": "add-standards-versioning-policy-v2",
+      "git_blob_sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+      "bytes": 13396,
+      "sha256": "c549a467bf3b768e7009ff2034983cee231166655339d8cae6a74b92df0a36f6",
+      "verified": true
+    }
+  ]
+}
