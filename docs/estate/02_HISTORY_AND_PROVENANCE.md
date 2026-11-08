@@ -1,0 +1,18 @@
+# Foundation history, branches and worker provenance
+Canonical main: `8ee8036b649ae9c9e73ae374a7247f0bb34c4c03` (GitHub API readback). Repository exposes **53 branch heads** in a one-page API listing and **48 PR records** in the retrieved all-state PR page. This is complete for returned branch/PR pages, NOT a complete all-commit graph and NOT proof every historical blob was opened.
+
+Historical sequence: May static site, policy/test scaffolding and route hardening (#2/#4/#5/#6/#7); June site/fallback Hosting issue #10; July source audit #11 and legal-status corrections #16/#17; August public-governance #19, operating-model dossier #21, grant concierge #23; September protected grant staff backend #27 **MERGED** on 2026-09-05 as `1fbebd8dfd9b4960757b92424f6fd8338cb2c495`, donation #28 **CLOSED WITHOUT MERGE** head `a8d97c3dd8892d13e703e23e293089e2820260e3`; September Texas-status correction #38, Node22 #39, institutional UX #41–45; October status, accessibility, dependencies #48–59; governance stewardship controller #60 **OPEN/DRAFT/UNMERGED**, head `aa7bff55f9a88656a7eb067e74c2ae5de879447c`; Genesis starter #64 **OPEN/DRAFT/UNMERGED**, head `653705252063e7d369b3ddce6278f478f5b25a1e`.
+
+PR #60 contains correctly scoped successful exact-head source checks and browser artifact captures, *not* authority to merge/deploy or govern. Its incorporated privileged auth-time successor #63 rejects future timestamps on privileged actions. In main, `functions/src/index.ts` requires a numeric auth_time and that now-minus-time not exceed 300s, without rejecting timestamps in the future; do not mark repaired on main. PR #60 preserves local-source screenshots that supersede misleading historical hero-only capture labels.
+PR #28 includes candidate Stripe Checkout, signed webhook, event ledger and lifecycle security tests, but *no canonical deployment, activated payment, tax-deductibility or banking proof*. Preserve branch even though PR is closed.
+PR #64 is only a pointer into Labs master registry; do not label it a completed audit. Central Labs draft PR #262 is the provisional registry with 19 repo source snapshots and 23 founder-supplied, unaudited Firebase project IDs.
+
+Useful retained pointers:
+- https://github.com/LifeLoggerAI/urai-foundation/pulls
+- https://github.com/LifeLoggerAI/urai-foundation/pull/27
+- https://github.com/LifeLoggerAI/urai-foundation/pull/28
+- https://github.com/LifeLoggerAI/urai-foundation/pull/60
+- https://github.com/LifeLoggerAI/urai-foundation/pull/64
+- https://github.com/LifeLoggerAI/urai-labs-llc/pull/262
+
+Do not destroy, squash for convenience, cherry-pick, or overwrite any current worker branch. Historical assertions and earlier worker logs retain their original source date and scope.
