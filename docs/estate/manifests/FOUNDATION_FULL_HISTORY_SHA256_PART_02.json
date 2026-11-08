@@ -1,0 +1,121 @@
+{
+  "range": [
+    14,
+    28
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "1dffb2f1cd42b193c33ff38a00d5b4e2739849b9",
+      "bytes": 2465,
+      "path": ".github/workflows/check.yml",
+      "source_commit": "ec57ae939f6b1dacec1ec9272515ce911c729001",
+      "sha256": "9e663169ffefc53946f30923f75ce992a7ef70492577207360d6e02016a9ff63",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "217b15262179eaf3138a8410a7c272cc5695c647",
+      "bytes": 2685,
+      "path": "tests/test_smoke_live_routes.py",
+      "source_commit": "10f1d43749b5b694cded956735c819f2868076f5",
+      "sha256": "8c18fd005892e120005db5a25eaad53dfe4bda572fbcd776faa7389c1b332abe",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "231e4924065f605da7a766542f509a5b02747905",
+      "bytes": 14779,
+      "path": "functions/src/index.ts",
+      "source_commit": "23d3dc234873db88e3571cd4d8b1851294481390",
+      "sha256": "364ad92b6f596f7cdc9b53e8b657f4819ee23e2a28a7e97b5f45547dd626fbdb",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "25d13f14a5ff48015766cd1af8afe616f93407a6",
+      "bytes": 7307,
+      "path": "README.md",
+      "source_commit": "988d338fd9437c479e512f926b3ea343ac774af3",
+      "sha256": "bd8226b23c821407e807aa7f79e78972fecddb1a5a28d99047633434f158bca8",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "25f5efc2f8971870cffd38e406c18d3fb3cd0165",
+      "bytes": 8289,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "15f60282ee0cc6432af3667e4dff12642262a4a5",
+      "sha256": "705acbc4f30395fc0e0da82944c7a8f6fcef2d0ac4869636e3e72a49eff466d1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "2798dc6a970a4bcdb4c6137f6e27869920f502b0",
+      "bytes": 4402,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "90a953d9b4bff00c3aae176a008f3532e5139a5e",
+      "sha256": "034ca3b22391d68f3e2689d9894b4c7e0f3c01762ae900ae8bafe49db59dd3bc",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "2ce180d3b0bcf497dba6d92bc5530447eef32e4b",
+      "bytes": 4335,
+      "path": "scripts/validate-routes.py",
+      "source_commit": "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+      "sha256": "237f7e7c293006683fb8c7ae3019cfac5d6b57f9fbfc7820fa828a9666df2dd1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "2e402e3616a8739de3cc767c74a9f2944ec60c82",
+      "bytes": 3373,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "6c2f6d4a08314d96e9e68dc9d0c086cbaacabe24",
+      "sha256": "248dd2950046bd0abe94769c9eb409d8d0a02f6562da98b9c3bacf25b182f243",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "2e43af694345fc9b3d12ef492ec4212cc2572722",
+      "bytes": 4089,
+      "path": "firestore.rules",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "70d2cdd521c90d334ec8f7590a9b5a7a229684f1ebc20802bf4d951f9d354125",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "2e8b3b58302984257e38045654d0074e3a899998",
+      "bytes": 13352,
+      "path": "README.md",
+      "source_commit": "4aa9ec58f4fac837dfb570cdb2895316837a7c7f",
+      "sha256": "929ce46dfc1a16f4a52cc0ee3ade3600b6aa7d9db92fc703c852a4c9af34040f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "337fe86ea004fbf8c94447afe8376f9fbb74fb25",
+      "bytes": 4433,
+      "path": "scripts/smoke-live-routes.py",
+      "source_commit": "5aeb7e8457781a304554b5bf712ea88710683fc6",
+      "sha256": "27790abc2c6df086229bd9ed9bbb3dc64e23b4cb4342eba8b17186888d548955",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "33c60c319f5c1f8075e1ddcd47a1f47c71cb8012",
+      "bytes": 23212,
+      "path": "functions/src/donations.ts",
+      "source_commit": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "sha256": "038ed6f3db01b1364d6d256c0a536e60606436b4eb870a9c0dc9aa7f23922b78",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "33ee23fcf598eef57d15f75d6970b33db238d9ec",
+      "bytes": 2171,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "41f2ad66f41a1b2f05a415f642ee6ecc65a0d2df",
+      "sha256": "4fdfcf95d67c8603c3eb612d9e0140e0b2186d3d2f67bce7c041453258346c93",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "342328e0caeea303d64ca7545f5285154edee94b",
+      "bytes": 2675,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "2708f910819f07eee90ae4fce28b240e7bab45d9e1a024c77ee737fd55737acb",
+      "verified": true
+    }
+  ]
+}
