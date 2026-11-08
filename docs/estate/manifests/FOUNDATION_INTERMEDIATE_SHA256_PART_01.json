@@ -1,0 +1,85 @@
+{
+  "scope": "intermediate-only unique blobs first 10",
+  "files": [
+    {
+      "path": "foundation-home.css",
+      "git_blob_sha": "0f5c8c2892a32d8817962f3ccadf338eb1250726",
+      "bytes": 10171,
+      "source_commit": "d2049f98646a84d449647800377d448b3662d387",
+      "sha256": "b51f1e89776e1517bf7b790d36054895202c67c930000b03513f902e5adf2a01",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "5744c5dd11408a19119dd5ee0c49cb8b01c33cd3",
+      "bytes": 13308,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "325c0b8153b58d91d23ac3a8595fee2e4f90bff8185c9f4f6966e627259ad581",
+      "verified": true
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "git_blob_sha": "5b6b5270c2ffb73f89ed0086b7392bd5aec43a99",
+      "bytes": 6069,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "b0697406871a951080ad1702bd38d6bb1cf605f8448f02df18918d080a8ac001",
+      "verified": true
+    },
+    {
+      "path": "functions/src/index.ts",
+      "git_blob_sha": "ab76f065185c4282baa2dec5343320b50c3e01f3",
+      "bytes": 24147,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "f528fce2825e8c8d716f697fa0a470c219b99cacb7795cad9527061282ed3b4b",
+      "verified": true
+    },
+    {
+      "path": "grants/grants.js",
+      "git_blob_sha": "4ab20597993517f8a8fe9d30159f29fd58f66dc9",
+      "bytes": 16778,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "1607b03f4bc8f630c4adcd7c691fba06430188f5861b1ad86f13793ed0193934",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "git_blob_sha": "23e047c33dbdec8fa9850a782754522e6e1977bd",
+      "bytes": 4451,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "a942c08b781b99c1d6d088f8228869c7d70f8d2b9d87001387fa358faeb31da3",
+      "verified": true
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "git_blob_sha": "f77d90f57d595e7de6c5407102eea4d9c20f7c51",
+      "bytes": 3731,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "8e3c13b326ecaf9366003c182b6710d0c6c4b17b5f07cacba47361700e6df85b",
+      "verified": true
+    },
+    {
+      "path": "tests/test_staff_backend_contract.py",
+      "git_blob_sha": "b226e5646e8dec1b206b107957e4c859facef13f",
+      "bytes": 3023,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "b1e461ce86fbd89599295333183e0e391353cdca9ab8de467b78a798f754341b",
+      "verified": true
+    },
+    {
+      "path": "tests/test_validate_routes.py",
+      "git_blob_sha": "6a86ca4902835b8d6584b1393335bcc19415dd3c",
+      "bytes": 4031,
+      "source_commit": "dd32ff9e67ce8e425d369ebc0990962c0222ce2a",
+      "sha256": "4b4b396bac5b367fc3dbf7f98dc413d0d98ec62cc436393fe2987f7c5361701e",
+      "verified": true
+    },
+    {
+      "path": "docs/final-live-cutover-runbook.md",
+      "git_blob_sha": "b17b1234b861df6526ec23c482b0f1983e927f57",
+      "bytes": 3567,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "93c63594b71bc5a52024b31115d05de75daad109fc6bd7c0bd07f7e5d0784bbf",
+      "verified": true
+    }
+  ]
+}
