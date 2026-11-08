@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 24,
+  "end": 36,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "contact/index.html",
+      "bytes": 3555,
+      "blob_sha": "07b9178402d0c1df31cee46f3af32efb4642497f",
+      "sha256": "a3de5717b02ca215cd605e28eca61639d1db23851741a3043921b3370042387a",
+      "state": "verified"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2045,
+      "blob_sha": "dad5b942988d3e0a794023044996dd6b2a7ba93f",
+      "sha256": "8518bfcaf7c666cb5b46543b43c6375db573a0bf0048b365eeef72b57dc1c0f3",
+      "state": "verified"
+    },
+    {
+      "path": "deaf-community/index.html",
+      "bytes": 2952,
+      "blob_sha": "9b19ea1e57e9de8c6de408fc2b74512bac5fb40f",
+      "sha256": "26686942dffa45a2b8931b00c97ad6ab96d6ac583e98601ab67a68605829ac49",
+      "state": "verified"
+    },
+    {
+      "path": "docs/accessibility-and-site-quality-checklist.md",
+      "bytes": 2324,
+      "blob_sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+      "sha256": "b6486acb1e7189e50223eeb7393de272b19606893c4184b603c90b64e9a54ce5",
+      "state": "verified"
+    },
+    {
+      "path": "docs/audits/foundation-v1-audit-2026-07-06.md",
+      "bytes": 34738,
+      "blob_sha": "aafe40cb7b1804baebf58ae3c312d0ffcd587ea9",
+      "sha256": "28f399d021c36ec83b8bcd81ebb1c7e346a098745f5b434d8cf7666ea9872ff6",
+      "state": "verified"
+    },
+    {
+      "path": "docs/canonical-production-truth.md",
+      "bytes": 6027,
+      "blob_sha": "a0a6fba4c5506d0c570524f98387908c6f51d325",
+      "sha256": "531a9091318da8a926ed21a41b97e0b4b98de70a727244d180a8684ce0fe52ad",
+      "state": "verified"
+    },
+    {
+      "path": "docs/ethical-ai-principles.md",
+      "bytes": 9489,
+      "blob_sha": "48ef71407dd1dc33a3f7a163c7bd95489ad3a7d6",
+      "sha256": "edeee95cfadcbf06270d7951834232a08270a22888612f606af652a32abbf447",
+      "state": "verified"
+    },
+    {
+      "path": "docs/EVIDENCE_STATUS.md",
+      "bytes": 243,
+      "blob_sha": "051b4d8ccd1a3e09ea84ebde7d1950f02debe006",
+      "sha256": "598b0a2a8cccd4df9122166588217e3df5b480575913c21de269f0828e72d301",
+      "state": "verified"
+    },
+    {
+      "path": "docs/final-live-cutover-runbook.md",
+      "bytes": 3950,
+      "blob_sha": "9cc6bba4cff73b06943fdd8c12722cb9352cf709",
+      "sha256": "a3fa9225927270ab0778ddcfa0d405e950a60b750d69a0de4260dd66d61093e9",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/README_FOUNDATION_ADVISOR_KIT.md",
+      "bytes": 1644,
+      "blob_sha": "339bec1920ae8e573e3d156ac8b58678cc645e4e",
+      "sha256": "92b6e4c454ddbd83e8124b81f2ddf5f2e5e71a48a135096b252a9f1495617068",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/URAI_ACCESSIBILITY_CHECKLIST.md",
+      "bytes": 1773,
+      "blob_sha": "0b8605b7ac5b2610cbf4a14249954065882c8823",
+      "sha256": "183bbb1c2f2f148d73b6b553a74f35ca672fdd8c83ae32803074dc0e19e343e1",
+      "state": "verified"
+    },
+    {
+      "path": "docs/foundation/URAI_ACCESSIBILITY_STANDARDS_AUTHORITY.md",
+      "bytes": 8513,
+      "blob_sha": "7ec62f0df66b39f9d8f94c0d6ac0739c32cf8de6",
+      "sha256": "02e9d97d7e5e2bee3cdc14787b8d27a98697b8de4e3280e010b2ff470973a3da",
+      "state": "verified"
+    }
+  ]
+}
