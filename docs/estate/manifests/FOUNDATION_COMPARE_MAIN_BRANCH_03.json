@@ -1,0 +1,221 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 20,
+  "end": 30,
+  "branches": [
+    {
+      "name": "feature/global-emotional-weather-public-interest-20261002",
+      "head": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 14,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "fix/dependency-security-20261007",
+      "head": "1192586bcef32bd68bd8e1d4223ee7248e217042",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 1,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "fix/foundation-community-mailto-20261005",
+      "head": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+      "status": "diverged",
+      "ahead": 3,
+      "behind": 9,
+      "total": 3,
+      "returned": 3,
+      "commits": [
+        {
+          "sha": "c3583055407f9dbdd64e3fcf4ce5933a2d8339f7",
+          "subject": "Fix Foundation community contact mailto",
+          "date": "2026-10-05T12:10:03Z"
+        },
+        {
+          "sha": "15e44e03e3ad7cbfaefd7092670003b35e272f35",
+          "subject": "Guard Foundation mailto query syntax",
+          "date": "2026-10-05T12:10:05Z"
+        },
+        {
+          "sha": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+          "subject": "Validate duplicate mailto subject parameters",
+          "date": "2026-10-05T12:13:37Z"
+        }
+      ],
+      "file_diff_count": 2
+    },
+    {
+      "name": "fix/labs-standing-certificate-receipt-20261007",
+      "head": "92d78c0b53dce77ac174bfb67f85d70306277ccf",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 3,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "fix/labs-tax-standing-status-page-20261005",
+      "head": "8401ff83d1aba5b4ec1cf1a95df837ab0910968b",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 5,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "fix/postmerge-foundation-trust-proof-20261005",
+      "head": "20b521770beee295cd50d3260a6f0c981b21ba58",
+      "status": "diverged",
+      "ahead": 5,
+      "behind": 7,
+      "total": 5,
+      "returned": 5,
+      "commits": [
+        {
+          "sha": "e36fc5c180f8bdd3c0c3cde2d921f7bb560f6350",
+          "subject": "build(foundation): publish interior stylesheet",
+          "date": "2026-10-05T18:29:58Z"
+        },
+        {
+          "sha": "376a678e79d0b208f605e1cb1f5831f05a1a34fc",
+          "subject": "test(foundation): require live security route marker",
+          "date": "2026-10-05T18:30:02Z"
+        },
+        {
+          "sha": "3d31302a971b23559a15203864117972324051d8",
+          "subject": "test(foundation): lock security route live proof",
+          "date": "2026-10-05T18:30:07Z"
+        },
+        {
+          "sha": "e6d2c33544ae20bd26be1b6910b38cf8e295a138",
+          "subject": "truth(foundation): record verified role-routing boundary",
+          "date": "2026-10-05T18:30:19Z"
+        },
+        {
+          "sha": "20b521770beee295cd50d3260a6f0c981b21ba58",
+          "subject": "test(foundation): require interior stylesheet artifact",
+          "date": "2026-10-05T18:30:22Z"
+        }
+      ],
+      "file_diff_count": 5
+    },
+    {
+      "name": "fix/public-security-accessibility-routes-20261005",
+      "head": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "status": "diverged",
+      "ahead": 8,
+      "behind": 8,
+      "total": 8,
+      "returned": 8,
+      "commits": [
+        {
+          "sha": "05bc9a892ea43c47f0de9e53961d5354da4406e4",
+          "subject": "security(foundation): add public security reporting route",
+          "date": "2026-10-05T17:39:45Z"
+        },
+        {
+          "sha": "24f5dc73ca21b08f581e8efd8cffccfe3fe742ba",
+          "subject": "a11y(foundation): add accessibility reporting path",
+          "date": "2026-10-05T17:39:59Z"
+        },
+        {
+          "sha": "2dd54ddb144906f11b825542fc3560e28ff171ba",
+          "subject": "security(foundation): route sensitive reports safely",
+          "date": "2026-10-05T17:40:03Z"
+        },
+        {
+          "sha": "e1a7345860e905857ffcdb2ef5994d7280abea95",
+          "subject": "trust(foundation): register security route in scripts/build-public-site.py",
+          "date": "2026-10-05T17:40:15Z"
+        },
+        {
+          "sha": "fe0f308c22ce7570dc2efbd8b2df748331a5f248",
+          "subject": "trust(foundation): register security route in scripts/validate-routes.py",
+          "date": "2026-10-05T17:40:18Z"
+        },
+        {
+          "sha": "943cefa8044e46c3be973c747a68ebad3fda415f",
+          "subject": "trust(foundation): register security route in scripts/smoke-live-routes.py",
+          "date": "2026-10-05T17:40:21Z"
+        },
+        {
+          "sha": "1df8755eef3db4ca4fd9af46edc21e851b4b719e",
+          "subject": "trust(foundation): register security route in tests/test_smoke_live_routes.py",
+          "date": "2026-10-05T17:40:23Z"
+        },
+        {
+          "sha": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+          "subject": "trust(foundation): register security route in sitemap.xml",
+          "date": "2026-10-05T17:40:26Z"
+        }
+      ],
+      "file_diff_count": 8
+    },
+    {
+      "name": "foundation-audit-20260706",
+      "head": "72ac186c4663f0434d0ee685abcf267be26e5201",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 207,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "foundation-webapp-preview-v1",
+      "head": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "status": "diverged",
+      "ahead": 4,
+      "behind": 261,
+      "total": 4,
+      "returned": 4,
+      "commits": [
+        {
+          "sha": "4e1c7ad76c09a448e4b2144f495f7f4a3939f6d0",
+          "subject": "Add Foundation Firebase Hosting preview config",
+          "date": "2026-07-06T04:07:17Z"
+        },
+        {
+          "sha": "f682d35b263fcff89f6b41bff63112406eed7153",
+          "subject": "Add Foundation public CSS",
+          "date": "2026-07-06T04:07:52Z"
+        },
+        {
+          "sha": "406735851d5a8b98d03f337b4166b060c32a1aff",
+          "subject": "Add Foundation homepage skeleton",
+          "date": "2026-07-06T04:08:11Z"
+        },
+        {
+          "sha": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+          "subject": "Add Foundation mission page",
+          "date": "2026-07-06T04:08:35Z"
+        }
+      ],
+      "file_diff_count": 4
+    },
+    {
+      "name": "harden-foundation-website-launch",
+      "head": "ee3ba015aace70bb60e545815788e0fabe76ab5e",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 368,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    }
+  ]
+}
