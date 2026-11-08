@@ -14,3 +14,8 @@
 **Release gate**: no claim of current legal activation, deployed Foundation staff function, current custom-domain parity, federal tax-exemption, donation deductible receipt, registered partner/study, conformity certification, or full audit completeness. Existing Genesis production HOLD remains.
 
 **Completed in this review**: exact untruncated canonical main Git tree; 53 named branch refs; 48 PR snapshots; read foundational documents and legal preparation packets; checked exact GitHub Actions verdicts and key access-control source. Limitations: no local clone (network DNS unavailable), no new local runner or live provider admin proof. Continue evidence work without requiring owner to repeat the task.
+
+## R-GENESIS-A2 — next worker continuation
+Main-source SHA-256 all 120 files and all distinct 320 original branch-head Git blobs are complete, and all 53 original branch heads have untruncated recursive trees. Do **not** repeat this already proven exact-head byte work. Read `docs/estate/manifests/FOUNDATION_UNION_320_SHA256_COMPLETE.json`, `FOUNDATION_BRANCH_UNION_AND_HISTORICAL_ONLY_20261107.json`, and `FOUNDATION_MAIN_REACHABLE_COMMITS_PAGED_20261107.json`. Next priority is remaining **branch-only/intermediate commit graph and blobs**, external original legal evidence, reproducible provider runtime proof, and CI diagnostic logs.
+Latest audit PR #65 Check reported failure with missing log/step detail; investigate job start/permission/billing through read-only owner/provider evidence, do not hypothesize a test failure. Protect existing PR #60 and master #262 from overwrites. No deployment, legal filing, banking/Stripe funds, tax exemption or Foundation officer appointments from an AI worker.
+
