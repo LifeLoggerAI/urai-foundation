@@ -1,0 +1,2572 @@
+{
+  "source": "original 406-intermediate queue",
+  "slice": [
+    304,
+    320
+  ],
+  "commits": [
+    {
+      "index": 326,
+      "sha": "ec8e705c46c55aff14db8cfb19fa59dff5741445",
+      "truncated": false,
+      "returned_sha": "ec8e705c46c55aff14db8cfb19fa59dff5741445",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "e041cfd65c7252325739888ac9ef3c17859b5afa",
+          "bytes": 6728
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "3d522dc7de658d4d48a36c5978369617c8f4d1de",
+          "bytes": 4023
+        },
+        {
+          "path": "docs/release-and-versioning.md",
+          "sha": "5662c63597832fcc0b32bdd812005538b7b2d592",
+          "bytes": 2248
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "254c10e687016bb74c5eff3c97b84ef2415b81dc",
+          "bytes": 1004
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 327,
+      "sha": "efc01b4cdcb0e1df26ce5d3f715358154427c205",
+      "truncated": false,
+      "returned_sha": "efc01b4cdcb0e1df26ce5d3f715358154427c205",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "e041cfd65c7252325739888ac9ef3c17859b5afa",
+          "bytes": 6728
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/accessibility-and-site-quality-checklist.md",
+          "sha": "794a27fef492c4edf4072c60f31106e6f23e9dce",
+          "bytes": 2324
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "3d522dc7de658d4d48a36c5978369617c8f4d1de",
+          "bytes": 4023
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "254c10e687016bb74c5eff3c97b84ef2415b81dc",
+          "bytes": 1004
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 328,
+      "sha": "3a8aa9e8b3bfaa0d4189a5397019eca2ff9878bb",
+      "truncated": false,
+      "returned_sha": "3a8aa9e8b3bfaa0d4189a5397019eca2ff9878bb",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "e041cfd65c7252325739888ac9ef3c17859b5afa",
+          "bytes": 6728
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "3d522dc7de658d4d48a36c5978369617c8f4d1de",
+          "bytes": 4023
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "254c10e687016bb74c5eff3c97b84ef2415b81dc",
+          "bytes": 1004
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 329,
+      "sha": "ea6f984af8e768612a578b2d8aab2e2f376f096a",
+      "truncated": false,
+      "returned_sha": "ea6f984af8e768612a578b2d8aab2e2f376f096a",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "e041cfd65c7252325739888ac9ef3c17859b5afa",
+          "bytes": 6728
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "254c10e687016bb74c5eff3c97b84ef2415b81dc",
+          "bytes": 1004
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 330,
+      "sha": "caa11a1fb40d1a464a29b721ec92ba0cff256260",
+      "truncated": false,
+      "returned_sha": "caa11a1fb40d1a464a29b721ec92ba0cff256260",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "254c10e687016bb74c5eff3c97b84ef2415b81dc",
+          "bytes": 1004
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 331,
+      "sha": "f160f0133250fc19651351f3fa24cb64d4604fd9",
+      "truncated": false,
+      "returned_sha": "f160f0133250fc19651351f3fa24cb64d4604fd9",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "b77782cca64c44dbbedecb653d973bda86b81104",
+          "bytes": 457
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 332,
+      "sha": "1b8d74770ea72754ef5e0510434e721d1102b3e0",
+      "truncated": false,
+      "returned_sha": "1b8d74770ea72754ef5e0510434e721d1102b3e0",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+          "bytes": 1245
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 333,
+      "sha": "a30ce6de4d5bd8ced5563ebcea09d48c51c69119",
+      "truncated": false,
+      "returned_sha": "a30ce6de4d5bd8ced5563ebcea09d48c51c69119",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+          "bytes": 10969
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 334,
+      "sha": "4e8bca8f9aadad861e370d4b4d3cac992b813818",
+      "truncated": false,
+      "returned_sha": "4e8bca8f9aadad861e370d4b4d3cac992b813818",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "f6e4d03f42dc9e22177c1b8b740391d901b102c9",
+          "bytes": 13396
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 335,
+      "sha": "8a9ea7db892d266cb482262d5c1a618450451d71",
+      "truncated": false,
+      "returned_sha": "8a9ea7db892d266cb482262d5c1a618450451d71",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+          "bytes": 520
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+          "sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+          "bytes": 1613
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+          "sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+          "bytes": 1069
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+          "sha": "704a6e981605591d67ebc560bf09112927956d47",
+          "bytes": 1754
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+          "sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+          "bytes": 2342
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 336,
+      "sha": "35212d5c919eca7800be43e67a998f9f9e0082ba",
+      "truncated": false,
+      "returned_sha": "35212d5c919eca7800be43e67a998f9f9e0082ba",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "a1d123d1e0ccd5b2e07a662986d994502de95905",
+          "bytes": 9097
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+          "bytes": 10660
+        }
+      ]
+    },
+    {
+      "index": 337,
+      "sha": "5d935f9b6feec236c0a683b233d19b844adeac27",
+      "truncated": false,
+      "returned_sha": "5d935f9b6feec236c0a683b233d19b844adeac27",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "a9f152c8016e60f9847457346cfc8f0b7b9a45d4",
+          "bytes": 6591
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "0329112370467055b072f159f480f5e534df16a8",
+          "bytes": 6821
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "4286674828f0b212d203c0adfe0af4510da73112",
+          "bytes": 7292
+        }
+      ]
+    },
+    {
+      "index": 338,
+      "sha": "7e5e2c69809db2a2ba896e41dfbb16b8690cbce4",
+      "truncated": false,
+      "returned_sha": "7e5e2c69809db2a2ba896e41dfbb16b8690cbce4",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "177d3edd8f411d0b13bb7522fa84db9bb989313b",
+          "bytes": 6155
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/implementation-map.md",
+          "sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+          "bytes": 4041
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "0329112370467055b072f159f480f5e534df16a8",
+          "bytes": 6821
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "4286674828f0b212d203c0adfe0af4510da73112",
+          "bytes": 7292
+        }
+      ]
+    },
+    {
+      "index": 339,
+      "sha": "c387bc5fad8262bec1e7f5073ab34e7b22d80b1c",
+      "truncated": false,
+      "returned_sha": "c387bc5fad8262bec1e7f5073ab34e7b22d80b1c",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/check.yml",
+          "sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+          "bytes": 449
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "177d3edd8f411d0b13bb7522fa84db9bb989313b",
+          "bytes": 6155
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "0329112370467055b072f159f480f5e534df16a8",
+          "bytes": 6821
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "4286674828f0b212d203c0adfe0af4510da73112",
+          "bytes": 7292
+        }
+      ]
+    },
+    {
+      "index": 340,
+      "sha": "8adb54e710ede4a44727ceeda042da3b8c5d04d5",
+      "truncated": false,
+      "returned_sha": "8adb54e710ede4a44727ceeda042da3b8c5d04d5",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "177d3edd8f411d0b13bb7522fa84db9bb989313b",
+          "bytes": 6155
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "857b6ad360caa04c4c5a0d51428730aef8f90bda",
+          "bytes": 8800
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "0329112370467055b072f159f480f5e534df16a8",
+          "bytes": 6821
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+          "bytes": 7216
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "4286674828f0b212d203c0adfe0af4510da73112",
+          "bytes": 7292
+        }
+      ]
+    },
+    {
+      "index": 341,
+      "sha": "aa3a27eae319691b3e246de65b85cc550efd69e8",
+      "truncated": false,
+      "returned_sha": "aa3a27eae319691b3e246de65b85cc550efd69e8",
+      "files": [
+        {
+          "path": ".editorconfig",
+          "sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+          "bytes": 229
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+          "sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+          "bytes": 273
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+          "sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+          "bytes": 351
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "sha": "1aeb11a76aaf1c401f0d3644e89db110352b0280",
+          "bytes": 446
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "sha": "a70b9bb6a74451dc29dfdef95b379b539d7cc6bd",
+          "bytes": 400
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+          "bytes": 306
+        },
+        {
+          "path": "CNAME",
+          "sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+          "bytes": 19
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+          "bytes": 1083
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+          "bytes": 1275
+        },
+        {
+          "path": "Makefile",
+          "sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+          "bytes": 141
+        },
+        {
+          "path": "README.md",
+          "sha": "f3047680a692b72a84bcfe4921f1ab036f1ec2d2",
+          "bytes": 4717
+        },
+        {
+          "path": "SECURITY.md",
+          "sha": "eb871963c5810bba6035083fdbf0da136c831fec",
+          "bytes": 1053
+        },
+        {
+          "path": "docs/ethical-ai-principles.md",
+          "sha": "1883913ad807434aeb5f52fde7c7db17589406bf",
+          "bytes": 2143
+        },
+        {
+          "path": "docs/governance-charter.md",
+          "sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+          "bytes": 1738
+        },
+        {
+          "path": "docs/risk-review-process.md",
+          "sha": "9a34133a2353515273745e10a8b94d6182284e00",
+          "bytes": 1490
+        },
+        {
+          "path": "docs/templates/decision-record.md",
+          "sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+          "bytes": 879
+        },
+        {
+          "path": "docs/templates/risk-review-record.md",
+          "sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+          "bytes": 1338
+        },
+        {
+          "path": "docs/transparency-framework.md",
+          "sha": "1d1a3f7fd97649ba9ba9fe7ae9fb9aaeecad9240",
+          "bytes": 1465
+        },
+        {
+          "path": "index.html",
+          "sha": "42a9f8de0e0030f95bb4305eedf9270315f059a0",
+          "bytes": 7745
+        },
+        {
+          "path": "robots.txt",
+          "sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+          "bytes": 72
+        },
+        {
+          "path": "scripts/validate-docs.py",
+          "sha": "0329112370467055b072f159f480f5e534df16a8",
+          "bytes": 6821
+        },
+        {
+          "path": "site.webmanifest",
+          "sha": "ec87b1beb162b4d1cedb0c0b3ab41153c27f40f3",
+          "bytes": 275
+        },
+        {
+          "path": "sitemap.xml",
+          "sha": "d8196b21fd1653c4292ab0267c79fbfb341a6086",
+          "bytes": 236
+        },
+        {
+          "path": "styles.css",
+          "sha": "93d2474e9b713e07367da2e3e28af91904541de0",
+          "bytes": 6599
+        },
+        {
+          "path": "tests/test_validate_docs.py",
+          "sha": "4286674828f0b212d203c0adfe0af4510da73112",
+          "bytes": 7292
+        }
+      ]
+    }
+  ]
+}
