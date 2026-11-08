@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 112,
+  "end": 126,
+  "files": [
+    {
+      "path": "terms.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "8f3c4af4597bde782398934ad2b75851ed10d30d",
+      "bytes": 3927,
+      "sha256": "4bed516b5e3505bd9e0ad326828daac6fce9465b0703785a4c0769e7b4b455c0",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "8f4f8a7c44bf9549afe00b3fa2ffdb96cc95dd62",
+      "bytes": 9804,
+      "sha256": "39578962375c082ce9468afee13e0a6e41a06a5b6163a11ed516ba1035843c94",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "72ac186c4663f0434d0ee685abcf267be26e5201",
+      "reference_branch": "foundation-audit-20260706",
+      "git_blob_sha": "8f80e7c3ff8cdab24aed59555cf5306be7eae4f5",
+      "bytes": 8105,
+      "sha256": "d32a404c473fab28e501334c1e92cfb52229457e7048c81d13fa9b75522bc0a3",
+      "verified": true
+    },
+    {
+      "path": "SECURITY.md",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "90fd31374f877ce3e972d43993d4c2a4abd205f0",
+      "bytes": 1187,
+      "sha256": "ae010b4b4dc9c67adbac332807842f446e079dba4ba5f73b106d1f808599acbb",
+      "verified": true
+    },
+    {
+      "path": "terms/index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "9141e3f1f92de688a9d3dceb6e82c588c08704ea",
+      "bytes": 2692,
+      "sha256": "b046d174528e605654e368f837e85f84a5616c4824b5101147c2d37c5a032a03",
+      "verified": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "93bec9c23188db0d55b7b4de4316073b8064b71b",
+      "bytes": 1708,
+      "sha256": "934a38577837e5efabeb9bada594b958442a69045e519bee6922c603c23572e4",
+      "verified": true
+    },
+    {
+      "path": "styles.css",
+      "reference_commit": "ee3ba015aace70bb60e545815788e0fabe76ab5e",
+      "reference_branch": "harden-foundation-website-launch",
+      "git_blob_sha": "93d2474e9b713e07367da2e3e28af91904541de0",
+      "bytes": 6599,
+      "sha256": "d3b3577752ac4c8cc7ef0403ba15dd53c5fce6cd3d0996c569be5d92e299f533",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "995295d108d68424bbc87cc9f5b43a747ce1a9cd",
+      "bytes": 5803,
+      "sha256": "9ce22240e10c53f4b3bf78b352c0b04eba9a07ee0544256c882789d6e5f60d8f",
+      "verified": true
+    },
+    {
+      "path": "styles.css",
+      "reference_commit": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+      "reference_branch": "add-standards-versioning-policy-v2",
+      "git_blob_sha": "99e089fd40ef2edec20bc24f9f08b7beb12396da",
+      "bytes": 10969,
+      "sha256": "aff94400a5d0efd26434cbe5d682c0221b4c73224297b2b34e4b217bfb881e09",
+      "verified": true
+    },
+    {
+      "path": "docs/risk-review-process.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "9a34133a2353515273745e10a8b94d6182284e00",
+      "bytes": 1490,
+      "sha256": "e8826d2a44293efb8043bd42c5c9984a8de305c8046dfc328d6bedd38e78508f",
+      "verified": true
+    },
+    {
+      "path": "sitemap.xml",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "9c393a1e788f685aa9f685a83c3b4f2e7ae530cd",
+      "bytes": 2584,
+      "sha256": "c95499d149f08fbf1b50f2c9ea9d048c94e7429ef9c02ebbd2fdf0328cb8b0ed",
+      "verified": true
+    },
+    {
+      "path": "docs/donation-backend-contract.md",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "9d830c326d203bbd61c7e865f624758b04c01896",
+      "bytes": 8378,
+      "sha256": "c291527d346e2241e783ce70517264cccaf7a88c1362d10fb81f7903b89f2f34",
+      "verified": true
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "9ddfa05f28dd677f0617b9f03484b9e5515c1262",
+      "bytes": 3752,
+      "sha256": "7b29544737c107ac22fd9012dcf3a4290a2b5608917d4f64d502fd995eba821a",
+      "verified": true
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_ADVISORY_COUNCIL_ARCHITECTURE.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "9e63360c5fcba37f793ff675bfb0681a3cbb9b94",
+      "bytes": 18783,
+      "sha256": "9529355b57e1c8da8933ef6fe7dff5a6305b3628d37d6549531aad658a5b9ca5",
+      "verified": true
+    }
+  ]
+}
