@@ -1,0 +1,4118 @@
+{
+  "schema": "1",
+  "repository": "LifeLoggerAI/urai-foundation",
+  "original_ref_union_commits": 481,
+  "original_head_unique_tips": 51,
+  "intermediate_commits": 430,
+  "already_tree_inspected": 24,
+  "remaining": 406,
+  "origin_head_sha": "66bd2e7e7c111a09dd673759983fa2daae14e639",
+  "note": "Queue is for original reachable intermediate commits not yet tree-inspected; never present current audit-branch new commits as part of original 481.",
+  "queue": [
+    {
+      "sha": "655734fb0bf15cbc1fe58b788faae5dd0859ee93",
+      "parents": [
+        "95a0a6b5184ba1fa4af7aab2608d5a01e9108622"
+      ],
+      "date": "2026-10-02T03:56:09Z",
+      "subject": "fix(research): link Global Emotional Weather public route",
+      "main_reachable": true,
+      "intermediate_index": 16
+    },
+    {
+      "sha": "95a0a6b5184ba1fa4af7aab2608d5a01e9108622",
+      "parents": [
+        "91a1093db3f45e5b30e5f4defcd058ff25dad0c5"
+      ],
+      "date": "2026-10-02T03:56:06Z",
+      "subject": "feat(research): add Global Emotional Weather public-interest page",
+      "main_reachable": true,
+      "intermediate_index": 17
+    },
+    {
+      "sha": "91a1093db3f45e5b30e5f4defcd058ff25dad0c5",
+      "parents": [
+        "abdc7ef348f05d0a813b4c5d666decc8c9130fcd"
+      ],
+      "date": "2026-10-02T03:55:46Z",
+      "subject": "docs: surface Global Emotional Weather methodology boundary",
+      "main_reachable": true,
+      "intermediate_index": 18
+    },
+    {
+      "sha": "abdc7ef348f05d0a813b4c5d666decc8c9130fcd",
+      "parents": [
+        "26a39cfb8b4313d118b31fba85804fbb42396fa9"
+      ],
+      "date": "2026-10-02T03:55:43Z",
+      "subject": "docs: govern Global Emotional Weather public-interest boundary",
+      "main_reachable": true,
+      "intermediate_index": 19
+    },
+    {
+      "sha": "254f23ec4bc472bcbf64a4db885fa872efc63941",
+      "parents": [
+        "8972c7791ae7621dfa0b7575a0df477f82b71195"
+      ],
+      "date": "2026-09-25T14:16:56Z",
+      "subject": "ci: bind accessibility standards authority to exact-head proof",
+      "main_reachable": true,
+      "intermediate_index": 20
+    },
+    {
+      "sha": "8972c7791ae7621dfa0b7575a0df477f82b71195",
+      "parents": [
+        "6dd82f6f1ed36e1848c742ed98122e38bf729296"
+      ],
+      "date": "2026-09-25T14:16:38Z",
+      "subject": "test: enforce accessibility standards authority boundaries",
+      "main_reachable": true,
+      "intermediate_index": 21
+    },
+    {
+      "sha": "6dd82f6f1ed36e1848c742ed98122e38bf729296",
+      "parents": [
+        "8b43fe25f16e5a528d7173ac297337b103c7977e"
+      ],
+      "date": "2026-09-25T14:16:10Z",
+      "subject": "governance: link accessibility standards authority",
+      "main_reachable": true,
+      "intermediate_index": 22
+    },
+    {
+      "sha": "8b43fe25f16e5a528d7173ac297337b103c7977e",
+      "parents": [
+        "4f1c6f157de83cd7a18e5f77a6d64c2f97091a5e"
+      ],
+      "date": "2026-09-25T14:16:07Z",
+      "subject": "accessibility: lock WCAG 2.2 AA engineering target",
+      "main_reachable": true,
+      "intermediate_index": 23
+    },
+    {
+      "sha": "4f1c6f157de83cd7a18e5f77a6d64c2f97091a5e",
+      "parents": [
+        "c323cad2060be9e54e99ec7dabde9e2146e47b47"
+      ],
+      "date": "2026-09-25T14:16:04Z",
+      "subject": "accessibility: add current standards and legal authority matrix",
+      "main_reachable": true,
+      "intermediate_index": 24
+    },
+    {
+      "sha": "c323cad2060be9e54e99ec7dabde9e2146e47b47",
+      "parents": [
+        "46497c1d764cb528433f36c9432623ea413437ff"
+      ],
+      "date": "2026-09-25T02:09:54Z",
+      "subject": "docs: reconcile Foundation ecosystem integration authority",
+      "main_reachable": true,
+      "intermediate_index": 25
+    },
+    {
+      "sha": "46497c1d764cb528433f36c9432623ea413437ff",
+      "parents": [
+        "2572a6b30c7b23c24c8995673b3ae9a3db433d4a"
+      ],
+      "date": "2026-09-22T03:41:50Z",
+      "subject": "design: reconcile Foundation with warm civic visual authority",
+      "main_reachable": true,
+      "intermediate_index": 26
+    },
+    {
+      "sha": "2572a6b30c7b23c24c8995673b3ae9a3db433d4a",
+      "parents": [
+        "81b9f0af131f13f60de4492b814b55d3b54af760"
+      ],
+      "date": "2026-09-21T17:08:21Z",
+      "subject": "docs(foundation): preserve current Comptroller process truth",
+      "main_reachable": true,
+      "intermediate_index": 27
+    },
+    {
+      "sha": "81b9f0af131f13f60de4492b814b55d3b54af760",
+      "parents": [
+        "749d7278a8cc28c44102db42378e096b1c5cb7b0"
+      ],
+      "date": "2026-09-21T17:08:17Z",
+      "subject": "docs(foundation): record Comptroller acknowledgement without status overclaim",
+      "main_reachable": true,
+      "intermediate_index": 28
+    },
+    {
+      "sha": "749d7278a8cc28c44102db42378e096b1c5cb7b0",
+      "parents": [
+        "a3d1201632362dca8b218ad86ed41238d3bec471"
+      ],
+      "date": "2026-09-21T16:10:37Z",
+      "subject": "docs: update Foundation production legal-status truth",
+      "main_reachable": true,
+      "intermediate_index": 29
+    },
+    {
+      "sha": "a3d1201632362dca8b218ad86ed41238d3bec471",
+      "parents": [
+        "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6"
+      ],
+      "date": "2026-09-21T16:10:32Z",
+      "subject": "docs: reconcile Foundation Texas termination authority",
+      "main_reachable": true,
+      "intermediate_index": 30
+    },
+    {
+      "sha": "bc02189c4495e97e595f6a61cc28dd568080c7ff",
+      "parents": [
+        "eefe5ac593aecdf66cb923623f0c9f4c598fed26"
+      ],
+      "date": "2026-09-13T18:31:01Z",
+      "subject": "fix: align contact copy with Foundation claim guard",
+      "main_reachable": true,
+      "intermediate_index": 31
+    },
+    {
+      "sha": "eefe5ac593aecdf66cb923623f0c9f4c598fed26",
+      "parents": [
+        "b8bdb0bfb5987829c09a1df4be23e387d12e5fd0"
+      ],
+      "date": "2026-09-13T18:30:49Z",
+      "subject": "fix: align accessibility copy with Foundation claim guard",
+      "main_reachable": true,
+      "intermediate_index": 32
+    },
+    {
+      "sha": "b8bdb0bfb5987829c09a1df4be23e387d12e5fd0",
+      "parents": [
+        "45a6c4e53964c68e91e58945af63b48c2acf4501"
+      ],
+      "date": "2026-09-13T18:28:31Z",
+      "subject": "qa: capture every critical Foundation route at mobile and desktop",
+      "main_reachable": true,
+      "intermediate_index": 33
+    },
+    {
+      "sha": "45a6c4e53964c68e91e58945af63b48c2acf4501",
+      "parents": [
+        "f1de64f0e3f46353648ae27ac00cc6c9cce6feb8"
+      ],
+      "date": "2026-09-13T18:28:09Z",
+      "subject": "design: converge Foundation staff access boundary",
+      "main_reachable": true,
+      "intermediate_index": 34
+    },
+    {
+      "sha": "f1de64f0e3f46353648ae27ac00cc6c9cce6feb8",
+      "parents": [
+        "7d2248bf42398bf99ae204f190e93e9578b650f9"
+      ],
+      "date": "2026-09-13T18:27:49Z",
+      "subject": "design: converge Foundation contact shell",
+      "main_reachable": true,
+      "intermediate_index": 35
+    },
+    {
+      "sha": "7d2248bf42398bf99ae204f190e93e9578b650f9",
+      "parents": [
+        "f884658d2261540681865818c852c7bd7ec7f5c1"
+      ],
+      "date": "2026-09-13T18:27:35Z",
+      "subject": "design: converge Foundation responsible AI shell",
+      "main_reachable": true,
+      "intermediate_index": 36
+    },
+    {
+      "sha": "f884658d2261540681865818c852c7bd7ec7f5c1",
+      "parents": [
+        "7c274c9f52ea6dc681f0e48b129283e2f50819ec"
+      ],
+      "date": "2026-09-13T18:27:18Z",
+      "subject": "design: converge Foundation community shell and remove solicitation cues",
+      "main_reachable": true,
+      "intermediate_index": 37
+    },
+    {
+      "sha": "7c274c9f52ea6dc681f0e48b129283e2f50819ec",
+      "parents": [
+        "65a85f4a61a3ac68ed1d55e28a7f5d92addf4c56"
+      ],
+      "date": "2026-09-13T18:27:00Z",
+      "subject": "design: converge Foundation research interior shell",
+      "main_reachable": true,
+      "intermediate_index": 38
+    },
+    {
+      "sha": "65a85f4a61a3ac68ed1d55e28a7f5d92addf4c56",
+      "parents": [
+        "cfaaaef7abd2515b0ccde27b0792e6b94a963fc7"
+      ],
+      "date": "2026-09-13T18:26:44Z",
+      "subject": "design: converge Foundation public status shell",
+      "main_reachable": true,
+      "intermediate_index": 39
+    },
+    {
+      "sha": "cfaaaef7abd2515b0ccde27b0792e6b94a963fc7",
+      "parents": [
+        "3932dfb73a1e58c62de93d7dd1e6dd59e33d3a9a"
+      ],
+      "date": "2026-09-13T18:26:30Z",
+      "subject": "design: converge Foundation accessibility interior shell",
+      "main_reachable": true,
+      "intermediate_index": 40
+    },
+    {
+      "sha": "3932dfb73a1e58c62de93d7dd1e6dd59e33d3a9a",
+      "parents": [
+        "aabcd08171e92b2554ad4d6061ae9289521ec26f"
+      ],
+      "date": "2026-09-13T18:26:04Z",
+      "subject": "design: add warm Foundation interior shell",
+      "main_reachable": true,
+      "intermediate_index": 41
+    },
+    {
+      "sha": "aabcd08171e92b2554ad4d6061ae9289521ec26f",
+      "parents": [
+        "115d6aadc292b461857ebb8b8859775c0d9b82d3"
+      ],
+      "date": "2026-09-13T18:19:51Z",
+      "subject": "chore: remove superseded responsive helper",
+      "main_reachable": true,
+      "intermediate_index": 42
+    },
+    {
+      "sha": "115d6aadc292b461857ebb8b8859775c0d9b82d3",
+      "parents": [
+        "1d59bb2d59dcd0642bf7f682200b9cbd027eefa9"
+      ],
+      "date": "2026-09-13T18:19:40Z",
+      "subject": "fix: make Foundation mobile navigation fully legible",
+      "main_reachable": true,
+      "intermediate_index": 43
+    },
+    {
+      "sha": "1d59bb2d59dcd0642bf7f682200b9cbd027eefa9",
+      "parents": [
+        "f4f7314f7cd5c577802b4dc55d137c0888c32fab"
+      ],
+      "date": "2026-09-13T18:19:05Z",
+      "subject": "fix: make Foundation mobile navigation fully legible",
+      "main_reachable": true,
+      "intermediate_index": 44
+    },
+    {
+      "sha": "f4f7314f7cd5c577802b4dc55d137c0888c32fab",
+      "parents": [
+        "6fc53dd46afb1d45c7a967c97491117f2ef98de9"
+      ],
+      "date": "2026-09-13T18:16:41Z",
+      "subject": "qa: bind Foundation pixel proof to exact PR head",
+      "main_reachable": true,
+      "intermediate_index": 45
+    },
+    {
+      "sha": "6fc53dd46afb1d45c7a967c97491117f2ef98de9",
+      "parents": [
+        "34b09a6aea8edbc0c4401c5a3333e415f772f86b"
+      ],
+      "date": "2026-09-13T18:15:33Z",
+      "subject": "qa: repair Foundation visual proof route guards",
+      "main_reachable": true,
+      "intermediate_index": 46
+    },
+    {
+      "sha": "34b09a6aea8edbc0c4401c5a3333e415f772f86b",
+      "parents": [
+        "15f60282ee0cc6432af3667e4dff12642262a4a5"
+      ],
+      "date": "2026-09-13T18:14:24Z",
+      "subject": "qa: remove package dependency from Foundation pixel proof",
+      "main_reachable": true,
+      "intermediate_index": 47
+    },
+    {
+      "sha": "15f60282ee0cc6432af3667e4dff12642262a4a5",
+      "parents": [
+        "1ce522ba4fe7786bea660291b6d241dbb1c736bf"
+      ],
+      "date": "2026-09-13T18:13:01Z",
+      "subject": "qa: bind Foundation visual proof to runner Chrome",
+      "main_reachable": true,
+      "intermediate_index": 48
+    },
+    {
+      "sha": "1ce522ba4fe7786bea660291b6d241dbb1c736bf",
+      "parents": [
+        "d2049f98646a84d449647800377d448b3662d387"
+      ],
+      "date": "2026-09-13T18:11:43Z",
+      "subject": "qa: add exact-head Foundation browser visual proof",
+      "main_reachable": true,
+      "intermediate_index": 49
+    },
+    {
+      "sha": "35d7605f6b1095a1908a9f42f6fa5a343044f28b",
+      "parents": [
+        "e89c989743b530d5072f15f5a2ac5da80c2e80de"
+      ],
+      "date": "2026-09-13T18:10:32Z",
+      "subject": "design: restore Foundation ecosystem switcher and system atlas",
+      "main_reachable": true,
+      "intermediate_index": 51
+    },
+    {
+      "sha": "e89c989743b530d5072f15f5a2ac5da80c2e80de",
+      "parents": [
+        "cc93587b519164812ea1b405fe4a8dcacb52fffd"
+      ],
+      "date": "2026-09-13T17:38:52Z",
+      "subject": "design: add public Foundation governance route",
+      "main_reachable": true,
+      "intermediate_index": 52
+    },
+    {
+      "sha": "cc93587b519164812ea1b405fe4a8dcacb52fffd",
+      "parents": [
+        "91ca7e74abe1ecbc3c93b236dfdb2ce254a9e2df"
+      ],
+      "date": "2026-09-13T17:38:13Z",
+      "subject": "design: rebuild Foundation around public benefit and status truth",
+      "main_reachable": true,
+      "intermediate_index": 53
+    },
+    {
+      "sha": "91ca7e74abe1ecbc3c93b236dfdb2ce254a9e2df",
+      "parents": [
+        "ddc7ceb49c0591ce2a1865e9444a7cc5eeb54524"
+      ],
+      "date": "2026-09-13T17:37:52Z",
+      "subject": "design: add Foundation public-benefit homepage identity",
+      "main_reachable": true,
+      "intermediate_index": 54
+    },
+    {
+      "sha": "e99fd615cba3efd8da11e1cc6514198cdefca082",
+      "parents": [
+        "cb66240175789f55ff98ce60f6e948a788cf9eb4"
+      ],
+      "date": "2026-09-13T15:58:56Z",
+      "subject": "Runtime: move Foundation staff Functions to Node 22",
+      "main_reachable": true,
+      "intermediate_index": 55
+    },
+    {
+      "sha": "1ed56a75aef769d231deaf013b46533d221210f9",
+      "parents": [
+        "ea5c39210c242a21af0e4c9c3d332e187bdd0b8a"
+      ],
+      "date": "2026-09-10T01:47:56Z",
+      "subject": "Public: publish current Texas Foundation status",
+      "main_reachable": true,
+      "intermediate_index": 56
+    },
+    {
+      "sha": "ea5c39210c242a21af0e4c9c3d332e187bdd0b8a",
+      "parents": [
+        "1fbebd8dfd9b4960757b92424f6fd8338cb2c495"
+      ],
+      "date": "2026-09-05T22:34:43Z",
+      "subject": "Privacy: remove prospective advisor outreach from public source",
+      "main_reachable": true,
+      "intermediate_index": 57
+    },
+    {
+      "sha": "35f88f8d98a1d32e4b9d8b97dbdee39d7f1601f7",
+      "parents": [
+        "b4762f78552d3fd749c068af6d3af483c258b0e8"
+      ],
+      "date": "2026-09-05T22:07:39Z",
+      "subject": "docs: reconcile Foundation public route inventory",
+      "main_reachable": true,
+      "intermediate_index": 58
+    },
+    {
+      "sha": "b4762f78552d3fd749c068af6d3af483c258b0e8",
+      "parents": [
+        "bd8db8192802f955f851f6a630b1f6019dcfc6ea"
+      ],
+      "date": "2026-09-05T22:07:06Z",
+      "subject": "docs: record Foundation governance public-surface change",
+      "main_reachable": true,
+      "intermediate_index": 59
+    },
+    {
+      "sha": "bd8db8192802f955f851f6a630b1f6019dcfc6ea",
+      "parents": [
+        "75c3dd9697820dd998429ca3004d0a637f9c475c"
+      ],
+      "date": "2026-09-05T22:06:48Z",
+      "subject": "test: lock Foundation operator inventory to published routes",
+      "main_reachable": true,
+      "intermediate_index": 60
+    },
+    {
+      "sha": "75c3dd9697820dd998429ca3004d0a637f9c475c",
+      "parents": [
+        "3dac3224381076790166ad378779615febe8bb67"
+      ],
+      "date": "2026-09-05T22:06:35Z",
+      "subject": "docs: include governance routes in Foundation deployment smoke",
+      "main_reachable": true,
+      "intermediate_index": 61
+    },
+    {
+      "sha": "3dac3224381076790166ad378779615febe8bb67",
+      "parents": [
+        "2242a8f0fcc2a85ead475fdd7557e7c80e14ab2d"
+      ],
+      "date": "2026-09-05T22:06:17Z",
+      "subject": "docs: add status and governance to Foundation cutover smoke",
+      "main_reachable": true,
+      "intermediate_index": 62
+    },
+    {
+      "sha": "2242a8f0fcc2a85ead475fdd7557e7c80e14ab2d",
+      "parents": [
+        "4dd3df89943346fc52ca2ec6491ba1daaa81c508"
+      ],
+      "date": "2026-09-05T21:43:46Z",
+      "subject": "reconcile: test governance live marker",
+      "main_reachable": true,
+      "intermediate_index": 63
+    },
+    {
+      "sha": "4dd3df89943346fc52ca2ec6491ba1daaa81c508",
+      "parents": [
+        "f2be2baf145ae070cb269b795aae9319bec2ba0b"
+      ],
+      "date": "2026-09-05T21:43:36Z",
+      "subject": "reconcile: test governance and status publication boundary",
+      "main_reachable": true,
+      "intermediate_index": 64
+    },
+    {
+      "sha": "f2be2baf145ae070cb269b795aae9319bec2ba0b",
+      "parents": [
+        "ec704086cfe6814d2562f5215fad635f9caf3e29"
+      ],
+      "date": "2026-09-05T21:43:27Z",
+      "subject": "reconcile: publish governance route in sitemap",
+      "main_reachable": true,
+      "intermediate_index": 65
+    },
+    {
+      "sha": "ec704086cfe6814d2562f5215fad635f9caf3e29",
+      "parents": [
+        "967eccd0af9d93bf11d5dd006e159e773dd11cfc"
+      ],
+      "date": "2026-09-05T21:43:19Z",
+      "subject": "reconcile: validate governance and public 404",
+      "main_reachable": true,
+      "intermediate_index": 66
+    },
+    {
+      "sha": "967eccd0af9d93bf11d5dd006e159e773dd11cfc",
+      "parents": [
+        "983cb64eaafeba9f346809c70f3d997a497e69a9"
+      ],
+      "date": "2026-09-05T21:43:09Z",
+      "subject": "reconcile: require governance in live smoke",
+      "main_reachable": true,
+      "intermediate_index": 67
+    },
+    {
+      "sha": "983cb64eaafeba9f346809c70f3d997a497e69a9",
+      "parents": [
+        "fc4bd5cf3b8ed982651d5d9bbb13b5b5150ab746"
+      ],
+      "date": "2026-09-05T21:42:58Z",
+      "subject": "reconcile: include governance and 404 in public artifact",
+      "main_reachable": true,
+      "intermediate_index": 68
+    },
+    {
+      "sha": "fc4bd5cf3b8ed982651d5d9bbb13b5b5150ab746",
+      "parents": [
+        "4e3e20e5b7a2931fe44c8bc31485e46765de8170"
+      ],
+      "date": "2026-09-05T21:42:48Z",
+      "subject": "reconcile: integrate governance links on current main",
+      "main_reachable": true,
+      "intermediate_index": 69
+    },
+    {
+      "sha": "4e3e20e5b7a2931fe44c8bc31485e46765de8170",
+      "parents": [
+        "93ced139c2c6545a8bcb66109f295593a8f69e34"
+      ],
+      "date": "2026-09-05T21:42:31Z",
+      "subject": "reconcile: restore governance surface on current main",
+      "main_reachable": true,
+      "intermediate_index": 70
+    },
+    {
+      "sha": "93ced139c2c6545a8bcb66109f295593a8f69e34",
+      "parents": [
+        "1fbebd8dfd9b4960757b92424f6fd8338cb2c495"
+      ],
+      "date": "2026-09-05T21:42:19Z",
+      "subject": "reconcile: restore public 404 on current main",
+      "main_reachable": true,
+      "intermediate_index": 71
+    },
+    {
+      "sha": "5924004045a3078001142b80cf2cfd027b35ca96",
+      "parents": [
+        "4915cd5dc761aa9764fa3c72600b84bbc5b3da3c",
+        "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7"
+      ],
+      "date": "2026-09-04T17:32:24Z",
+      "subject": "Merge PR #23: Foundation portal base",
+      "main_reachable": true,
+      "intermediate_index": 72
+    },
+    {
+      "sha": "766b2b0d4282e46cc6f619f215214356fe12a94f",
+      "parents": [
+        "16841f01d605186834c3524bea58681d09301360"
+      ],
+      "date": "2026-09-04T04:01:30Z",
+      "subject": "test(grants): lock document provenance type boundary",
+      "main_reachable": true,
+      "intermediate_index": 73
+    },
+    {
+      "sha": "16841f01d605186834c3524bea58681d09301360",
+      "parents": [
+        "fa3ba14fb2b38a15b027cbbd6125ca67b0e02bfa"
+      ],
+      "date": "2026-09-04T04:01:15Z",
+      "subject": "fix(grants): preserve document provenance value types",
+      "main_reachable": true,
+      "intermediate_index": 74
+    },
+    {
+      "sha": "fa3ba14fb2b38a15b027cbbd6125ca67b0e02bfa",
+      "parents": [
+        "8315864e93bebfaf551b9a8a7f44d036d3fd3c59"
+      ],
+      "date": "2026-09-04T03:43:57Z",
+      "subject": "docs: restore staff backend validation phrase",
+      "main_reachable": true,
+      "intermediate_index": 75
+    },
+    {
+      "sha": "8315864e93bebfaf551b9a8a7f44d036d3fd3c59",
+      "parents": [
+        "8a8c3c87ab71adf35b88ff247338135a067aa7f0",
+        "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7"
+      ],
+      "date": "2026-09-04T03:35:10Z",
+      "subject": "merge: reconcile Foundation portal parent into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 76
+    },
+    {
+      "sha": "8a8c3c87ab71adf35b88ff247338135a067aa7f0",
+      "parents": [
+        "c55ed36a18c4b729a44e43ffed6cd4b47d1a8275"
+      ],
+      "date": "2026-09-04T03:34:59Z",
+      "subject": "docs: restack implementation map on portal truth",
+      "main_reachable": true,
+      "intermediate_index": 77
+    },
+    {
+      "sha": "c55ed36a18c4b729a44e43ffed6cd4b47d1a8275",
+      "parents": [
+        "553f4706fc37c7ae94f37e94532f8386f8530339"
+      ],
+      "date": "2026-09-04T03:34:40Z",
+      "subject": "docs: reconcile staff backend with portal authority",
+      "main_reachable": true,
+      "intermediate_index": 78
+    },
+    {
+      "sha": "c21e25bb7d67dbcfa4f6e42d5763524f7a0b0901",
+      "parents": [
+        "ab465a2e040480a30feca6de09292b7d664e7ee2"
+      ],
+      "date": "2026-09-04T03:04:06Z",
+      "subject": "docs: reconcile Foundation portal route authority",
+      "main_reachable": true,
+      "intermediate_index": 79
+    },
+    {
+      "sha": "553f4706fc37c7ae94f37e94532f8386f8530339",
+      "parents": [
+        "6c2f6d4a08314d96e9e68dc9d0c086cbaacabe24"
+      ],
+      "date": "2026-09-04T00:51:04Z",
+      "subject": "test: lock strict Foundation profile provenance comparison",
+      "main_reachable": true,
+      "intermediate_index": 80
+    },
+    {
+      "sha": "ab465a2e040480a30feca6de09292b7d664e7ee2",
+      "parents": [
+        "4aa9b00698479308a72dc14205edf5c58c4de6cd"
+      ],
+      "date": "2026-09-03T22:03:44Z",
+      "subject": "docs(portal): reconcile canonical route inventory",
+      "main_reachable": true,
+      "intermediate_index": 81
+    },
+    {
+      "sha": "4aa9b00698479308a72dc14205edf5c58c4de6cd",
+      "parents": [
+        "29b46f7af24df9765205b42b283634402e457918"
+      ],
+      "date": "2026-09-03T22:03:38Z",
+      "subject": "docs(portal): reconcile canonical route inventory",
+      "main_reachable": true,
+      "intermediate_index": 82
+    },
+    {
+      "sha": "6c2f6d4a08314d96e9e68dc9d0c086cbaacabe24",
+      "parents": [
+        "a731e81528c63cbb6e241c911dce8e9a7eb4232a"
+      ],
+      "date": "2026-09-03T22:02:54Z",
+      "subject": "docs(staff): correct checked-in Storage status",
+      "main_reachable": true,
+      "intermediate_index": 83
+    },
+    {
+      "sha": "a731e81528c63cbb6e241c911dce8e9a7eb4232a",
+      "parents": [
+        "b4d0e2d06637f717dfe20c9cb3f739e1090b8a41"
+      ],
+      "date": "2026-09-03T22:02:47Z",
+      "subject": "docs(staff): correct checked-in Storage status",
+      "main_reachable": true,
+      "intermediate_index": 84
+    },
+    {
+      "sha": "b4d0e2d06637f717dfe20c9cb3f739e1090b8a41",
+      "parents": [
+        "f3de33b09c45a27b418e8000c63f11576ad119c3"
+      ],
+      "date": "2026-09-03T22:02:40Z",
+      "subject": "fix(staff): preserve profile evidence value types",
+      "main_reachable": true,
+      "intermediate_index": 85
+    },
+    {
+      "sha": "f3de33b09c45a27b418e8000c63f11576ad119c3",
+      "parents": [
+        "acd3a3648edd8829d1976fa1e265da9c3f13f976",
+        "29b46f7af24df9765205b42b283634402e457918"
+      ],
+      "date": "2026-09-03T20:56:16Z",
+      "subject": "Merge current grant concierge base into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 86
+    },
+    {
+      "sha": "29b46f7af24df9765205b42b283634402e457918",
+      "parents": [
+        "f2d1226ff57d5b2ff3fca2fccab25e2faa79acb7"
+      ],
+      "date": "2026-09-03T20:54:00Z",
+      "subject": "Lock approved grant version regression",
+      "main_reachable": true,
+      "intermediate_index": 87
+    },
+    {
+      "sha": "f2d1226ff57d5b2ff3fca2fccab25e2faa79acb7",
+      "parents": [
+        "8329d11e77a1653a1bded271c80ce01ce1889437"
+      ],
+      "date": "2026-09-03T20:53:52Z",
+      "subject": "Preserve approved grant draft versions",
+      "main_reachable": true,
+      "intermediate_index": 88
+    },
+    {
+      "sha": "acd3a3648edd8829d1976fa1e265da9c3f13f976",
+      "parents": [
+        "fa678978efa8ee47a7584b45ac1529702272c7f6"
+      ],
+      "date": "2026-09-03T20:11:08Z",
+      "subject": "stack: consume Foundation portal tests/test_smoke_live_routes.py",
+      "main_reachable": true,
+      "intermediate_index": 89
+    },
+    {
+      "sha": "fa678978efa8ee47a7584b45ac1529702272c7f6",
+      "parents": [
+        "b8f0ace91e14816e7b7a76aa28169a0832f7ff6d"
+      ],
+      "date": "2026-09-03T20:11:01Z",
+      "subject": "stack: consume Foundation portal grants/grants.js",
+      "main_reachable": true,
+      "intermediate_index": 90
+    },
+    {
+      "sha": "b8f0ace91e14816e7b7a76aa28169a0832f7ff6d",
+      "parents": [
+        "50789fc8ec7888b388468bd897af5b00267a2e97"
+      ],
+      "date": "2026-09-03T20:08:13Z",
+      "subject": "docs: clarify remaining Firebase Hosting work",
+      "main_reachable": true,
+      "intermediate_index": 91
+    },
+    {
+      "sha": "50789fc8ec7888b388468bd897af5b00267a2e97",
+      "parents": [
+        "00a6aa795512f54af159f8b42605b1b64c50d3be"
+      ],
+      "date": "2026-09-03T20:08:07Z",
+      "subject": "docs: distinguish backend config from hosting setup",
+      "main_reachable": true,
+      "intermediate_index": 92
+    },
+    {
+      "sha": "00a6aa795512f54af159f8b42605b1b64c50d3be",
+      "parents": [
+        "1daec5ec3a36ef3c9026d11c35cf4c1c30f17161"
+      ],
+      "date": "2026-09-03T20:07:59Z",
+      "subject": "security: require typed canonical profile values",
+      "main_reachable": true,
+      "intermediate_index": 93
+    },
+    {
+      "sha": "8329d11e77a1653a1bded271c80ce01ce1889437",
+      "parents": [
+        "17d9e8358cae57651467cd7f4092e2d41f5292e9"
+      ],
+      "date": "2026-09-03T19:52:34Z",
+      "subject": "fix: retain approved-version lineage after receipt invalidation",
+      "main_reachable": true,
+      "intermediate_index": 94
+    },
+    {
+      "sha": "17d9e8358cae57651467cd7f4092e2d41f5292e9",
+      "parents": [
+        "4ded2ed6659301c6f09caa4d339474dce627c79c"
+      ],
+      "date": "2026-09-03T19:52:15Z",
+      "subject": "test: include Grant Desk script marker",
+      "main_reachable": true,
+      "intermediate_index": 95
+    },
+    {
+      "sha": "1daec5ec3a36ef3c9026d11c35cf4c1c30f17161",
+      "parents": [
+        "f76d92fb25e4f8da6de9745be51b271dbbe3abda",
+        "4ded2ed6659301c6f09caa4d339474dce627c79c"
+      ],
+      "date": "2026-09-03T19:49:51Z",
+      "subject": "merge: consume exact current Foundation portal authority",
+      "main_reachable": true,
+      "intermediate_index": 96
+    },
+    {
+      "sha": "f76d92fb25e4f8da6de9745be51b271dbbe3abda",
+      "parents": [
+        "634bc3720f4bcc80d4c902d1abfa591c074e8796"
+      ],
+      "date": "2026-09-03T19:49:38Z",
+      "subject": "stack: consume current portal grants/grants.js",
+      "main_reachable": true,
+      "intermediate_index": 97
+    },
+    {
+      "sha": "634bc3720f4bcc80d4c902d1abfa591c074e8796",
+      "parents": [
+        "a884e4f865dde5410885861b8adee8c50d7761e1"
+      ],
+      "date": "2026-09-03T19:49:28Z",
+      "subject": "stack: consume current portal scripts/smoke-live-routes.py",
+      "main_reachable": true,
+      "intermediate_index": 98
+    },
+    {
+      "sha": "a884e4f865dde5410885861b8adee8c50d7761e1",
+      "parents": [
+        "dd32ff9e67ce8e425d369ebc0990962c0222ce2a"
+      ],
+      "date": "2026-09-03T19:47:56Z",
+      "subject": "Lock full opportunity definition regression",
+      "main_reachable": true,
+      "intermediate_index": 99
+    },
+    {
+      "sha": "4ded2ed6659301c6f09caa4d339474dce627c79c",
+      "parents": [
+        "7d22b76511208489f68267073438d8edbaf3afe4"
+      ],
+      "date": "2026-09-03T19:45:58Z",
+      "subject": "fix: version materially changed approved grant drafts",
+      "main_reachable": true,
+      "intermediate_index": 101
+    },
+    {
+      "sha": "7d22b76511208489f68267073438d8edbaf3afe4",
+      "parents": [
+        "f5f86135eb7a17c7ead954afa676d1f76fb4672f"
+      ],
+      "date": "2026-09-03T19:45:29Z",
+      "subject": "fix: smoke-test Grant Desk runtime script",
+      "main_reachable": true,
+      "intermediate_index": 102
+    },
+    {
+      "sha": "411b811430102b63a2efaebaee2ce5defe709650",
+      "parents": [
+        "f50c4a11a61076c39aed75c525a4f24adafc1bc1"
+      ],
+      "date": "2026-09-03T19:27:26Z",
+      "subject": "test: lock protected opportunity revalidation",
+      "main_reachable": true,
+      "intermediate_index": 103
+    },
+    {
+      "sha": "f50c4a11a61076c39aed75c525a4f24adafc1bc1",
+      "parents": [
+        "51d4b1f2addbbc97b3bbccd76056096b3b825d42"
+      ],
+      "date": "2026-09-03T19:27:12Z",
+      "subject": "fix: revalidate grant opportunity at review and approval",
+      "main_reachable": true,
+      "intermediate_index": 104
+    },
+    {
+      "sha": "51d4b1f2addbbc97b3bbccd76056096b3b825d42",
+      "parents": [
+        "34a6df31e637add2823c0fb937a8f4a7ae6702ac",
+        "f5f86135eb7a17c7ead954afa676d1f76fb4672f"
+      ],
+      "date": "2026-09-03T19:15:37Z",
+      "subject": "Merge current Grant Desk fixes into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 105
+    },
+    {
+      "sha": "f5f86135eb7a17c7ead954afa676d1f76fb4672f",
+      "parents": [
+        "1691be08231a0b9f5729ed923a72c056faf6d2c6"
+      ],
+      "date": "2026-09-03T19:10:16Z",
+      "subject": "fix: harden grant review and signoff validation",
+      "main_reachable": true,
+      "intermediate_index": 106
+    },
+    {
+      "sha": "34a6df31e637add2823c0fb937a8f4a7ae6702ac",
+      "parents": [
+        "582a067fe4bfe80be9e87d79c20996e8ceb55c73"
+      ],
+      "date": "2026-09-03T19:02:06Z",
+      "subject": "test: lock grant question and provenance invariants",
+      "main_reachable": true,
+      "intermediate_index": 107
+    },
+    {
+      "sha": "582a067fe4bfe80be9e87d79c20996e8ceb55c73",
+      "parents": [
+        "fc6960ef8d94c6e7162846c8f85b6ccc798d933b"
+      ],
+      "date": "2026-09-03T19:01:47Z",
+      "subject": "fix: bind grant answers to opportunity and generated provenance",
+      "main_reachable": true,
+      "intermediate_index": 108
+    },
+    {
+      "sha": "fc6960ef8d94c6e7162846c8f85b6ccc798d933b",
+      "parents": [
+        "c784613985120ba59d878aa239f3e80ff8bcd785"
+      ],
+      "date": "2026-09-03T18:10:21Z",
+      "subject": "Cover immutable grant provenance approval",
+      "main_reachable": true,
+      "intermediate_index": 109
+    },
+    {
+      "sha": "c784613985120ba59d878aa239f3e80ff8bcd785",
+      "parents": [
+        "3a0ec7d9dbf84a651347e1d370011ce5346cc485"
+      ],
+      "date": "2026-09-03T18:09:54Z",
+      "subject": "Align Foundation source-scope documentation",
+      "main_reachable": true,
+      "intermediate_index": 110
+    },
+    {
+      "sha": "3a0ec7d9dbf84a651347e1d370011ce5346cc485",
+      "parents": [
+        "258c0dcbc0f44648530a689dae4b8b8d672bf760"
+      ],
+      "date": "2026-09-03T18:09:40Z",
+      "subject": "Align Foundation source-scope documentation",
+      "main_reachable": true,
+      "intermediate_index": 111
+    },
+    {
+      "sha": "258c0dcbc0f44648530a689dae4b8b8d672bf760",
+      "parents": [
+        "4aa9ec58f4fac837dfb570cdb2895316837a7c7f"
+      ],
+      "date": "2026-09-03T18:09:27Z",
+      "subject": "Align Foundation source-scope documentation",
+      "main_reachable": true,
+      "intermediate_index": 112
+    },
+    {
+      "sha": "4aa9ec58f4fac837dfb570cdb2895316837a7c7f",
+      "parents": [
+        "3269806c91b079e207e3e3666d747137830ff90d"
+      ],
+      "date": "2026-09-03T18:08:46Z",
+      "subject": "Revalidate authoritative grant provenance",
+      "main_reachable": true,
+      "intermediate_index": 113
+    },
+    {
+      "sha": "3269806c91b079e207e3e3666d747137830ff90d",
+      "parents": [
+        "41f2ad66f41a1b2f05a415f642ee6ecc65a0d2df"
+      ],
+      "date": "2026-09-03T17:53:41Z",
+      "subject": "test: detect literal escaped newlines precisely",
+      "main_reachable": true,
+      "intermediate_index": 114
+    },
+    {
+      "sha": "41f2ad66f41a1b2f05a415f642ee6ecc65a0d2df",
+      "parents": [
+        "0f5ea20c6a933c3e0f08d3953730cdc0684e908a"
+      ],
+      "date": "2026-09-03T17:53:28Z",
+      "subject": "test: detect literal escaped newlines precisely",
+      "main_reachable": true,
+      "intermediate_index": 115
+    },
+    {
+      "sha": "0f5ea20c6a933c3e0f08d3953730cdc0684e908a",
+      "parents": [
+        "6faa0b7a4d220dd325bf10e9aad40622160e512c"
+      ],
+      "date": "2026-09-03T17:46:01Z",
+      "subject": "test: enforce truthful Foundation repository scope",
+      "main_reachable": true,
+      "intermediate_index": 116
+    },
+    {
+      "sha": "6faa0b7a4d220dd325bf10e9aad40622160e512c",
+      "parents": [
+        "8bb633049b46ef183d5d4074a6f54d9ffe7fcb52"
+      ],
+      "date": "2026-09-03T17:45:34Z",
+      "subject": "test: lock grant evidence and opportunity boundaries",
+      "main_reachable": true,
+      "intermediate_index": 117
+    },
+    {
+      "sha": "8bb633049b46ef183d5d4074a6f54d9ffe7fcb52",
+      "parents": [
+        "94932cfc814423753c5e30ed2311c7dc1c2a0c01"
+      ],
+      "date": "2026-09-03T17:45:05Z",
+      "subject": "docs: reconcile Foundation backend repository role",
+      "main_reachable": true,
+      "intermediate_index": 118
+    },
+    {
+      "sha": "94932cfc814423753c5e30ed2311c7dc1c2a0c01",
+      "parents": [
+        "4adc22738fdf901bb9d199ffebe04a2f673ec1bd"
+      ],
+      "date": "2026-09-03T17:44:40Z",
+      "subject": "fix: finalize protected grant evidence validation",
+      "main_reachable": true,
+      "intermediate_index": 119
+    },
+    {
+      "sha": "4adc22738fdf901bb9d199ffebe04a2f673ec1bd",
+      "parents": [
+        "0a87b25266ef3ddbc16465c262dad591813118f5"
+      ],
+      "date": "2026-09-03T16:59:48Z",
+      "subject": "Lock exact provenance and opportunity validation contracts",
+      "main_reachable": true,
+      "intermediate_index": 120
+    },
+    {
+      "sha": "0a87b25266ef3ddbc16465c262dad591813118f5",
+      "parents": [
+        "34718d988f7b0a06b4e0cf132b94c03f62dbc99d"
+      ],
+      "date": "2026-09-03T16:59:29Z",
+      "subject": "Reconcile Foundation repository role with undeployed backend source",
+      "main_reachable": true,
+      "intermediate_index": 121
+    },
+    {
+      "sha": "34718d988f7b0a06b4e0cf132b94c03f62dbc99d",
+      "parents": [
+        "4637ef7f7e61d6ff535c25d30825ac347e01b623"
+      ],
+      "date": "2026-09-03T16:58:54Z",
+      "subject": "Bind grant answers to exact evidence and validate opportunities",
+      "main_reachable": true,
+      "intermediate_index": 122
+    },
+    {
+      "sha": "4637ef7f7e61d6ff535c25d30825ac347e01b623",
+      "parents": [
+        "8ef50776a14ba2989283c8976dec7b626f53ab99"
+      ],
+      "date": "2026-09-03T16:29:50Z",
+      "subject": "fix: repair grant provenance validator source",
+      "main_reachable": true,
+      "intermediate_index": 123
+    },
+    {
+      "sha": "8ef50776a14ba2989283c8976dec7b626f53ab99",
+      "parents": [
+        "874407c53a95bbfb632515a6b32c2e6903aee970",
+        "1691be08231a0b9f5729ed923a72c056faf6d2c6"
+      ],
+      "date": "2026-09-03T12:40:37Z",
+      "subject": "Merge final Grant Desk parser repair into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 124
+    },
+    {
+      "sha": "1691be08231a0b9f5729ed923a72c056faf6d2c6",
+      "parents": [
+        "d55d53aa089c53873336f2e0127148493e00dc25"
+      ],
+      "date": "2026-09-03T12:40:06Z",
+      "subject": "Test valid currency parsing and cent preservation",
+      "main_reachable": true,
+      "intermediate_index": 125
+    },
+    {
+      "sha": "d55d53aa089c53873336f2e0127148493e00dc25",
+      "parents": [
+        "2c46c5611dc08b8d2dc790bbc2e95e36a2144c4b"
+      ],
+      "date": "2026-09-03T12:39:57Z",
+      "subject": "Fix currency parser escapes and preserve cents",
+      "main_reachable": true,
+      "intermediate_index": 126
+    },
+    {
+      "sha": "874407c53a95bbfb632515a6b32c2e6903aee970",
+      "parents": [
+        "5557eab1742b7a72e499b0f89c977b8e149d0d8a"
+      ],
+      "date": "2026-09-03T12:34:52Z",
+      "subject": "Test authoritative provenance binding",
+      "main_reachable": true,
+      "intermediate_index": 127
+    },
+    {
+      "sha": "5557eab1742b7a72e499b0f89c977b8e149d0d8a",
+      "parents": [
+        "b390b784d1c08a51fe8833176a77ac85e4116a8d"
+      ],
+      "date": "2026-09-03T12:34:44Z",
+      "subject": "Validate authoritative answer provenance",
+      "main_reachable": true,
+      "intermediate_index": 128
+    },
+    {
+      "sha": "b390b784d1c08a51fe8833176a77ac85e4116a8d",
+      "parents": [
+        "fb4c4fc70b3bc2f9c625d3356d4b4edb59ddbf12"
+      ],
+      "date": "2026-09-03T12:34:36Z",
+      "subject": "Bind verified answers to authoritative evidence",
+      "main_reachable": true,
+      "intermediate_index": 129
+    },
+    {
+      "sha": "fb4c4fc70b3bc2f9c625d3356d4b4edb59ddbf12",
+      "parents": [
+        "3f669b60ab4f549babad5faa77afbfb93d6ead6c"
+      ],
+      "date": "2026-09-03T12:30:41Z",
+      "subject": "Test supported roles and transactional authority",
+      "main_reachable": true,
+      "intermediate_index": 130
+    },
+    {
+      "sha": "3f669b60ab4f549babad5faa77afbfb93d6ead6c",
+      "parents": [
+        "2c8dd1ba44341cedd8641a2d7a4c212c693a161e"
+      ],
+      "date": "2026-09-03T12:30:34Z",
+      "subject": "Lock transactional staff authority checks",
+      "main_reachable": true,
+      "intermediate_index": 131
+    },
+    {
+      "sha": "2c8dd1ba44341cedd8641a2d7a4c212c693a161e",
+      "parents": [
+        "e491a58f491b8f593dbd9873c32b4eeb602abaee"
+      ],
+      "date": "2026-09-03T12:30:23Z",
+      "subject": "Correct Firebase configuration status",
+      "main_reachable": true,
+      "intermediate_index": 132
+    },
+    {
+      "sha": "e491a58f491b8f593dbd9873c32b4eeb602abaee",
+      "parents": [
+        "64673dba18ca1b02aa2c54d00032ac9ed0200f47"
+      ],
+      "date": "2026-09-03T12:30:15Z",
+      "subject": "Fail closed on unsafe owner-claim repair",
+      "main_reachable": true,
+      "intermediate_index": 133
+    },
+    {
+      "sha": "64673dba18ca1b02aa2c54d00032ac9ed0200f47",
+      "parents": [
+        "23d3dc234873db88e3571cd4d8b1851294481390"
+      ],
+      "date": "2026-09-03T12:30:05Z",
+      "subject": "Recheck staff authority inside protected transactions",
+      "main_reachable": true,
+      "intermediate_index": 134
+    },
+    {
+      "sha": "23d3dc234873db88e3571cd4d8b1851294481390",
+      "parents": [
+        "4137474726111fd214dce2b022780ffbfa8ff2c7"
+      ],
+      "date": "2026-09-03T12:29:57Z",
+      "subject": "Restrict active staff to supported roles",
+      "main_reachable": true,
+      "intermediate_index": 135
+    },
+    {
+      "sha": "4137474726111fd214dce2b022780ffbfa8ff2c7",
+      "parents": [
+        "1542e6c3d2870b8cb6a099639101f0268ceb3943",
+        "2c46c5611dc08b8d2dc790bbc2e95e36a2144c4b"
+      ],
+      "date": "2026-09-03T12:22:12Z",
+      "subject": "Merge final Grant Desk review repairs into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 136
+    },
+    {
+      "sha": "2c46c5611dc08b8d2dc790bbc2e95e36a2144c4b",
+      "parents": [
+        "5aeb7e8457781a304554b5bf712ea88710683fc6"
+      ],
+      "date": "2026-09-03T12:21:44Z",
+      "subject": "Type multi-marker live smoke expectations",
+      "main_reachable": true,
+      "intermediate_index": 137
+    },
+    {
+      "sha": "5aeb7e8457781a304554b5bf712ea88710683fc6",
+      "parents": [
+        "fabd805e19d4e62aefa92c0767e0644cb95753a1"
+      ],
+      "date": "2026-09-03T12:21:38Z",
+      "subject": "Test Grant Desk answer source badges",
+      "main_reachable": true,
+      "intermediate_index": 138
+    },
+    {
+      "sha": "fabd805e19d4e62aefa92c0767e0644cb95753a1",
+      "parents": [
+        "d127802fff1405e7a41412a1dd6d27d3e8b0c978"
+      ],
+      "date": "2026-09-03T12:21:31Z",
+      "subject": "Distinguish employee-confirmed Grant Desk answers",
+      "main_reachable": true,
+      "intermediate_index": 139
+    },
+    {
+      "sha": "1542e6c3d2870b8cb6a099639101f0268ceb3943",
+      "parents": [
+        "d8d3f6be9ebe1982973e83fb332bd8b2e9362751",
+        "d127802fff1405e7a41412a1dd6d27d3e8b0c978"
+      ],
+      "date": "2026-09-03T12:20:01Z",
+      "subject": "Merge repaired Grant Desk parent into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 140
+    },
+    {
+      "sha": "d127802fff1405e7a41412a1dd6d27d3e8b0c978",
+      "parents": [
+        "a7a577d2cc94221789e55f10a67be72e2a1f4d42"
+      ],
+      "date": "2026-09-03T12:19:11Z",
+      "subject": "Cover strict currency fact validation",
+      "main_reachable": true,
+      "intermediate_index": 141
+    },
+    {
+      "sha": "a7a577d2cc94221789e55f10a67be72e2a1f4d42",
+      "parents": [
+        "eda8ed3409f362b8982618ca06d5df982d65f854"
+      ],
+      "date": "2026-09-03T12:19:04Z",
+      "subject": "Reject malformed Grant Desk currency facts",
+      "main_reachable": true,
+      "intermediate_index": 142
+    },
+    {
+      "sha": "eda8ed3409f362b8982618ca06d5df982d65f854",
+      "parents": [
+        "6b65dfdc2217aaa2ff1f64079792d509a800b013"
+      ],
+      "date": "2026-09-03T12:18:32Z",
+      "subject": "Test Grant Desk stale-profile and amount repairs",
+      "main_reachable": true,
+      "intermediate_index": 143
+    },
+    {
+      "sha": "6b65dfdc2217aaa2ff1f64079792d509a800b013",
+      "parents": [
+        "0567c7175c777fc988e94585a436ca8de85427fa"
+      ],
+      "date": "2026-09-03T12:18:25Z",
+      "subject": "Test live Grant Desk boundary markers",
+      "main_reachable": true,
+      "intermediate_index": 144
+    },
+    {
+      "sha": "0567c7175c777fc988e94585a436ca8de85427fa",
+      "parents": [
+        "b6e60f85280e03249002f4403c12be8681e98173"
+      ],
+      "date": "2026-09-03T12:18:19Z",
+      "subject": "Correct Grant Desk public-access deployment boundary",
+      "main_reachable": true,
+      "intermediate_index": 145
+    },
+    {
+      "sha": "b6e60f85280e03249002f4403c12be8681e98173",
+      "parents": [
+        "7ec8fcc36fe8ff79143a1bd2be3617aa71e1b554"
+      ],
+      "date": "2026-09-03T12:18:12Z",
+      "subject": "Correct Grant Desk public-access cutover boundary",
+      "main_reachable": true,
+      "intermediate_index": 146
+    },
+    {
+      "sha": "7ec8fcc36fe8ff79143a1bd2be3617aa71e1b554",
+      "parents": [
+        "630ff6fcc9cdff943ef0d13892a70c19a3dfdba1"
+      ],
+      "date": "2026-09-03T12:18:05Z",
+      "subject": "Strengthen live Grant Desk boundary smoke",
+      "main_reachable": true,
+      "intermediate_index": 147
+    },
+    {
+      "sha": "630ff6fcc9cdff943ef0d13892a70c19a3dfdba1",
+      "parents": [
+        "781c4db8cd7a3cd5e340035fd75053595843a81f"
+      ],
+      "date": "2026-09-03T12:17:56Z",
+      "subject": "Fix Grant Desk stale-profile and amount validation",
+      "main_reachable": true,
+      "intermediate_index": 148
+    },
+    {
+      "sha": "d8d3f6be9ebe1982973e83fb332bd8b2e9362751",
+      "parents": [
+        "4bff2bff36ae68ecec5208a876039577fc48f769",
+        "781c4db8cd7a3cd5e340035fd75053595843a81f"
+      ],
+      "date": "2026-09-03T11:37:12Z",
+      "subject": "fix protected grant review and owner bootstrap",
+      "main_reachable": true,
+      "intermediate_index": 149
+    },
+    {
+      "sha": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "parents": [
+        "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+        "8a2909d6f2172ea733945b56e2595d9790cc297b"
+      ],
+      "date": "2026-09-03T11:13:52Z",
+      "subject": "merge Foundation portal safety repairs into staff backend",
+      "main_reachable": true,
+      "intermediate_index": 151
+    },
+    {
+      "sha": "8a2909d6f2172ea733945b56e2595d9790cc297b",
+      "parents": [
+        "cd118715df7c599b62c1f174a3219b14b6884766"
+      ],
+      "date": "2026-09-03T11:11:15Z",
+      "subject": "fix Foundation public release boundaries",
+      "main_reachable": true,
+      "intermediate_index": 152
+    },
+    {
+      "sha": "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+      "parents": [
+        "721e141a5ff288271468163905b0486d03105384"
+      ],
+      "date": "2026-09-03T10:18:13Z",
+      "subject": "fix: harden Foundation staff approval controls",
+      "main_reachable": true,
+      "intermediate_index": 153
+    },
+    {
+      "sha": "721e141a5ff288271468163905b0486d03105384",
+      "parents": [
+        "c04f6c5242e206bd0f75594972d73823deae903e"
+      ],
+      "date": "2026-09-02T20:11:13Z",
+      "subject": "ci(foundation): install locked dependencies",
+      "main_reachable": true,
+      "intermediate_index": 154
+    },
+    {
+      "sha": "c04f6c5242e206bd0f75594972d73823deae903e",
+      "parents": [
+        "c546908957b98aaed016e08342fe745d59937128"
+      ],
+      "date": "2026-09-02T20:10:58Z",
+      "subject": "ci(foundation): lock staff backend dependencies",
+      "main_reachable": true,
+      "intermediate_index": 155
+    },
+    {
+      "sha": "c546908957b98aaed016e08342fe745d59937128",
+      "parents": [
+        "da9dd27c7601f893e4fb84bd6100cfd7cd7e9f05"
+      ],
+      "date": "2026-08-17T02:32:57Z",
+      "subject": "ci(foundation): typecheck staff Cloud Functions",
+      "main_reachable": true,
+      "intermediate_index": 156
+    },
+    {
+      "sha": "da9dd27c7601f893e4fb84bd6100cfd7cd7e9f05",
+      "parents": [
+        "2608c399526ac1b78057fc3a6dc24ebcba929c8f"
+      ],
+      "date": "2026-08-17T02:28:32Z",
+      "subject": "docs(foundation): define staff backend and grant data contract",
+      "main_reachable": true,
+      "intermediate_index": 157
+    },
+    {
+      "sha": "2608c399526ac1b78057fc3a6dc24ebcba929c8f",
+      "parents": [
+        "24600206a54459c0c894c5691288f469858be9d4"
+      ],
+      "date": "2026-08-17T02:28:04Z",
+      "subject": "backend(foundation): expose guarded owner bootstrap",
+      "main_reachable": true,
+      "intermediate_index": 158
+    },
+    {
+      "sha": "24600206a54459c0c894c5691288f469858be9d4",
+      "parents": [
+        "366a3ee4bc091254b8fe2597f74e1c79b5e2e350"
+      ],
+      "date": "2026-08-17T02:27:55Z",
+      "subject": "backend(foundation): include staff backend gate in checks",
+      "main_reachable": true,
+      "intermediate_index": 159
+    },
+    {
+      "sha": "366a3ee4bc091254b8fe2597f74e1c79b5e2e350",
+      "parents": [
+        "9acb785328cb0ace80d648c7a74513109b4046d6"
+      ],
+      "date": "2026-08-17T02:27:42Z",
+      "subject": "backend(foundation): test staff security contract",
+      "main_reachable": true,
+      "intermediate_index": 160
+    },
+    {
+      "sha": "9acb785328cb0ace80d648c7a74513109b4046d6",
+      "parents": [
+        "9fa0226c9eb3622053a56185ae6794b25bc71c4e"
+      ],
+      "date": "2026-08-17T02:27:35Z",
+      "subject": "backend(foundation): add fail-closed backend validation gate",
+      "main_reachable": true,
+      "intermediate_index": 161
+    },
+    {
+      "sha": "9fa0226c9eb3622053a56185ae6794b25bc71c4e",
+      "parents": [
+        "86870aca78be628d1b779cc1f9025212bc9d4273"
+      ],
+      "date": "2026-08-17T02:27:28Z",
+      "subject": "backend(foundation): add guarded owner bootstrap",
+      "main_reachable": true,
+      "intermediate_index": 162
+    },
+    {
+      "sha": "86870aca78be628d1b779cc1f9025212bc9d4273",
+      "parents": [
+        "c05ff5661b90073c9ae096354f49ea12c2240507"
+      ],
+      "date": "2026-08-17T02:27:15Z",
+      "subject": "backend(foundation): type callable auth guard explicitly",
+      "main_reachable": true,
+      "intermediate_index": 163
+    },
+    {
+      "sha": "c05ff5661b90073c9ae096354f49ea12c2240507",
+      "parents": [
+        "bb425e850706a062c6ded858ba6c546014604612"
+      ],
+      "date": "2026-08-17T02:26:53Z",
+      "subject": "backend(foundation): add MFA-gated approval functions",
+      "main_reachable": true,
+      "intermediate_index": 164
+    },
+    {
+      "sha": "bb425e850706a062c6ded858ba6c546014604612",
+      "parents": [
+        "fead0831e7eb8af0d007fd626863850af3778c4c"
+      ],
+      "date": "2026-08-17T02:26:39Z",
+      "subject": "backend(foundation): configure staff function typecheck",
+      "main_reachable": true,
+      "intermediate_index": 165
+    },
+    {
+      "sha": "fead0831e7eb8af0d007fd626863850af3778c4c",
+      "parents": [
+        "b61c30af4a59b4dc4ad5d869b67090811cbbdf26"
+      ],
+      "date": "2026-08-17T02:26:35Z",
+      "subject": "backend(foundation): add staff Cloud Functions package",
+      "main_reachable": true,
+      "intermediate_index": 166
+    },
+    {
+      "sha": "b61c30af4a59b4dc4ad5d869b67090811cbbdf26",
+      "parents": [
+        "eb6c01902703667ba0e69985ac6b832e80530685"
+      ],
+      "date": "2026-08-17T02:26:23Z",
+      "subject": "backend(foundation): add isolated Firebase backend contract",
+      "main_reachable": true,
+      "intermediate_index": 167
+    },
+    {
+      "sha": "eb6c01902703667ba0e69985ac6b832e80530685",
+      "parents": [
+        "c78953842499902eab0bfe60e71fece86d06698e"
+      ],
+      "date": "2026-08-17T02:26:18Z",
+      "subject": "backend(foundation): add grant query indexes",
+      "main_reachable": true,
+      "intermediate_index": 168
+    },
+    {
+      "sha": "c78953842499902eab0bfe60e71fece86d06698e",
+      "parents": [
+        "cd118715df7c599b62c1f174a3219b14b6884766"
+      ],
+      "date": "2026-08-17T02:26:14Z",
+      "subject": "backend(foundation): add deny-by-default staff grant rules",
+      "main_reachable": true,
+      "intermediate_index": 169
+    },
+    {
+      "sha": "cd118715df7c599b62c1f174a3219b14b6884766",
+      "parents": [
+        "ad5bf998b59ba47365d49a874a384b3b45def60f"
+      ],
+      "date": "2026-08-17T02:20:21Z",
+      "subject": "test(foundation): distinguish public and noindex routes",
+      "main_reachable": true,
+      "intermediate_index": 170
+    },
+    {
+      "sha": "ad5bf998b59ba47365d49a874a384b3b45def60f",
+      "parents": [
+        "7e55a4ab2f88da6c6b19298a604b1ac347522c08"
+      ],
+      "date": "2026-08-17T02:19:32Z",
+      "subject": "site(foundation): publish community and donate routes in sitemap",
+      "main_reachable": true,
+      "intermediate_index": 171
+    },
+    {
+      "sha": "7e55a4ab2f88da6c6b19298a604b1ac347522c08",
+      "parents": [
+        "02c252be6b388af3a9501aa85ea32345f2b16cb4"
+      ],
+      "date": "2026-08-17T02:19:24Z",
+      "subject": "build(foundation): publish community donate and staff grant routes",
+      "main_reachable": true,
+      "intermediate_index": 172
+    },
+    {
+      "sha": "02c252be6b388af3a9501aa85ea32345f2b16cb4",
+      "parents": [
+        "b861b37c2fa3d8fb6781c90a473b2ab6c908026e"
+      ],
+      "date": "2026-08-17T02:19:14Z",
+      "subject": "test(foundation): keep private staff routes out of sitemap",
+      "main_reachable": true,
+      "intermediate_index": 173
+    },
+    {
+      "sha": "b861b37c2fa3d8fb6781c90a473b2ab6c908026e",
+      "parents": [
+        "f09ab5cd6ab64ac3f7e9244da6e6c508378c56d5"
+      ],
+      "date": "2026-08-17T02:19:04Z",
+      "subject": "site(foundation): strengthen staff authentication boundary",
+      "main_reachable": true,
+      "intermediate_index": 174
+    },
+    {
+      "sha": "f09ab5cd6ab64ac3f7e9244da6e6c508378c56d5",
+      "parents": [
+        "dbb3a8e04f3323378cc8194c371d137b31be6fb8"
+      ],
+      "date": "2026-08-17T02:18:38Z",
+      "subject": "test(foundation): validate community donate and staff boundaries",
+      "main_reachable": true,
+      "intermediate_index": 175
+    },
+    {
+      "sha": "dbb3a8e04f3323378cc8194c371d137b31be6fb8",
+      "parents": [
+        "649436402d52eb0479d928231a15ff5f925a5e2f"
+      ],
+      "date": "2026-08-17T02:18:22Z",
+      "subject": "site(foundation): make homepage community-first with donate and staff entry",
+      "main_reachable": true,
+      "intermediate_index": 176
+    },
+    {
+      "sha": "649436402d52eb0479d928231a15ff5f925a5e2f",
+      "parents": [
+        "0644bb0abfda14c6d771c2f52841f0c8246b8951"
+      ],
+      "date": "2026-08-17T02:18:00Z",
+      "subject": "feat(foundation): make grant desk Foundation-staff specific",
+      "main_reachable": true,
+      "intermediate_index": 177
+    },
+    {
+      "sha": "0644bb0abfda14c6d771c2f52841f0c8246b8951",
+      "parents": [
+        "2d56952f0d124c3a8f7a0c2425d56f01dda9857a"
+      ],
+      "date": "2026-08-17T02:17:36Z",
+      "subject": "site(foundation): pivot grant concierge to employee grant desk",
+      "main_reachable": true,
+      "intermediate_index": 178
+    },
+    {
+      "sha": "2d56952f0d124c3a8f7a0c2425d56f01dda9857a",
+      "parents": [
+        "d92f4e73a6ab3aef8cdf54ec63753199a67879e4"
+      ],
+      "date": "2026-08-17T02:16:46Z",
+      "subject": "site(foundation): add fail-closed staff login gateway",
+      "main_reachable": true,
+      "intermediate_index": 179
+    },
+    {
+      "sha": "d92f4e73a6ab3aef8cdf54ec63753199a67879e4",
+      "parents": [
+        "f601eb597d65186ce80dc7ee3cc1165a3d952fb6"
+      ],
+      "date": "2026-08-17T02:16:34Z",
+      "subject": "site(foundation): add donation support page",
+      "main_reachable": true,
+      "intermediate_index": 180
+    },
+    {
+      "sha": "f601eb597d65186ce80dc7ee3cc1165a3d952fb6",
+      "parents": [
+        "297aee646f7b937e41961a2dca89fc7bf9da7eec"
+      ],
+      "date": "2026-08-17T02:16:21Z",
+      "subject": "site(foundation): add community outreach page",
+      "main_reachable": true,
+      "intermediate_index": 181
+    },
+    {
+      "sha": "297aee646f7b937e41961a2dca89fc7bf9da7eec",
+      "parents": [
+        "79e0e76d6cdf3d3c51d53e0dd078316e0e3e596e"
+      ],
+      "date": "2026-08-17T02:09:51Z",
+      "subject": "site(foundation): surface grant concierge from homepage",
+      "main_reachable": true,
+      "intermediate_index": 182
+    },
+    {
+      "sha": "79e0e76d6cdf3d3c51d53e0dd078316e0e3e596e",
+      "parents": [
+        "e76645c99d63d305d4e6fc4a8120ef9e5af391b3"
+      ],
+      "date": "2026-08-17T02:09:36Z",
+      "subject": "site(foundation): add grant concierge to sitemap",
+      "main_reachable": true,
+      "intermediate_index": 183
+    },
+    {
+      "sha": "e76645c99d63d305d4e6fc4a8120ef9e5af391b3",
+      "parents": [
+        "e368ffd5f6e2a89451bf7aeb037d95022edf48f9"
+      ],
+      "date": "2026-08-17T02:09:27Z",
+      "subject": "test(foundation): validate grant concierge boundary",
+      "main_reachable": true,
+      "intermediate_index": 184
+    },
+    {
+      "sha": "e368ffd5f6e2a89451bf7aeb037d95022edf48f9",
+      "parents": [
+        "e36768ef9c3120202fedd734edd783a0a897957d"
+      ],
+      "date": "2026-08-17T02:09:17Z",
+      "subject": "build(foundation): publish grant concierge route",
+      "main_reachable": true,
+      "intermediate_index": 185
+    },
+    {
+      "sha": "e36768ef9c3120202fedd734edd783a0a897957d",
+      "parents": [
+        "410c147159e237180abaa5ed225524b461819c48"
+      ],
+      "date": "2026-08-17T02:08:58Z",
+      "subject": "feat(grants): add local prefill review and signoff workflow",
+      "main_reachable": true,
+      "intermediate_index": 186
+    },
+    {
+      "sha": "410c147159e237180abaa5ed225524b461819c48",
+      "parents": [
+        "8902e4425f93bd443f2822eda810c8410ffb6a67"
+      ],
+      "date": "2026-08-17T02:08:32Z",
+      "subject": "style(grants): add concierge workspace styling",
+      "main_reachable": true,
+      "intermediate_index": 187
+    },
+    {
+      "sha": "8902e4425f93bd443f2822eda810c8410ffb6a67",
+      "parents": [
+        "4915cd5dc761aa9764fa3c72600b84bbc5b3da3c"
+      ],
+      "date": "2026-08-17T02:08:15Z",
+      "subject": "feat(grants): add grant concierge workspace shell",
+      "main_reachable": true,
+      "intermediate_index": 188
+    },
+    {
+      "sha": "fcbb8653272bdb3e7d4e012486543342524959d3",
+      "parents": [
+        "bc057b35f76f70db4e713d4ffbbd39f51f5c3e8e",
+        "72ac186c4663f0434d0ee685abcf267be26e5201"
+      ],
+      "date": "2026-07-17T15:29:02Z",
+      "subject": "Merge pull request #11 from LifeLoggerAI/foundation-audit-20260706",
+      "main_reachable": true,
+      "intermediate_index": 189
+    },
+    {
+      "sha": "ec57ae939f6b1dacec1ec9272515ce911c729001",
+      "parents": [
+        "7888f77bb15586ccaa48428038226b529ddcaab5"
+      ],
+      "date": "2026-07-14T17:34:09Z",
+      "subject": "Allow Foundation build output outside protected source trees",
+      "main_reachable": true,
+      "intermediate_index": 190
+    },
+    {
+      "sha": "7888f77bb15586ccaa48428038226b529ddcaab5",
+      "parents": [
+        "62133f6d5bbffaf0a88fc2a8995bf05336a8495a"
+      ],
+      "date": "2026-07-14T17:30:45Z",
+      "subject": "Clarify Foundation privacy status boundary",
+      "main_reachable": true,
+      "intermediate_index": 191
+    },
+    {
+      "sha": "62133f6d5bbffaf0a88fc2a8995bf05336a8495a",
+      "parents": [
+        "41297e0a54b47b1874ba42be729002aed1ff83ca"
+      ],
+      "date": "2026-07-14T17:30:25Z",
+      "subject": "Clarify Foundation contact status boundary",
+      "main_reachable": true,
+      "intermediate_index": 192
+    },
+    {
+      "sha": "41297e0a54b47b1874ba42be729002aed1ff83ca",
+      "parents": [
+        "7ee7178772e540f0f80e96c1cd10b011d7e5d52c"
+      ],
+      "date": "2026-07-14T17:30:03Z",
+      "subject": "Clarify Foundation partnership status boundary",
+      "main_reachable": true,
+      "intermediate_index": 193
+    },
+    {
+      "sha": "7ee7178772e540f0f80e96c1cd10b011d7e5d52c",
+      "parents": [
+        "da62c90162ecaeafcd3cedd58bac5df3afdbe149"
+      ],
+      "date": "2026-07-14T17:29:41Z",
+      "subject": "Clarify Foundation responsible AI status boundary",
+      "main_reachable": true,
+      "intermediate_index": 194
+    },
+    {
+      "sha": "da62c90162ecaeafcd3cedd58bac5df3afdbe149",
+      "parents": [
+        "066abbbaacd510e2d101c0771652d5377c691754"
+      ],
+      "date": "2026-07-14T17:29:22Z",
+      "subject": "Reject symlinked Foundation build outputs before resolution",
+      "main_reachable": true,
+      "intermediate_index": 195
+    },
+    {
+      "sha": "066abbbaacd510e2d101c0771652d5377c691754",
+      "parents": [
+        "6e17d4e35d3005150958e64f811ebb3ad2fef4c4"
+      ],
+      "date": "2026-07-12T17:48:56Z",
+      "subject": "Make Foundation check exact-head and artifact-bound",
+      "main_reachable": true,
+      "intermediate_index": 196
+    },
+    {
+      "sha": "6e17d4e35d3005150958e64f811ebb3ad2fef4c4",
+      "parents": [
+        "9d50bb9455f6f9d767d4691dccd3a54b42a3084c",
+        "bc057b35f76f70db4e713d4ffbbd39f51f5c3e8e"
+      ],
+      "date": "2026-07-12T17:45:14Z",
+      "subject": "Merge current public authority into Foundation audit candidate",
+      "main_reachable": true,
+      "intermediate_index": 197
+    },
+    {
+      "sha": "9d50bb9455f6f9d767d4691dccd3a54b42a3084c",
+      "parents": [
+        "012a76f371b656f801047828fb0e243be681b8e4"
+      ],
+      "date": "2026-07-12T14:10:54Z",
+      "subject": "Test Foundation standards docs path confinement",
+      "main_reachable": true,
+      "intermediate_index": 198
+    },
+    {
+      "sha": "012a76f371b656f801047828fb0e243be681b8e4",
+      "parents": [
+        "66847b7af444ed9730e6ccb6365138ed1a08b664"
+      ],
+      "date": "2026-07-12T14:10:27Z",
+      "subject": "Test Foundation publication deletion confinement",
+      "main_reachable": true,
+      "intermediate_index": 199
+    },
+    {
+      "sha": "6d8e885ced4a1969e06c727106dbf6ff77b49200",
+      "parents": [
+        "e9fb0870e08e0fd642c2e5b7a3b134ce368124de"
+      ],
+      "date": "2026-07-12T14:09:28Z",
+      "subject": "Confine Foundation publication output deletion",
+      "main_reachable": true,
+      "intermediate_index": 201
+    },
+    {
+      "sha": "bc057b35f76f70db4e713d4ffbbd39f51f5c3e8e",
+      "parents": [
+        "20020a43c7584ecfd7123f81232872e0bc189669"
+      ],
+      "date": "2026-07-10T17:30:39Z",
+      "subject": "Trigger Foundation authority-site release and add receipt",
+      "main_reachable": true,
+      "intermediate_index": 202
+    },
+    {
+      "sha": "20020a43c7584ecfd7123f81232872e0bc189669",
+      "parents": [
+        "8180d27937b524909a4655d73c6874586fd68558"
+      ],
+      "date": "2026-07-10T17:01:28Z",
+      "subject": "Correct Foundation legal-status language to match available evidence (#17)",
+      "main_reachable": true,
+      "intermediate_index": 203
+    },
+    {
+      "sha": "8180d27937b524909a4655d73c6874586fd68558",
+      "parents": [
+        "a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea",
+        "4d4024f46196fdba22a8f7f519b0c83e825419f4"
+      ],
+      "date": "2026-07-10T14:35:58Z",
+      "subject": "Merge pull request #16 from LifeLoggerAI/public-authority/entity-resolution-20260710",
+      "main_reachable": true,
+      "intermediate_index": 204
+    },
+    {
+      "sha": "4d4024f46196fdba22a8f7f519b0c83e825419f4",
+      "parents": [
+        "71299ee0a4ed45f2a6503c213522d2d07c3e02f6"
+      ],
+      "date": "2026-07-10T14:27:29Z",
+      "subject": "Align terms page with canonical Foundation status",
+      "main_reachable": true,
+      "intermediate_index": 205
+    },
+    {
+      "sha": "71299ee0a4ed45f2a6503c213522d2d07c3e02f6",
+      "parents": [
+        "f164ca46686b34b8302c6e6c258ef9e49ca5b847"
+      ],
+      "date": "2026-07-10T14:25:19Z",
+      "subject": "Align accessibility page with canonical Foundation status",
+      "main_reachable": true,
+      "intermediate_index": 206
+    },
+    {
+      "sha": "f164ca46686b34b8302c6e6c258ef9e49ca5b847",
+      "parents": [
+        "7e6d273859b799d4e0b848796761a1c0ce654252"
+      ],
+      "date": "2026-07-10T14:24:43Z",
+      "subject": "Add Foundation status route to live smoke verification",
+      "main_reachable": true,
+      "intermediate_index": 207
+    },
+    {
+      "sha": "7e6d273859b799d4e0b848796761a1c0ce654252",
+      "parents": [
+        "ce82a4ba5089103f7ec1ee0e2eaf36a0a35a8820"
+      ],
+      "date": "2026-07-10T14:23:52Z",
+      "subject": "Validate canonical status route and conservative boundary language",
+      "main_reachable": true,
+      "intermediate_index": 208
+    },
+    {
+      "sha": "ce82a4ba5089103f7ec1ee0e2eaf36a0a35a8820",
+      "parents": [
+        "1ca80fa75e63a236ded62be8d7d1b69e894f2571"
+      ],
+      "date": "2026-07-10T14:20:03Z",
+      "subject": "Address status-page metadata and navigation review",
+      "main_reachable": true,
+      "intermediate_index": 209
+    },
+    {
+      "sha": "1ca80fa75e63a236ded62be8d7d1b69e894f2571",
+      "parents": [
+        "b7eaa36c64ed49162a561318a568a407cea47efd"
+      ],
+      "date": "2026-07-10T13:22:08Z",
+      "subject": "Add Foundation status page to sitemap",
+      "main_reachable": true,
+      "intermediate_index": 210
+    },
+    {
+      "sha": "b7eaa36c64ed49162a561318a568a407cea47efd",
+      "parents": [
+        "6c7fdb6a43a213840d79b79992d487927b6ed8a6"
+      ],
+      "date": "2026-07-10T13:21:57Z",
+      "subject": "Replace formation-era homepage language with public authority disclosure",
+      "main_reachable": true,
+      "intermediate_index": 211
+    },
+    {
+      "sha": "6c7fdb6a43a213840d79b79992d487927b6ed8a6",
+      "parents": [
+        "632554c6bbd48522df5ecdffa977c01ca58d5331"
+      ],
+      "date": "2026-07-10T13:21:37Z",
+      "subject": "Add canonical Foundation organizational status page",
+      "main_reachable": true,
+      "intermediate_index": 212
+    },
+    {
+      "sha": "632554c6bbd48522df5ecdffa977c01ca58d5331",
+      "parents": [
+        "a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea"
+      ],
+      "date": "2026-07-10T13:21:23Z",
+      "subject": "Establish public authority language and remove stale formation claim",
+      "main_reachable": true,
+      "intermediate_index": 213
+    },
+    {
+      "sha": "e9fb0870e08e0fd642c2e5b7a3b134ce368124de",
+      "parents": [
+        "3b14a15e9347d0c0b7bf06842eb552d97d1e28be"
+      ],
+      "date": "2026-07-06T07:17:56Z",
+      "subject": "ci: retire duplicate documentation workflow",
+      "main_reachable": true,
+      "intermediate_index": 214
+    },
+    {
+      "sha": "3b14a15e9347d0c0b7bf06842eb552d97d1e28be",
+      "parents": [
+        "2fdb689917073d055200cb518aec204b8f553191"
+      ],
+      "date": "2026-07-06T06:32:58Z",
+      "subject": "test: make live route smoke provider-neutral",
+      "main_reachable": true,
+      "intermediate_index": 215
+    },
+    {
+      "sha": "2fdb689917073d055200cb518aec204b8f553191",
+      "parents": [
+        "4f0050a2e2550df212634d8eb30943116a094d98"
+      ],
+      "date": "2026-07-06T06:31:52Z",
+      "subject": "docs: update implementation map after audit hardening",
+      "main_reachable": true,
+      "intermediate_index": 216
+    },
+    {
+      "sha": "4f0050a2e2550df212634d8eb30943116a094d98",
+      "parents": [
+        "dd97b2a1928f970b90aed2b4be6fa0b9eadcd305"
+      ],
+      "date": "2026-07-06T06:31:22Z",
+      "subject": "docs: replace stale ecosystem integration status",
+      "main_reachable": true,
+      "intermediate_index": 217
+    },
+    {
+      "sha": "dd97b2a1928f970b90aed2b4be6fa0b9eadcd305",
+      "parents": [
+        "7108eb891f339010eb1b2e06ca0cae83b6f2d8e6"
+      ],
+      "date": "2026-07-06T06:30:53Z",
+      "subject": "docs: reconcile final cutover checklist with hosting decision",
+      "main_reachable": true,
+      "intermediate_index": 218
+    },
+    {
+      "sha": "7108eb891f339010eb1b2e06ca0cae83b6f2d8e6",
+      "parents": [
+        "df802bea050d6d0a276e9e506cf37842ffdc0762"
+      ],
+      "date": "2026-07-06T06:30:37Z",
+      "subject": "docs: make deployment and rollback runbook evidence-driven",
+      "main_reachable": true,
+      "intermediate_index": 219
+    },
+    {
+      "sha": "df802bea050d6d0a276e9e506cf37842ffdc0762",
+      "parents": [
+        "98195ab9f8d9128ff9bc8f34b415d7f38990049d"
+      ],
+      "date": "2026-07-06T06:27:31Z",
+      "subject": "docs: record Foundation v1 audit hardening changes",
+      "main_reachable": true,
+      "intermediate_index": 220
+    },
+    {
+      "sha": "98195ab9f8d9128ff9bc8f34b415d7f38990049d",
+      "parents": [
+        "94c609fb61438d065141ab54ac07d59fceb1678c"
+      ],
+      "date": "2026-07-06T06:27:09Z",
+      "subject": "docs: replace stale production status with evidence gate",
+      "main_reachable": true,
+      "intermediate_index": 221
+    },
+    {
+      "sha": "94c609fb61438d065141ab54ac07d59fceb1678c",
+      "parents": [
+        "16acd82d8d935ec9a23fcd86a61bf79c08820495"
+      ],
+      "date": "2026-07-06T06:26:35Z",
+      "subject": "docs: align README with verified Foundation production truth",
+      "main_reachable": true,
+      "intermediate_index": 222
+    },
+    {
+      "sha": "16acd82d8d935ec9a23fcd86a61bf79c08820495",
+      "parents": [
+        "8395a7c867917ef14fee11a4df2a566ad96ac7d8"
+      ],
+      "date": "2026-07-06T06:26:06Z",
+      "subject": "docs: relabel program menu as unlaunched concepts",
+      "main_reachable": true,
+      "intermediate_index": 223
+    },
+    {
+      "sha": "8395a7c867917ef14fee11a4df2a566ad96ac7d8",
+      "parents": [
+        "06262b7c557f4c6007c796bbe7689a06033eadd2"
+      ],
+      "date": "2026-07-06T06:25:43Z",
+      "subject": "docs: expand risk review scoring and release gates",
+      "main_reachable": true,
+      "intermediate_index": 224
+    },
+    {
+      "sha": "06262b7c557f4c6007c796bbe7689a06033eadd2",
+      "parents": [
+        "25af4861b530974ac536e0b5b91070b2454cd801"
+      ],
+      "date": "2026-07-06T06:25:03Z",
+      "subject": "docs: expand transparency records and disclosure rules",
+      "main_reachable": true,
+      "intermediate_index": 225
+    },
+    {
+      "sha": "25af4861b530974ac536e0b5b91070b2454cd801",
+      "parents": [
+        "3ba46d4035dc7fa4750a5fdc377855788e70ccf3"
+      ],
+      "date": "2026-07-06T06:24:31Z",
+      "subject": "docs: expand ethical AI controls for URAI systems",
+      "main_reachable": true,
+      "intermediate_index": 226
+    },
+    {
+      "sha": "3ba46d4035dc7fa4750a5fdc377855788e70ccf3",
+      "parents": [
+        "a167f83a8f4e5f30a21c18edd57b3dfd3c805485"
+      ],
+      "date": "2026-07-06T06:23:55Z",
+      "subject": "docs: expand formation-stage governance controls",
+      "main_reachable": true,
+      "intermediate_index": 227
+    },
+    {
+      "sha": "a167f83a8f4e5f30a21c18edd57b3dfd3c805485",
+      "parents": [
+        "8a266d221d0483de486bcf7685c7a165329111e0"
+      ],
+      "date": "2026-07-06T06:23:08Z",
+      "subject": "ci: make one required validation workflow authoritative",
+      "main_reachable": true,
+      "intermediate_index": 228
+    },
+    {
+      "sha": "8a266d221d0483de486bcf7685c7a165329111e0",
+      "parents": [
+        "01a07488cc1ad68d83d62cdb06becd1b05ba7e84"
+      ],
+      "date": "2026-07-06T06:22:39Z",
+      "subject": "ci: remove false-green production verifier",
+      "main_reachable": true,
+      "intermediate_index": 229
+    },
+    {
+      "sha": "01a07488cc1ad68d83d62cdb06becd1b05ba7e84",
+      "parents": [
+        "a4131d6437ee5b69bf499e4168e4354207a3fc31"
+      ],
+      "date": "2026-07-06T06:22:31Z",
+      "subject": "ci: deploy curated Foundation site artifact",
+      "main_reachable": true,
+      "intermediate_index": 230
+    },
+    {
+      "sha": "a4131d6437ee5b69bf499e4168e4354207a3fc31",
+      "parents": [
+        "5b51491d594433e90d46bc0ff939994059f8490f"
+      ],
+      "date": "2026-07-06T06:22:14Z",
+      "subject": "build: add standards and public artifact targets",
+      "main_reachable": true,
+      "intermediate_index": 231
+    },
+    {
+      "sha": "5b51491d594433e90d46bc0ff939994059f8490f",
+      "parents": [
+        "2078b2109f5a46c7f84e044cbc50128ded9d37d3"
+      ],
+      "date": "2026-07-06T06:21:56Z",
+      "subject": "test: cover public artifact allowlist",
+      "main_reachable": true,
+      "intermediate_index": 232
+    },
+    {
+      "sha": "2078b2109f5a46c7f84e044cbc50128ded9d37d3",
+      "parents": [
+        "85c53b56dc77b45574aa128cad4afb9b5b1b9088"
+      ],
+      "date": "2026-07-06T06:21:37Z",
+      "subject": "feat: build curated public site artifact",
+      "main_reachable": true,
+      "intermediate_index": 233
+    },
+    {
+      "sha": "85c53b56dc77b45574aa128cad4afb9b5b1b9088",
+      "parents": [
+        "08679094b87069795c6ff6407e51e35189766f07"
+      ],
+      "date": "2026-07-06T06:21:16Z",
+      "subject": "docs: add public accountability template suite",
+      "main_reachable": true,
+      "intermediate_index": 234
+    },
+    {
+      "sha": "08679094b87069795c6ff6407e51e35189766f07",
+      "parents": [
+        "a67b30c9ec92ba220ad9eba65e4628bb2bb810d4"
+      ],
+      "date": "2026-07-06T06:20:54Z",
+      "subject": "docs: add publication evidence and external review policy",
+      "main_reachable": true,
+      "intermediate_index": 235
+    },
+    {
+      "sha": "a67b30c9ec92ba220ad9eba65e4628bb2bb810d4",
+      "parents": [
+        "2814e4b9ae93cd4a7e11821339de46fc2be1576a"
+      ],
+      "date": "2026-07-06T06:20:22Z",
+      "subject": "docs: add ecosystem product integration contract",
+      "main_reachable": true,
+      "intermediate_index": 236
+    },
+    {
+      "sha": "2814e4b9ae93cd4a7e11821339de46fc2be1576a",
+      "parents": [
+        "17ea8e5fa6ce453639b7a179e7c47131ffad2050"
+      ],
+      "date": "2026-07-06T06:19:50Z",
+      "subject": "test: cover standards registry validation",
+      "main_reachable": true,
+      "intermediate_index": 237
+    },
+    {
+      "sha": "17ea8e5fa6ce453639b7a179e7c47131ffad2050",
+      "parents": [
+        "1ebbc2315371a9346573d81bd90d415134c1db6c"
+      ],
+      "date": "2026-07-06T06:19:33Z",
+      "subject": "test: validate standards registry without dependencies",
+      "main_reachable": true,
+      "intermediate_index": 238
+    },
+    {
+      "sha": "1ebbc2315371a9346573d81bd90d415134c1db6c",
+      "parents": [
+        "d0cf1943c9721bd481591eecee3ccc8a8245338a"
+      ],
+      "date": "2026-07-06T06:19:08Z",
+      "subject": "feat: add standards registry schema",
+      "main_reachable": true,
+      "intermediate_index": 239
+    },
+    {
+      "sha": "d0cf1943c9721bd481591eecee3ccc8a8245338a",
+      "parents": [
+        "3d326274b0f6dfb1bad6d5e5330a62ba90a5966a"
+      ],
+      "date": "2026-07-06T06:18:48Z",
+      "subject": "feat: add formation-stage standards registry",
+      "main_reachable": true,
+      "intermediate_index": 240
+    },
+    {
+      "sha": "3d326274b0f6dfb1bad6d5e5330a62ba90a5966a",
+      "parents": [
+        "ff1e052506504ebcf460df23aad55d5a1a9955f9"
+      ],
+      "date": "2026-07-06T06:18:28Z",
+      "subject": "docs: establish canonical production evidence hierarchy",
+      "main_reachable": true,
+      "intermediate_index": 241
+    },
+    {
+      "sha": "ff1e052506504ebcf460df23aad55d5a1a9955f9",
+      "parents": [
+        "a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea"
+      ],
+      "date": "2026-07-06T06:18:00Z",
+      "subject": "docs: add Foundation v1 evidence audit and roadmap",
+      "main_reachable": true,
+      "intermediate_index": 242
+    },
+    {
+      "sha": "a8fb209f02d81ad59e7ab9cac90ad503a0dcc0ea",
+      "parents": [
+        "e08b31c5608c0ea7834e24ddb12a96c94a0817a6"
+      ],
+      "date": "2026-07-05T11:04:56Z",
+      "subject": "docs: add advisor account setup notes",
+      "main_reachable": true,
+      "intermediate_index": 243
+    },
+    {
+      "sha": "e08b31c5608c0ea7834e24ddb12a96c94a0817a6",
+      "parents": [
+        "ef3d185331ac042fce2df8a83479e026dc373839"
+      ],
+      "date": "2026-07-05T11:03:28Z",
+      "subject": "docs: add Dr Scott outreach email reference",
+      "main_reachable": true,
+      "intermediate_index": 244
+    },
+    {
+      "sha": "ef3d185331ac042fce2df8a83479e026dc373839",
+      "parents": [
+        "8624776e139efb547873ed827f896d36a77ebd20"
+      ],
+      "date": "2026-07-05T11:00:19Z",
+      "subject": "docs: remove temporary write check",
+      "main_reachable": true,
+      "intermediate_index": 245
+    },
+    {
+      "sha": "8624776e139efb547873ed827f896d36a77ebd20",
+      "parents": [
+        "1746517de48bc14b77ed9750f68e846fae242d3d"
+      ],
+      "date": "2026-07-05T10:55:17Z",
+      "subject": "test write",
+      "main_reachable": true,
+      "intermediate_index": 246
+    },
+    {
+      "sha": "1746517de48bc14b77ed9750f68e846fae242d3d",
+      "parents": [
+        "7fb3e1b04345127b2b42b02c918188248c60162d"
+      ],
+      "date": "2026-07-05T10:53:50Z",
+      "subject": "docs: add veteran accessibility pathway",
+      "main_reachable": true,
+      "intermediate_index": 247
+    },
+    {
+      "sha": "7fb3e1b04345127b2b42b02c918188248c60162d",
+      "parents": [
+        "c28fe19a580e4862cd8978f1fa7bc1c7ba33ff69"
+      ],
+      "date": "2026-07-05T10:51:03Z",
+      "subject": "docs: add accessibility checklist",
+      "main_reachable": true,
+      "intermediate_index": 248
+    },
+    {
+      "sha": "c28fe19a580e4862cd8978f1fa7bc1c7ba33ff69",
+      "parents": [
+        "e5d596ac609cebce0488dfe25e9980346d0d6812"
+      ],
+      "date": "2026-07-05T10:50:47Z",
+      "subject": "docs: add foundation program menu",
+      "main_reachable": true,
+      "intermediate_index": 249
+    },
+    {
+      "sha": "d2ea8b623c6bad4cdbf252d736fd62e3fbd65cb0",
+      "parents": [
+        "e304d320e1a21623ef0013bd48d21090e70e478b"
+      ],
+      "date": "2026-07-05T10:46:35Z",
+      "subject": "docs: add foundation advisor kit readme",
+      "main_reachable": true,
+      "intermediate_index": 251
+    },
+    {
+      "sha": "e304d320e1a21623ef0013bd48d21090e70e478b",
+      "parents": [
+        "c5af9613ba83d8c26ef3e661b90ce1565e12970c"
+      ],
+      "date": "2026-06-30T10:30:22Z",
+      "subject": "Record latest validation patch commit",
+      "main_reachable": true,
+      "intermediate_index": 252
+    },
+    {
+      "sha": "c5af9613ba83d8c26ef3e661b90ce1565e12970c",
+      "parents": [
+        "7ed334fcb1145f2cbd9d28f05a1f28a69b1856f5"
+      ],
+      "date": "2026-06-30T10:29:24Z",
+      "subject": "Test smoke failure on wrong host responses",
+      "main_reachable": true,
+      "intermediate_index": 253
+    },
+    {
+      "sha": "7ed334fcb1145f2cbd9d28f05a1f28a69b1856f5",
+      "parents": [
+        "895688f26c55280b02d419eeb80d912e9719be63"
+      ],
+      "date": "2026-06-30T10:28:49Z",
+      "subject": "Fail live smoke test on Squarespace responses",
+      "main_reachable": true,
+      "intermediate_index": 254
+    },
+    {
+      "sha": "895688f26c55280b02d419eeb80d912e9719be63",
+      "parents": [
+        "10f1d43749b5b694cded956735c819f2868076f5"
+      ],
+      "date": "2026-06-30T10:27:03Z",
+      "subject": "Fix smoke live test module registration",
+      "main_reachable": true,
+      "intermediate_index": 255
+    },
+    {
+      "sha": "10f1d43749b5b694cded956735c819f2868076f5",
+      "parents": [
+        "b3996b2a39a14d98c11fef4b742a383e16ee75ef"
+      ],
+      "date": "2026-06-30T10:20:23Z",
+      "subject": "Avoid forbidden claim snippets on terms page",
+      "main_reachable": true,
+      "intermediate_index": 256
+    },
+    {
+      "sha": "b3996b2a39a14d98c11fef4b742a383e16ee75ef",
+      "parents": [
+        "300ba6d78350ec5989340046c0e1e29a8bb4c938"
+      ],
+      "date": "2026-06-30T10:19:01Z",
+      "subject": "Avoid forbidden claim snippets on partners page",
+      "main_reachable": true,
+      "intermediate_index": 257
+    },
+    {
+      "sha": "300ba6d78350ec5989340046c0e1e29a8bb4c938",
+      "parents": [
+        "ac6f4126ca0c77464aafce6945332e60363b02b1"
+      ],
+      "date": "2026-06-30T10:18:29Z",
+      "subject": "Avoid forbidden claim snippets on homepage",
+      "main_reachable": true,
+      "intermediate_index": 258
+    },
+    {
+      "sha": "ac6f4126ca0c77464aafce6945332e60363b02b1",
+      "parents": [
+        "48a243a5ab183dfc297c9d6e8e44201a37d0cb48"
+      ],
+      "date": "2026-06-30T10:06:39Z",
+      "subject": "Add final launch proof template",
+      "main_reachable": true,
+      "intermediate_index": 259
+    },
+    {
+      "sha": "48a243a5ab183dfc297c9d6e8e44201a37d0cb48",
+      "parents": [
+        "8ebc0f4553409bf315552d568dfc9dfbb1493b93"
+      ],
+      "date": "2026-06-30T10:03:08Z",
+      "subject": "Document live smoke unit test coverage",
+      "main_reachable": true,
+      "intermediate_index": 260
+    },
+    {
+      "sha": "8ebc0f4553409bf315552d568dfc9dfbb1493b93",
+      "parents": [
+        "75f2715b51391d534601d531189bceb337688cf1"
+      ],
+      "date": "2026-06-30T09:55:02Z",
+      "subject": "Add tests for live smoke route checker",
+      "main_reachable": true,
+      "intermediate_index": 261
+    },
+    {
+      "sha": "75f2715b51391d534601d531189bceb337688cf1",
+      "parents": [
+        "90a953d9b4bff00c3aae176a008f3532e5139a5e"
+      ],
+      "date": "2026-06-30T09:41:09Z",
+      "subject": "Document live smoke verification command",
+      "main_reachable": true,
+      "intermediate_index": 262
+    },
+    {
+      "sha": "90a953d9b4bff00c3aae176a008f3532e5139a5e",
+      "parents": [
+        "47e1b5fc3b9424ccf41520f1da28df9ce42839ea"
+      ],
+      "date": "2026-06-30T09:40:39Z",
+      "subject": "Wire live smoke test into verification lifecycle",
+      "main_reachable": true,
+      "intermediate_index": 263
+    },
+    {
+      "sha": "47e1b5fc3b9424ccf41520f1da28df9ce42839ea",
+      "parents": [
+        "54026b75af8d3026333afdbe288ddd9461ef2fed"
+      ],
+      "date": "2026-06-30T09:40:03Z",
+      "subject": "Add live route smoke test script",
+      "main_reachable": true,
+      "intermediate_index": 264
+    },
+    {
+      "sha": "54026b75af8d3026333afdbe288ddd9461ef2fed",
+      "parents": [
+        "e470f4a0fd618672ffcc5e5454d239ec73ba1f8f"
+      ],
+      "date": "2026-06-30T09:39:17Z",
+      "subject": "Record Pages deployment workflow proof",
+      "main_reachable": true,
+      "intermediate_index": 265
+    },
+    {
+      "sha": "e470f4a0fd618672ffcc5e5454d239ec73ba1f8f",
+      "parents": [
+        "67c29e63b438978a369c2f5fd8f2e88ee2662575"
+      ],
+      "date": "2026-06-30T09:35:26Z",
+      "subject": "Record Pages deployment workflow status",
+      "main_reachable": true,
+      "intermediate_index": 266
+    },
+    {
+      "sha": "67c29e63b438978a369c2f5fd8f2e88ee2662575",
+      "parents": [
+        "6ddec41b55886349a5d9dbe2bb75162d02babcc5"
+      ],
+      "date": "2026-06-30T09:18:08Z",
+      "subject": "Add GitHub Pages deployment workflow",
+      "main_reachable": true,
+      "intermediate_index": 267
+    },
+    {
+      "sha": "6ddec41b55886349a5d9dbe2bb75162d02babcc5",
+      "parents": [
+        "1c2d0ae4714581e8104384f5d50efe0777b36f8e"
+      ],
+      "date": "2026-06-30T09:01:12Z",
+      "subject": "Update production status with Pages hardening",
+      "main_reachable": true,
+      "intermediate_index": 268
+    },
+    {
+      "sha": "1c2d0ae4714581e8104384f5d50efe0777b36f8e",
+      "parents": [
+        "af9a60f512eade1b2a2172cbbe08fd75a69f0a07"
+      ],
+      "date": "2026-06-30T08:50:22Z",
+      "subject": "Add GitHub Pages nojekyll marker",
+      "main_reachable": true,
+      "intermediate_index": 269
+    },
+    {
+      "sha": "af9a60f512eade1b2a2172cbbe08fd75a69f0a07",
+      "parents": [
+        "c6179c1fea91dacd5bdda8b4915ab02fe65a2a78"
+      ],
+      "date": "2026-06-30T08:49:21Z",
+      "subject": "Add Foundation production status report",
+      "main_reachable": true,
+      "intermediate_index": 270
+    },
+    {
+      "sha": "c6179c1fea91dacd5bdda8b4915ab02fe65a2a78",
+      "parents": [
+        "4bc0374bbbe53476eb9c436506cd18f3bc5f46e0"
+      ],
+      "date": "2026-06-30T08:34:02Z",
+      "subject": "Update validation proof with route tests",
+      "main_reachable": true,
+      "intermediate_index": 271
+    },
+    {
+      "sha": "4bc0374bbbe53476eb9c436506cd18f3bc5f46e0",
+      "parents": [
+        "c560dca8d74ddbc4cb2d816701deed93b6f2dcde"
+      ],
+      "date": "2026-06-30T08:28:23Z",
+      "subject": "Add tests for Foundation route validator",
+      "main_reachable": true,
+      "intermediate_index": 272
+    },
+    {
+      "sha": "c560dca8d74ddbc4cb2d816701deed93b6f2dcde",
+      "parents": [
+        "bb1a2190faad777a154fcb1dcfca6e5d4824ec8c"
+      ],
+      "date": "2026-06-30T08:20:56Z",
+      "subject": "Add final live cutover runbook",
+      "main_reachable": true,
+      "intermediate_index": 273
+    },
+    {
+      "sha": "bb1a2190faad777a154fcb1dcfca6e5d4824ec8c",
+      "parents": [
+        "33c1d048b9be98ac355d53eba3bc0641acbf6a54"
+      ],
+      "date": "2026-06-30T08:01:42Z",
+      "subject": "Record Foundation validation hardening proof",
+      "main_reachable": true,
+      "intermediate_index": 274
+    },
+    {
+      "sha": "33c1d048b9be98ac355d53eba3bc0641acbf6a54",
+      "parents": [
+        "c2ec6064d8f8fcfb820c503afd3a16787e92133b"
+      ],
+      "date": "2026-06-30T08:00:54Z",
+      "subject": "Strengthen Foundation validation workflow",
+      "main_reachable": true,
+      "intermediate_index": 275
+    },
+    {
+      "sha": "c2ec6064d8f8fcfb820c503afd3a16787e92133b",
+      "parents": [
+        "375ac79d3f63974a637ef9d750de9acddfe06ad3"
+      ],
+      "date": "2026-06-30T07:59:43Z",
+      "subject": "Add route validation to check lifecycle",
+      "main_reachable": true,
+      "intermediate_index": 276
+    },
+    {
+      "sha": "375ac79d3f63974a637ef9d750de9acddfe06ad3",
+      "parents": [
+        "97ff868594e92135340cf96c682209c3c05bdaca"
+      ],
+      "date": "2026-06-30T07:59:24Z",
+      "subject": "Add route validation script",
+      "main_reachable": true,
+      "intermediate_index": 277
+    },
+    {
+      "sha": "97ff868594e92135340cf96c682209c3c05bdaca",
+      "parents": [
+        "d1d0b26a65ce0ab24e62c5a3796fe60ff5eb4678"
+      ],
+      "date": "2026-06-30T07:53:49Z",
+      "subject": "Add Foundation completion plan proof",
+      "main_reachable": true,
+      "intermediate_index": 278
+    },
+    {
+      "sha": "d1d0b26a65ce0ab24e62c5a3796fe60ff5eb4678",
+      "parents": [
+        "053e9e2e28636d0c76b5c5a40b457a12520de460"
+      ],
+      "date": "2026-06-30T07:53:31Z",
+      "subject": "Add Foundation blockers proof",
+      "main_reachable": true,
+      "intermediate_index": 279
+    },
+    {
+      "sha": "053e9e2e28636d0c76b5c5a40b457a12520de460",
+      "parents": [
+        "cc61d232b9813d3219eda4cfb7334d654ecefa1b"
+      ],
+      "date": "2026-06-30T07:40:35Z",
+      "subject": "Add Foundation deployment proof",
+      "main_reachable": true,
+      "intermediate_index": 280
+    },
+    {
+      "sha": "cc61d232b9813d3219eda4cfb7334d654ecefa1b",
+      "parents": [
+        "e5d71cbd69678a4d6541c6eff54b5bf636b2d7bb"
+      ],
+      "date": "2026-06-30T07:40:15Z",
+      "subject": "Add Foundation build test proof",
+      "main_reachable": true,
+      "intermediate_index": 281
+    },
+    {
+      "sha": "e5d71cbd69678a4d6541c6eff54b5bf636b2d7bb",
+      "parents": [
+        "d4250a7cec08ef624bb4ec880de257f1d6d97910"
+      ],
+      "date": "2026-06-30T07:39:57Z",
+      "subject": "Add Foundation route CTA proof",
+      "main_reachable": true,
+      "intermediate_index": 282
+    },
+    {
+      "sha": "d4250a7cec08ef624bb4ec880de257f1d6d97910",
+      "parents": [
+        "ee675576ea009a5cd22d42a927629940f8ff5b4f"
+      ],
+      "date": "2026-06-30T07:39:41Z",
+      "subject": "Add Foundation claim audit proof",
+      "main_reachable": true,
+      "intermediate_index": 283
+    },
+    {
+      "sha": "ee675576ea009a5cd22d42a927629940f8ff5b4f",
+      "parents": [
+        "814b4ba78d36015894d1695c5720fe29d9d13bfc"
+      ],
+      "date": "2026-06-30T07:38:55Z",
+      "subject": "Add DONE-DONE Foundation production lock proof",
+      "main_reachable": true,
+      "intermediate_index": 284
+    },
+    {
+      "sha": "814b4ba78d36015894d1695c5720fe29d9d13bfc",
+      "parents": [
+        "cc518a1c21b8d06f730ba6869b3625549476f1de"
+      ],
+      "date": "2026-06-30T07:38:01Z",
+      "subject": "Update implementation map for static route completion",
+      "main_reachable": true,
+      "intermediate_index": 285
+    },
+    {
+      "sha": "cc518a1c21b8d06f730ba6869b3625549476f1de",
+      "parents": [
+        "f974782b0e46d06cabcbc5a885d8ddbe499b79b9"
+      ],
+      "date": "2026-06-30T07:37:41Z",
+      "subject": "Update Foundation README production route map",
+      "main_reachable": true,
+      "intermediate_index": 286
+    },
+    {
+      "sha": "f974782b0e46d06cabcbc5a885d8ddbe499b79b9",
+      "parents": [
+        "c74c9d37c2b22f48277f3c85f0676d2d9d5a0826"
+      ],
+      "date": "2026-06-30T07:37:11Z",
+      "subject": "Update Foundation sitemap for public routes",
+      "main_reachable": true,
+      "intermediate_index": 287
+    },
+    {
+      "sha": "c74c9d37c2b22f48277f3c85f0676d2d9d5a0826",
+      "parents": [
+        "5e0a083377283a951bd5a5b6a5b8db6328310572"
+      ],
+      "date": "2026-06-30T07:21:20Z",
+      "subject": "Wire Foundation homepage to completed routes",
+      "main_reachable": true,
+      "intermediate_index": 288
+    },
+    {
+      "sha": "5e0a083377283a951bd5a5b6a5b8db6328310572",
+      "parents": [
+        "9a03424c33a1a810dbcce90205b3c1598d0ecfcb"
+      ],
+      "date": "2026-06-30T07:20:20Z",
+      "subject": "Add terms Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 289
+    },
+    {
+      "sha": "9a03424c33a1a810dbcce90205b3c1598d0ecfcb",
+      "parents": [
+        "36bc75143e37ce6e7391fb83f1eccd0a402c11bd"
+      ],
+      "date": "2026-06-30T07:20:03Z",
+      "subject": "Add privacy Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 290
+    },
+    {
+      "sha": "36bc75143e37ce6e7391fb83f1eccd0a402c11bd",
+      "parents": [
+        "135178b3899eb0dcc25fd01ab7803067849d0478"
+      ],
+      "date": "2026-06-30T07:19:46Z",
+      "subject": "Add contact Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 291
+    },
+    {
+      "sha": "135178b3899eb0dcc25fd01ab7803067849d0478",
+      "parents": [
+        "052c20665a5a7b592f7a2041090a14d801d302d7"
+      ],
+      "date": "2026-06-30T07:17:37Z",
+      "subject": "Add partners Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 292
+    },
+    {
+      "sha": "052c20665a5a7b592f7a2041090a14d801d302d7",
+      "parents": [
+        "99f875b7036aed8041d7aa320fcf70babc908b33"
+      ],
+      "date": "2026-06-30T07:17:20Z",
+      "subject": "Add research Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 293
+    },
+    {
+      "sha": "99f875b7036aed8041d7aa320fcf70babc908b33",
+      "parents": [
+        "154053b627379517db3af85d93da5c0cb4e44745"
+      ],
+      "date": "2026-06-30T07:09:33Z",
+      "subject": "Add responsible AI Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 294
+    },
+    {
+      "sha": "154053b627379517db3af85d93da5c0cb4e44745",
+      "parents": [
+        "1f9ea65aa3ba6037501b3c888642c77c2d98af11"
+      ],
+      "date": "2026-06-30T07:07:05Z",
+      "subject": "Add emotional wellness Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 295
+    },
+    {
+      "sha": "1f9ea65aa3ba6037501b3c888642c77c2d98af11",
+      "parents": [
+        "c6c2130b48c8d047ddee98cab3ada76a30b2cde8"
+      ],
+      "date": "2026-06-30T06:59:14Z",
+      "subject": "Add Deaf community Foundation route",
+      "main_reachable": true,
+      "intermediate_index": 296
+    },
+    {
+      "sha": "c6c2130b48c8d047ddee98cab3ada76a30b2cde8",
+      "parents": [
+        "f0c533a3b01c2b78f29b33e2ca552d515ac6d81e"
+      ],
+      "date": "2026-06-30T06:58:58Z",
+      "subject": "Add safe static Foundation route pages",
+      "main_reachable": true,
+      "intermediate_index": 297
+    },
+    {
+      "sha": "f0c533a3b01c2b78f29b33e2ca552d515ac6d81e",
+      "parents": [
+        "1a74d9dff0b90b77038a4304f6e8c1ec614d216a"
+      ],
+      "date": "2026-06-30T05:06:15Z",
+      "subject": "Add URAI Foundation production lock audit proof",
+      "main_reachable": true,
+      "intermediate_index": 298
+    },
+    {
+      "sha": "1a74d9dff0b90b77038a4304f6e8c1ec614d216a",
+      "parents": [
+        "4b6677078b91a2a97b3528370b8add536db06c73"
+      ],
+      "date": "2026-06-30T05:05:36Z",
+      "subject": "Clarify Foundation formation status in README",
+      "main_reachable": true,
+      "intermediate_index": 299
+    },
+    {
+      "sha": "a93558ba25fd0665cfc370ba249fb7bc22de11a0",
+      "parents": [
+        "392f9cea137be1a6c39129a89303eec3cd45914e"
+      ],
+      "date": "2026-06-02T07:11:48Z",
+      "subject": "Add URAI production verification workflow",
+      "main_reachable": true,
+      "intermediate_index": 301
+    },
+    {
+      "sha": "392f9cea137be1a6c39129a89303eec3cd45914e",
+      "parents": [
+        "72f5f13460eb9ae6267569c4eb25ec960055d365"
+      ],
+      "date": "2026-05-31T01:15:42Z",
+      "subject": "Add URAI production verify script",
+      "main_reachable": true,
+      "intermediate_index": 302
+    },
+    {
+      "sha": "72f5f13460eb9ae6267569c4eb25ec960055d365",
+      "parents": [
+        "c86846bcdaba001c66252d1adfecf3a3c33a3772"
+      ],
+      "date": "2026-05-30T21:41:17Z",
+      "subject": "Add production hardening checklist",
+      "main_reachable": true,
+      "intermediate_index": 303
+    },
+    {
+      "sha": "c86846bcdaba001c66252d1adfecf3a3c33a3772",
+      "parents": [
+        "cae5833798604f1aa1eea723359c66bc5428cc98"
+      ],
+      "date": "2026-05-30T20:52:59Z",
+      "subject": "Add Wave 3 foundation launch lock evidence",
+      "main_reachable": true,
+      "intermediate_index": 304
+    },
+    {
+      "sha": "cae5833798604f1aa1eea723359c66bc5428cc98",
+      "parents": [
+        "1213be5512981948c0cdbc8e2b1073bbe6f98178"
+      ],
+      "date": "2026-05-21T20:10:55Z",
+      "subject": "Add evidence status",
+      "main_reachable": true,
+      "intermediate_index": 305
+    },
+    {
+      "sha": "1213be5512981948c0cdbc8e2b1073bbe6f98178",
+      "parents": [
+        "86a098213b6c722c05dd32eaaa07d919bf7a3e78"
+      ],
+      "date": "2026-05-18T03:13:33Z",
+      "subject": "Document live deployment verification",
+      "main_reachable": true,
+      "intermediate_index": 306
+    },
+    {
+      "sha": "86a098213b6c722c05dd32eaaa07d919bf7a3e78",
+      "parents": [
+        "a39ccb70f706e96d09488ce1ee1c48868d50779b"
+      ],
+      "date": "2026-05-18T03:12:49Z",
+      "subject": "Add live deployment runbook",
+      "main_reachable": true,
+      "intermediate_index": 307
+    },
+    {
+      "sha": "a39ccb70f706e96d09488ce1ee1c48868d50779b",
+      "parents": [
+        "c273399f4b0028599167646984f7f14088f24127"
+      ],
+      "date": "2026-05-18T03:12:05Z",
+      "subject": "Add live domain verification target",
+      "main_reachable": true,
+      "intermediate_index": 308
+    },
+    {
+      "sha": "c273399f4b0028599167646984f7f14088f24127",
+      "parents": [
+        "aee84091af615e731a6ce16cca66ac380221819f"
+      ],
+      "date": "2026-05-18T03:11:11Z",
+      "subject": "Add live domain verification script",
+      "main_reachable": true,
+      "intermediate_index": 309
+    },
+    {
+      "sha": "aee84091af615e731a6ce16cca66ac380221819f",
+      "parents": [
+        "d3fef6eed3e8dcf7f3a7c6e5a475884480206218"
+      ],
+      "date": "2026-05-18T02:58:09Z",
+      "subject": "Add integration contract to sitemap",
+      "main_reachable": true,
+      "intermediate_index": 310
+    },
+    {
+      "sha": "d3fef6eed3e8dcf7f3a7c6e5a475884480206218",
+      "parents": [
+        "988d338fd9437c479e512f926b3ea343ac774af3"
+      ],
+      "date": "2026-05-18T02:52:33Z",
+      "subject": "Link system-of-systems integration contract",
+      "main_reachable": true,
+      "intermediate_index": 311
+    },
+    {
+      "sha": "988d338fd9437c479e512f926b3ea343ac774af3",
+      "parents": [
+        "91caf213efbac34954f7aea1cd4a7f9ed283b0dd"
+      ],
+      "date": "2026-05-18T02:52:10Z",
+      "subject": "Add Foundation system-of-systems integration contract",
+      "main_reachable": true,
+      "intermediate_index": 312
+    },
+    {
+      "sha": "91caf213efbac34954f7aea1cd4a7f9ed283b0dd",
+      "parents": [
+        "5dd51838005dd28aac0d4a75a512c2fdff9a79cd"
+      ],
+      "date": "2026-05-18T02:42:40Z",
+      "subject": "Fix Markdown same-page anchor validation",
+      "main_reachable": true,
+      "intermediate_index": 313
+    },
+    {
+      "sha": "5dd51838005dd28aac0d4a75a512c2fdff9a79cd",
+      "parents": [
+        "abe9b529eddd5d9078430c5a84bff3fbd5dddf26"
+      ],
+      "date": "2026-05-18T02:40:45Z",
+      "subject": "Reference quality checklist in README",
+      "main_reachable": true,
+      "intermediate_index": 314
+    },
+    {
+      "sha": "abe9b529eddd5d9078430c5a84bff3fbd5dddf26",
+      "parents": [
+        "cd856b86a179dee426f9cb8d5f871c1b7fb9a89c"
+      ],
+      "date": "2026-05-18T02:40:07Z",
+      "subject": "Strengthen pull request checklist",
+      "main_reachable": true,
+      "intermediate_index": 315
+    },
+    {
+      "sha": "cd856b86a179dee426f9cb8d5f871c1b7fb9a89c",
+      "parents": [
+        "a40b4ce0180645de7fee16c3f95a19df9627071b"
+      ],
+      "date": "2026-05-18T02:39:46Z",
+      "subject": "Expand contribution guidance for hardened process",
+      "main_reachable": true,
+      "intermediate_index": 316
+    },
+    {
+      "sha": "a40b4ce0180645de7fee16c3f95a19df9627071b",
+      "parents": [
+        "c8529e94708dc8e33dacedd6464a1362ab32e87e"
+      ],
+      "date": "2026-05-18T02:39:16Z",
+      "subject": "Refresh implementation map for completed process hardening",
+      "main_reachable": true,
+      "intermediate_index": 317
+    },
+    {
+      "sha": "c8529e94708dc8e33dacedd6464a1362ab32e87e",
+      "parents": [
+        "5b0a35bd603dcdf1ce125beb5bf380fa4c506fc4"
+      ],
+      "date": "2026-05-18T02:38:54Z",
+      "subject": "Remove duplicate release guidance",
+      "main_reachable": true,
+      "intermediate_index": 318
+    },
+    {
+      "sha": "5b0a35bd603dcdf1ce125beb5bf380fa4c506fc4",
+      "parents": [
+        "aa4c25e8162e674f9bbd4ffd0c3a85c4247e1179"
+      ],
+      "date": "2026-05-18T02:38:01Z",
+      "subject": "Add site quality issue template",
+      "main_reachable": true,
+      "intermediate_index": 319
+    },
+    {
+      "sha": "aa4c25e8162e674f9bbd4ffd0c3a85c4247e1179",
+      "parents": [
+        "facd03a27dc185eca1cd2d8b7a19f47e72c4e551"
+      ],
+      "date": "2026-05-18T02:37:34Z",
+      "subject": "Fix risk review issue template metadata",
+      "main_reachable": true,
+      "intermediate_index": 320
+    },
+    {
+      "sha": "facd03a27dc185eca1cd2d8b7a19f47e72c4e551",
+      "parents": [
+        "4ca6c6a795690a71fc95b6dd0a2f4e75259ac87d"
+      ],
+      "date": "2026-05-18T02:37:28Z",
+      "subject": "Document versioning and changelog policy",
+      "main_reachable": true,
+      "intermediate_index": 321
+    },
+    {
+      "sha": "4ca6c6a795690a71fc95b6dd0a2f4e75259ac87d",
+      "parents": [
+        "3606628ef7bcaf5417f9515aded2bfca53628271"
+      ],
+      "date": "2026-05-18T02:37:15Z",
+      "subject": "Add risk review request issue template",
+      "main_reachable": true,
+      "intermediate_index": 322
+    },
+    {
+      "sha": "3606628ef7bcaf5417f9515aded2bfca53628271",
+      "parents": [
+        "701286b0862f7c7105939565c8ed46cda291f403"
+      ],
+      "date": "2026-05-18T02:36:57Z",
+      "subject": "Add policy proposal issue template",
+      "main_reachable": true,
+      "intermediate_index": 323
+    },
+    {
+      "sha": "701286b0862f7c7105939565c8ed46cda291f403",
+      "parents": [
+        "9a93984dbeefa35bb6d3d11e6e346cb9737ff859"
+      ],
+      "date": "2026-05-18T02:36:55Z",
+      "subject": "Add changelog for standards traceability",
+      "main_reachable": true,
+      "intermediate_index": 324
+    },
+    {
+      "sha": "9a93984dbeefa35bb6d3d11e6e346cb9737ff859",
+      "parents": [
+        "ec8e705c46c55aff14db8cfb19fa59dff5741445"
+      ],
+      "date": "2026-05-18T02:35:48Z",
+      "subject": "Add standards versioning policy",
+      "main_reachable": true,
+      "intermediate_index": 325
+    },
+    {
+      "sha": "ec8e705c46c55aff14db8cfb19fa59dff5741445",
+      "parents": [
+        "efc01b4cdcb0e1df26ce5d3f715358154427c205"
+      ],
+      "date": "2026-05-18T02:35:45Z",
+      "subject": "Add release and versioning guidance",
+      "main_reachable": true,
+      "intermediate_index": 326
+    },
+    {
+      "sha": "efc01b4cdcb0e1df26ce5d3f715358154427c205",
+      "parents": [
+        "3a8aa9e8b3bfaa0d4189a5397019eca2ff9878bb"
+      ],
+      "date": "2026-05-18T02:34:55Z",
+      "subject": "Add accessibility and site quality checklist",
+      "main_reachable": true,
+      "intermediate_index": 327
+    },
+    {
+      "sha": "3a8aa9e8b3bfaa0d4189a5397019eca2ff9878bb",
+      "parents": [
+        "ea6f984af8e768612a578b2d8aab2e2f376f096a"
+      ],
+      "date": "2026-05-18T02:29:15Z",
+      "subject": "Update implementation map after website polish",
+      "main_reachable": true,
+      "intermediate_index": 328
+    },
+    {
+      "sha": "ea6f984af8e768612a578b2d8aab2e2f376f096a",
+      "parents": [
+        "caa11a1fb40d1a464a29b721ec92ba0cff256260"
+      ],
+      "date": "2026-05-18T02:28:40Z",
+      "subject": "Document completed static website surface",
+      "main_reachable": true,
+      "intermediate_index": 329
+    },
+    {
+      "sha": "caa11a1fb40d1a464a29b721ec92ba0cff256260",
+      "parents": [
+        "f160f0133250fc19651351f3fa24cb64d4604fd9"
+      ],
+      "date": "2026-05-18T02:28:04Z",
+      "subject": "Expand sitemap for public standards",
+      "main_reachable": true,
+      "intermediate_index": 330
+    },
+    {
+      "sha": "f160f0133250fc19651351f3fa24cb64d4604fd9",
+      "parents": [
+        "1b8d74770ea72754ef5e0510434e721d1102b3e0"
+      ],
+      "date": "2026-05-18T02:27:40Z",
+      "subject": "Update site manifest with icon metadata",
+      "main_reachable": true,
+      "intermediate_index": 331
+    },
+    {
+      "sha": "1b8d74770ea72754ef5e0510434e721d1102b3e0",
+      "parents": [
+        "a30ce6de4d5bd8ced5563ebcea09d48c51c69119"
+      ],
+      "date": "2026-05-18T02:27:21Z",
+      "subject": "Add Foundation SVG favicon",
+      "main_reachable": true,
+      "intermediate_index": 332
+    },
+    {
+      "sha": "a30ce6de4d5bd8ced5563ebcea09d48c51c69119",
+      "parents": [
+        "4e8bca8f9aadad861e370d4b4d3cac992b813818"
+      ],
+      "date": "2026-05-18T02:26:42Z",
+      "subject": "Upgrade Foundation visual system",
+      "main_reachable": true,
+      "intermediate_index": 333
+    },
+    {
+      "sha": "4e8bca8f9aadad861e370d4b4d3cac992b813818",
+      "parents": [
+        "8a9ea7db892d266cb482262d5c1a618450451d71"
+      ],
+      "date": "2026-05-18T02:25:54Z",
+      "subject": "Polish Foundation homepage content and structure",
+      "main_reachable": true,
+      "intermediate_index": 334
+    },
+    {
+      "sha": "8a9ea7db892d266cb482262d5c1a618450451d71",
+      "parents": [
+        "35212d5c919eca7800be43e67a998f9f9e0082ba"
+      ],
+      "date": "2026-05-18T02:23:25Z",
+      "subject": "Add structured issue templates",
+      "main_reachable": true,
+      "intermediate_index": 335
+    },
+    {
+      "sha": "35212d5c919eca7800be43e67a998f9f9e0082ba",
+      "parents": [
+        "5d935f9b6feec236c0a683b233d19b844adeac27"
+      ],
+      "date": "2026-05-18T02:11:56Z",
+      "subject": "Harden static site validation",
+      "main_reachable": true,
+      "intermediate_index": 336
+    },
+    {
+      "sha": "5d935f9b6feec236c0a683b233d19b844adeac27",
+      "parents": [
+        "8adb54e710ede4a44727ceeda042da3b8c5d04d5",
+        "edf1dfa8d366b36ee6a0f7d92310eea3a9451119"
+      ],
+      "date": "2026-05-18T02:03:19Z",
+      "subject": "Merge pull request #6 from LifeLoggerAI/complete-urai-foundation-system",
+      "main_reachable": true,
+      "intermediate_index": 337
+    },
+    {
+      "sha": "7e5e2c69809db2a2ba896e41dfbb16b8690cbce4",
+      "parents": [
+        "c387bc5fad8262bec1e7f5073ab34e7b22d80b1c"
+      ],
+      "date": "2026-05-18T01:59:19Z",
+      "subject": "Add implementation map for repository scope",
+      "main_reachable": true,
+      "intermediate_index": 338
+    },
+    {
+      "sha": "c387bc5fad8262bec1e7f5073ab34e7b22d80b1c",
+      "parents": [
+        "8adb54e710ede4a44727ceeda042da3b8c5d04d5"
+      ],
+      "date": "2026-05-18T01:58:09Z",
+      "subject": "Add CI validation workflow",
+      "main_reachable": true,
+      "intermediate_index": 339
+    },
+    {
+      "sha": "8adb54e710ede4a44727ceeda042da3b8c5d04d5",
+      "parents": [
+        "ee3ba015aace70bb60e545815788e0fabe76ab5e",
+        "559b12d772de51aa397c0667f50c98de72ed1d79"
+      ],
+      "date": "2026-05-08T18:22:32Z",
+      "subject": "Merge pull request #5 from LifeLoggerAI/polish-foundation-website",
+      "main_reachable": true,
+      "intermediate_index": 340
+    },
+    {
+      "sha": "aa3a27eae319691b3e246de65b85cc550efd69e8",
+      "parents": [
+        "3342dbcf43ffbdb46bad47891153f958e721fdc8"
+      ],
+      "date": "2026-05-08T18:15:35Z",
+      "subject": "Add web manifest metadata",
+      "main_reachable": true,
+      "intermediate_index": 341
+    },
+    {
+      "sha": "3342dbcf43ffbdb46bad47891153f958e721fdc8",
+      "parents": [
+        "41fc0a2456be62e22e8a1113ecf54e99e2372158"
+      ],
+      "date": "2026-05-08T18:15:21Z",
+      "subject": "Add sitemap for foundation website",
+      "main_reachable": true,
+      "intermediate_index": 342
+    },
+    {
+      "sha": "41fc0a2456be62e22e8a1113ecf54e99e2372158",
+      "parents": [
+        "4eae6de47ec165b7e2fb7ccfcc0d1cfe18cf26db"
+      ],
+      "date": "2026-05-08T18:14:45Z",
+      "subject": "Add robots file for site indexing",
+      "main_reachable": true,
+      "intermediate_index": 343
+    },
+    {
+      "sha": "4eae6de47ec165b7e2fb7ccfcc0d1cfe18cf26db",
+      "parents": [
+        "74b85295ea493a8227e5f1c5bc859b30acd0b287"
+      ],
+      "date": "2026-05-08T18:14:29Z",
+      "subject": "Configure custom domain for foundation website",
+      "main_reachable": true,
+      "intermediate_index": 344
+    },
+    {
+      "sha": "74b85295ea493a8227e5f1c5bc859b30acd0b287",
+      "parents": [
+        "121990eaedf9a6eebd2d8d844d722f7b9c138c7a"
+      ],
+      "date": "2026-05-08T18:14:12Z",
+      "subject": "Add responsive production styling",
+      "main_reachable": true,
+      "intermediate_index": 345
+    },
+    {
+      "sha": "121990eaedf9a6eebd2d8d844d722f7b9c138c7a",
+      "parents": [
+        "bb6bb362ee765a665f39cc0380ea26ce752a88ca"
+      ],
+      "date": "2026-05-08T18:13:28Z",
+      "subject": "Add polished static foundation website",
+      "main_reachable": true,
+      "intermediate_index": 346
+    },
+    {
+      "sha": "09a105650836638a8f55d294bd9a36e944eb578d",
+      "parents": [
+        "2c6b63e17f9cbf614091d91f4eebb09b2383a85a"
+      ],
+      "date": "2026-05-08T18:12:11Z",
+      "subject": "Document website launch and positioning",
+      "main_reachable": true,
+      "intermediate_index": 347
+    },
+    {
+      "sha": "2c6b63e17f9cbf614091d91f4eebb09b2383a85a",
+      "parents": [
+        "f9e74efb08c9dc247bb3e8eb513e8a8dac410e69"
+      ],
+      "date": "2026-05-08T18:05:07Z",
+      "subject": "Add web manifest metadata",
+      "main_reachable": true,
+      "intermediate_index": 348
+    },
+    {
+      "sha": "f9e74efb08c9dc247bb3e8eb513e8a8dac410e69",
+      "parents": [
+        "094ec6073431f416dfa6804291d30ca0340fd2ad"
+      ],
+      "date": "2026-05-08T18:04:34Z",
+      "subject": "Add sitemap for foundation website",
+      "main_reachable": true,
+      "intermediate_index": 349
+    },
+    {
+      "sha": "47bea2d1bb659f6098029735e846c61bf02d8014",
+      "parents": [
+        "33d655fa1fe4f02876b608d579c3b44be492a6a2"
+      ],
+      "date": "2026-05-08T18:04:09Z",
+      "subject": "Configure custom domain for foundation website",
+      "main_reachable": true,
+      "intermediate_index": 351
+    },
+    {
+      "sha": "33d655fa1fe4f02876b608d579c3b44be492a6a2",
+      "parents": [
+        "d4d5c2f1c22821032a46723ae8395d4473d1ceab"
+      ],
+      "date": "2026-05-08T17:58:52Z",
+      "subject": "Add responsive production styling",
+      "main_reachable": true,
+      "intermediate_index": 352
+    },
+    {
+      "sha": "d4d5c2f1c22821032a46723ae8395d4473d1ceab",
+      "parents": [
+        "d246e3dc418ad07fa8d0d6f46f2d1f2d44786ace"
+      ],
+      "date": "2026-05-08T17:55:42Z",
+      "subject": "Add polished static foundation website",
+      "main_reachable": true,
+      "intermediate_index": 353
+    },
+    {
+      "sha": "bb6bb362ee765a665f39cc0380ea26ce752a88ca",
+      "parents": [
+        "d246e3dc418ad07fa8d0d6f46f2d1f2d44786ace",
+        "a993bdba59d17b5156a3d99e2b71cb066936d211"
+      ],
+      "date": "2026-05-07T17:47:48Z",
+      "subject": "Merge pull request #2 from LifeLoggerAI/codex/complete-audit-findings-and-polish-repo",
+      "main_reachable": true,
+      "intermediate_index": 354
+    },
+    {
+      "sha": "d246e3dc418ad07fa8d0d6f46f2d1f2d44786ace",
+      "parents": [
+        "a068a07fecb0350d5bf26cddb108306d9112df48"
+      ],
+      "date": "2026-02-05T20:13:28Z",
+      "subject": "Revise README to include foundation details",
+      "main_reachable": true,
+      "intermediate_index": 355
+    },
+    {
+      "sha": "a068a07fecb0350d5bf26cddb108306d9112df48",
+      "parents": [],
+      "date": "2026-02-05T20:12:19Z",
+      "subject": "Initial commit",
+      "main_reachable": true,
+      "intermediate_index": 356
+    },
+    {
+      "sha": "042ae1e85f016bb525f125af44218c60c0535091",
+      "subject": "reconcile Foundation dossier docs onto portal main",
+      "date": "2026-09-05T00:58:11Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 357
+    },
+    {
+      "sha": "05bc9a892ea43c47f0de9e53961d5354da4406e4",
+      "subject": "security(foundation): add public security reporting route",
+      "date": "2026-10-05T17:39:45Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 358
+    },
+    {
+      "sha": "06fce7fa33444166ac9b0703df4323689cc53dbc",
+      "subject": "Add nonprofit programs page",
+      "date": "2026-05-17T19:21:21Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 359
+    },
+    {
+      "sha": "078ac8fe7078715174e29314dbcdddd5e37be0b2",
+      "subject": "Add custom 404 page",
+      "date": "2026-05-18T02:21:06Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 360
+    },
+    {
+      "sha": "0d06b169ee5c7275f4bea197a85d36b2f75a1afa",
+      "subject": "Add support and donations page",
+      "date": "2026-05-17T19:27:02Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 361
+    },
+    {
+      "sha": "0d14f401bc3081a4ca13928590cc47aa585a6ea7",
+      "subject": "privacy: remove prospective outreach record from public source",
+      "date": "2026-09-05T10:07:10Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 362
+    },
+    {
+      "sha": "0fee0025d1f65653c47fd9aa47bd6043fef2e946",
+      "subject": "docs: fail closed on estate implementation evidence",
+      "date": "2026-09-05T10:45:06Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 363
+    },
+    {
+      "sha": "10346708992820b8321e06619aeb2a7651dcb347",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:28:19Z",
+      "branches": [
+        "add-standards-versioning-policy-v2"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 364
+    },
+    {
+      "sha": "15e44e03e3ad7cbfaefd7092670003b35e272f35",
+      "subject": "Guard Foundation mailto query syntax",
+      "date": "2026-10-05T12:10:05Z",
+      "branches": [
+        "fix/foundation-community-mailto-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 365
+    },
+    {
+      "sha": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "subject": "reconcile donations onto current staff backend",
+      "date": "2026-09-05T00:52:46Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 366
+    },
+    {
+      "sha": "18351f477c468815b8051cbddc15880929807cbc",
+      "subject": "Add accessibility and inclusion page",
+      "date": "2026-05-18T02:11:09Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 367
+    },
+    {
+      "sha": "1df8755eef3db4ca4fd9af46edc21e851b4b719e",
+      "subject": "trust(foundation): register security route in tests/test_smoke_live_routes.py",
+      "date": "2026-10-05T17:40:23Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 368
+    },
+    {
+      "sha": "23822c789f7b596ec331e9c47335cfc3c7aa470e",
+      "subject": "Add nonprofit about page",
+      "date": "2026-05-17T18:34:39Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 369
+    },
+    {
+      "sha": "24f5dc73ca21b08f581e8efd8cffccfe3fe742ba",
+      "subject": "a11y(foundation): add accessibility reporting path",
+      "date": "2026-10-05T17:39:59Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 370
+    },
+    {
+      "sha": "25ae3beb4ef88f2903244218c469ec4614f10239",
+      "subject": "donations: model out-of-order cancellation authority",
+      "date": "2026-09-05T12:43:09Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 371
+    },
+    {
+      "sha": "2632d57bd3f18860f73c952ca3bb52ffe703aab0",
+      "subject": "Align partner page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:48:24Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 372
+    },
+    {
+      "sha": "26973c2a6f896236f0825d82af5aeeabb38c38fb",
+      "subject": "Align responsible AI page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:46:51Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 373
+    },
+    {
+      "sha": "2dd54ddb144906f11b825542fc3560e28ff171ba",
+      "subject": "security(foundation): route sensitive reports safely",
+      "date": "2026-10-05T17:40:03Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 374
+    },
+    {
+      "sha": "33745a186486c801f55a673ba4640bd33715aebf",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:28:07Z",
+      "branches": [
+        "add-standards-versioning-policy-v2"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 375
+    },
+    {
+      "sha": "339fa667eb93ac08ed1d366563390e062fbc013e",
+      "subject": "tests: exercise donation cancellation event order",
+      "date": "2026-09-05T12:45:18Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 376
+    },
+    {
+      "sha": "33c14f7cbe6d47146eba7c9b7915e9f9c105f119",
+      "subject": "Polish: make Foundation color-scheme metadata match dark-only UI",
+      "date": "2026-09-13T17:22:52Z",
+      "branches": [
+        "polish/foundation-color-scheme-truth-20260913"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 377
+    },
+    {
+      "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+      "subject": "Wait for the actual loaded Governance document before section capture",
+      "date": "2026-10-07T22:48:55Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 378
+    },
+    {
+      "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+      "subject": "Reject sticky-header occlusion in stewardship browser proof",
+      "date": "2026-10-07T23:16:55Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 379
+    },
+    {
+      "sha": "376a678e79d0b208f605e1cb1f5831f05a1a34fc",
+      "subject": "test(foundation): require live security route marker",
+      "date": "2026-10-05T18:30:02Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 380
+    },
+    {
+      "sha": "3d31302a971b23559a15203864117972324051d8",
+      "subject": "test(foundation): lock security route live proof",
+      "date": "2026-10-05T18:30:07Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 381
+    },
+    {
+      "sha": "406735851d5a8b98d03f337b4166b060c32a1aff",
+      "subject": "Add Foundation homepage skeleton",
+      "date": "2026-07-06T04:08:11Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 382
+    },
+    {
+      "sha": "42c128a8549655dc9e0300fb48da105c30522335",
+      "subject": "Use legally cautious Foundation initiative language",
+      "date": "2026-07-10T14:42:06Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 383
+    },
+    {
+      "sha": "481ee59c34453c6237c35cef5492fef92a888e6c",
+      "subject": "Add issue template configuration",
+      "date": "2026-05-18T02:15:37Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 384
+    },
+    {
+      "sha": "4c68871f817fdaa89febf00121deff4c5c0bb531",
+      "subject": "Align Foundation authority language with available legal evidence",
+      "date": "2026-07-10T14:41:44Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 385
+    },
+    {
+      "sha": "4d1e7527d8cf0f4807d3bb892cc831bb749f9637",
+      "subject": "Align Deaf community page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:14:24Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 386
+    },
+    {
+      "sha": "4e1c7ad76c09a448e4b2144f495f7f4a3939f6d0",
+      "subject": "Add Foundation Firebase Hosting preview config",
+      "date": "2026-07-06T04:07:17Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 387
+    },
+    {
+      "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+      "subject": "Record the actual canonical-main Pages enablement failure",
+      "date": "2026-10-07T23:02:37Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 388
+    },
+    {
+      "sha": "579b9878ee4474886c8def54e74cb4095dd3aeb3",
+      "subject": "Add documentation and website issue template",
+      "date": "2026-05-18T02:20:52Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 389
+    },
+    {
+      "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+      "subject": "Retain exact-source stewardship section pixels in native visual proof",
+      "date": "2026-10-07T21:09:11Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 390
+    },
+    {
+      "sha": "5e591755d73790490f3bebdabcc541d8132fab70",
+      "subject": "Align research page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:48:08Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 391
+    },
+    {
+      "sha": "65bd8eee5a1d6777a0469e61a273d0763b71549a",
+      "subject": "fix: retain public status in curated Foundation artifact",
+      "date": "2026-09-05T02:25:27Z",
+      "branches": [
+        "chatgpt/asap-public-governance-20260813"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 392
+    },
+    {
+      "sha": "6ea9a30d169e60027f37d288ef9277b95a7f985b",
+      "subject": "Add contact and participation page",
+      "date": "2026-05-18T02:20:28Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 393
+    },
+    {
+      "sha": "6f348828d02b68b79cabc7bb173226b4d3d1e8e3",
+      "subject": "wire donation functions through reconciled staff entrypoint",
+      "date": "2026-09-05T00:53:55Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 394
+    },
+    {
+      "sha": "713e686eb1a64e57aa5fa2bc928ad6fea966a39f",
+      "subject": "Validate static site files and HTML links",
+      "date": "2026-05-18T02:09:56Z",
+      "branches": [
+        "harden-static-site-validation"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 395
+    },
+    {
+      "sha": "7150cf7e2d67b37f30c4e207de40f51512b24882",
+      "subject": "reconcile: restack Foundation dossier on current main",
+      "date": "2026-09-05T21:55:40Z",
+      "branches": [
+        "reconcile/foundation21-current-main-20260905"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 396
+    },
+    {
+      "sha": "7bb8ffc7d6ec5b7cd5f74a35b89367ee340977e6",
+      "subject": "donations: make cancellation authoritative across event order",
+      "date": "2026-09-05T12:45:05Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 397
+    },
+    {
+      "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+      "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+      "date": "2026-10-07T21:14:42Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 398
+    },
+    {
+      "sha": "81d1ca76817fc84fe2af1ddb272aac1f3749bd98",
+      "subject": "Make Foundation legal-status uncertainty explicit",
+      "date": "2026-07-10T14:42:21Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 399
+    },
+    {
+      "sha": "833ee4f5ceba1e17b4ba31d841297b60f8aa74fa",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:32:16Z",
+      "branches": [
+        "add-standards-versioning-policy-v3"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 400
+    },
+    {
+      "sha": "836fe17a4c0cfd819c9f47ddd1f65b69756f5f91",
+      "subject": "Add research initiatives page",
+      "date": "2026-05-17T19:22:56Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 401
+    },
+    {
+      "sha": "84d3ff4c74f1ea843b3503917c07d62ed76f81b0",
+      "subject": "tests: run donation ordering behavior in build",
+      "date": "2026-09-05T12:46:24Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 402
+    },
+    {
+      "sha": "874fd712f7efe9cd066f682f54cdcc07294a0432",
+      "subject": "tests: lock donation cancellation ordering assertions",
+      "date": "2026-09-05T12:46:59Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 403
+    },
+    {
+      "sha": "8cd95fd175b239b65e6459e9d9c5ffa835be8c14",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:25:51Z",
+      "branches": [
+        "add-standards-versioning-policy"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 404
+    },
+    {
+      "sha": "942c408ee9b548378e4429e2f91a1b8b39a1caa6",
+      "subject": "Add terms and safety disclaimer page",
+      "date": "2026-05-18T00:16:39Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 405
+    },
+    {
+      "sha": "943cefa8044e46c3be973c747a68ebad3fda415f",
+      "subject": "trust(foundation): register security route in scripts/smoke-live-routes.py",
+      "date": "2026-10-05T17:40:21Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 406
+    },
+    {
+      "sha": "98adda83e97297909ecc58360ccc6a6368a97d7f",
+      "subject": "feat(site): turn Foundation home from repo audit into a public institution",
+      "date": "2026-08-12T18:57:16Z",
+      "branches": [
+        "chatgpt/urai-product-polish-20260812"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 407
+    },
+    {
+      "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+      "subject": "Capture the actual Foundation stewardship section before source admission",
+      "date": "2026-10-07T22:45:09Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 408
+    },
+    {
+      "sha": "a713890cf5998a8690532fdd0ce25f27249635ad",
+      "subject": "reconcile public governance and 404 onto portal main",
+      "date": "2026-09-05T00:57:16Z",
+      "branches": [
+        "chatgpt/asap-public-governance-20260813"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 409
+    },
+    {
+      "sha": "ab0f1e08c84392f86cd0b3649250e8aa559659cd",
+      "subject": "validation: lock donation cancellation ordering contract",
+      "date": "2026-09-05T12:46:43Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 410
+    },
+    {
+      "sha": "ad1accc97802604959f88d6c0c9456347f17874c",
+      "subject": "Design: establish Foundation institution experience",
+      "date": "2026-09-13T17:29:32Z",
+      "branches": [
+        "design/foundation-institution-ui-20260913"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 411
+    },
+    {
+      "sha": "c3583055407f9dbdd64e3fcf4ce5933a2d8339f7",
+      "subject": "Fix Foundation community contact mailto",
+      "date": "2026-10-05T12:10:03Z",
+      "branches": [
+        "fix/foundation-community-mailto-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 412
+    },
+    {
+      "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+      "subject": "Add bounded public stewardship principles under Foundation governance",
+      "date": "2026-10-07T20:50:04Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 413
+    },
+    {
+      "sha": "c5438d821527c0bee66a3a71cc1461f8cd3d18bd",
+      "subject": "Align contact page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:11:33Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 414
+    },
+    {
+      "sha": "c9050350d2c2e5a5bfc74e6c40ecda87214c444e",
+      "subject": "Add governance overview page",
+      "date": "2026-05-18T02:20:48Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 415
+    },
+    {
+      "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+      "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+      "date": "2026-10-08T04:36:13Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 416
+    },
+    {
+      "sha": "cfde2ee6a408140d449e0f157ea6533761af0988",
+      "subject": "Pin Foundation workflow actions",
+      "date": "2026-10-05T10:52:06Z",
+      "branches": [
+        "hardening/pin-foundation-actions-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 417
+    },
+    {
+      "sha": "d5805c158b3b9ff5d328d018ce56cdc5a0ffb207",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:26:27Z",
+      "branches": [
+        "add-standards-versioning-policy"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 418
+    },
+    {
+      "sha": "d9855f3e49c938ad028a8657acf481c57f7be0de",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:29:14Z",
+      "branches": [
+        "add-standards-versioning-policy-v3"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 419
+    },
+    {
+      "sha": "df972c9c169f02075d721e18d1df14bfa244bae2",
+      "subject": "Add privacy policy page",
+      "date": "2026-05-17T20:15:21Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 420
+    },
+    {
+      "sha": "e1a7345860e905857ffcdb2ef5994d7280abea95",
+      "subject": "trust(foundation): register security route in scripts/build-public-site.py",
+      "date": "2026-10-05T17:40:15Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 421
+    },
+    {
+      "sha": "e36fc5c180f8bdd3c0c3cde2d921f7bb560f6350",
+      "subject": "build(foundation): publish interior stylesheet",
+      "date": "2026-10-05T18:29:58Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 422
+    },
+    {
+      "sha": "e6185be03181453588d03956753859e181dac112",
+      "subject": "Add policy proposal issue template",
+      "date": "2026-05-18T02:16:07Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 423
+    },
+    {
+      "sha": "e6d2c33544ae20bd26be1b6910b38cf8e295a138",
+      "subject": "truth(foundation): record verified role-routing boundary",
+      "date": "2026-10-05T18:30:19Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 424
+    },
+    {
+      "sha": "f3bcf13050b3378b3ef7d5157ed86590763e6646",
+      "subject": "Add risk review issue template",
+      "date": "2026-05-18T02:20:15Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 425
+    },
+    {
+      "sha": "f556fb883dee6d8152eda131a3e49b3a290dd9af",
+      "subject": "Add impact page",
+      "date": "2026-05-17T19:26:41Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 426
+    },
+    {
+      "sha": "f682d35b263fcff89f6b41bff63112406eed7153",
+      "subject": "Add Foundation public CSS",
+      "date": "2026-07-06T04:07:52Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 427
+    },
+    {
+      "sha": "fe0f308c22ce7570dc2efbd8b2df748331a5f248",
+      "subject": "trust(foundation): register security route in scripts/validate-routes.py",
+      "date": "2026-10-05T17:40:18Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ],
+      "main_reachable": false,
+      "intermediate_index": 428
+    }
+  ]
+}
