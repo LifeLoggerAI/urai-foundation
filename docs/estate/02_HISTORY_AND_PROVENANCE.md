@@ -16,3 +16,8 @@ Useful retained pointers:
 - https://github.com/LifeLoggerAI/urai-labs-llc/pull/262
 
 Do not destroy, squash for convenience, cherry-pick, or overwrite any current worker branch. Historical assertions and earlier worker logs retain their original source date and scope.
+
+## R-GENESIS-A2 — historical head and main-reachable graph
+All 53 original branch heads have immutable recursive path/size/Git-blob inventories in [historical tree parts 01–07](manifests/FOUNDATION_HISTORY_BRANCH_TREES_01.json) (see adjacent numbered files). GitHub API returned 51 distinct head commits; two pairs of branches share the same head commit: `reconcile/foundation19-main-20260905` and `reconcile/foundation19-main-into-pr` share `1fbebd8...`; `repair/foundation-privileged-auth-time-20261010` and `repair/foundation-public-stewardship-20261007` share `aa7bff55...`. 33 historical paths are not at canonical main, including donation server code, historical legal-payment drafts, and prior website routes. Their full version-specific SHA256 receipt set is [320-blob union](manifests/FOUNDATION_UNION_320_SHA256_COMPLETE.json).
+Main-reachable GitHub commits API pages 1–4 returned 380 commits; pages 5–10 empty. This confirms *main-reachable paginated metadata*, not every branch-only commit and intermediate file version. Full all-ref commit graph and every historical reachable blob require additional traversal. Existing PR merge status and approvals take precedence over branch-name inference. Never reinstate donation production or publish historical advisor details merely because a branch contains them.
+
