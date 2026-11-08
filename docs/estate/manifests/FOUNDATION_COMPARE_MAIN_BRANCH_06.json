@@ -1,0 +1,70 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 50,
+  "end": 52,
+  "branches": [
+    {
+      "name": "repair/full-completion-web-20261008",
+      "head": "90e0733e910691e50883c8c3397d65794c65a971",
+      "status": "ahead",
+      "ahead": 8,
+      "behind": 0,
+      "total": 8,
+      "returned": 8,
+      "commits": [
+        {
+          "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+          "subject": "Add bounded public stewardship principles under Foundation governance",
+          "date": "2026-10-07T20:50:04Z"
+        },
+        {
+          "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+          "subject": "Retain exact-source stewardship section pixels in native visual proof",
+          "date": "2026-10-07T21:09:11Z"
+        },
+        {
+          "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+          "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+          "date": "2026-10-07T21:14:42Z"
+        },
+        {
+          "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+          "subject": "Capture the actual Foundation stewardship section before source admission",
+          "date": "2026-10-07T22:45:09Z"
+        },
+        {
+          "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+          "subject": "Wait for the actual loaded Governance document before section capture",
+          "date": "2026-10-07T22:48:55Z"
+        },
+        {
+          "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+          "subject": "Record the actual canonical-main Pages enablement failure",
+          "date": "2026-10-07T23:02:37Z"
+        },
+        {
+          "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+          "subject": "Reject sticky-header occlusion in stewardship browser proof",
+          "date": "2026-10-07T23:16:55Z"
+        },
+        {
+          "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+          "subject": "Preserve Foundation page assets and research route in public build",
+          "date": "2026-10-08T00:44:29Z"
+        }
+      ],
+      "file_diff_count": 6
+    },
+    {
+      "name": "runtime/foundation-node22-20260913",
+      "head": "ddc7ceb49c0591ce2a1865e9444a7cc5eeb54524",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 80,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    }
+  ]
+}
