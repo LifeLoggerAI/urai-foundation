@@ -1,0 +1,121 @@
+{
+  "range": [
+    56,
+    70
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "6d2c6ff3048bc967a60ffb84645f00b3208c4734",
+      "bytes": 1583,
+      "path": "tests/test_validate_routes.py",
+      "source_commit": "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+      "sha256": "d36214dd9f00f2205a56c2d1035c00d68383d94b92f91c60029dfbf86487ba8f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6eac54cad8577bc9274a6db0b0479ef5b56f1687",
+      "bytes": 377,
+      "path": "functions/package.json",
+      "source_commit": "24600206a54459c0c894c5691288f469858be9d4",
+      "sha256": "75c9ba64d6e5fa7c3a3a91516082127b33fc11fa5b94645baff835c94b2ebf38",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6eb2db29c2c3d5ce2ae02c75e9164682d0f7505d",
+      "bytes": 5353,
+      "path": "status/index.html",
+      "source_commit": "8180d27937b524909a4655d73c6874586fd68558",
+      "sha256": "5f44db54c600d53aaf3de34453e3be562b36bbce73a4817a882363a03e7a3474",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6efa076bda9d31eef06eba02a424fe58168d83fd",
+      "bytes": 7013,
+      "path": "functions/src/index.ts",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "6f0c7c6682ab536ad1bb985bf8ce5175b46337c68f503f57f9d9feef679a0a84",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "6f2afe5fdedbc7ff4f1b4a2ac091015961364f18",
+      "bytes": 683,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "3f669b60ab4f549babad5faa77afbfb93d6ead6c",
+      "sha256": "e169b3ca9e08531a9ab8a07fd798ef300e9b2bff3f0a459e8df1a360fd6e77e9",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7004b25b90f394ab129ea8a926cdb4b1167d7094",
+      "bytes": 13422,
+      "path": "grants/grants.js",
+      "source_commit": "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+      "sha256": "7eab7d2b05a5fe58d96f57d9ae5552d42df1aa53983f064a73b62e0e8999995f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "70133f0859028f2d17ef7fb5f607f7488e98d6ea",
+      "bytes": 2383,
+      "path": "tests/test_smoke_live_routes.py",
+      "source_commit": "7ed334fcb1145f2cbd9d28f05a1f28a69b1856f5",
+      "sha256": "dc96abded6da7965f1724a98fbe19c0a4a6253575d6d07d35564acd81d6163a3",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "714db0a5640219bf11ad9dc80350970a0c23fb20",
+      "bytes": 8226,
+      "path": "index.html",
+      "source_commit": "e89c989743b530d5072f15f5a2ac5da80c2e80de",
+      "sha256": "b324a871711e920389cf9723e652dc041d0269be7b42f725b68a2202a1f83f03",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7348cd6c56a8b4a6656f4b450edf1bf07e292961",
+      "bytes": 4258,
+      "path": "staff/index.html",
+      "source_commit": "f09ab5cd6ab64ac3f7e9244da6e6c508378c56d5",
+      "sha256": "e6fa33e369cd3e449f08374789108e2abb0fb57a1fbe2b669b5b957fe165c1c5",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7419d75b64429fb73aee1b1b6c551f65aff6b462",
+      "bytes": 8984,
+      "path": "docs/staff-backend-contract.md",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "b4b6e765544d373d28783846d385172d36fbc8a5c6079d83dcd7174c0503fef4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "7447ecedca33daf8a53516e5bf85ee32386e8586",
+      "bytes": 13712,
+      "path": "README.md",
+      "source_commit": "ab465a2e040480a30feca6de09292b7d664e7ee2",
+      "sha256": "02afd1cd308c4e901a607506cf0771af44b6de6b2b3cfcc3a50a97b52d55d933",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "74f475893ae39200a5dcf87bd600abf3c8cbe67a",
+      "bytes": 9927,
+      "path": "scripts/capture-stewardship.mjs",
+      "source_commit": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+      "sha256": "0ca65520a36841fa5e658680fdaf144e2ba5001ca66c3da21caefedb7a823ce4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "754b4ddd2d3fcd125628bf4ccb4a414d8dfcaca8",
+      "bytes": 2080,
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+      "source_commit": "e470f4a0fd618672ffcc5e5454d239ec73ba1f8f",
+      "sha256": "f866171117be5607201be5f62e62504ccfdbcf4efb86e8fa8089e368acad82f1",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "799f1893390d3884e0bfb7008787511ee63ce845",
+      "bytes": 4629,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "c5af9613ba83d8c26ef3e661b90ce1565e12970c",
+      "sha256": "39775167486b1cf67795b217737ed089dc8807d5b05d5ee52298fdf3cc0b84f5",
+      "verified": true
+    }
+  ]
+}
