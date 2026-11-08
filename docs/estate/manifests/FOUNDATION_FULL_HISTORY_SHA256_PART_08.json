@@ -1,0 +1,121 @@
+{
+  "range": [
+    98,
+    112
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "b162f3edfe2f9cf11b294c6c05d09619731a9f75",
+      "bytes": 4292,
+      "path": "staff/index.html",
+      "source_commit": "bc02189c4495e97e595f6a61cc28dd568080c7ff",
+      "sha256": "e43d741a79e097e792baba71be6afe6da0552c8628ee5c59605d914fc8155349",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "b806f37dff67ccd082a2e70783599937ba201c54",
+      "bytes": 2346,
+      "path": "sitemap.xml",
+      "source_commit": "7e55a4ab2f88da6c6b19298a604b1ac347522c08",
+      "sha256": "088d9dac0f1c954fb5bfcc60786fe347d8856df4e4363118a43d2fc8064138f9",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "b8e358d5b98c2cbeccb64b49b064fed80af46d93",
+      "bytes": 1541,
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+      "source_commit": "4bc0374bbbe53476eb9c436506cd18f3bc5f46e0",
+      "sha256": "aa091683dd5fe1e1735bcdcc61c6047afbdd9a54a1bdaa404b0d60cfe72f56f4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "b9e549b4ad57f2b3d941cfa21c4297e078c9d1f5",
+      "bytes": 23251,
+      "path": "functions/src/index.ts",
+      "source_commit": "411b811430102b63a2efaebaee2ce5defe709650",
+      "sha256": "4e68bfa1bc9bf91c3dfc4063bb4e2c0c318fa97aacb93a68c216567b5c3c0906",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "bb337ab4f4779fad51b224ee988db48ed713bdb5",
+      "bytes": 3734,
+      "path": "tests/test_validate_routes.py",
+      "source_commit": "a7a577d2cc94221789e55f10a67be72e2a1f4d42",
+      "sha256": "1ab2e830042ac7d4a3cdf4903c3f4955c0798cb81ca1f383e9236f5edd4ef88d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "bb8db24b821ad0d5169895520e9e0409206bbb33",
+      "bytes": 3934,
+      "path": "tests/test_validate_routes.py",
+      "source_commit": "d55d53aa089c53873336f2e0127148493e00dc25",
+      "sha256": "9df54072306e9f2cd27215b35d55fc9880e90baaa397f83a420ffb32fe24778b",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "c0b5afc7ef46d271686e334e4c222fb101c17ba8",
+      "bytes": 2170,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "c784613985120ba59d878aa239f3e80ff8bcd785",
+      "sha256": "c0992fca4ec8b9b8c25f6f44318b601a6ff5e97eb7a9b57a4ba1e9cf6b5ca79d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "c2321b3bf3f29ef341e4dada432ea2673de5629c",
+      "bytes": 7287,
+      "path": "PRODUCTION_STATUS.md",
+      "source_commit": "749d7278a8cc28c44102db42378e096b1c5cb7b0",
+      "sha256": "a8e175126e1481e0653ed9133f13b6286936166f859a818e6930c409ed5db79f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "c448226ba73c526b2c8535862347ff18a9a1569a",
+      "bytes": 3822,
+      "path": "tests/test_validate_routes.py",
+      "source_commit": "fabd805e19d4e62aefa92c0767e0644cb95753a1",
+      "sha256": "edd049612141f422382e0e09898e02dd7cab6d962a2062c4546713736331e619",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "c7bdffa40b682debde5fcc01c81e4c82a51043f8",
+      "bytes": 17124,
+      "path": "grants/grants.js",
+      "source_commit": "acd3a3648edd8829d1976fa1e265da9c3f13f976",
+      "sha256": "c5359234966c3b94bba2349b8b87cd50d8ea2226a93d582cc43cfad6f1f00db4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "c9f0834a39aa70a88cab230bc853cb0ef7feb85f",
+      "bytes": 3884,
+      "path": "research/index.html",
+      "source_commit": "95a0a6b5184ba1fa4af7aab2608d5a01e9108622",
+      "sha256": "baaa60af699a71f3edc60a344452a13604284dc8752b46858477c70723272070",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "cb7c5254e52cb452bac64962bf7c4574b597b8bf",
+      "bytes": 13353,
+      "path": "README.md",
+      "source_commit": "94932cfc814423753c5e30ed2311c7dc1c2a0c01",
+      "sha256": "de81c29aca0687f72c978cd7d44b9bf688b82bb0c17d18cf55cf4b232b632776",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "cd66494d737da75fae0cbd8779d9a51c525c7b33",
+      "bytes": 7732,
+      "path": "functions/src/index.ts",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "653569a79a7a12ac4684945a60b1f129723857df2558cbb9e918592f094186c7",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "cf80e739180b6ddc30712a8d7605f08bce7020d2",
+      "bytes": 22391,
+      "path": "functions/src/index.ts",
+      "source_commit": "51d4b1f2addbbc97b3bbccd76056096b3b825d42",
+      "sha256": "9f2fa480543ffb8c2306d45adfee65d980a00239aaa5af4f768ddb90b9507b9b",
+      "verified": true
+    }
+  ]
+}
