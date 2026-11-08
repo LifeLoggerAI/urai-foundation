@@ -1,0 +1,73 @@
+{
+  "range": [
+    126,
+    134
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "e42abc54cfac40f69c44dbdf3a5f716b34579005",
+      "bytes": 8784,
+      "path": "docs/staff-backend-contract.md",
+      "source_commit": "721e141a5ff288271468163905b0486d03105384",
+      "sha256": "8f1c69f704f67164d6b1b4f1ee7d61b931633173a0af876b9dad6178c498cc65",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "e9cb937a00a95f2047d4b5d187e1e7d7a2ff1304",
+      "bytes": 460,
+      "path": "functions/package.json",
+      "source_commit": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "sha256": "c7d5da3f06655e7efb79ebd088286424e37628b1ae0238cba32f33b637fb274a",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "eb588f6701d130263c1f3739b3c10b4a4d7bac22",
+      "bytes": 3467,
+      "path": "contact/index.html",
+      "source_commit": "eefe5ac593aecdf66cb923623f0c9f4c598fed26",
+      "sha256": "e61a37ff85f1bc0fd6c3a752f1c9bf1e05f6eb4a26e049a95e6aafdbf296bdb9",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "f0364651dfe903ab34ffbae991f7886be9cce03f",
+      "bytes": 3656,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "2c8dd1ba44341cedd8641a2d7a4c212c693a161e",
+      "sha256": "1c0eb0c3fcfb90abf3195bcda29dc4ab64618455255d1680db09fd8febda987c",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "f8d8a51cac89836447e048a03a26d04381855891",
+      "bytes": 24183,
+      "path": "functions/src/index.ts",
+      "source_commit": "fa3ba14fb2b38a15b027cbbd6125ca67b0e02bfa",
+      "sha256": "39e964715a206b2009ca055ec230738cf1dd19ed9041ded0797dd9b045020a9f",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "f98fc03c5043d5d66a3a3af953ad1623da37c102",
+      "bytes": 1579,
+      "path": "tests/test_staff_backend_contract.py",
+      "source_commit": "8bb633049b46ef183d5d4074a6f54d9ffe7fcb52",
+      "sha256": "f209025a8be7b96d85792784c97e7518b90118595cf416a6c4afee84c6b395c0",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "fd377743f178f07713644eeef5de67588653ba9c",
+      "bytes": 19855,
+      "path": "functions/src/index.ts",
+      "source_commit": "4adc22738fdf901bb9d199ffebe04a2f673ec1bd",
+      "sha256": "6ebd4b0ae2848e2ce35db31d4e5cd76f51957369599694c18b251bcd5ee3caf0",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "fe5f892b5a3622199cc84c0c104bbed8aaee037d",
+      "bytes": 3909,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "b390b784d1c08a51fe8833176a77ac85e4116a8d",
+      "sha256": "cec8e61385d86bb39154f88b0405e032137a21948ce0be8007917066fc6fdcc9",
+      "verified": true
+    }
+  ]
+}
