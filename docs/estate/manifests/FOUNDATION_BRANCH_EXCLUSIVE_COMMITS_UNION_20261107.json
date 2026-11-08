@@ -1,0 +1,1276 @@
+{
+  "repository": "LifeLoggerAI/urai-foundation",
+  "source_main": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "scope": "52 other original branches compared to canonical main: ahead commits only, includes duplicate membership across branches; additional main-reachable commits in main separate",
+  "branch_comparisons": 52,
+  "branch_ahead_references": 139,
+  "unique_branch_only_commits": 101,
+  "unmatched_return_counts": [],
+  "branches_behind_only": 23,
+  "branch_evidence": [
+    {
+      "name": "add-standards-versioning-policy",
+      "head": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "ahead": 3,
+      "behind": 353,
+      "returned": 3,
+      "status": "diverged"
+    },
+    {
+      "name": "add-standards-versioning-policy-v2",
+      "head": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+      "ahead": 3,
+      "behind": 351,
+      "returned": 3,
+      "status": "diverged"
+    },
+    {
+      "name": "add-standards-versioning-policy-v3",
+      "head": "88fe9b533a24335975cb082c80a6de8c37eff302",
+      "ahead": 3,
+      "behind": 347,
+      "returned": 3,
+      "status": "diverged"
+    },
+    {
+      "name": "add-structured-issue-templates",
+      "head": "a1f8df574c04e337bafeb1121561300c45fb6152",
+      "ahead": 5,
+      "behind": 354,
+      "returned": 5,
+      "status": "diverged"
+    },
+    {
+      "name": "agent/foundation-master-business-model",
+      "head": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "ahead": 4,
+      "behind": 159,
+      "returned": 4,
+      "status": "diverged"
+    },
+    {
+      "name": "canon/upstream-authority-20260924",
+      "head": "da100d50b8a746c56d82cc999baa0168f58fab81",
+      "ahead": 1,
+      "behind": 32,
+      "returned": 1,
+      "status": "diverged"
+    },
+    {
+      "name": "chatgpt/asap-public-governance-20260813",
+      "head": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "ahead": 3,
+      "behind": 159,
+      "returned": 3,
+      "status": "diverged"
+    },
+    {
+      "name": "chatgpt/urai-product-polish-20260812",
+      "head": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "ahead": 2,
+      "behind": 206,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "codex/complete-audit-findings-and-polish-repo",
+      "head": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "ahead": 0,
+      "behind": 377,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "cold-vault-2026-08-16",
+      "head": "4915cd5dc761aa9764fa3c72600b84bbc5b3da3c",
+      "ahead": 0,
+      "behind": 205,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "complete-urai-foundation-system",
+      "head": "edf1dfa8d366b36ee6a0f7d92310eea3a9451119",
+      "ahead": 0,
+      "behind": 356,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "converge/foundation-current-main-terminal-20260921",
+      "head": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "ahead": 0,
+      "behind": 26,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "converge/foundation-terminal-governance-design-20260914",
+      "head": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "ahead": 0,
+      "behind": 39,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "design/foundation-institution-ui-20260913",
+      "head": "8c172842a476149069ada0a854c9f00440728696",
+      "ahead": 2,
+      "behind": 80,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "design/public-benefit-web-v1",
+      "head": "890c37961cab380ce4f01147fb910236fbee3dfe",
+      "ahead": 0,
+      "behind": 55,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "docs/genesis-estate-handoff-20261106",
+      "head": "653705252063e7d369b3ddce6278f478f5b25a1e",
+      "ahead": 1,
+      "behind": 0,
+      "returned": 1,
+      "status": "ahead"
+    },
+    {
+      "name": "feat/foundation-donations-v1",
+      "head": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "ahead": 9,
+      "behind": 84,
+      "returned": 9,
+      "status": "diverged"
+    },
+    {
+      "name": "feat/foundation-staff-backend-v1",
+      "head": "aa2bd12dd9af7bb0191e756a67e8bd4f6f1facac",
+      "ahead": 0,
+      "behind": 86,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "feat/grant-concierge-v1",
+      "head": "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7",
+      "ahead": 0,
+      "behind": 160,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "feature/adam-presence-entry-20261001",
+      "head": "64edbf743ad547af253e6481fba22d5933de53f4",
+      "ahead": 1,
+      "behind": 84,
+      "returned": 1,
+      "status": "diverged"
+    },
+    {
+      "name": "feature/global-emotional-weather-public-interest-20261002",
+      "head": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "ahead": 0,
+      "behind": 14,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "fix/dependency-security-20261007",
+      "head": "1192586bcef32bd68bd8e1d4223ee7248e217042",
+      "ahead": 0,
+      "behind": 1,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "fix/foundation-community-mailto-20261005",
+      "head": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+      "ahead": 3,
+      "behind": 9,
+      "returned": 3,
+      "status": "diverged"
+    },
+    {
+      "name": "fix/labs-standing-certificate-receipt-20261007",
+      "head": "92d78c0b53dce77ac174bfb67f85d70306277ccf",
+      "ahead": 0,
+      "behind": 3,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "fix/labs-tax-standing-status-page-20261005",
+      "head": "8401ff83d1aba5b4ec1cf1a95df837ab0910968b",
+      "ahead": 0,
+      "behind": 5,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "fix/postmerge-foundation-trust-proof-20261005",
+      "head": "20b521770beee295cd50d3260a6f0c981b21ba58",
+      "ahead": 5,
+      "behind": 7,
+      "returned": 5,
+      "status": "diverged"
+    },
+    {
+      "name": "fix/public-security-accessibility-routes-20261005",
+      "head": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "ahead": 8,
+      "behind": 8,
+      "returned": 8,
+      "status": "diverged"
+    },
+    {
+      "name": "foundation-audit-20260706",
+      "head": "72ac186c4663f0434d0ee685abcf267be26e5201",
+      "ahead": 0,
+      "behind": 207,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "foundation-webapp-preview-v1",
+      "head": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "ahead": 4,
+      "behind": 261,
+      "returned": 4,
+      "status": "diverged"
+    },
+    {
+      "name": "harden-foundation-website-launch",
+      "head": "ee3ba015aace70bb60e545815788e0fabe76ab5e",
+      "ahead": 0,
+      "behind": 368,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "harden-static-site-validation",
+      "head": "ba9030afc546015ac742d86b8747a6317f379190",
+      "ahead": 2,
+      "behind": 355,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "hardening/foundation-visual-proof-action-pins-20260914",
+      "head": "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6",
+      "ahead": 0,
+      "behind": 38,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "hardening/pin-foundation-actions-20261005",
+      "head": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+      "ahead": 2,
+      "behind": 12,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "hardening/pin-reviewer-workflow-actions-20261005",
+      "head": "4824ec130180ff1ba080501258f2be14e2424499",
+      "ahead": 0,
+      "behind": 10,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "launch-readiness-nonprofit-site",
+      "head": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "ahead": 12,
+      "behind": 359,
+      "returned": 12,
+      "status": "diverged"
+    },
+    {
+      "name": "legal/foundation-state-status-20260909",
+      "head": "cb66240175789f55ff98ce60f6e948a788cf9eb4",
+      "ahead": 0,
+      "behind": 82,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "polish-foundation-website",
+      "head": "559b12d772de51aa397c0667f50c98de72ed1d79",
+      "ahead": 0,
+      "behind": 360,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "polish-foundation-website-v2",
+      "head": "7eff7a7fa8c67d6684fdffa36b68b05787b8eddd",
+      "ahead": 0,
+      "behind": 369,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "polish/foundation-color-scheme-truth-20260913",
+      "head": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+      "ahead": 2,
+      "behind": 80,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "privacy/remove-prospective-advisor-outreach-20260905",
+      "head": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4",
+      "ahead": 1,
+      "behind": 85,
+      "returned": 1,
+      "status": "diverged"
+    },
+    {
+      "name": "public-authority/entity-resolution-20260710",
+      "head": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "ahead": 10,
+      "behind": 252,
+      "returned": 10,
+      "status": "diverged"
+    },
+    {
+      "name": "reconcile/foundation19-main-20260905",
+      "head": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "ahead": 0,
+      "behind": 85,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "reconcile/foundation19-main-into-pr",
+      "head": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "ahead": 0,
+      "behind": 85,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "reconcile/foundation19-successor-20260905",
+      "head": "2098714e910994401b35be45ca4b5eb6d11b1744",
+      "ahead": 0,
+      "behind": 69,
+      "returned": 0,
+      "status": "behind"
+    },
+    {
+      "name": "reconcile/foundation21-current-main-20260905",
+      "head": "c357a5b5c682dcd379ca284d624b2258bf2280d7",
+      "ahead": 2,
+      "behind": 85,
+      "returned": 2,
+      "status": "diverged"
+    },
+    {
+      "name": "reconcile/foundation34-post-privacy-20260905",
+      "head": "733bd29dbf64187320ccce9531f85f93cae9af30",
+      "ahead": 1,
+      "behind": 84,
+      "returned": 1,
+      "status": "diverged"
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008",
+      "head": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "ahead": 10,
+      "behind": 0,
+      "returned": 10,
+      "status": "ahead"
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008-0634",
+      "head": "b5d48b933a7f034a7bb92d7aa190f7921605b988",
+      "ahead": 10,
+      "behind": 0,
+      "returned": 10,
+      "status": "ahead"
+    },
+    {
+      "name": "repair/foundation-privileged-auth-time-20261010",
+      "head": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "ahead": 11,
+      "behind": 0,
+      "returned": 11,
+      "status": "ahead"
+    },
+    {
+      "name": "repair/foundation-public-stewardship-20261007",
+      "head": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "ahead": 11,
+      "behind": 0,
+      "returned": 11,
+      "status": "ahead"
+    },
+    {
+      "name": "repair/full-completion-web-20261008",
+      "head": "90e0733e910691e50883c8c3397d65794c65a971",
+      "ahead": 8,
+      "behind": 0,
+      "returned": 8,
+      "status": "ahead"
+    },
+    {
+      "name": "runtime/foundation-node22-20260913",
+      "head": "ddc7ceb49c0591ce2a1865e9444a7cc5eeb54524",
+      "ahead": 0,
+      "behind": 80,
+      "returned": 0,
+      "status": "behind"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "subject": "Align emotional wellness page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:17:15Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "042ae1e85f016bb525f125af44218c60c0535091",
+      "subject": "reconcile Foundation dossier docs onto portal main",
+      "date": "2026-09-05T00:58:11Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ]
+    },
+    {
+      "sha": "05bc9a892ea43c47f0de9e53961d5354da4406e4",
+      "subject": "security(foundation): add public security reporting route",
+      "date": "2026-10-05T17:39:45Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "06fce7fa33444166ac9b0703df4323689cc53dbc",
+      "subject": "Add nonprofit programs page",
+      "date": "2026-05-17T19:21:21Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "078ac8fe7078715174e29314dbcdddd5e37be0b2",
+      "subject": "Add custom 404 page",
+      "date": "2026-05-18T02:21:06Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "0d06b169ee5c7275f4bea197a85d36b2f75a1afa",
+      "subject": "Add support and donations page",
+      "date": "2026-05-17T19:27:02Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "0d14f401bc3081a4ca13928590cc47aa585a6ea7",
+      "subject": "privacy: remove prospective outreach record from public source",
+      "date": "2026-09-05T10:07:10Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ]
+    },
+    {
+      "sha": "0fee0025d1f65653c47fd9aa47bd6043fef2e946",
+      "subject": "docs: fail closed on estate implementation evidence",
+      "date": "2026-09-05T10:45:06Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ]
+    },
+    {
+      "sha": "10346708992820b8321e06619aeb2a7651dcb347",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:28:19Z",
+      "branches": [
+        "add-standards-versioning-policy-v2"
+      ]
+    },
+    {
+      "sha": "15e44e03e3ad7cbfaefd7092670003b35e272f35",
+      "subject": "Guard Foundation mailto query syntax",
+      "date": "2026-10-05T12:10:05Z",
+      "branches": [
+        "fix/foundation-community-mailto-20261005"
+      ]
+    },
+    {
+      "sha": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+      "subject": "Fix: restore full Foundation index while keeping truthful dark color scheme",
+      "date": "2026-09-13T17:23:14Z",
+      "branches": [
+        "polish/foundation-color-scheme-truth-20260913"
+      ]
+    },
+    {
+      "sha": "171555fc2d71a9a78b327fee95d397e642d6e462",
+      "subject": "reconcile donations onto current staff backend",
+      "date": "2026-09-05T00:52:46Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "18351f477c468815b8051cbddc15880929807cbc",
+      "subject": "Add accessibility and inclusion page",
+      "date": "2026-05-18T02:11:09Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "1df8755eef3db4ca4fd9af46edc21e851b4b719e",
+      "subject": "trust(foundation): register security route in tests/test_smoke_live_routes.py",
+      "date": "2026-10-05T17:40:23Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "20b521770beee295cd50d3260a6f0c981b21ba58",
+      "subject": "test(foundation): require interior stylesheet artifact",
+      "date": "2026-10-05T18:30:22Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ]
+    },
+    {
+      "sha": "23822c789f7b596ec331e9c47335cfc3c7aa470e",
+      "subject": "Add nonprofit about page",
+      "date": "2026-05-17T18:34:39Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "24f5dc73ca21b08f581e8efd8cffccfe3fe742ba",
+      "subject": "a11y(foundation): add accessibility reporting path",
+      "date": "2026-10-05T17:39:59Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "25ae3beb4ef88f2903244218c469ec4614f10239",
+      "subject": "donations: model out-of-order cancellation authority",
+      "date": "2026-09-05T12:43:09Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "2632d57bd3f18860f73c952ca3bb52ffe703aab0",
+      "subject": "Align partner page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:48:24Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "26973c2a6f896236f0825d82af5aeeabb38c38fb",
+      "subject": "Align responsible AI page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:46:51Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "2dd54ddb144906f11b825542fc3560e28ff171ba",
+      "subject": "security(foundation): route sensitive reports safely",
+      "date": "2026-10-05T17:40:03Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "33745a186486c801f55a673ba4640bd33715aebf",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:28:07Z",
+      "branches": [
+        "add-standards-versioning-policy-v2"
+      ]
+    },
+    {
+      "sha": "339fa667eb93ac08ed1d366563390e062fbc013e",
+      "subject": "tests: exercise donation cancellation event order",
+      "date": "2026-09-05T12:45:18Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "33c14f7cbe6d47146eba7c9b7915e9f9c105f119",
+      "subject": "Polish: make Foundation color-scheme metadata match dark-only UI",
+      "date": "2026-09-13T17:22:52Z",
+      "branches": [
+        "polish/foundation-color-scheme-truth-20260913"
+      ]
+    },
+    {
+      "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+      "subject": "Wait for the actual loaded Governance document before section capture",
+      "date": "2026-10-07T22:48:55Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+      "subject": "Reject sticky-header occlusion in stewardship browser proof",
+      "date": "2026-10-07T23:16:55Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "376a678e79d0b208f605e1cb1f5831f05a1a34fc",
+      "subject": "test(foundation): require live security route marker",
+      "date": "2026-10-05T18:30:02Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ]
+    },
+    {
+      "sha": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "subject": "Add Foundation mission page",
+      "date": "2026-07-06T04:08:35Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "sha": "3d31302a971b23559a15203864117972324051d8",
+      "subject": "test(foundation): lock security route live proof",
+      "date": "2026-10-05T18:30:07Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ]
+    },
+    {
+      "sha": "406735851d5a8b98d03f337b4166b060c32a1aff",
+      "subject": "Add Foundation homepage skeleton",
+      "date": "2026-07-06T04:08:11Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "sha": "42c128a8549655dc9e0300fb48da105c30522335",
+      "subject": "Use legally cautious Foundation initiative language",
+      "date": "2026-07-10T14:42:06Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "481ee59c34453c6237c35cef5492fef92a888e6c",
+      "subject": "Add issue template configuration",
+      "date": "2026-05-18T02:15:37Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ]
+    },
+    {
+      "sha": "4c68871f817fdaa89febf00121deff4c5c0bb531",
+      "subject": "Align Foundation authority language with available legal evidence",
+      "date": "2026-07-10T14:41:44Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "4d1e7527d8cf0f4807d3bb892cc831bb749f9637",
+      "subject": "Align Deaf community page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:14:24Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "4e1c7ad76c09a448e4b2144f495f7f4a3939f6d0",
+      "subject": "Add Foundation Firebase Hosting preview config",
+      "date": "2026-07-06T04:07:17Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+      "subject": "Record the actual canonical-main Pages enablement failure",
+      "date": "2026-10-07T23:02:37Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "579b9878ee4474886c8def54e74cb4095dd3aeb3",
+      "subject": "Add documentation and website issue template",
+      "date": "2026-05-18T02:20:52Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ]
+    },
+    {
+      "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+      "subject": "Retain exact-source stewardship section pixels in native visual proof",
+      "date": "2026-10-07T21:09:11Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "5e591755d73790490f3bebdabcc541d8132fab70",
+      "subject": "Align research page with evidence-safe Foundation status",
+      "date": "2026-07-10T14:48:08Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+      "subject": "Document versioning and changelog policy",
+      "date": "2026-05-18T02:28:44Z",
+      "branches": [
+        "add-standards-versioning-policy-v2"
+      ]
+    },
+    {
+      "sha": "64edbf743ad547af253e6481fba22d5933de53f4",
+      "subject": "feat: add canonical Adam presence entry",
+      "date": "2026-10-02T00:13:25Z",
+      "branches": [
+        "feature/adam-presence-entry-20261001"
+      ]
+    },
+    {
+      "sha": "653705252063e7d369b3ddce6278f478f5b25a1e",
+      "subject": "docs(estate): add shared Genesis knowledge handoff entrypoint",
+      "date": "2026-11-07T04:46:01Z",
+      "branches": [
+        "docs/genesis-estate-handoff-20261106"
+      ]
+    },
+    {
+      "sha": "65bd8eee5a1d6777a0469e61a273d0763b71549a",
+      "subject": "fix: retain public status in curated Foundation artifact",
+      "date": "2026-09-05T02:25:27Z",
+      "branches": [
+        "chatgpt/asap-public-governance-20260813"
+      ]
+    },
+    {
+      "sha": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+      "subject": "Pin Foundation workflow actions",
+      "date": "2026-10-05T10:52:10Z",
+      "branches": [
+        "hardening/pin-foundation-actions-20261005"
+      ]
+    },
+    {
+      "sha": "6ea9a30d169e60027f37d288ef9277b95a7f985b",
+      "subject": "Add contact and participation page",
+      "date": "2026-05-18T02:20:28Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "6f348828d02b68b79cabc7bb173226b4d3d1e8e3",
+      "subject": "wire donation functions through reconciled staff entrypoint",
+      "date": "2026-09-05T00:53:55Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "713e686eb1a64e57aa5fa2bc928ad6fea966a39f",
+      "subject": "Validate static site files and HTML links",
+      "date": "2026-05-18T02:09:56Z",
+      "branches": [
+        "harden-static-site-validation"
+      ]
+    },
+    {
+      "sha": "7150cf7e2d67b37f30c4e207de40f51512b24882",
+      "subject": "reconcile: restack Foundation dossier on current main",
+      "date": "2026-09-05T21:55:40Z",
+      "branches": [
+        "reconcile/foundation21-current-main-20260905"
+      ]
+    },
+    {
+      "sha": "733bd29dbf64187320ccce9531f85f93cae9af30",
+      "subject": "docs: restack Foundation advisor dossier after privacy merge",
+      "date": "2026-09-05T22:36:03Z",
+      "branches": [
+        "reconcile/foundation34-post-privacy-20260905"
+      ]
+    },
+    {
+      "sha": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+      "subject": "Validate duplicate mailto subject parameters",
+      "date": "2026-10-05T12:13:37Z",
+      "branches": [
+        "fix/foundation-community-mailto-20261005"
+      ]
+    },
+    {
+      "sha": "7bb8ffc7d6ec5b7cd5f74a35b89367ee340977e6",
+      "subject": "donations: make cancellation authoritative across event order",
+      "date": "2026-09-05T12:45:05Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+      "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+      "date": "2026-10-07T21:14:42Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "81d1ca76817fc84fe2af1ddb272aac1f3749bd98",
+      "subject": "Make Foundation legal-status uncertainty explicit",
+      "date": "2026-07-10T14:42:21Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "subject": "Verify the complete curated artifact after upload and download",
+      "date": "2026-10-08T07:07:24Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ]
+    },
+    {
+      "sha": "833ee4f5ceba1e17b4ba31d841297b60f8aa74fa",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:32:16Z",
+      "branches": [
+        "add-standards-versioning-policy-v3"
+      ]
+    },
+    {
+      "sha": "836fe17a4c0cfd819c9f47ddd1f65b69756f5f91",
+      "subject": "Add research initiatives page",
+      "date": "2026-05-17T19:22:56Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "subject": "docs: record advisor governance process",
+      "date": "2026-09-05T10:45:20Z",
+      "branches": [
+        "agent/foundation-master-business-model"
+      ]
+    },
+    {
+      "sha": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "subject": "Harden security policy with private reporting contact",
+      "date": "2026-05-18T02:34:26Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "84d3ff4c74f1ea843b3503917c07d62ed76f81b0",
+      "subject": "tests: run donation ordering behavior in build",
+      "date": "2026-09-05T12:46:24Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "874fd712f7efe9cd066f682f54cdcc07294a0432",
+      "subject": "tests: lock donation cancellation ordering assertions",
+      "date": "2026-09-05T12:46:59Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "88fe9b533a24335975cb082c80a6de8c37eff302",
+      "subject": "Document versioning and changelog policy",
+      "date": "2026-05-18T02:34:57Z",
+      "branches": [
+        "add-standards-versioning-policy-v3"
+      ]
+    },
+    {
+      "sha": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4",
+      "subject": "privacy: remove prospective advisor outreach from public source",
+      "date": "2026-09-05T21:54:40Z",
+      "branches": [
+        "privacy/remove-prospective-advisor-outreach-20260905"
+      ]
+    },
+    {
+      "sha": "8c172842a476149069ada0a854c9f00440728696",
+      "subject": "Design: add Foundation institution visual system",
+      "date": "2026-09-13T17:30:19Z",
+      "branches": [
+        "design/foundation-institution-ui-20260913"
+      ]
+    },
+    {
+      "sha": "8cd95fd175b239b65e6459e9d9c5ffa835be8c14",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:25:51Z",
+      "branches": [
+        "add-standards-versioning-policy"
+      ]
+    },
+    {
+      "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+      "subject": "Preserve Foundation page assets and research route in public build",
+      "date": "2026-10-08T00:44:29Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "subject": "Document versioning and changelog policy",
+      "date": "2026-05-18T02:26:55Z",
+      "branches": [
+        "add-standards-versioning-policy"
+      ]
+    },
+    {
+      "sha": "942c408ee9b548378e4429e2f91a1b8b39a1caa6",
+      "subject": "Add terms and safety disclaimer page",
+      "date": "2026-05-18T00:16:39Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "943cefa8044e46c3be973c747a68ebad3fda415f",
+      "subject": "trust(foundation): register security route in scripts/smoke-live-routes.py",
+      "date": "2026-10-05T17:40:21Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "subject": "fix: verify governance route in live smoke",
+      "date": "2026-09-05T10:04:33Z",
+      "branches": [
+        "chatgpt/asap-public-governance-20260813"
+      ]
+    },
+    {
+      "sha": "98adda83e97297909ecc58360ccc6a6368a97d7f",
+      "subject": "feat(site): turn Foundation home from repo audit into a public institution",
+      "date": "2026-08-12T18:57:16Z",
+      "branches": [
+        "chatgpt/urai-product-polish-20260812"
+      ]
+    },
+    {
+      "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+      "subject": "Capture the actual Foundation stewardship section before source admission",
+      "date": "2026-10-07T22:45:09Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "subject": "test(foundation): recognize conservative status non-claims",
+      "date": "2026-08-12T22:12:16Z",
+      "branches": [
+        "chatgpt/urai-product-polish-20260812"
+      ]
+    },
+    {
+      "sha": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "subject": "trust(foundation): register security route in sitemap.xml",
+      "date": "2026-10-05T17:40:26Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "a1f8df574c04e337bafeb1121561300c45fb6152",
+      "subject": "Add maintainer process issue template",
+      "date": "2026-05-18T02:21:10Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ]
+    },
+    {
+      "sha": "a713890cf5998a8690532fdd0ce25f27249635ad",
+      "subject": "reconcile public governance and 404 onto portal main",
+      "date": "2026-09-05T00:57:16Z",
+      "branches": [
+        "chatgpt/asap-public-governance-20260813"
+      ]
+    },
+    {
+      "sha": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "subject": "Sync post-privacy main into Foundation donations candidate",
+      "date": "2026-09-05T22:42:24Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "subject": "Require valid recent authentication time for privileged Foundation actions",
+      "date": "2026-10-10T00:19:52Z",
+      "branches": [
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ]
+    },
+    {
+      "sha": "ab0f1e08c84392f86cd0b3649250e8aa559659cd",
+      "subject": "validation: lock donation cancellation ordering contract",
+      "date": "2026-09-05T12:46:43Z",
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "sha": "ad1accc97802604959f88d6c0c9456347f17874c",
+      "subject": "Design: establish Foundation institution experience",
+      "date": "2026-09-13T17:29:32Z",
+      "branches": [
+        "design/foundation-institution-ui-20260913"
+      ]
+    },
+    {
+      "sha": "b5d48b933a7f034a7bb92d7aa190f7921605b988",
+      "subject": "Fix allowlisted public artifact delivery and verify upload/download bytes",
+      "date": "2026-10-08T06:39:52Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008-0634"
+      ]
+    },
+    {
+      "sha": "ba9030afc546015ac742d86b8747a6317f379190",
+      "subject": "Add static site validation tests",
+      "date": "2026-05-18T02:10:31Z",
+      "branches": [
+        "harden-static-site-validation"
+      ]
+    },
+    {
+      "sha": "c357a5b5c682dcd379ca284d624b2258bf2280d7",
+      "subject": "docs: preserve advisor governance changelog on current main",
+      "date": "2026-09-05T21:55:56Z",
+      "branches": [
+        "reconcile/foundation21-current-main-20260905"
+      ]
+    },
+    {
+      "sha": "c3583055407f9dbdd64e3fcf4ce5933a2d8339f7",
+      "subject": "Fix Foundation community contact mailto",
+      "date": "2026-10-05T12:10:03Z",
+      "branches": [
+        "fix/foundation-community-mailto-20261005"
+      ]
+    },
+    {
+      "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+      "subject": "Add bounded public stewardship principles under Foundation governance",
+      "date": "2026-10-07T20:50:04Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "sha": "c5438d821527c0bee66a3a71cc1461f8cd3d18bd",
+      "subject": "Align contact page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:11:33Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "sha": "c9050350d2c2e5a5bfc74e6c40ecda87214c444e",
+      "subject": "Add governance overview page",
+      "date": "2026-05-18T02:20:48Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+      "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+      "date": "2026-10-08T04:36:13Z",
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ]
+    },
+    {
+      "sha": "cfde2ee6a408140d449e0f157ea6533761af0988",
+      "subject": "Pin Foundation workflow actions",
+      "date": "2026-10-05T10:52:06Z",
+      "branches": [
+        "hardening/pin-foundation-actions-20261005"
+      ]
+    },
+    {
+      "sha": "d5805c158b3b9ff5d328d018ce56cdc5a0ffb207",
+      "subject": "Add changelog for standards traceability",
+      "date": "2026-05-18T02:26:27Z",
+      "branches": [
+        "add-standards-versioning-policy"
+      ]
+    },
+    {
+      "sha": "d9855f3e49c938ad028a8657acf481c57f7be0de",
+      "subject": "Add standards versioning policy",
+      "date": "2026-05-18T02:29:14Z",
+      "branches": [
+        "add-standards-versioning-policy-v3"
+      ]
+    },
+    {
+      "sha": "da100d50b8a746c56d82cc999baa0168f58fab81",
+      "subject": "canon: restack cross-system authority on current convergence base",
+      "date": "2026-09-25T10:37:38Z",
+      "branches": [
+        "canon/upstream-authority-20260924"
+      ]
+    },
+    {
+      "sha": "df972c9c169f02075d721e18d1df14bfa244bae2",
+      "subject": "Add privacy policy page",
+      "date": "2026-05-17T20:15:21Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "e1a7345860e905857ffcdb2ef5994d7280abea95",
+      "subject": "trust(foundation): register security route in scripts/build-public-site.py",
+      "date": "2026-10-05T17:40:15Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "e36fc5c180f8bdd3c0c3cde2d921f7bb560f6350",
+      "subject": "build(foundation): publish interior stylesheet",
+      "date": "2026-10-05T18:29:58Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ]
+    },
+    {
+      "sha": "e6185be03181453588d03956753859e181dac112",
+      "subject": "Add policy proposal issue template",
+      "date": "2026-05-18T02:16:07Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ]
+    },
+    {
+      "sha": "e6d2c33544ae20bd26be1b6910b38cf8e295a138",
+      "subject": "truth(foundation): record verified role-routing boundary",
+      "date": "2026-10-05T18:30:19Z",
+      "branches": [
+        "fix/postmerge-foundation-trust-proof-20261005"
+      ]
+    },
+    {
+      "sha": "f3bcf13050b3378b3ef7d5157ed86590763e6646",
+      "subject": "Add risk review issue template",
+      "date": "2026-05-18T02:20:15Z",
+      "branches": [
+        "add-structured-issue-templates"
+      ]
+    },
+    {
+      "sha": "f556fb883dee6d8152eda131a3e49b3a290dd9af",
+      "subject": "Add impact page",
+      "date": "2026-05-17T19:26:41Z",
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "sha": "f682d35b263fcff89f6b41bff63112406eed7153",
+      "subject": "Add Foundation public CSS",
+      "date": "2026-07-06T04:07:52Z",
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "sha": "fe0f308c22ce7570dc2efbd8b2df748331a5f248",
+      "subject": "trust(foundation): register security route in scripts/validate-routes.py",
+      "date": "2026-10-05T17:40:18Z",
+      "branches": [
+        "fix/public-security-accessibility-routes-20261005"
+      ]
+    },
+    {
+      "sha": "fe66f9a0e8e618ce32ed500295823a0663b7a635",
+      "subject": "Align privacy page with evidence-safe Foundation status",
+      "date": "2026-07-10T15:12:41Z",
+      "branches": [
+        "public-authority/entity-resolution-20260710"
+      ]
+    }
+  ]
+}
