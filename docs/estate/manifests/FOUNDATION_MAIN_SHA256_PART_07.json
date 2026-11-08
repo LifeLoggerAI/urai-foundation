@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 72,
+  "end": 84,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "grants/grants.js",
+      "bytes": 17124,
+      "blob_sha": "4edfb94397145e7c374040044e7ac238d052c3c6",
+      "sha256": "e69d65d45255283bdc89834f53930bfc4fefe9f311568109b32364b4ac851366",
+      "state": "verified"
+    },
+    {
+      "path": "grants/index.html",
+      "bytes": 13016,
+      "blob_sha": "e516adaa447807047c1269100ee5a6b8eab6cda6",
+      "sha256": "71f79f5840cc37ebe378abc8fbdd9c3711ad483af72614df00766af3fe96c314",
+      "state": "verified"
+    },
+    {
+      "path": "index.html",
+      "bytes": 13636,
+      "blob_sha": "83f31f1e73cdda308d581777d19361d5bd3743c2",
+      "sha256": "1aeb9864021e0fc1f6361835be990603c0f3b752f9aaa8f2a2717f956ed9ff15",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T000000-0500/README.md",
+      "bytes": 7630,
+      "blob_sha": "278d98a5342f42b3c88002a4ea83a66b03b5a066",
+      "sha256": "d2a0ba6eb121039fdf53acec5e32533b2c2af2612093d82c3b93078e9bc9a374",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/blockers.md",
+      "bytes": 1817,
+      "blob_sha": "4941206e8454c3afb4433c8a7ea185374d247876",
+      "sha256": "0bd61c19e981a6dae4af67fa8440c1e93d632dd26da192801fe1b058378221d6",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/build-test-logs.md",
+      "bytes": 2381,
+      "blob_sha": "1a70975031ea09fd22f9ca64b4908de2c2535be3",
+      "sha256": "eabbe49dd5506edf6749c12eb9bbd807b1e4ed2a85edfbf7eee9a66911d6d770",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/claim-audit.md",
+      "bytes": 2511,
+      "blob_sha": "ff4ead39520bb20eaa3e771a87c9c03fb99c8cdd",
+      "sha256": "fd1bbc5f88a52726346e0c727a53cc3eed676a6b2f5e894f164d17727009fe7a",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/completion-plan.md",
+      "bytes": 1457,
+      "blob_sha": "5202baa458d5c4b199507acaebf1b038ab692ace",
+      "sha256": "43953383996b187b8fd78d6f7cc0502431f429feee26528984285b2cda352b0f",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/deployment-proof.md",
+      "bytes": 2595,
+      "blob_sha": "27719d7578b42a7afff562baf3dd0b478fb4eb82",
+      "sha256": "4f879ec33f11a791506d21cd3c065a9969afc8c91d4a5be300c5dfa64d4d8409",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/README.md",
+      "bytes": 1725,
+      "blob_sha": "5824c706d6e9e8e1a2673e9ada9dc0c694631d38",
+      "sha256": "65008c3292ec21d8d76ac62152ede04555d62d5234f80f87080a050df626a3fd",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/route-cta-map.md",
+      "bytes": 1886,
+      "blob_sha": "e13e8eb3cd79de3162c1759f57463d4ab067223a",
+      "sha256": "599fc1aed7902ade78ccb0bc90eb9cac2c9062d1f191f6d149aab016f8769fbe",
+      "state": "verified"
+    },
+    {
+      "path": "launch-proof/urai-foundation-production-lock/2026-06-30T013000-0500/validation-hardening.md",
+      "bytes": 2900,
+      "blob_sha": "69743b6a65bdd8a33e950de23eeb376a0b5050c9",
+      "sha256": "ed6758f815bb3e97851d4c844e01b2c95431f578d2a5c5c0fac01276237aae2b",
+      "state": "verified"
+    }
+  ]
+}
