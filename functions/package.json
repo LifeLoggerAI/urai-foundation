@@ -9,7 +9,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "build": "tsc -p tsconfig.json",
     "bootstrap:owner": "node scripts/bootstrap-owner.mjs",
-    "test": "node --test test/sdk-compatibility.test.cjs"
+    "test": "node --test test/*.test.cjs"
   },
   "dependencies": {
     "firebase-admin": "^13.10.0",
