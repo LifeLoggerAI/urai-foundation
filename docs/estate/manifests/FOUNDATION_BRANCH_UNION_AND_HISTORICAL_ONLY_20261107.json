@@ -1,0 +1,271 @@
+{
+  "repository": "LifeLoggerAI/urai-foundation",
+  "main_sha": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "original_branch_heads": 53,
+  "unique_branch_head_shas": 51,
+  "all_head_file_records": 4882,
+  "unique_paths": 153,
+  "paths_in_main": 120,
+  "historical_only_path_count": 33,
+  "historical_only_paths": [
+    {
+      "path": ".github/workflows/urai-production-verify.yml",
+      "branch_count": 2,
+      "branches": [
+        "foundation-webapp-preview-v1",
+        "public-authority/entity-resolution-20260710"
+      ]
+    },
+    {
+      "path": "about.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "accessibility.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "contact.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "docs/CROSS_SYSTEM_CANON_AUTHORITY.md",
+      "branch_count": 1,
+      "branches": [
+        "canon/upstream-authority-20260924"
+      ]
+    },
+    {
+      "path": "docs/donation-backend-contract.md",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "docs/estate/00_START_HERE.md",
+      "branch_count": 1,
+      "branches": [
+        "docs/genesis-estate-handoff-20261106"
+      ]
+    },
+    {
+      "path": "docs/foundation-legal-payment-activation-packet.md",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_ADVISOR_OPERATIONS_KIT.md",
+      "branch_count": 3,
+      "branches": [
+        "agent/foundation-master-business-model",
+        "reconcile/foundation21-current-main-20260905",
+        "reconcile/foundation34-post-privacy-20260905"
+      ]
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_ADVISORY_COUNCIL_ARCHITECTURE.md",
+      "branch_count": 3,
+      "branches": [
+        "agent/foundation-master-business-model",
+        "reconcile/foundation21-current-main-20260905",
+        "reconcile/foundation34-post-privacy-20260905"
+      ]
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_MASTER_BUSINESS_MODEL.md",
+      "branch_count": 3,
+      "branches": [
+        "agent/foundation-master-business-model",
+        "reconcile/foundation21-current-main-20260905",
+        "reconcile/foundation34-post-privacy-20260905"
+      ]
+    },
+    {
+      "path": "docs/research-collaboration/dr-scott-outreach-email.md",
+      "branch_count": 10,
+      "branches": [
+        "chatgpt/asap-public-governance-20260813",
+        "chatgpt/urai-product-polish-20260812",
+        "cold-vault-2026-08-16",
+        "feat/foundation-staff-backend-v1",
+        "feat/grant-concierge-v1",
+        "foundation-audit-20260706",
+        "foundation-webapp-preview-v1",
+        "public-authority/entity-resolution-20260710",
+        "reconcile/foundation19-main-20260905",
+        "reconcile/foundation19-main-into-pr"
+      ]
+    },
+    {
+      "path": "donate/thanks/index.html",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "functions/scripts/test-donation-status.mjs",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "functions/src/donation-status.ts",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "functions/src/donations.ts",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "governance.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "impact.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "privacy-policy.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "programs.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "public/css/foundation.css",
+      "branch_count": 1,
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "path": "public/index.html",
+      "branch_count": 1,
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "path": "public/mission.html",
+      "branch_count": 1,
+      "branches": [
+        "foundation-webapp-preview-v1"
+      ]
+    },
+    {
+      "path": "research.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "scripts/capture-stewardship.mjs",
+      "branch_count": 5,
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-artifact-roundtrip-20261008-0634",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007",
+        "repair/full-completion-web-20261008"
+      ]
+    },
+    {
+      "path": "scripts/public-artifact-contract.py",
+      "branch_count": 3,
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ]
+    },
+    {
+      "path": "scripts/validate-donations.py",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "scripts/verify-public-artifact.py",
+      "branch_count": 1,
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008-0634"
+      ]
+    },
+    {
+      "path": "support.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "terms.html",
+      "branch_count": 1,
+      "branches": [
+        "launch-readiness-nonprofit-site"
+      ]
+    },
+    {
+      "path": "tests/test_donation_backend_contract.py",
+      "branch_count": 1,
+      "branches": [
+        "feat/foundation-donations-v1"
+      ]
+    },
+    {
+      "path": "tests/test_public_artifact_contract.py",
+      "branch_count": 3,
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008",
+        "repair/foundation-privileged-auth-time-20261010",
+        "repair/foundation-public-stewardship-20261007"
+      ]
+    },
+    {
+      "path": "tests/test_public_artifact_delivery.py",
+      "branch_count": 1,
+      "branches": [
+        "repair/foundation-artifact-roundtrip-20261008-0634"
+      ]
+    }
+  ],
+  "unique_git_blobs": 320,
+  "distinct_historical_blob_bytes": 1911120,
+  "truncated_branches": [],
+  "remaining_uninspected": "all prior reachable commits, private cloud resources, source semantic full-file review, original byte hashes on non-main branch objects"
+}

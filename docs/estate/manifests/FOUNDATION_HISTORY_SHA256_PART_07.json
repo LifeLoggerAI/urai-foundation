@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 84,
+  "end": 98,
+  "files": [
+    {
+      "path": ".github/workflows/check.yml",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "63c9845f0259b73bbc526b4cfb8ebad3db806af6",
+      "bytes": 2567,
+      "sha256": "77a0f8062b0c1a2366c7215bcf589290cfcf3c3134ea7a66b8aee419f16715af",
+      "verified": true
+    },
+    {
+      "path": "docs/system-of-systems-integration.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "64ab04be53ff1662fe8bae6bf1aa86f8abb0f1a0",
+      "bytes": 5783,
+      "sha256": "f3a8cba97223500fc9f219a5f40e8890b3cd9b5359c52f9211a3756566856f57",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "6617ffe303f235e4906e5b15ded5061e8ec5eb6c",
+      "bytes": 3096,
+      "sha256": "b36a4af0549b344fa7ab4022c9184627907bfb58e7d99ddbea04bf40dc1dc613",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-donations.py",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "66649f794b3949c46eef9bd131f4c85f0af5c83f",
+      "bytes": 6841,
+      "sha256": "17373a0386150445851b56e2265c2f413a7c83011155228fc1ec934e73ad4d62",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "reference_commit": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "reference_branch": "converge/foundation-terminal-governance-design-20260914",
+      "git_blob_sha": "67d81ae062c5caea9144fe53e6069ebfab81c036",
+      "bytes": 5752,
+      "sha256": "7636667ca46749e7100a510863250f068b7772e7394016bd81bba6f9e5714a04",
+      "verified": true
+    },
+    {
+      "path": "governance/index.html",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "683bfaec65d845ff8d7847fe57b65497c4c7731e",
+      "bytes": 7676,
+      "sha256": "a8f8b2eaaf6c6a4a72050cf69e8519acb0810edc33a6fb1a3482b196a991b90d",
+      "verified": true
+    },
+    {
+      "path": "staff/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "6a356f87be9e6c748520ae09d2f1bd6bb8b8b35c",
+      "bytes": 4318,
+      "sha256": "7a3d989857b266b511c842889d56f631c8ecf57eded882724ad916c1b2589a4e",
+      "verified": true
+    },
+    {
+      "path": "tests/test_build_public_site.py",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "6b1e5bbfd7a3dbadc52f3f431fb861bb3748fcfd",
+      "bytes": 4706,
+      "sha256": "888c91f7b68a9214a1f9c9591fbed42a083e8a42de319d1f1766bd7a12103c04",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "reference_commit": "b5d48b933a7f034a7bb92d7aa190f7921605b988",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008-0634",
+      "git_blob_sha": "6da3957386fa332eb97ad475f420d63c9b1ae55c",
+      "bytes": 5339,
+      "sha256": "f36310b8974a893b597c8ad0580ce83851ee6fd56a03bae9329ec893e5c9391f",
+      "verified": true
+    },
+    {
+      "path": "docs/estate/00_START_HERE.md",
+      "reference_commit": "653705252063e7d369b3ddce6278f478f5b25a1e",
+      "reference_branch": "docs/genesis-estate-handoff-20261106",
+      "git_blob_sha": "6e4e3e37ce5925c49a05ddc51630d364006a4582",
+      "bytes": 2318,
+      "sha256": "f7c9a0351415cef1bec1af8f6c4974a2227e9bcfba8dbe20d1ffb9feb9d9d5ea",
+      "verified": true
+    },
+    {
+      "path": "styles.css",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "70e47274c4fbb817028416da7b559b53fac53df0",
+      "bytes": 7216,
+      "sha256": "f8e5ebf0f4f6c5ba3b58e242c94c04598f5f0801779f714ed063b9e0faa0920b",
+      "verified": true
+    },
+    {
+      "path": "community/index.html",
+      "reference_commit": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "reference_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "git_blob_sha": "7143ff2c55b866cc1d3ab3f1475f617961f5bec6",
+      "bytes": 5103,
+      "sha256": "f818d1597c1c83e6b609a90cb94f8eec9606187b9a21ab8cfcc6f4589fe0b680",
+      "verified": true
+    },
+    {
+      "path": "PRODUCTION_STATUS.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "7209accd42883ecb2a790601ea84a324461efe2c",
+      "bytes": 5239,
+      "sha256": "08106d9350bba5fbe3fa6b3cc2a0f77f517bd5ff174d3922684e8e57316a0b66",
+      "verified": true
+    },
+    {
+      "path": "functions/src/donation-status.ts",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "749f445c4a7c6576773692b764d32ac409e38578",
+      "bytes": 4619,
+      "sha256": "36e60f2aae59bd53bbfec2be4ec6667bcc5f75265a70cf1ea3fc0e85f8acc5dd",
+      "verified": true
+    }
+  ]
+}

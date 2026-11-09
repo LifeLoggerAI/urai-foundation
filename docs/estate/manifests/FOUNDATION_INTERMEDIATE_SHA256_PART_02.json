@@ -1,0 +1,85 @@
+{
+  "scope": "intermediate-only unique blobs 11-20",
+  "files": [
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "git_blob_sha": "5cdea950e9b88231d3c268e5a462d261ee2e9af8",
+      "bytes": 6823,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "a9a50e46ec082ea90a047a60bc07e8179781c2342c6de0c70b0043eebad8d401",
+      "verified": true
+    },
+    {
+      "path": "grants/grants.js",
+      "git_blob_sha": "4ea95128c177887c517367106439433fbe0a3809",
+      "bytes": 15093,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "a38ab26d62ed85f389f9b75cfc5fea83fe2eda39062c6e4011e87e040b07fe79",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "git_blob_sha": "78620c9aa5a7a1281d05c01171c5c63af0571e6d",
+      "bytes": 4187,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "9bfe0f0c2c40cc8e00fe591262977e8488f9f6be34dee3decf5ded122b857ed4",
+      "verified": true
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "git_blob_sha": "22a4d815e7d6cf4e8a71d9dd48b9857323d8e51c",
+      "bytes": 3371,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "90778f938c4bd6af011d09f149b14530f68bd0703cde07fb3b4f4ebd9c19cf5b",
+      "verified": true
+    },
+    {
+      "path": "tests/test_validate_routes.py",
+      "git_blob_sha": "90534afea1f9213ca0ee55dfdc57872cf5df20e8",
+      "bytes": 3564,
+      "source_commit": "781c4db8cd7a3cd5e340035fd75053595843a81f",
+      "sha256": "411c8f096e8822ae3a3c41bc20a165fd51c30d620e78b49ffa6cd3d315f4e6f9",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "git_blob_sha": "ba942adb82f1f1e364c984c6096c02bf938a3add",
+      "bytes": 902,
+      "source_commit": "66847b7af444ed9730e6ccb6365138ed1a08b664",
+      "sha256": "5966691f1255d9ccb9fa1cb4d91260566e3c995510b04a61168f6f3d44eb150a",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "f6c7f5682686e79299ee56d7e1336967b27daa53",
+      "bytes": 8463,
+      "source_commit": "66847b7af444ed9730e6ccb6365138ed1a08b664",
+      "sha256": "80495ba8846f3010729edd5ea10c600e00f5911266344b2a35d13e7c9b976bd8",
+      "verified": true
+    },
+    {
+      "path": "scripts/build-public-site.py",
+      "git_blob_sha": "3aad30c53f3a28a5b1b5fe9b234d6dddfe5c10d2",
+      "bytes": 4616,
+      "source_commit": "66847b7af444ed9730e6ccb6365138ed1a08b664",
+      "sha256": "d1825c82479e8a93a576608b3be5fdcbfc1af4eab0ae55c1123cdb6521560d7c",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "git_blob_sha": "9860f4ba61066bdd5eb92020c4ee7ed3282c5a95",
+      "bytes": 3864,
+      "source_commit": "66847b7af444ed9730e6ccb6365138ed1a08b664",
+      "sha256": "551cf1a420941696e163cf55ad98b83ae892bc36466c242ed7d96f7ae5980865",
+      "verified": true
+    },
+    {
+      "path": "tests/test_build_public_site.py",
+      "git_blob_sha": "3ae739f73da5ce9b13745700b398a0cbffda8790",
+      "bytes": 2644,
+      "source_commit": "66847b7af444ed9730e6ccb6365138ed1a08b664",
+      "sha256": "14346c52373bc3c1e0292e4862d725362c8e2ae72f21c51a659b0fb3703c87d9",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "range": [
+    84,
+    98
+  ],
+  "scope": "new intermediate blobs original bytes verified against immutable commit/sha and SHA256",
+  "files": [
+    {
+      "git_blob_sha": "9853d918619c531da5f3b3695a6227e47f61401e",
+      "bytes": 4964,
+      "path": "scripts/validate-routes.py",
+      "source_commit": "15e44e03e3ad7cbfaefd7092670003b35e272f35",
+      "sha256": "5d14ea891f1844b6a9c43c4c4e5ceb523288407cd4c43e1afc52fa584854e59a",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "99508bc347872a67432ef9b140e7fa98c76a540c",
+      "bytes": 15291,
+      "path": "grants/grants.js",
+      "source_commit": "1542e6c3d2870b8cb6a099639101f0268ceb3943",
+      "sha256": "fdd6a318757feb0fb7e175b9dfd4f043434963496eb2c779f87553ef7352a7a8",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "9a037f2a8fdeb20bc02c33f1f704a3605cfb8610",
+      "bytes": 6823,
+      "path": "docs/global-emotional-weather-public-interest.md",
+      "source_commit": "655734fb0bf15cbc1fe58b788faae5dd0859ee93",
+      "sha256": "e6a19c57eef0651381c264e2302fc68ed5cfc810f299ce83b10521ac66dbe920",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "9dec7bf768f77c4a1899a7190e1f0cf50bcd5145",
+      "bytes": 5371,
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "source_commit": "6fc53dd46afb1d45c7a967c97491117f2ef98de9",
+      "sha256": "160974c1dfbeb4b11fa145a7c8c3910f0899744209c7f4bae7c04d168b15533b",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a1749293dbc0b7780d6a3ed6506599d9a952ff4f",
+      "bytes": 12976,
+      "path": "grants/index.html",
+      "source_commit": "f3d58d2fdb90839baa0cd07b3f1f5deb57d3b030",
+      "sha256": "bd2b15c46141368af7c844986bda73760d93351d4c0eb0230f0be5e77c89186d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a228f9e023427c1fff556d37b737fbee88c99fe3",
+      "bytes": 26,
+      "path": "docs/foundation/TEST_WRITE.md",
+      "source_commit": "8624776e139efb547873ed827f896d36a77ebd20",
+      "sha256": "3dfff33dc9635e4af23f065922b3bdb37f532ba9eba29d9a3a02bdf0ef5985a4",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a5828b2cd855f329de68312fd96309bf201ad26a",
+      "bytes": 7772,
+      "path": "index.html",
+      "source_commit": "ac6f4126ca0c77464aafce6945332e60363b02b1",
+      "sha256": "75dea898faaaa13986672fad95123adcdb67bc6f39173b316039f212815bd5a5",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a63de97d34b3a948a1264b80550b67beead13aab",
+      "bytes": 3274,
+      "path": "scripts/validate-staff-backend.py",
+      "source_commit": "4bff2bff36ae68ecec5208a876039577fc48f769",
+      "sha256": "1b149541614cd56463a873a5c6e58d6db1a8d5210085e6ed86b7b86d1b5cdd2b",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a7c966ec03fe7f818a29159c2ae11fc8c7b42f58",
+      "bytes": 10068,
+      "path": "scripts/capture-stewardship.mjs",
+      "source_commit": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+      "sha256": "3cc381b8c41e2ddd253a2e0e225a5b826dc22f121abdc8bcab4af05327db4465",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "a8e40c91f82fdd17c50cdd94ee86c31279dfda6f",
+      "bytes": 17057,
+      "path": "grants/grants.js",
+      "source_commit": "b8f0ace91e14816e7b7a76aa28169a0832f7ff6d",
+      "sha256": "c36cc9656056bfe813542100629e517405941f92600a52acb7d4fc79107c4d3d",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "aa3a727dea4adf8fba6fa639e80700bf0609c4d7",
+      "bytes": 12978,
+      "path": "grants/index.html",
+      "source_commit": "2d56952f0d124c3a8f7a0c2425d56f01dda9857a",
+      "sha256": "2c606cd0fa96a8902a41d8c80036386805683e5fbd5e5720ed766573a1cd0a34",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "ab980de53bccf0b7ce81236d7718d57cbd975631",
+      "bytes": 21903,
+      "path": "functions/src/index.ts",
+      "source_commit": "8ef50776a14ba2989283c8976dec7b626f53ab99",
+      "sha256": "498629562ee727626263bd5e0e714566f02921e5234586c92f71529598881e7e",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "aec241d437e138d4bda099fbf012a84966c670be",
+      "bytes": 639,
+      "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+      "source_commit": "facd03a27dc185eca1cd2d8b7a19f47e72c4e551",
+      "sha256": "ab8ce348df5f732bfd41aa878a3d37927455d0b432d48bb0c44ddcaa81ff38c9",
+      "verified": true
+    },
+    {
+      "git_blob_sha": "b025d629f968eba8e44558caaaa5179a077c2b04",
+      "bytes": 5517,
+      "path": "scripts/validate-standards-registry.py",
+      "source_commit": "6d8e885ced4a1969e06c727106dbf6ff77b49200",
+      "sha256": "de6b5ba02409388693a5e97278f6d41ffc6ed6f37c6b5c5ae72353008c4b1937",
+      "verified": true
+    }
+  ]
+}

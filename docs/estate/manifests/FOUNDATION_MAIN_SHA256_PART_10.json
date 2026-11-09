@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 108,
+  "end": 120,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "standards/registry.schema.json",
+      "bytes": 2224,
+      "blob_sha": "b395088b2481e7c061ac61a82c1dd50487918994",
+      "sha256": "0b0fcca0a3ddee8cab6b7783b2c9c933105c7a209c5878fd91ef4f4eebfe99c0",
+      "state": "verified"
+    },
+    {
+      "path": "status/index.html",
+      "bytes": 6839,
+      "blob_sha": "ddab5a2a8ab5a58ac475884658325626f5ac65f6",
+      "sha256": "aa701d7b512ba20b7e007616c9c6a9956572ee65482ff8b0c7e047df362e7600",
+      "state": "verified"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 13999,
+      "blob_sha": "ca3d59bb1c31d020a3ae8b1a0f2a6c82b360cf88",
+      "sha256": "30bd1f317dfbb120d5451df41ca708989976d7f571d7ddd440aff44648dab22f",
+      "state": "verified"
+    },
+    {
+      "path": "terms/index.html",
+      "bytes": 2933,
+      "blob_sha": "9af098f89d9f1253eb0606982c4ba5f79352e543",
+      "sha256": "e5a299f9e83623fa2548b697999bb60d4da670b47941b071664727847de316d8",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_accessibility_standards_authority.py",
+      "bytes": 2811,
+      "blob_sha": "e18e6b3a850a2e28917c31d39c812c440c15c705",
+      "sha256": "7b84164b52108abb035292ffb4736838a4d9eb94e04ceb895824f2c513316dee",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_build_public_site.py",
+      "bytes": 4782,
+      "blob_sha": "5d6d2e3d6ab54e75dc8b1941fac72917d32eb12d",
+      "sha256": "40776e313557a8b682689a9e5a4ab52b583bff668ad91f5e4e60984ca3db367e",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "bytes": 4463,
+      "blob_sha": "eabfe1306aeab20a0745ff48ef99384a276bd64e",
+      "sha256": "6f4a0a0ac06f36d09cbf9514009e9f4c2c8e9ae960022a42aa14ffa8500f8278",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_staff_backend_contract.py",
+      "bytes": 4254,
+      "blob_sha": "e4c99e3846150b514f461e3fdc566b359307281c",
+      "sha256": "43140a89989d8aa30b0280b715008c90f051a2e520031620cd984865d207a97a",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_validate_docs.py",
+      "bytes": 10660,
+      "blob_sha": "caeae90aba2a14f39cfed1b3beec730c7bbd0aec",
+      "sha256": "48a81f93896482331e48cf65439f4c70969eb1c29a9dbe54b6acf24aa35d026b",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_validate_routes.py",
+      "bytes": 4491,
+      "blob_sha": "abb8fc052f8bcdb4ff019828f3ed29c89956b77d",
+      "sha256": "51bb8b02ad6eecc60c695af9e91aa62b03d80d51b22a66e20e8470baadbaeff7",
+      "state": "verified"
+    },
+    {
+      "path": "tests/test_validate_standards_registry.py",
+      "bytes": 3644,
+      "blob_sha": "dc1bfaafbd0e6cac4910f479a66097da12009352",
+      "sha256": "c1ebf134fd34dbb76dba1cefec3473abbc24c35ad258725f985526c46c91b9e8",
+      "state": "verified"
+    },
+    {
+      "path": "VERSIONING.md",
+      "bytes": 3713,
+      "blob_sha": "851eb999d1b07b62beb82e6b78131db04eac5e23",
+      "sha256": "e68ff637120d9e0f6800c75ab5a5ea836947498401680afeddb1c7e01e8f3c22",
+      "state": "verified"
+    }
+  ]
+}

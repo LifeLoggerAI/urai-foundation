@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 60,
+  "end": 72,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "firestore.indexes.json",
+      "bytes": 756,
+      "blob_sha": "2cb75897cd9e9b26d221e780f02f79f0682c831c",
+      "sha256": "2df053a3ca49b1b7926e46d6ce213d112b1601065418c28878fb47038d2f4491",
+      "state": "verified"
+    },
+    {
+      "path": "firestore.rules",
+      "bytes": 3715,
+      "blob_sha": "061723cfb6edc4931624152103a35cda6283b722",
+      "sha256": "933fbe31ffc438b322982c23ae8de48a082cbf4b9e55a1655e1ccf124398b31b",
+      "state": "verified"
+    },
+    {
+      "path": "foundation-home.css",
+      "bytes": 10700,
+      "blob_sha": "c676e3a543d5fd6e96f1dc0ed16ce4ac20ee41a2",
+      "sha256": "1f3430e46bfeefd95e306d3d27661167e2485a6a3f8e61ace16b9c94551b131d",
+      "state": "verified"
+    },
+    {
+      "path": "foundation-interior.css",
+      "bytes": 3304,
+      "blob_sha": "518926d4ad644cfe7aecffab1661aee6682c201c",
+      "sha256": "fbdfb0b9281989ecb4e956594f5d436c8adbb8c3defec68b995acef464290cb4",
+      "state": "verified"
+    },
+    {
+      "path": "functions/package-lock.json",
+      "bytes": 107379,
+      "blob_sha": "4636c208c5da9e6408a2f36317a10e65ae1907fa",
+      "sha256": "4c66ee40b51303b1436ac5f05b3a0f4c09b1fb683b8257db4ea0c241405473a3",
+      "state": "verified"
+    },
+    {
+      "path": "functions/package.json",
+      "bytes": 596,
+      "blob_sha": "e7c77ebe8cbf3c27866f0457d658d1702ae901b9",
+      "sha256": "541162b27cfbc152aae176bb940c36553be98dda854a699ad0c93dd79ce2e7ff",
+      "state": "verified"
+    },
+    {
+      "path": "functions/scripts/bootstrap-owner.mjs",
+      "bytes": 2715,
+      "blob_sha": "75c43672a02971d42e22c5fa1add958749884ac9",
+      "sha256": "4479111498602b01ebbb945171bfbb7160dee5dcfba253195a00d6c23af33346",
+      "state": "verified"
+    },
+    {
+      "path": "functions/src/index.ts",
+      "bytes": 24213,
+      "blob_sha": "fe13ea200a9dd117ed57f1a8d1a2dec7fc127727",
+      "sha256": "e60af769fd705252c3519db751e2b44a0a42e0a9d8d47551d67a2d8826fe3816",
+      "state": "verified"
+    },
+    {
+      "path": "functions/test/sdk-compatibility.test.cjs",
+      "bytes": 5211,
+      "blob_sha": "52a01a54fece6f3e502e104c57c0acaea499f1e3",
+      "sha256": "17e92f34528a345281d1e3b27ee4a74b739dbb567f00a7ab0f7b13cf122d306c",
+      "state": "verified"
+    },
+    {
+      "path": "functions/tsconfig.json",
+      "bytes": 306,
+      "blob_sha": "68696eb2eddbfdb1205782d73ac70f1f26185493",
+      "sha256": "c2fb419d663414988ebf14e9bcd23f72ffa1a1dbbbba690b3d32d38cc9565049",
+      "state": "verified"
+    },
+    {
+      "path": "governance/index.html",
+      "bytes": 5439,
+      "blob_sha": "5a32d241abdead7adc58288d93516a01bcd416b6",
+      "sha256": "53b1164be97ca6ad820d7e74341d423d26c8ab490611f5dff400a42b4fe26107",
+      "state": "verified"
+    },
+    {
+      "path": "grants/grants.css",
+      "bytes": 6481,
+      "blob_sha": "a64733c0a434e5d69d2550d9a555bb25d297d0f5",
+      "sha256": "05841c33c145b5d32a9bd195ec80e0f51af587dca02121f57d49cf38b6b7d481",
+      "state": "verified"
+    }
+  ]
+}

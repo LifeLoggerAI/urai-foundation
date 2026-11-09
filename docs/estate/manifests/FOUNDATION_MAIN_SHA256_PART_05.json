@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 48,
+  "end": 60,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "docs/release-receipts/2026-07-10-public-authority-release.md",
+      "bytes": 1436,
+      "blob_sha": "418f90db5d372d62ab33702893091b3110c6d67b",
+      "sha256": "02004e6ec8667cc227f56dd93dd91d3426d0ffa635def5c2c63913690f443917",
+      "state": "verified"
+    },
+    {
+      "path": "docs/risk-review-process.md",
+      "bytes": 10054,
+      "blob_sha": "a012537a290c81b5adb0592e54ed1089280cc9a0",
+      "sha256": "11430181ae08c0ccc6babc357de3c31a9bbea1f71712cffbc912073920a644dc",
+      "state": "verified"
+    },
+    {
+      "path": "docs/staff-backend-contract.md",
+      "bytes": 10027,
+      "blob_sha": "4d79f0d517bc08b4b18d1631d0a9f8400118db78",
+      "sha256": "c5dfa7d24a36f73b56037b368bfb82a59ada6ea526818765c9822d260744e095",
+      "state": "verified"
+    },
+    {
+      "path": "docs/system-of-systems-integration.md",
+      "bytes": 8000,
+      "blob_sha": "493b252ca630b6e9932187c363ca9a7fc28590fc",
+      "sha256": "538d4676d043d93792fc5c31df0e2ce6c17cd7fa4c2345e856d13640de4f72c3",
+      "state": "verified"
+    },
+    {
+      "path": "docs/templates/decision-record.md",
+      "bytes": 879,
+      "blob_sha": "90b057c69341dd0cbfae97c5fd28a556e0a1d1b1",
+      "sha256": "1a1b32ce8d1006a9294607256b17d300e7ab8bf274bef5a312b0e2c737a0f32d",
+      "state": "verified"
+    },
+    {
+      "path": "docs/templates/public-accountability-templates.md",
+      "bytes": 5866,
+      "blob_sha": "704771ef7c11660ed502c98d08e37bebbd4ae8d0",
+      "sha256": "761acf8a3d7f6c447b84a2e6d23e1bb41dee366a480aae5996dc22f0127dcd3c",
+      "state": "verified"
+    },
+    {
+      "path": "docs/templates/risk-review-record.md",
+      "bytes": 1338,
+      "blob_sha": "efd93de5a2742c07b5a959e102353f3106d1c5da",
+      "sha256": "bae990dbc7fce283a6205bf6560f99f12ba921704ae4f3e8800b8d6f945e0408",
+      "state": "verified"
+    },
+    {
+      "path": "docs/transparency-framework.md",
+      "bytes": 8252,
+      "blob_sha": "deeb37997a4af03022e31bbafd428cdcdae0b9e8",
+      "sha256": "041213d96f4b08409d5aee6def81e52857071448f2744bb5c5cdd4239259c40b",
+      "state": "verified"
+    },
+    {
+      "path": "donate/index.html",
+      "bytes": 4589,
+      "blob_sha": "bb8dd0143864d1e8777e683a9f40ebbe06540b46",
+      "sha256": "fef08cab46354c947b3744848129b5415f955ce70adc0c762979a115a7643f6c",
+      "state": "verified"
+    },
+    {
+      "path": "emotional-wellness/index.html",
+      "bytes": 2893,
+      "blob_sha": "73034be935171e3d8d6828682aa474cc849a5c64",
+      "sha256": "c3c7baca16c65f8425a237dd4e8c003ddb5191d11a899451a3f0c47e138c815d",
+      "state": "verified"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 1245,
+      "blob_sha": "fa29a335b81f1af42a27e6bad00d58e08640875e",
+      "sha256": "9261df96c781a391426f8e0c4b1f16606a37459a58e57782a70fc21032ce4b9c",
+      "state": "verified"
+    },
+    {
+      "path": "firebase.json",
+      "bytes": 307,
+      "blob_sha": "203c05716102a3d962b08740a6a9d182ec9958e4",
+      "sha256": "99535b2316d36ae7e539ef6977d2c4610c3f897f1b2cd057a661d3989ea7ad27",
+      "state": "verified"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 84,
+  "end": 96,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": "launch-proof/urai-foundation-production-lock/PROOF_TEMPLATE.md",
+      "bytes": 1930,
+      "blob_sha": "b6f23ae8b7cff9db034bd7c8a097e8e7f4b1e3c6",
+      "sha256": "5d9a6a784214db736374319171d3eb6a13937345332d753ffafe3a7688357c1a",
+      "state": "verified"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 675,
+      "blob_sha": "0adb1da426b875ef048a65e259f7028a4a41074d",
+      "sha256": "0c5435bc453fed44d3f94ee9a09d0326e9d3cb3d5b15172036938727da01e755",
+      "state": "verified"
+    },
+    {
+      "path": "partners/index.html",
+      "bytes": 2796,
+      "blob_sha": "3ed757b85dca6930537d4d76f290c44cdf03a1c0",
+      "sha256": "3117c3941a62b704a8e8221921b95c2e7595c6b3bb7bebfafab6c280251033b8",
+      "state": "verified"
+    },
+    {
+      "path": "privacy/index.html",
+      "bytes": 3264,
+      "blob_sha": "3f105084308824ee86666f08a6b81a5bfc728c7a",
+      "sha256": "8ab4518b4eddd533ac64f93691ab9c2de9bdad6cdc477d975d801b33bc45ca29",
+      "state": "verified"
+    },
+    {
+      "path": "PRODUCTION_STATUS.md",
+      "bytes": 8513,
+      "blob_sha": "445bd06dfdc3ca34e4da6cf02113529d383e713d",
+      "sha256": "1a038c9e740f3af938d4864fcb998ddb472ce81b18fde4a4c041768ee3b1a1e4",
+      "state": "verified"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17191,
+      "blob_sha": "ab6124b8103477b818a67503e29af5826f93d97b",
+      "sha256": "fb2505d0b32355328e58a82531beb88f5eb83e10d002013569d3cde64ae1d030",
+      "state": "verified"
+    },
+    {
+      "path": "research/global-emotional-weather/index.html",
+      "bytes": 5690,
+      "blob_sha": "ca68b91b4a9449e4ddf1a534f34ccd158bfba341",
+      "sha256": "784dc9f8f6084319c9598367c0ae836518aa8d7e99c4743d0e95232da6dff683",
+      "state": "verified"
+    },
+    {
+      "path": "research/index.html",
+      "bytes": 3870,
+      "blob_sha": "caaf31d8006b857f1613ff0ec8283d1b0d2ea716",
+      "sha256": "cc76319978116d540e5897a730d069fb19fcacf8e4a0592ccefa2ea4dd786cbd",
+      "state": "verified"
+    },
+    {
+      "path": "responsible-ai/index.html",
+      "bytes": 3251,
+      "blob_sha": "4fd7b4e2f2855530c3c39db00963d82cff62cf3c",
+      "sha256": "67a9bbd1dd02aa39c6daccf1fdc49b803511751b214dfbb30e02282f2866e537",
+      "state": "verified"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 72,
+      "blob_sha": "d82ce884b4bf8b3ec4acdbfa6331e1a7ba80d992",
+      "sha256": "ddde75a583ee536c8066cfe31553724eb1971ff5999ac73577da5431c1037726",
+      "state": "verified"
+    },
+    {
+      "path": "scripts/build-public-site.py",
+      "bytes": 4866,
+      "blob_sha": "285eeb9ea5e6a14e705338a2ef758b6913a1f843",
+      "sha256": "ebbbe5dfd349abf655f52a8f4ad0c9ae873a96ee7316f5f797257a3273a5122b",
+      "state": "verified"
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "bytes": 4703,
+      "blob_sha": "8117f9bb2cb2c678a7cdc666707458dc50f0ed1b",
+      "sha256": "9aa7de5b7b87573d757295d7e4391d926b1b8406b01d93747f6401428acd24b3",
+      "state": "verified"
+    }
+  ]
+}

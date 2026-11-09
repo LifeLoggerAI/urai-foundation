@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "first_index": 0,
+  "file_count": 12,
+  "method": "GitHub immutable file base64; decoded complete bytes, sha256 (NIST self-test), checked declared blob SHA and size",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "size_bytes": 229,
+      "git_blob_sha": "54e6a1d8cca1aac9958714c0caa2f97b36fefadb",
+      "sha256": "07a6f29d8c5445c98d3ecc3c1a14dd183d3ea7b9698feabd7c54542e5cc184d3",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "size_bytes": 520,
+      "git_blob_sha": "a7455307a82ac5c65843fe7e208d861f7a8a326f",
+      "sha256": "a8a2b80a21f0315995b8c288157c3667d8d76c8ab4a0a78877921d15a058d9ed",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/documentation-gap.md",
+      "size_bytes": 273,
+      "git_blob_sha": "2794491edfc8b16facdf403279f05cb9d4794151",
+      "sha256": "508b8a11eb0e6212ed6916acc90e9817a6b017c3da72399a3c30c227d7ebd28f",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/documentation-website.yml",
+      "size_bytes": 1613,
+      "git_blob_sha": "63d1cd79eb8b8f65914bb1bbbafbb13cb1df27bb",
+      "sha256": "de673f3d51267b8f75c7e07c6767b0c028ce337d8ad5e7f65024ddbb7fe713ee",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/maintainer-process.yml",
+      "size_bytes": 1069,
+      "git_blob_sha": "3941de8cae34944edf2f43f437eed38e582c7f12",
+      "sha256": "88e68f19be75dd7e830bfd4bcdaa3703b645ceb9c0ea72438db728ec771bfe65",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/policy-proposal.md",
+      "size_bytes": 456,
+      "git_blob_sha": "31c9fbe0a24afe90d5432a36c98948bcd24909d4",
+      "sha256": "154fd4f68097878ebc7cde00b9fa5145b9e633178b3c989b09bc0f3c00dae579",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/policy-proposal.yml",
+      "size_bytes": 1754,
+      "git_blob_sha": "704a6e981605591d67ebc560bf09112927956d47",
+      "sha256": "c72cfa5902279eae95a21d0ffc1e86cdd8c2e48722ee798bb457ce1c8134a0ae",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/risk-review-request.md",
+      "size_bytes": 639,
+      "git_blob_sha": "36c4501c99f9cbb4fe9f2ebe56be958af2cc45ea",
+      "sha256": "dcf624503901e4c48cd5a83cbc2a79598964996445d30f2aeccb88f650fb1ba8",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/risk-review.md",
+      "size_bytes": 351,
+      "git_blob_sha": "5b8b2c81da414f2dd2209438e77be88c632a65f9",
+      "sha256": "8dbff645fc8aa34a6633ae1b8ae62f7b8c4cf0c8cc05e7d34a1eddee3edc47ee",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/risk-review.yml",
+      "size_bytes": 2342,
+      "git_blob_sha": "e7d22f18d516ca4f772da2fe446acbb820d8ec5e",
+      "sha256": "151e3954d95f3e2cc15f76f7183a9af0835062bd21a3a9f526af39cbeda933c8",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/site-quality.md",
+      "size_bytes": 342,
+      "git_blob_sha": "dd465110b352681f7e3eae5458ee67d21044fc58",
+      "sha256": "836ca1166de9197917b2abeaf0b747eab8399050e278970d41007fb1be742f33",
+      "coverage": "full_bytes_read_and_hashed"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "size_bytes": 1088,
+      "git_blob_sha": "8ddb327ebb22b4715bbed6a763bde70daee97c41",
+      "sha256": "813c785c3fa2baaf0fa8d484f5582f4931109ee34d260cb91647b7b8731a3ffc",
+      "coverage": "full_bytes_read_and_hashed"
+    }
+  ]
+}

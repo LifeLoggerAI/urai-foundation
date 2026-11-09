@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 168,
+  "end": 182,
+  "files": [
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "reference_commit": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "reference_branch": "fix/public-security-accessibility-routes-20261005",
+      "git_blob_sha": "d8d5da2412ac3b615a66cff063ebed5067e9c282",
+      "bytes": 4220,
+      "sha256": "c8160616c24888cd4c0fb624c72b6c0f802f5569dcee8b5192e62e04f1daab3a",
+      "verified": true
+    },
+    {
+      "path": "status/index.html",
+      "reference_commit": "8401ff83d1aba5b4ec1cf1a95df837ab0910968b",
+      "reference_branch": "fix/labs-tax-standing-status-page-20261005",
+      "git_blob_sha": "d9c57e0e4ec19291dd6052cc21f7f967be6c8656",
+      "bytes": 6911,
+      "sha256": "afbd0177d0587fad793d4dc883401a8db606090182377e1807d8e77f6bb7f3fc",
+      "verified": true
+    },
+    {
+      "path": "research.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "db9d1a12e0ced76054ea6b21c02d7a5363e79d16",
+      "bytes": 4083,
+      "sha256": "bb6a061ee028ec4e44515bc5dfec96f75e81fc18a3801f396d8770c21be4fd1d",
+      "verified": true
+    },
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "dcc079bcbb299bd31c3008ed2aab2e51f31e0403",
+      "bytes": 6644,
+      "sha256": "62276c183ffdb943ea58969842e2487d257e1fc31ab26bcd024bbb10e30ddead",
+      "verified": true
+    },
+    {
+      "path": "tests/test_build_public_site.py",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "dcc4913a13a1b9ea899f95e3488cfbc54aa13b70",
+      "bytes": 4493,
+      "sha256": "1d0a110bdd6df9a1280b70641529f667d7febb425f473c15570b271ac9b2ffce",
+      "verified": true
+    },
+    {
+      "path": "public/css/foundation.css",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "dd492dbbf6af3e2f06266ae3b550ef64f6018384",
+      "bytes": 2650,
+      "sha256": "e17064da91b39e6c318340d405cd95d05e24b009743360fc1e3d437ebfb9e130",
+      "verified": true
+    },
+    {
+      "path": "docs/foundation-legal-payment-activation-packet.md",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "de349d525fe4925ee6016fdc5677b96b32d773d7",
+      "bytes": 5962,
+      "sha256": "1bc83a4b1118cc9bdb4e319b41dbac230ab49390cb2dd53a6238751a7eaf52ea",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "de3cc64389609999266e744afa39d121d6e692cc",
+      "bytes": 7906,
+      "sha256": "ab37cb014190257ebbdc1c4828a4eae656852d10ce7cf61727bfcbbecd2f179d",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "8c172842a476149069ada0a854c9f00440728696",
+      "reference_branch": "design/foundation-institution-ui-20260913",
+      "git_blob_sha": "de4b9afb6bb3446ddfde04a65a52c999ae94a023",
+      "bytes": 15938,
+      "sha256": "7f41f8dcbc6065a3a0cd625c73e3fb0288b74c6130efc5a69beafa3fa3e45c1a",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/urai-production-verify.yml",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "df5050e42e9d3d90b45905907a01ade125165f6e",
+      "bytes": 746,
+      "sha256": "8373f7d641b158ba0917635cc11e172c2af3d9996f7c83a17f220c4126b53084",
+      "verified": true
+    },
+    {
+      "path": "community/index.html",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "dff92d088e0fc14ed33eef07024ad3ce483cbbf4",
+      "bytes": 5059,
+      "sha256": "868d1b8fc807c6c8bb2528a8da55ac529134aedaafc64cebc102099e5705ba7c",
+      "verified": true
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "e20e3c94fb196465500214ac2effb4c0c452dceb",
+      "bytes": 3033,
+      "sha256": "c0a9ce4ff63db01ae4044338d860a679223b781855838643e690f0107767b49f",
+      "verified": true
+    },
+    {
+      "path": "functions/src/index.ts",
+      "reference_commit": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "reference_branch": "repair/foundation-privileged-auth-time-20261010",
+      "git_blob_sha": "e5d7af4bca2b605168b5961f9240cb3ca5d93b3f",
+      "bytes": 24342,
+      "sha256": "a812f931c9ed3b4950e0af74ae37aef4c48b75bcf2b4d47049c6328466c3d3c7",
+      "verified": true
+    },
+    {
+      "path": "docs/live-deployment-runbook.md",
+      "reference_commit": "8c172842a476149069ada0a854c9f00440728696",
+      "reference_branch": "design/foundation-institution-ui-20260913",
+      "git_blob_sha": "e6776a26417aac7d09f44d83905912b4b1860bc1",
+      "bytes": 7097,
+      "sha256": "4d1bea5918d8198b2389e94cbb3ed3cfa10a62f58912db323f0bc281493a9078",
+      "verified": true
+    }
+  ]
+}

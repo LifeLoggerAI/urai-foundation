@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 70,
+  "end": 84,
+  "files": [
+    {
+      "path": "Makefile",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "51c819b5f7a9b7987baa99cb52b95be3fc822601",
+      "bytes": 561,
+      "sha256": "381ece7f75a184a9f012eb212aa33a70ddc706e3b15099024f38db73d99af99c",
+      "verified": true
+    },
+    {
+      "path": "sitemap.xml",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "53066f61e3f0462fc6aebf25810d436ea78910b3",
+      "bytes": 2232,
+      "sha256": "2e4f91918c9e63f5ac78181d1475c5020b373b07a62c2c6492b45ab643004748",
+      "verified": true
+    },
+    {
+      "path": "emotional-wellness/index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "53978d7282f91e2138cad8fdb6fdf542d5d27393",
+      "bytes": 2760,
+      "sha256": "323cb531f9919b5721b5c7f6ffbf921edb0de45755c8e4838f6f522a1b7427af",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "reference_commit": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+      "reference_branch": "hardening/pin-foundation-actions-20261005",
+      "git_blob_sha": "540d7bf89c2558bf0a7ee200d877a6a1d0a5cc0b",
+      "bytes": 1725,
+      "sha256": "192c4052bdbf67fddb3914959bf21825af7cf4662e8fb82eb95469870a2a0843",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "reference_commit": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "reference_branch": "public-authority/entity-resolution-20260710",
+      "git_blob_sha": "56ac14c3f863e6382e6825f8dad174a34942568f",
+      "bytes": 2441,
+      "sha256": "853e8bdef37d4e3f951540b01f50b0fbf5c8e6851d8f5e8da30e663707d6a38c",
+      "verified": true
+    },
+    {
+      "path": "accessibility.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "56b5ac3c8e0f2a8fd111dc6994bedb67edc26775",
+      "bytes": 3941,
+      "sha256": "4731e2366e1157d37ee71862b75be41b66aa4fc0d0eff5d2b3359dfd24992517",
+      "verified": true
+    },
+    {
+      "path": "firebase.json",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "58169fcb941430275a5e8c6d4c1c69afc20b48dc",
+      "bytes": 278,
+      "sha256": "bfa2e71e3a22e8e7311c7760e568584240bcf6a6e57f4d6a78d162b3bfe3b521",
+      "verified": true
+    },
+    {
+      "path": "functions/package-lock.json",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "59c7c4e15c2ac52af00a682b79629a6f1692b769",
+      "bytes": 103979,
+      "sha256": "3c989f0489a3e0813386f59e42d2c273c59a98026ecbd247521b1af8162fec31",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "5a91be6f158866a548f1c81e1acf5581417ca76f",
+      "bytes": 7114,
+      "sha256": "2b70240e1e9dff97a36fff0cd5bfa891c0f0de4b0222202dccb8d1b28b97aa03",
+      "verified": true
+    },
+    {
+      "path": "research/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "5ac2617e7f33b5ad4ae3c77ffaaa46da49ce9bd2",
+      "bytes": 2889,
+      "sha256": "6ef69c2c47a1e837fd20ccebf58a56121acf8526a3cac1c56020e036c450dec0",
+      "verified": true
+    },
+    {
+      "path": "responsible-ai/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "5f3380c66b6de5a06f39a3e73646eda69a824f85",
+      "bytes": 2871,
+      "sha256": "4254f81aed08ace9f078ad52681ff17a78d68a7ed31e1a59ae9a67f28e496c2d",
+      "verified": true
+    },
+    {
+      "path": "contact/index.html",
+      "reference_commit": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "reference_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "git_blob_sha": "6086b3e9cc00f6b77450e18e8d56ade0366ec13e",
+      "bytes": 3487,
+      "sha256": "01204aad1ae0b76612381d55ba6efc5643f67e69ef0dd251ead5176be572540d",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "60babca8bef16cf118e23650b61926212f9cf428",
+      "bytes": 1375,
+      "sha256": "0d8038b791ff500d7bbae008b50bb4d658a23fff0309fb639d3d3a4fb03df97b",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "62d46473486bc213d80a6f5b7d40b21d0c77b0d1",
+      "bytes": 4569,
+      "sha256": "ace1847d23d707aee0c03db04fd08567deff7d45dbb8fa34fbb245bbfec4ca25",
+      "verified": true
+    }
+  ]
+}

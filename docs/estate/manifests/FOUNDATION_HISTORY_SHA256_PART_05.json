@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 56,
+  "end": 70,
+  "files": [
+    {
+      "path": "index.html",
+      "reference_commit": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+      "reference_branch": "polish/foundation-color-scheme-truth-20260913",
+      "git_blob_sha": "484b23bcb179f754237a774f2563efc70a1a572b",
+      "bytes": 9521,
+      "sha256": "53a7c59c2161853eafa5557158bcb3df6fc8e561c74afdaaead1cd2bf28f082f",
+      "verified": true
+    },
+    {
+      "path": "scripts/public-artifact-contract.py",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "48d04a327e4ad382591b191116a7c427731cbcbf",
+      "bytes": 6407,
+      "sha256": "9d831bcbd6243cb9398158e81655522fd1e73083b4d55532a0da574690ddf8e4",
+      "verified": true
+    },
+    {
+      "path": "docs/final-live-cutover-runbook.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "4a1adf69a29bed8133efe62f4384953a47f88001",
+      "bytes": 3610,
+      "sha256": "9d168b63175ce4d60a33ab8604cb8c8b8a27458527e63d0aac7f943c1459d6a0",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "reference_branch": "converge/foundation-terminal-governance-design-20260914",
+      "git_blob_sha": "4ac3b8a303530eaa40fef5dfd17561ed3f28a173",
+      "bytes": 16478,
+      "sha256": "dc8ca900380ccd322a27f2d649ad6b71d246cc19dabaa1380a4fa9a36426a8bd",
+      "verified": true
+    },
+    {
+      "path": "donate/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "4b4e2a0799072ea77039010575a3303c27765f74",
+      "bytes": 4583,
+      "sha256": "5603cb8149a031f161471249eac257e0e98aadab331bda4e85b445111356c294",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "4b98fb410d11de32868ae239dc2fbafa9f7dcbd1",
+      "bytes": 6981,
+      "sha256": "fd4b8cc8d363b2e7997bf111bc2bb9cbad8aafd05998102eb2437cdaf713ba12",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "4ce5d2dfd02c4fcae311999502f56a58fb2f44ff",
+      "bytes": 14961,
+      "sha256": "399b53682c43b4b3a89ac536a37e23ea5b35839b5197473b2b0869ad8591e603",
+      "verified": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "4deaa2a14a607eeb802ed67635e7a4a47a8fd4a8",
+      "bytes": 4208,
+      "sha256": "277ff5a0861a7f926759d519971948e5384672741ad6b40081ffe98e2d8fbe22",
+      "verified": true
+    },
+    {
+      "path": "privacy/index.html",
+      "reference_commit": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "reference_branch": "public-authority/entity-resolution-20260710",
+      "git_blob_sha": "4e3c7838f3ec43cdf3a5d29ae7e18149ddff9e00",
+      "bytes": 3002,
+      "sha256": "43deb55da2a166782972a9ca4c3b04f6528a9f0232456b189c29c10bf850f3cc",
+      "verified": true
+    },
+    {
+      "path": "Makefile",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "4e9f4a93144785de1ba92886b787b7580995858d",
+      "bytes": 773,
+      "sha256": "ad7bf8429ed1c53bdba1edb18c2cc83c47b6384e23e794aa3f48e5e42d4e3897",
+      "verified": true
+    },
+    {
+      "path": "tests/test_public_artifact_contract.py",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "4ed604f67ab4936235a0cf5617a92be3c9032bd6",
+      "bytes": 4447,
+      "sha256": "400d608bc006aba1373814088462a9635040854029108a63836b5ceff4f2e0ad",
+      "verified": true
+    },
+    {
+      "path": "support.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "4edd1efdaa6b9a4755be97330547af8572be151a",
+      "bytes": 3655,
+      "sha256": "0b521576d2da14d378ea04fd97307afcde21b2c8659a69b562355d570d9154c3",
+      "verified": true
+    },
+    {
+      "path": "status/index.html",
+      "reference_commit": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "reference_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "git_blob_sha": "503f53ab681b7c92335f9e38cc0c284ef79d8b6a",
+      "bytes": 6658,
+      "sha256": "77350c486f5ba79d02c15195c675ae5890f5ab337ede0903a7bb53d150d5bcd8",
+      "verified": true
+    },
+    {
+      "path": "scripts/build-public-site.py",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "519a379269fe64a30b87a1d7a3267cd29577f232",
+      "bytes": 4808,
+      "sha256": "63f4d034d8481c596fe1b640c5a18181a263f1b46aafe3786520326df8383c2a",
+      "verified": true
+    }
+  ]
+}

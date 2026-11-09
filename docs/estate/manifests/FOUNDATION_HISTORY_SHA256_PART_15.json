@@ -1,0 +1,43 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 196,
+  "end": 200,
+  "files": [
+    {
+      "path": "functions/package-lock.json",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "f70f122876d963f3ccc8fee75579fbeb74bc7456",
+      "bytes": 103951,
+      "sha256": "dc055ddc20aea09bf5a12fed51b91fa930aac3a7eb125526d2d67b1cfaa2d9c1",
+      "verified": true
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "f7d503df8b3c116c078ab9362e75329c1c1a4860",
+      "bytes": 1275,
+      "sha256": "e5b7938dfbeb355bb15a1b899d8f4ac02d2bdd9406e1a2e5f48fe58550498150",
+      "verified": true
+    },
+    {
+      "path": "404.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "fac93611bc3f3d7692505eab0b823a1263c91ec4",
+      "bytes": 893,
+      "sha256": "b5a44b5f4007008b7b14d54f6b6bf64f27ecc11db37e9b924efba91ffa0c065e",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "reference_commit": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "reference_branch": "public-authority/entity-resolution-20260710",
+      "git_blob_sha": "fd662269ea6975136c1446c5da4e1d3c2f314b65",
+      "bytes": 11264,
+      "sha256": "2a27ca784ac68b336ed78213f92fd57a0fc1947715007cb61733d11cc2392864",
+      "verified": true
+    }
+  ]
+}

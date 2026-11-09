@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 140,
+  "end": 154,
+  "files": [
+    {
+      "path": "programs.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "b41472a29e39ae67109e2119e670fbaca9f4cded",
+      "bytes": 3643,
+      "sha256": "e65a6fdd3641853727f9fc8f3d931070e2061e0ac39437c3d648db2a5c1214e4",
+      "verified": true
+    },
+    {
+      "path": "scripts/capture-stewardship.mjs",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "b4b364a5b7ac3b263dda9fd23bb3168e81ec9df7",
+      "bytes": 11709,
+      "sha256": "775435b27fc259d5923f14f8a8e815ab2d531e2c0a99c87f713f31e566bd8be9",
+      "verified": true
+    },
+    {
+      "path": "docs/foundation/URAI_PROGRAM_MENU.md",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "b4b8d69511f1490ea5ab581825ffd4b2b763bdba",
+      "bytes": 947,
+      "sha256": "a24204b1df4948907dddc0dde9a45b07970c0869d5584d3758c49314ca62a2dc",
+      "verified": true
+    },
+    {
+      "path": ".gitignore",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "b6318775eac990d051dbd026ae2f58fcde7f2b1f",
+      "bytes": 306,
+      "sha256": "47e5af3efc68c504722733632747a78ce42c10f7347723f17d507ee0222abeab",
+      "verified": true
+    },
+    {
+      "path": "privacy/index.html",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "b7b83015913b59f48d34573800b2dbcb4a426a33",
+      "bytes": 3033,
+      "sha256": "5c6e7634434e9d0bca71f4c49acf8d46fe72001a1dbec4b4a140ee4624e1f64e",
+      "verified": true
+    },
+    {
+      "path": "status/index.html",
+      "reference_commit": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "reference_branch": "converge/foundation-current-main-terminal-20260921",
+      "git_blob_sha": "b8dd7b68a80260e754aba6b67c2111a84cd5c610",
+      "bytes": 6537,
+      "sha256": "81e923e0225a041f9e1e0b7440dcc3b7aec5c890e45fa38b685d8ea2721bd844",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "reference_commit": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "reference_branch": "chatgpt/urai-product-polish-20260812",
+      "git_blob_sha": "b9c5c42e3619d85ddacbe3deb16eed8234150fa4",
+      "bytes": 3880,
+      "sha256": "d7c15030ea35b298a01ddcfbb111cf5481d40c2051a2f5ce73407d6554b615f8",
+      "verified": true
+    },
+    {
+      "path": "docs/canonical-production-truth.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "bc827f7fcb75b0b018c87b6a5a8da33d60d47b68",
+      "bytes": 5822,
+      "sha256": "5853be271136f054b43c3fbb5881337f9e347faaa58ee5796f082a8067393352",
+      "verified": true
+    },
+    {
+      "path": "docs/implementation-map.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "bd1c13c1c9d0ec545d744dcdcf37c89b32c63b5c",
+      "bytes": 4041,
+      "sha256": "15059a7d5fc7a1d0b422af3b2a0a614134dfa3294b4eac9ec3dd2bef75f44eea",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/docs.yml",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "bda9cddd4f96cd09353e902dfa3bba93f3afb1ab",
+      "bytes": 420,
+      "sha256": "0728355fde20f959e9c73036fac2a68c6c0f5bf28505ef361eef2df7782e6def",
+      "verified": true
+    },
+    {
+      "path": "scripts/smoke-live-routes.py",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "bde37a229e8759d1b142f9ab0128d9c1019ae775",
+      "bytes": 2425,
+      "sha256": "01cf3da81ea12d345f87d2aac60f571e3658719841cc98bc539ea74ab129ce32",
+      "verified": true
+    },
+    {
+      "path": "docs/governance-charter.md",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "bf4b7207ca84469a68afb084b6fbd6cbe3dfa8fa",
+      "bytes": 1738,
+      "sha256": "28b0d372a4f9f2736da1885952368254fda3e0a97f176d36a7581e1e83053c83",
+      "verified": true
+    },
+    {
+      "path": "scripts/validate-routes.py",
+      "reference_commit": "72ac186c4663f0434d0ee685abcf267be26e5201",
+      "reference_branch": "foundation-audit-20260706",
+      "git_blob_sha": "bf98fb4dd99ff3d87235821b988b7ded0502de45",
+      "bytes": 2618,
+      "sha256": "7f2d9de2542c28170cfff2f062260967ea240185f8883123e48878464c5d5233",
+      "verified": true
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "c179050566d7de2790aa4e9b1f880596cfbf4b2a",
+      "bytes": 449,
+      "sha256": "5c8b1e8eb214c53996f18bd0c7035d9d903370f9a88c77d7706a30c5d2fdaf21",
+      "verified": true
+    }
+  ]
+}

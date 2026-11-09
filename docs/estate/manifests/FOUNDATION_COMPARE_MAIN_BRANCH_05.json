@@ -1,0 +1,399 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 40,
+  "end": 50,
+  "branches": [
+    {
+      "name": "public-authority/entity-resolution-20260710",
+      "head": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "status": "diverged",
+      "ahead": 10,
+      "behind": 252,
+      "total": 10,
+      "returned": 10,
+      "commits": [
+        {
+          "sha": "4c68871f817fdaa89febf00121deff4c5c0bb531",
+          "subject": "Align Foundation authority language with available legal evidence",
+          "date": "2026-07-10T14:41:44Z"
+        },
+        {
+          "sha": "42c128a8549655dc9e0300fb48da105c30522335",
+          "subject": "Use legally cautious Foundation initiative language",
+          "date": "2026-07-10T14:42:06Z"
+        },
+        {
+          "sha": "81d1ca76817fc84fe2af1ddb272aac1f3749bd98",
+          "subject": "Make Foundation legal-status uncertainty explicit",
+          "date": "2026-07-10T14:42:21Z"
+        },
+        {
+          "sha": "26973c2a6f896236f0825d82af5aeeabb38c38fb",
+          "subject": "Align responsible AI page with evidence-safe Foundation status",
+          "date": "2026-07-10T14:46:51Z"
+        },
+        {
+          "sha": "5e591755d73790490f3bebdabcc541d8132fab70",
+          "subject": "Align research page with evidence-safe Foundation status",
+          "date": "2026-07-10T14:48:08Z"
+        },
+        {
+          "sha": "2632d57bd3f18860f73c952ca3bb52ffe703aab0",
+          "subject": "Align partner page with evidence-safe Foundation status",
+          "date": "2026-07-10T14:48:24Z"
+        },
+        {
+          "sha": "c5438d821527c0bee66a3a71cc1461f8cd3d18bd",
+          "subject": "Align contact page with evidence-safe Foundation status",
+          "date": "2026-07-10T15:11:33Z"
+        },
+        {
+          "sha": "fe66f9a0e8e618ce32ed500295823a0663b7a635",
+          "subject": "Align privacy page with evidence-safe Foundation status",
+          "date": "2026-07-10T15:12:41Z"
+        },
+        {
+          "sha": "4d1e7527d8cf0f4807d3bb892cc831bb749f9637",
+          "subject": "Align Deaf community page with evidence-safe Foundation status",
+          "date": "2026-07-10T15:14:24Z"
+        },
+        {
+          "sha": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+          "subject": "Align emotional wellness page with evidence-safe Foundation status",
+          "date": "2026-07-10T15:17:15Z"
+        }
+      ],
+      "file_diff_count": 10
+    },
+    {
+      "name": "reconcile/foundation19-main-20260905",
+      "head": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 85,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "reconcile/foundation19-main-into-pr",
+      "head": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 85,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "reconcile/foundation19-successor-20260905",
+      "head": "2098714e910994401b35be45ca4b5eb6d11b1744",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 69,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "reconcile/foundation21-current-main-20260905",
+      "head": "c357a5b5c682dcd379ca284d624b2258bf2280d7",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 85,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "7150cf7e2d67b37f30c4e207de40f51512b24882",
+          "subject": "reconcile: restack Foundation dossier on current main",
+          "date": "2026-09-05T21:55:40Z"
+        },
+        {
+          "sha": "c357a5b5c682dcd379ca284d624b2258bf2280d7",
+          "subject": "docs: preserve advisor governance changelog on current main",
+          "date": "2026-09-05T21:55:56Z"
+        }
+      ],
+      "file_diff_count": 5
+    },
+    {
+      "name": "reconcile/foundation34-post-privacy-20260905",
+      "head": "733bd29dbf64187320ccce9531f85f93cae9af30",
+      "status": "diverged",
+      "ahead": 1,
+      "behind": 84,
+      "total": 1,
+      "returned": 1,
+      "commits": [
+        {
+          "sha": "733bd29dbf64187320ccce9531f85f93cae9af30",
+          "subject": "docs: restack Foundation advisor dossier after privacy merge",
+          "date": "2026-09-05T22:36:03Z"
+        }
+      ],
+      "file_diff_count": 4
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008",
+      "head": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "status": "ahead",
+      "ahead": 10,
+      "behind": 0,
+      "total": 10,
+      "returned": 10,
+      "commits": [
+        {
+          "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+          "subject": "Add bounded public stewardship principles under Foundation governance",
+          "date": "2026-10-07T20:50:04Z"
+        },
+        {
+          "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+          "subject": "Retain exact-source stewardship section pixels in native visual proof",
+          "date": "2026-10-07T21:09:11Z"
+        },
+        {
+          "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+          "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+          "date": "2026-10-07T21:14:42Z"
+        },
+        {
+          "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+          "subject": "Capture the actual Foundation stewardship section before source admission",
+          "date": "2026-10-07T22:45:09Z"
+        },
+        {
+          "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+          "subject": "Wait for the actual loaded Governance document before section capture",
+          "date": "2026-10-07T22:48:55Z"
+        },
+        {
+          "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+          "subject": "Record the actual canonical-main Pages enablement failure",
+          "date": "2026-10-07T23:02:37Z"
+        },
+        {
+          "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+          "subject": "Reject sticky-header occlusion in stewardship browser proof",
+          "date": "2026-10-07T23:16:55Z"
+        },
+        {
+          "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+          "subject": "Preserve Foundation page assets and research route in public build",
+          "date": "2026-10-08T00:44:29Z"
+        },
+        {
+          "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+          "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+          "date": "2026-10-08T04:36:13Z"
+        },
+        {
+          "sha": "82451951df9053b0ef6854535f4c3f622e840aea",
+          "subject": "Verify the complete curated artifact after upload and download",
+          "date": "2026-10-08T07:07:24Z"
+        }
+      ],
+      "file_diff_count": 10
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008-0634",
+      "head": "b5d48b933a7f034a7bb92d7aa190f7921605b988",
+      "status": "ahead",
+      "ahead": 10,
+      "behind": 0,
+      "total": 10,
+      "returned": 10,
+      "commits": [
+        {
+          "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+          "subject": "Add bounded public stewardship principles under Foundation governance",
+          "date": "2026-10-07T20:50:04Z"
+        },
+        {
+          "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+          "subject": "Retain exact-source stewardship section pixels in native visual proof",
+          "date": "2026-10-07T21:09:11Z"
+        },
+        {
+          "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+          "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+          "date": "2026-10-07T21:14:42Z"
+        },
+        {
+          "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+          "subject": "Capture the actual Foundation stewardship section before source admission",
+          "date": "2026-10-07T22:45:09Z"
+        },
+        {
+          "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+          "subject": "Wait for the actual loaded Governance document before section capture",
+          "date": "2026-10-07T22:48:55Z"
+        },
+        {
+          "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+          "subject": "Record the actual canonical-main Pages enablement failure",
+          "date": "2026-10-07T23:02:37Z"
+        },
+        {
+          "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+          "subject": "Reject sticky-header occlusion in stewardship browser proof",
+          "date": "2026-10-07T23:16:55Z"
+        },
+        {
+          "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+          "subject": "Preserve Foundation page assets and research route in public build",
+          "date": "2026-10-08T00:44:29Z"
+        },
+        {
+          "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+          "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+          "date": "2026-10-08T04:36:13Z"
+        },
+        {
+          "sha": "b5d48b933a7f034a7bb92d7aa190f7921605b988",
+          "subject": "Fix allowlisted public artifact delivery and verify upload/download bytes",
+          "date": "2026-10-08T06:39:52Z"
+        }
+      ],
+      "file_diff_count": 10
+    },
+    {
+      "name": "repair/foundation-privileged-auth-time-20261010",
+      "head": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "status": "ahead",
+      "ahead": 11,
+      "behind": 0,
+      "total": 11,
+      "returned": 11,
+      "commits": [
+        {
+          "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+          "subject": "Add bounded public stewardship principles under Foundation governance",
+          "date": "2026-10-07T20:50:04Z"
+        },
+        {
+          "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+          "subject": "Retain exact-source stewardship section pixels in native visual proof",
+          "date": "2026-10-07T21:09:11Z"
+        },
+        {
+          "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+          "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+          "date": "2026-10-07T21:14:42Z"
+        },
+        {
+          "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+          "subject": "Capture the actual Foundation stewardship section before source admission",
+          "date": "2026-10-07T22:45:09Z"
+        },
+        {
+          "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+          "subject": "Wait for the actual loaded Governance document before section capture",
+          "date": "2026-10-07T22:48:55Z"
+        },
+        {
+          "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+          "subject": "Record the actual canonical-main Pages enablement failure",
+          "date": "2026-10-07T23:02:37Z"
+        },
+        {
+          "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+          "subject": "Reject sticky-header occlusion in stewardship browser proof",
+          "date": "2026-10-07T23:16:55Z"
+        },
+        {
+          "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+          "subject": "Preserve Foundation page assets and research route in public build",
+          "date": "2026-10-08T00:44:29Z"
+        },
+        {
+          "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+          "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+          "date": "2026-10-08T04:36:13Z"
+        },
+        {
+          "sha": "82451951df9053b0ef6854535f4c3f622e840aea",
+          "subject": "Verify the complete curated artifact after upload and download",
+          "date": "2026-10-08T07:07:24Z"
+        },
+        {
+          "sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+          "subject": "Require valid recent authentication time for privileged Foundation actions",
+          "date": "2026-10-10T00:19:52Z"
+        }
+      ],
+      "file_diff_count": 12
+    },
+    {
+      "name": "repair/foundation-public-stewardship-20261007",
+      "head": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "status": "ahead",
+      "ahead": 11,
+      "behind": 0,
+      "total": 11,
+      "returned": 11,
+      "commits": [
+        {
+          "sha": "c3bdb1dc6bcab94cd5d0ffa23ca7e5659bbe8fd7",
+          "subject": "Add bounded public stewardship principles under Foundation governance",
+          "date": "2026-10-07T20:50:04Z"
+        },
+        {
+          "sha": "5daf427de1603c25c22e61af8824ccdb9240238a",
+          "subject": "Retain exact-source stewardship section pixels in native visual proof",
+          "date": "2026-10-07T21:09:11Z"
+        },
+        {
+          "sha": "7d3fc32e909909c1e1c1a00df33428cef205c78f",
+          "subject": "Reconcile Foundation status with exact canonical-main check and inspected artifact",
+          "date": "2026-10-07T21:14:42Z"
+        },
+        {
+          "sha": "9ab3cf9092e18da5a6efa1d6dc1a50cd001f77d8",
+          "subject": "Capture the actual Foundation stewardship section before source admission",
+          "date": "2026-10-07T22:45:09Z"
+        },
+        {
+          "sha": "3491fae4a31aba3bd3109e347f6afb76e193048c",
+          "subject": "Wait for the actual loaded Governance document before section capture",
+          "date": "2026-10-07T22:48:55Z"
+        },
+        {
+          "sha": "53274f95774b535d99ed1b745ab3d0dce2f7d849",
+          "subject": "Record the actual canonical-main Pages enablement failure",
+          "date": "2026-10-07T23:02:37Z"
+        },
+        {
+          "sha": "366fc0ffdcfe44da665f0728029420adc9b072f8",
+          "subject": "Reject sticky-header occlusion in stewardship browser proof",
+          "date": "2026-10-07T23:16:55Z"
+        },
+        {
+          "sha": "90e0733e910691e50883c8c3397d65794c65a971",
+          "subject": "Preserve Foundation page assets and research route in public build",
+          "date": "2026-10-08T00:44:29Z"
+        },
+        {
+          "sha": "c907057b4c89b67df56d9df2613679f87a72e4b1",
+          "subject": "Clarify Foundation reinstatement preparation and agency dependencies",
+          "date": "2026-10-08T04:36:13Z"
+        },
+        {
+          "sha": "82451951df9053b0ef6854535f4c3f622e840aea",
+          "subject": "Verify the complete curated artifact after upload and download",
+          "date": "2026-10-08T07:07:24Z"
+        },
+        {
+          "sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+          "subject": "Require valid recent authentication time for privileged Foundation actions",
+          "date": "2026-10-10T00:19:52Z"
+        }
+      ],
+      "file_diff_count": 12
+    }
+  ]
+}

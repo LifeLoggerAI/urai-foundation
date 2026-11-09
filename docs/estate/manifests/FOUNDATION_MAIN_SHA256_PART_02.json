@@ -1,0 +1,92 @@
+{
+  "source_commit": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "start": 12,
+  "end": 24,
+  "method": "Original base64 bytes, SHA256 self-test and Git blob/byte count match",
+  "files": [
+    {
+      "path": ".github/workflows/check.yml",
+      "bytes": 3997,
+      "blob_sha": "adf010d3b68aff9c5a9ed816b065f01acf25cedd",
+      "sha256": "5b5fa64a05d767c528620c5cb10b6ec2677c7ba168fba5190553a2f71b95cc6e",
+      "state": "verified"
+    },
+    {
+      "path": ".github/workflows/docs.yml",
+      "bytes": 510,
+      "blob_sha": "fdcc26574e535cc00886c75933e9ca362e2a1794",
+      "sha256": "7cdf50fd0b5c80834911ca8f0e60a20083a6d8709e048df75d7c378053a5e022",
+      "state": "verified"
+    },
+    {
+      "path": ".github/workflows/foundation-visual-proof.yml",
+      "bytes": 6196,
+      "blob_sha": "ff1687a0308cfc6798c2cc92e2b9b67926e00672",
+      "sha256": "2f3b1d2cbaee88e513d74ef575838cd530ffd7bec725c3ff9dbe673128da3600",
+      "state": "verified"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1725,
+      "blob_sha": "0f4fc978c88084284b44d21807b23807290c770c",
+      "sha256": "abfceb71ffb32e504da302c4d6a85588c84dab422ee206ff953cede6955486bd",
+      "state": "verified"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 321,
+      "blob_sha": "e93d8178110241f5d23c4c4b9104b0d62c1ff2df",
+      "sha256": "dfa6a8bcc2520711e40501bf11dc6547169ee00bde992cf69949c24ec4257ede",
+      "state": "verified"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "state": "verified"
+    },
+    {
+      "path": "404.html",
+      "bytes": 2474,
+      "blob_sha": "3dcf15103bc5beef77a0d8baee32a6f32a07daf2",
+      "sha256": "8e75392aeb905335039436b07c4ff0a24efa406a875df8e3cc32876f322bf7a8",
+      "state": "verified"
+    },
+    {
+      "path": "accessibility/index.html",
+      "bytes": 3477,
+      "blob_sha": "1650dea9bc33da2c0d98aea3ce459ec75dd1c97d",
+      "sha256": "502bc6982b584f102dbae047f5648cdeb281ee9736f35bcaa225d4e10fcd844b",
+      "state": "verified"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 4427,
+      "blob_sha": "a921cdf22280b1623567b12214ada7b4306a19ef",
+      "sha256": "1edcd94921e66dd859448c7c0435e7fd102975b43e83d10f365e2610b1dfb8a6",
+      "state": "verified"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 19,
+      "blob_sha": "64acbdc27e4e4ff6ece6f1be1c52dd3ae9f31681",
+      "sha256": "3f629fcc9d9c43564db6c1c0a1a50611eaf0468c06471e8918268cd7f924be6e",
+      "state": "verified"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 1083,
+      "blob_sha": "a547d5878b5717cc05399d3e656d17c59b3d5615",
+      "sha256": "020ec79f3722a324df626de33f43680bf7fb8a503ebbe69ae8cb85dbf33cd052",
+      "state": "verified"
+    },
+    {
+      "path": "community/index.html",
+      "bytes": 5091,
+      "blob_sha": "77668114d797203f972013a03366ff1f058daac8",
+      "sha256": "b2ccce52c9e7f2c3e48d786759a4059b8bc4fa982158be39fd6d7bc4dc23f9f8",
+      "state": "verified"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "source": "historical branch head unique Git blobs",
+  "start": 42,
+  "end": 56,
+  "files": [
+    {
+      "path": "about.html",
+      "reference_commit": "84a027c3ca980817a863eed72b7362032f938e5b",
+      "reference_branch": "launch-readiness-nonprofit-site",
+      "git_blob_sha": "344627f74153ab5cb78b2952a1dd10b8ee8b8ce7",
+      "bytes": 4623,
+      "sha256": "ac9fc2a6f2f18c08eeb1261a391407c092100c7563bd425e5d46a157d8ad2bd5",
+      "verified": true
+    },
+    {
+      "path": "firebase.json",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "35d7bcce75f530d78004499341bb6cc8654113a6",
+      "bytes": 881,
+      "sha256": "bb03b9b3ae30a8146a2e256962d114bc2fed3262ccc39a644ac5d60b21ccf679",
+      "verified": true
+    },
+    {
+      "path": "Makefile",
+      "reference_commit": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "reference_branch": "add-standards-versioning-policy",
+      "git_blob_sha": "360c18810639bf4ffef8087c8a567c4bf2b66e96",
+      "bytes": 141,
+      "sha256": "4365d187385da32150ad17c8f470f4ff47bff7330cccd87db8247b34bae7ba22",
+      "verified": true
+    },
+    {
+      "path": "scripts/build-public-site.py",
+      "reference_commit": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "reference_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "git_blob_sha": "39cbe32cbfcd1c30d031ac62aeff38a7f0fad834",
+      "bytes": 4945,
+      "sha256": "d1d7a3ac2c10ca8413bec3cdf75e59447e24c84d6a6b17eb78e2756639f6ac3f",
+      "verified": true
+    },
+    {
+      "path": "tests/test_donation_backend_contract.py",
+      "reference_commit": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "reference_branch": "feat/foundation-donations-v1",
+      "git_blob_sha": "3eca79ec664cf2717081ade844772c85ac96a365",
+      "bytes": 4983,
+      "sha256": "550398c73a146a318395c8af1f58fddffe81dcb18fec5691462158b4c8454a20",
+      "verified": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "3effeae998684c43723002ed682a177018cd602e",
+      "bytes": 3980,
+      "sha256": "23cd177a7485f2f62c021735fa5e5c14c5c04eb3dcf785134d24b816992fd835",
+      "verified": true
+    },
+    {
+      "path": "sitemap.xml",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "41feaea821ca18fd085f222a3a48b93e35e86325",
+      "bytes": 2116,
+      "sha256": "6e3c004813d558680dc6f2e09b1e337aa85d43b224bc5505cbed48484e31237a",
+      "verified": true
+    },
+    {
+      "path": "contact/index.html",
+      "reference_commit": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439",
+      "reference_branch": "foundation-webapp-preview-v1",
+      "git_blob_sha": "426cf5793da24bde54dc1d43a86a9ca16b82f350",
+      "bytes": 2872,
+      "sha256": "ffda4e7337c04dbce31876a2e2080dd79fa4a22b04892f3281a3257a9cbb4c63",
+      "verified": true
+    },
+    {
+      "path": "scripts/build-public-site.py",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "426d51ae23b1cfe7bb00968e7e05fb349223730b",
+      "bytes": 4738,
+      "sha256": "ed977f74a026ecc537be25d63d7eb44b03570882090ad60c23d030823561109f",
+      "verified": true
+    },
+    {
+      "path": "tests/test_validate_docs.py",
+      "reference_commit": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "reference_branch": "codex/complete-audit-findings-and-polish-repo",
+      "git_blob_sha": "4286674828f0b212d203c0adfe0af4510da73112",
+      "bytes": 7292,
+      "sha256": "264f66a305035f50a29fe6a5786d1ac57ef369693ef277b52490db0bedefdeb9",
+      "verified": true
+    },
+    {
+      "path": "index.html",
+      "reference_commit": "ee3ba015aace70bb60e545815788e0fabe76ab5e",
+      "reference_branch": "harden-foundation-website-launch",
+      "git_blob_sha": "42a9f8de0e0030f95bb4305eedf9270315f059a0",
+      "bytes": 7745,
+      "sha256": "e946d732549e90c5c53920f2370f1217d0e72dc9ad12896a4663f9f0c184f437",
+      "verified": true
+    },
+    {
+      "path": "docs/foundation/URAI_FOUNDATION_MASTER_BUSINESS_MODEL.md",
+      "reference_commit": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "reference_branch": "agent/foundation-master-business-model",
+      "git_blob_sha": "442272c6372a8a9ddb718ef83d7c7be39750e7b3",
+      "bytes": 29335,
+      "sha256": "d7ab09c97a85e6b2410256cd897798f44f7a3fcbab1254841f0c273561218e0e",
+      "verified": true
+    },
+    {
+      "path": "docs/system-of-systems-integration.md",
+      "reference_commit": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "reference_branch": "converge/foundation-terminal-governance-design-20260914",
+      "git_blob_sha": "45d823732070bfc421545eae26fe93ebdc96aae6",
+      "bytes": 5964,
+      "sha256": "2b43b60f6fdf91a835b35033b41aa0b4fd165df8d6a2ad9788e417ffc862c39c",
+      "verified": true
+    },
+    {
+      "path": "tests/test_smoke_live_routes.py",
+      "reference_commit": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "reference_branch": "chatgpt/asap-public-governance-20260813",
+      "git_blob_sha": "4694d622c8ee6322b427a7263d58ad78028025b3",
+      "bytes": 4194,
+      "sha256": "7571d1832d245c99bba1d514915db7f25df40ebf58e9cb1ac1a6e1dbb298d2b3",
+      "verified": true
+    }
+  ]
+}

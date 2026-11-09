@@ -1,0 +1,245 @@
+{
+  "scope": "main-vs-branch head compare API; only ahead-side commits from shared history",
+  "start": 0,
+  "end": 10,
+  "branches": [
+    {
+      "name": "add-standards-versioning-policy",
+      "head": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+      "status": "diverged",
+      "ahead": 3,
+      "behind": 353,
+      "total": 3,
+      "returned": 3,
+      "commits": [
+        {
+          "sha": "8cd95fd175b239b65e6459e9d9c5ffa835be8c14",
+          "subject": "Add standards versioning policy",
+          "date": "2026-05-18T02:25:51Z"
+        },
+        {
+          "sha": "d5805c158b3b9ff5d328d018ce56cdc5a0ffb207",
+          "subject": "Add changelog for standards traceability",
+          "date": "2026-05-18T02:26:27Z"
+        },
+        {
+          "sha": "91b585c688d05e4d909b424c4f6562db8a97da1f",
+          "subject": "Document versioning and changelog policy",
+          "date": "2026-05-18T02:26:55Z"
+        }
+      ],
+      "file_diff_count": 3
+    },
+    {
+      "name": "add-standards-versioning-policy-v2",
+      "head": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+      "status": "diverged",
+      "ahead": 3,
+      "behind": 351,
+      "total": 3,
+      "returned": 3,
+      "commits": [
+        {
+          "sha": "33745a186486c801f55a673ba4640bd33715aebf",
+          "subject": "Add standards versioning policy",
+          "date": "2026-05-18T02:28:07Z"
+        },
+        {
+          "sha": "10346708992820b8321e06619aeb2a7651dcb347",
+          "subject": "Add changelog for standards traceability",
+          "date": "2026-05-18T02:28:19Z"
+        },
+        {
+          "sha": "6420acf279ce5f64951e24ea2be94853b1eef31f",
+          "subject": "Document versioning and changelog policy",
+          "date": "2026-05-18T02:28:44Z"
+        }
+      ],
+      "file_diff_count": 3
+    },
+    {
+      "name": "add-standards-versioning-policy-v3",
+      "head": "88fe9b533a24335975cb082c80a6de8c37eff302",
+      "status": "diverged",
+      "ahead": 3,
+      "behind": 347,
+      "total": 3,
+      "returned": 3,
+      "commits": [
+        {
+          "sha": "d9855f3e49c938ad028a8657acf481c57f7be0de",
+          "subject": "Add standards versioning policy",
+          "date": "2026-05-18T02:29:14Z"
+        },
+        {
+          "sha": "833ee4f5ceba1e17b4ba31d841297b60f8aa74fa",
+          "subject": "Add changelog for standards traceability",
+          "date": "2026-05-18T02:32:16Z"
+        },
+        {
+          "sha": "88fe9b533a24335975cb082c80a6de8c37eff302",
+          "subject": "Document versioning and changelog policy",
+          "date": "2026-05-18T02:34:57Z"
+        }
+      ],
+      "file_diff_count": 3
+    },
+    {
+      "name": "add-structured-issue-templates",
+      "head": "a1f8df574c04e337bafeb1121561300c45fb6152",
+      "status": "diverged",
+      "ahead": 5,
+      "behind": 354,
+      "total": 5,
+      "returned": 5,
+      "commits": [
+        {
+          "sha": "481ee59c34453c6237c35cef5492fef92a888e6c",
+          "subject": "Add issue template configuration",
+          "date": "2026-05-18T02:15:37Z"
+        },
+        {
+          "sha": "e6185be03181453588d03956753859e181dac112",
+          "subject": "Add policy proposal issue template",
+          "date": "2026-05-18T02:16:07Z"
+        },
+        {
+          "sha": "f3bcf13050b3378b3ef7d5157ed86590763e6646",
+          "subject": "Add risk review issue template",
+          "date": "2026-05-18T02:20:15Z"
+        },
+        {
+          "sha": "579b9878ee4474886c8def54e74cb4095dd3aeb3",
+          "subject": "Add documentation and website issue template",
+          "date": "2026-05-18T02:20:52Z"
+        },
+        {
+          "sha": "a1f8df574c04e337bafeb1121561300c45fb6152",
+          "subject": "Add maintainer process issue template",
+          "date": "2026-05-18T02:21:10Z"
+        }
+      ],
+      "file_diff_count": 5
+    },
+    {
+      "name": "agent/foundation-master-business-model",
+      "head": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "status": "diverged",
+      "ahead": 4,
+      "behind": 159,
+      "total": 4,
+      "returned": 4,
+      "commits": [
+        {
+          "sha": "042ae1e85f016bb525f125af44218c60c0535091",
+          "subject": "reconcile Foundation dossier docs onto portal main",
+          "date": "2026-09-05T00:58:11Z"
+        },
+        {
+          "sha": "0d14f401bc3081a4ca13928590cc47aa585a6ea7",
+          "subject": "privacy: remove prospective outreach record from public source",
+          "date": "2026-09-05T10:07:10Z"
+        },
+        {
+          "sha": "0fee0025d1f65653c47fd9aa47bd6043fef2e946",
+          "subject": "docs: fail closed on estate implementation evidence",
+          "date": "2026-09-05T10:45:06Z"
+        },
+        {
+          "sha": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+          "subject": "docs: record advisor governance process",
+          "date": "2026-09-05T10:45:20Z"
+        }
+      ],
+      "file_diff_count": 5
+    },
+    {
+      "name": "canon/upstream-authority-20260924",
+      "head": "da100d50b8a746c56d82cc999baa0168f58fab81",
+      "status": "diverged",
+      "ahead": 1,
+      "behind": 32,
+      "total": 1,
+      "returned": 1,
+      "commits": [
+        {
+          "sha": "da100d50b8a746c56d82cc999baa0168f58fab81",
+          "subject": "canon: restack cross-system authority on current convergence base",
+          "date": "2026-09-25T10:37:38Z"
+        }
+      ],
+      "file_diff_count": 115
+    },
+    {
+      "name": "chatgpt/asap-public-governance-20260813",
+      "head": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "status": "diverged",
+      "ahead": 3,
+      "behind": 159,
+      "total": 3,
+      "returned": 3,
+      "commits": [
+        {
+          "sha": "a713890cf5998a8690532fdd0ce25f27249635ad",
+          "subject": "reconcile public governance and 404 onto portal main",
+          "date": "2026-09-05T00:57:16Z"
+        },
+        {
+          "sha": "65bd8eee5a1d6777a0469e61a273d0763b71549a",
+          "subject": "fix: retain public status in curated Foundation artifact",
+          "date": "2026-09-05T02:25:27Z"
+        },
+        {
+          "sha": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+          "subject": "fix: verify governance route in live smoke",
+          "date": "2026-09-05T10:04:33Z"
+        }
+      ],
+      "file_diff_count": 9
+    },
+    {
+      "name": "chatgpt/urai-product-polish-20260812",
+      "head": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "status": "diverged",
+      "ahead": 2,
+      "behind": 206,
+      "total": 2,
+      "returned": 2,
+      "commits": [
+        {
+          "sha": "98adda83e97297909ecc58360ccc6a6368a97d7f",
+          "subject": "feat(site): turn Foundation home from repo audit into a public institution",
+          "date": "2026-08-12T18:57:16Z"
+        },
+        {
+          "sha": "9dfe94c984d4784a543738fa607316cfba7b447f",
+          "subject": "test(foundation): recognize conservative status non-claims",
+          "date": "2026-08-12T22:12:16Z"
+        }
+      ],
+      "file_diff_count": 2
+    },
+    {
+      "name": "codex/complete-audit-findings-and-polish-repo",
+      "head": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 377,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    },
+    {
+      "name": "cold-vault-2026-08-16",
+      "head": "4915cd5dc761aa9764fa3c72600b84bbc5b3da3c",
+      "status": "behind",
+      "ahead": 0,
+      "behind": 205,
+      "total": 0,
+      "returned": 0,
+      "commits": [],
+      "file_diff_count": 0
+    }
+  ]
+}

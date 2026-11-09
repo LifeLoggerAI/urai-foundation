@@ -1,0 +1,804 @@
+{
+  "schema_version": "1.0",
+  "repository": "LifeLoggerAI/urai-foundation",
+  "method": "GitHub REST branch and all-state pull-request lists, first 100 records; response count lower than page limit",
+  "scope": "Observed branch heads and PR state only; not exhaustive historical commit or per-branch blob inventories",
+  "observed_branches": 54,
+  "observed_prs": 48,
+  "branches": [
+    {
+      "name": "add-standards-versioning-policy",
+      "head_sha": "91b585c688d05e4d909b424c4f6562db8a97da1f"
+    },
+    {
+      "name": "add-standards-versioning-policy-v2",
+      "head_sha": "6420acf279ce5f64951e24ea2be94853b1eef31f"
+    },
+    {
+      "name": "add-standards-versioning-policy-v3",
+      "head_sha": "88fe9b533a24335975cb082c80a6de8c37eff302"
+    },
+    {
+      "name": "add-structured-issue-templates",
+      "head_sha": "a1f8df574c04e337bafeb1121561300c45fb6152"
+    },
+    {
+      "name": "agent/foundation-master-business-model",
+      "head_sha": "83e13510868d8835e6c04c3fb157b8a459b214a1"
+    },
+    {
+      "name": "canon/upstream-authority-20260924",
+      "head_sha": "da100d50b8a746c56d82cc999baa0168f58fab81"
+    },
+    {
+      "name": "chatgpt/asap-public-governance-20260813",
+      "head_sha": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9"
+    },
+    {
+      "name": "chatgpt/urai-product-polish-20260812",
+      "head_sha": "9dfe94c984d4784a543738fa607316cfba7b447f"
+    },
+    {
+      "name": "codex/complete-audit-findings-and-polish-repo",
+      "head_sha": "a993bdba59d17b5156a3d99e2b71cb066936d211"
+    },
+    {
+      "name": "cold-vault-2026-08-16",
+      "head_sha": "4915cd5dc761aa9764fa3c72600b84bbc5b3da3c"
+    },
+    {
+      "name": "complete-urai-foundation-system",
+      "head_sha": "edf1dfa8d366b36ee6a0f7d92310eea3a9451119"
+    },
+    {
+      "name": "converge/foundation-current-main-terminal-20260921",
+      "head_sha": "26a39cfb8b4313d118b31fba85804fbb42396fa9"
+    },
+    {
+      "name": "converge/foundation-terminal-governance-design-20260914",
+      "head_sha": "9d03232ac19a2097d76ad2379848e6d2f5f32f45"
+    },
+    {
+      "name": "design/foundation-institution-ui-20260913",
+      "head_sha": "8c172842a476149069ada0a854c9f00440728696"
+    },
+    {
+      "name": "design/public-benefit-web-v1",
+      "head_sha": "890c37961cab380ce4f01147fb910236fbee3dfe"
+    },
+    {
+      "name": "docs/foundation-genesis-forensic-20261107",
+      "head_sha": "454bba32a9f27e9d141d1c77cd5b9912c3f07066"
+    },
+    {
+      "name": "docs/genesis-estate-handoff-20261106",
+      "head_sha": "653705252063e7d369b3ddce6278f478f5b25a1e"
+    },
+    {
+      "name": "feat/foundation-donations-v1",
+      "head_sha": "a8d97c3dd8892d13e703e23e293089e2820260e3"
+    },
+    {
+      "name": "feat/foundation-staff-backend-v1",
+      "head_sha": "aa2bd12dd9af7bb0191e756a67e8bd4f6f1facac"
+    },
+    {
+      "name": "feat/grant-concierge-v1",
+      "head_sha": "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7"
+    },
+    {
+      "name": "feature/adam-presence-entry-20261001",
+      "head_sha": "64edbf743ad547af253e6481fba22d5933de53f4"
+    },
+    {
+      "name": "feature/global-emotional-weather-public-interest-20261002",
+      "head_sha": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69"
+    },
+    {
+      "name": "fix/dependency-security-20261007",
+      "head_sha": "1192586bcef32bd68bd8e1d4223ee7248e217042"
+    },
+    {
+      "name": "fix/foundation-community-mailto-20261005",
+      "head_sha": "7857b0cbe019bd63929f093adf0f8bcd702c49ed"
+    },
+    {
+      "name": "fix/labs-standing-certificate-receipt-20261007",
+      "head_sha": "92d78c0b53dce77ac174bfb67f85d70306277ccf"
+    },
+    {
+      "name": "fix/labs-tax-standing-status-page-20261005",
+      "head_sha": "8401ff83d1aba5b4ec1cf1a95df837ab0910968b"
+    },
+    {
+      "name": "fix/postmerge-foundation-trust-proof-20261005",
+      "head_sha": "20b521770beee295cd50d3260a6f0c981b21ba58"
+    },
+    {
+      "name": "fix/public-security-accessibility-routes-20261005",
+      "head_sha": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100"
+    },
+    {
+      "name": "foundation-audit-20260706",
+      "head_sha": "72ac186c4663f0434d0ee685abcf267be26e5201"
+    },
+    {
+      "name": "foundation-webapp-preview-v1",
+      "head_sha": "37e2ffc5c9911c5f1376024eaa45a72df7d7e439"
+    },
+    {
+      "name": "harden-foundation-website-launch",
+      "head_sha": "ee3ba015aace70bb60e545815788e0fabe76ab5e"
+    },
+    {
+      "name": "harden-static-site-validation",
+      "head_sha": "ba9030afc546015ac742d86b8747a6317f379190"
+    },
+    {
+      "name": "hardening/foundation-visual-proof-action-pins-20260914",
+      "head_sha": "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6"
+    },
+    {
+      "name": "hardening/pin-foundation-actions-20261005",
+      "head_sha": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e"
+    },
+    {
+      "name": "hardening/pin-reviewer-workflow-actions-20261005",
+      "head_sha": "4824ec130180ff1ba080501258f2be14e2424499"
+    },
+    {
+      "name": "launch-readiness-nonprofit-site",
+      "head_sha": "84a027c3ca980817a863eed72b7362032f938e5b"
+    },
+    {
+      "name": "legal/foundation-state-status-20260909",
+      "head_sha": "cb66240175789f55ff98ce60f6e948a788cf9eb4"
+    },
+    {
+      "name": "main",
+      "head_sha": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03"
+    },
+    {
+      "name": "polish/foundation-color-scheme-truth-20260913",
+      "head_sha": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77"
+    },
+    {
+      "name": "polish-foundation-website",
+      "head_sha": "559b12d772de51aa397c0667f50c98de72ed1d79"
+    },
+    {
+      "name": "polish-foundation-website-v2",
+      "head_sha": "7eff7a7fa8c67d6684fdffa36b68b05787b8eddd"
+    },
+    {
+      "name": "privacy/remove-prospective-advisor-outreach-20260905",
+      "head_sha": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4"
+    },
+    {
+      "name": "public-authority/entity-resolution-20260710",
+      "head_sha": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e"
+    },
+    {
+      "name": "reconcile/foundation19-main-20260905",
+      "head_sha": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495"
+    },
+    {
+      "name": "reconcile/foundation19-main-into-pr",
+      "head_sha": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495"
+    },
+    {
+      "name": "reconcile/foundation19-successor-20260905",
+      "head_sha": "2098714e910994401b35be45ca4b5eb6d11b1744"
+    },
+    {
+      "name": "reconcile/foundation21-current-main-20260905",
+      "head_sha": "c357a5b5c682dcd379ca284d624b2258bf2280d7"
+    },
+    {
+      "name": "reconcile/foundation34-post-privacy-20260905",
+      "head_sha": "733bd29dbf64187320ccce9531f85f93cae9af30"
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008-0634",
+      "head_sha": "b5d48b933a7f034a7bb92d7aa190f7921605b988"
+    },
+    {
+      "name": "repair/foundation-artifact-roundtrip-20261008",
+      "head_sha": "82451951df9053b0ef6854535f4c3f622e840aea"
+    },
+    {
+      "name": "repair/foundation-privileged-auth-time-20261010",
+      "head_sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c"
+    },
+    {
+      "name": "repair/foundation-public-stewardship-20261007",
+      "head_sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c"
+    },
+    {
+      "name": "repair/full-completion-web-20261008",
+      "head_sha": "90e0733e910691e50883c8c3397d65794c65a971"
+    },
+    {
+      "name": "runtime/foundation-node22-20260913",
+      "head_sha": "ddc7ceb49c0591ce2a1865e9444a7cc5eeb54524"
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 64,
+      "title": "Genesis: establish permanent estate knowledge handoff",
+      "state": "open",
+      "draft": true,
+      "merged_at": null,
+      "updated_at": "2026-11-07T04:46:46Z",
+      "head_branch": "docs/genesis-estate-handoff-20261106",
+      "head_sha": "653705252063e7d369b3ddce6278f478f5b25a1e",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/64"
+    },
+    {
+      "number": 63,
+      "title": "Validate recent authentication timestamps for privileged Foundation actions",
+      "state": "closed",
+      "draft": true,
+      "merged_at": "2026-10-10T00:36:25Z",
+      "updated_at": "2026-10-10T00:36:25Z",
+      "head_branch": "repair/foundation-privileged-auth-time-20261010",
+      "head_sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "base_branch": "repair/foundation-public-stewardship-20261007",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/63"
+    },
+    {
+      "number": 62,
+      "title": "Verify complete curated artifact through upload and download",
+      "state": "closed",
+      "draft": true,
+      "merged_at": "2026-10-08T23:52:15Z",
+      "updated_at": "2026-10-08T23:52:16Z",
+      "head_branch": "repair/foundation-artifact-roundtrip-20261008",
+      "head_sha": "82451951df9053b0ef6854535f4c3f622e840aea",
+      "base_branch": "repair/foundation-public-stewardship-20261007",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/62"
+    },
+    {
+      "number": 61,
+      "title": "Retain Foundation page dependencies in curated public build",
+      "state": "closed",
+      "draft": true,
+      "merged_at": "2026-10-08T00:50:27Z",
+      "updated_at": "2026-10-08T00:50:27Z",
+      "head_branch": "repair/full-completion-web-20261008",
+      "head_sha": "90e0733e910691e50883c8c3397d65794c65a971",
+      "base_branch": "repair/foundation-public-stewardship-20261007",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/61"
+    },
+    {
+      "number": 60,
+      "title": "Add accountable public stewardship within Foundation governance",
+      "state": "open",
+      "draft": true,
+      "merged_at": null,
+      "updated_at": "2026-10-10T00:46:02Z",
+      "head_branch": "repair/foundation-public-stewardship-20261007",
+      "head_sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/60"
+    },
+    {
+      "number": 59,
+      "title": "Repair Foundation dependency advisories and enforce SDK compatibility checks",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-07T20:35:18Z",
+      "updated_at": "2026-10-07T20:36:16Z",
+      "head_branch": "fix/dependency-security-20261007",
+      "head_sha": "1192586bcef32bd68bd8e1d4223ee7248e217042",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/59"
+    },
+    {
+      "number": 58,
+      "title": "Correct Labs standing disclosure with dated Wyoming certificate",
+      "state": "closed",
+      "draft": true,
+      "merged_at": "2026-10-07T20:35:20Z",
+      "updated_at": "2026-10-07T20:35:20Z",
+      "head_branch": "fix/labs-standing-certificate-receipt-20261007",
+      "head_sha": "92d78c0b53dce77ac174bfb67f85d70306277ccf",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/58"
+    },
+    {
+      "number": 57,
+      "title": "Correct URAI LABS LLC standing on Foundation status page",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-05T21:32:05Z",
+      "updated_at": "2026-10-05T21:32:05Z",
+      "head_branch": "fix/labs-tax-standing-status-page-20261005",
+      "head_sha": "8401ff83d1aba5b4ec1cf1a95df837ab0910968b",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/57"
+    },
+    {
+      "number": 55,
+      "title": "Fix Foundation post-merge security proof gaps",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-05T18:38:02Z",
+      "updated_at": "2026-10-05T18:38:02Z",
+      "head_branch": "fix/postmerge-foundation-trust-proof-20261005",
+      "head_sha": "20b521770beee295cd50d3260a6f0c981b21ba58",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/55"
+    },
+    {
+      "number": 54,
+      "title": "Add Foundation security reporting and accessibility contact routes",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-05T17:44:40Z",
+      "updated_at": "2026-10-05T17:44:49Z",
+      "head_branch": "fix/public-security-accessibility-routes-20261005",
+      "head_sha": "a1ec250c9013eb987410c5998e6e4ed2d2ff3100",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/54"
+    },
+    {
+      "number": 53,
+      "title": "Fix Foundation community contact mailto",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-05T12:15:41Z",
+      "updated_at": "2026-10-05T12:15:41Z",
+      "head_branch": "fix/foundation-community-mailto-20261005",
+      "head_sha": "7857b0cbe019bd63929f093adf0f8bcd702c49ed",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/53"
+    },
+    {
+      "number": 52,
+      "title": "Pin Foundation reviewer-facing workflow actions",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-05T10:54:10Z",
+      "updated_at": "2026-10-05T10:54:10Z",
+      "head_branch": "hardening/pin-reviewer-workflow-actions-20261005",
+      "head_sha": "4824ec130180ff1ba080501258f2be14e2424499",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/52"
+    },
+    {
+      "number": 51,
+      "title": "Pin Foundation Pages and docs workflow actions",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-10-05T10:56:27Z",
+      "head_branch": "hardening/pin-foundation-actions-20261005",
+      "head_sha": "6e4edb6c510a344f1e847a47cda6a55b249a4c6e",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/51"
+    },
+    {
+      "number": 49,
+      "title": "Enable GitHub Pages during governed Foundation deploy",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-04T23:45:22Z",
+      "updated_at": "2026-10-04T23:46:16Z",
+      "head_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "head_sha": "bc7f141a6fb8df9e258a7ad20adc1d275fceaa69",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/49"
+    },
+    {
+      "number": 48,
+      "title": "Govern Global Emotional Weather public-interest methodology",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-04T22:51:47Z",
+      "updated_at": "2026-10-04T22:51:47Z",
+      "head_branch": "feature/global-emotional-weather-public-interest-20261002",
+      "head_sha": "6a0b3f5d907ec930957fcac44d6487e85804fc9b",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/48"
+    },
+    {
+      "number": 47,
+      "title": "Add canonical Adam presence entry",
+      "state": "closed",
+      "draft": true,
+      "merged_at": null,
+      "updated_at": "2026-10-05T00:33:40Z",
+      "head_branch": "feature/adam-presence-entry-20261001",
+      "head_sha": "64edbf743ad547af253e6481fba22d5933de53f4",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/47"
+    },
+    {
+      "number": 46,
+      "title": "Canon: bind Foundation to cross-system UrAi authority",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-25T10:35:29Z",
+      "head_branch": "canon/upstream-authority-20260924",
+      "head_sha": "c323cad2060be9e54e99ec7dabde9e2146e47b47",
+      "base_branch": "converge/foundation-current-main-terminal-20260921",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/46"
+    },
+    {
+      "number": 45,
+      "title": "Converge Foundation Texas-status truth, Node 22, public-benefit governance experience, and proof onto current main",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-10-04T22:51:48Z",
+      "updated_at": "2026-10-04T22:51:49Z",
+      "head_branch": "converge/foundation-current-main-terminal-20260921",
+      "head_sha": "26a39cfb8b4313d118b31fba85804fbb42396fa9",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/45"
+    },
+    {
+      "number": 44,
+      "title": "Hardening: pin Foundation visual-proof actions",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:39:35Z",
+      "head_branch": "hardening/foundation-visual-proof-action-pins-20260914",
+      "head_sha": "0b25c72a6ecc2dff9a3dd443dd25d8b6b918efa6",
+      "base_branch": "runtime/foundation-node22-20260913",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/44"
+    },
+    {
+      "number": 43,
+      "title": "Converge Foundation public-benefit design with governance route proof",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-15T08:49:53Z",
+      "head_branch": "converge/foundation-terminal-governance-design-20260914",
+      "head_sha": "9d03232ac19a2097d76ad2379848e6d2f5f32f45",
+      "base_branch": "runtime/foundation-node22-20260913",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/43"
+    },
+    {
+      "number": 42,
+      "title": "Design: converge Foundation public-benefit and governance experience",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-14T16:20:47Z",
+      "head_branch": "design/public-benefit-web-v1",
+      "head_sha": "890c37961cab380ce4f01147fb910236fbee3dfe",
+      "base_branch": "runtime/foundation-node22-20260913",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/42"
+    },
+    {
+      "number": 41,
+      "title": "Design: establish Foundation INSTITUTION web experience",
+      "state": "closed",
+      "draft": true,
+      "merged_at": null,
+      "updated_at": "2026-09-15T08:15:03Z",
+      "head_branch": "design/foundation-institution-ui-20260913",
+      "head_sha": "8c172842a476149069ada0a854c9f00440728696",
+      "base_branch": "runtime/foundation-node22-20260913",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/41"
+    },
+    {
+      "number": 40,
+      "title": "Polish: align Foundation color-scheme metadata with actual UI",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:42:18Z",
+      "head_branch": "polish/foundation-color-scheme-truth-20260913",
+      "head_sha": "16f79c7576ef8c5d484d289cd5f3ba1d89d25d77",
+      "base_branch": "runtime/foundation-node22-20260913",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/40"
+    },
+    {
+      "number": 39,
+      "title": "Runtime: move Foundation staff Functions to Node 22",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:42:22Z",
+      "head_branch": "runtime/foundation-node22-20260913",
+      "head_sha": "ddc7ceb49c0591ce2a1865e9444a7cc5eeb54524",
+      "base_branch": "legal/foundation-state-status-20260909",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/39"
+    },
+    {
+      "number": 38,
+      "title": "Public: publish current Texas Foundation status",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:42:26Z",
+      "head_branch": "legal/foundation-state-status-20260909",
+      "head_sha": "cb66240175789f55ff98ce60f6e948a788cf9eb4",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/38"
+    },
+    {
+      "number": 37,
+      "title": "Sync post-privacy main into Foundation donations candidate",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-05T22:42:24Z",
+      "updated_at": "2026-09-05T22:42:28Z",
+      "head_branch": "main",
+      "head_sha": "ea5c39210c242a21af0e4c9c3d332e187bdd0b8a",
+      "base_branch": "feat/foundation-donations-v1",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/37"
+    },
+    {
+      "number": 36,
+      "title": "Sync post-privacy main into Foundation governance successor",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-05T22:40:48Z",
+      "updated_at": "2026-09-05T22:40:48Z",
+      "head_branch": "main",
+      "head_sha": "ea5c39210c242a21af0e4c9c3d332e187bdd0b8a",
+      "base_branch": "reconcile/foundation19-successor-20260905",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/36"
+    },
+    {
+      "number": 35,
+      "title": "Restack Foundation advisor dossier after privacy merge",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:42:41Z",
+      "head_branch": "reconcile/foundation34-post-privacy-20260905",
+      "head_sha": "733bd29dbf64187320ccce9531f85f93cae9af30",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/35"
+    },
+    {
+      "number": 34,
+      "title": "Restack Foundation business-model dossier on current main",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-05T22:36:26Z",
+      "head_branch": "reconcile/foundation21-current-main-20260905",
+      "head_sha": "c357a5b5c682dcd379ca284d624b2258bf2280d7",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/34"
+    },
+    {
+      "number": 33,
+      "title": "Privacy: remove prospective advisor outreach from public source",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-05T22:34:44Z",
+      "updated_at": "2026-09-05T22:34:44Z",
+      "head_branch": "privacy/remove-prospective-advisor-outreach-20260905",
+      "head_sha": "8a0ab7fad34ef5b662160a90ad9adbff2aab8ab4",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/33"
+    },
+    {
+      "number": 32,
+      "title": "Reconcile current main into Foundation dossier #21",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-05T21:56:18Z",
+      "head_branch": "main",
+      "head_sha": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "base_branch": "agent/foundation-master-business-model",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/32"
+    },
+    {
+      "number": 31,
+      "title": "Reconcile Foundation governance and 404 onto current main",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-14T16:20:36Z",
+      "head_branch": "reconcile/foundation19-successor-20260905",
+      "head_sha": "2098714e910994401b35be45ca4b5eb6d11b1744",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/31"
+    },
+    {
+      "number": 30,
+      "title": "Reconcile current main into Foundation #19 branch",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-05T21:44:44Z",
+      "head_branch": "main",
+      "head_sha": "1fbebd8dfd9b4960757b92424f6fd8338cb2c495",
+      "base_branch": "chatgpt/asap-public-governance-20260813",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/30"
+    },
+    {
+      "number": 28,
+      "title": "Foundation donations V1: gated Stripe Checkout and server donation ledger",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-20T22:42:45Z",
+      "head_branch": "feat/foundation-donations-v1",
+      "head_sha": "a8d97c3dd8892d13e703e23e293089e2820260e3",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/28"
+    },
+    {
+      "number": 27,
+      "title": "Foundation staff backend V1: grant data and employee authorization",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-05T13:04:53Z",
+      "updated_at": "2026-09-05T13:11:39Z",
+      "head_branch": "feat/foundation-staff-backend-v1",
+      "head_sha": "aa2bd12dd9af7bb0191e756a67e8bd4f6f1facac",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/27"
+    },
+    {
+      "number": 23,
+      "title": "Foundation portal: community outreach, donation surface, staff login, and employee Grant Desk",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-09-04T17:32:24Z",
+      "updated_at": "2026-09-04T17:32:25Z",
+      "head_branch": "feat/grant-concierge-v1",
+      "head_sha": "0aa5436d4ccb1babd591bdc09241ec9e1879c5f7",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/23"
+    },
+    {
+      "number": 21,
+      "title": "Add URAI Foundation master business model dossier",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-05T21:56:33Z",
+      "head_branch": "agent/foundation-master-business-model",
+      "head_sha": "83e13510868d8835e6c04c3fb157b8a459b214a1",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/21"
+    },
+    {
+      "number": 19,
+      "title": "Finish Foundation governance and missing-route public surfaces",
+      "state": "closed",
+      "draft": false,
+      "merged_at": null,
+      "updated_at": "2026-09-05T21:50:22Z",
+      "head_branch": "chatgpt/asap-public-governance-20260813",
+      "head_sha": "97cdd81cbb7ca32f7fddd37f65cd12e00157eca9",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/19"
+    },
+    {
+      "number": 18,
+      "title": "Production polish: public-interest Foundation homepage",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-08-13T00:21:56Z",
+      "updated_at": "2026-08-13T00:21:56Z",
+      "head_branch": "chatgpt/urai-product-polish-20260812",
+      "head_sha": "9dfe94c984d4784a543738fa607316cfba7b447f",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/18"
+    },
+    {
+      "number": 17,
+      "title": "Correct Foundation legal-status language to match available evidence",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-07-10T17:01:28Z",
+      "updated_at": "2026-07-10T17:01:28Z",
+      "head_branch": "public-authority/entity-resolution-20260710",
+      "head_sha": "029adc875f5614a8f3baadc5e3fb7bd2c89ddf9e",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/17"
+    },
+    {
+      "number": 16,
+      "title": "Establish URAI Foundation public authority and status disclosure",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-07-10T14:35:58Z",
+      "updated_at": "2026-07-10T14:35:58Z",
+      "head_branch": "public-authority/entity-resolution-20260710",
+      "head_sha": "4d4024f46196fdba22a8f7f519b0c83e825419f4",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/16"
+    },
+    {
+      "number": 11,
+      "title": "Audit Foundation production truth and harden v1 standards",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-07-17T15:29:03Z",
+      "updated_at": "2026-07-17T15:29:03Z",
+      "head_branch": "foundation-audit-20260706",
+      "head_sha": "72ac186c4663f0434d0ee685abcf267be26e5201",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/11"
+    },
+    {
+      "number": 8,
+      "title": "Add structured issue templates",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-18T02:23:26Z",
+      "updated_at": "2026-05-18T02:24:13Z",
+      "head_branch": "add-structured-issue-templates",
+      "head_sha": "a1f8df574c04e337bafeb1121561300c45fb6152",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/8"
+    },
+    {
+      "number": 7,
+      "title": "Harden static site validation",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-18T02:11:57Z",
+      "updated_at": "2026-05-18T02:13:09Z",
+      "head_branch": "harden-static-site-validation",
+      "head_sha": "ba9030afc546015ac742d86b8747a6317f379190",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/7"
+    },
+    {
+      "number": 6,
+      "title": "Complete URAI Foundation system implementation",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-18T02:03:20Z",
+      "updated_at": "2026-05-18T02:03:20Z",
+      "head_branch": "complete-urai-foundation-system",
+      "head_sha": "edf1dfa8d366b36ee6a0f7d92310eea3a9451119",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/6"
+    },
+    {
+      "number": 5,
+      "title": "Polish foundation website",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-08T18:22:33Z",
+      "updated_at": "2026-05-08T18:22:33Z",
+      "head_branch": "polish-foundation-website",
+      "head_sha": "559b12d772de51aa397c0667f50c98de72ed1d79",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/5"
+    },
+    {
+      "number": 4,
+      "title": "Add polished URAI Foundation website",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-08T18:18:45Z",
+      "updated_at": "2026-05-08T18:19:12Z",
+      "head_branch": "polish-foundation-website-v2",
+      "head_sha": "7eff7a7fa8c67d6684fdffa36b68b05787b8eddd",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/4"
+    },
+    {
+      "number": 2,
+      "title": "Add governance/docs scaffolding, doc validator, tests, and CI checks",
+      "state": "closed",
+      "draft": false,
+      "merged_at": "2026-05-07T17:47:48Z",
+      "updated_at": "2026-05-07T17:50:03Z",
+      "head_branch": "codex/complete-audit-findings-and-polish-repo",
+      "head_sha": "a993bdba59d17b5156a3d99e2b71cb066936d211",
+      "base_branch": "main",
+      "url": "https://github.com/LifeLoggerAI/urai-foundation/pull/2"
+    }
+  ]
+}
