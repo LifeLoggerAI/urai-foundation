@@ -29,7 +29,7 @@ Canonical main `functions/src/index.ts`: Git blob `fe13ea200a9dd117ed57f1a8d1a2d
 
 `firebase.json` original blob `203c05716102a3d962b08740a6a9d182ec9958e4`: only Firestore rules/indexes and Node 22 Functions codebase `foundation-staff`; no Firebase project, Hosting mapping or Storage rules. Public `grants/grants.js` blob `4edfb94397145e7c374040044e7ac238d052c3c6` is a browser-memory **demonstration**, producing local JSON with an explicit no-real-approval/submission disclosure. Do not mistake its local "approved" label for a signed grant or funder submission.
 
-`scripts/validate-staff-backend.py` expressly describes itself as a **static security contract** and checks source string markers, not a Firebase-authenticated emulator. Main `Makefile` invokes `python3 -m unittest discover -s tests` and static validators. No new native tests were run in this pass: a direct public `git ls-remote` failed DNS resolution for `github.com`; connected GitHub source reads succeeded. Historical green runs are separately exact-SHA-scoped; no active application tests claimed here.
+`scripts/validate-staff-backend.py` expressly describes itself as a **static security contract** and checks source string markers, not a Firebase-authenticated emulator. Main `Makefile` invokes `python3 -m unittest discover -s tests` and static validators. No new native tests were run in this pass. A previous worker documented a direct public `git ls-remote` DNS resolution failure for `github.com`; this continuation used connected GitHub source reads instead and did not independently rerun that shell command. Historical green runs are separately exact-SHA-scoped; no active application tests claimed here.
 
 ## 3. GitHub Actions fresh exact audit-head readback
 
