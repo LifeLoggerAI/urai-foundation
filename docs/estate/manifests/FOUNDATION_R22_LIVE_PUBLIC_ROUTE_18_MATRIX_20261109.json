@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "observed_date_utc": "2026-11-09",
+  "method": "Read-only TinyFish fetch_content (ttl 0; provider caching conditions may apply); public page text vs HTTP status. No Firebase admin release readback.",
+  "source_branch": "main",
+  "source_sha": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+  "fallback": "https://urai-foundation.web.app",
+  "apex": "https://uraifoundation.org",
+  "www_apex_observed": "Squarespace Coming Soon at https://www.uraifoundation.org/",
+  "apex_policy_doc_observed": "Squarespace Coming Soon at /docs/governance-charter.md",
+  "apex_sitemap_observed": "HTTP 401 target_http_error",
+  "fallback_sitemap": "Sitemap returned 16 URLs, canonicals target apex coming-soon domain; contains six old docs/ routes",
+  "routes": [
+    {
+      "path": "/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/",
+      "apex_observed": "Squarespace Coming Soon",
+      "semantic_note": null
+    },
+    {
+      "path": "/status/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/status/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/status/",
+      "apex_observed": "Squarespace Coming Soon",
+      "semantic_note": "main contains dated Texas termination disclosure; fallback 404"
+    },
+    {
+      "path": "/governance/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/governance/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/governance/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/community/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/community/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/community/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/donate/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/donate/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/donate/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": "main informational mailto only; closed unmerged Stripe candidate"
+    },
+    {
+      "path": "/staff/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/staff/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/staff/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": "main disabled login placeholder; fallback 404"
+    },
+    {
+      "path": "/grants/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/grants/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/grants/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": "main source browser-memory demo; fallback 404"
+    },
+    {
+      "path": "/accessibility/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/accessibility/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/accessibility/",
+      "apex_observed": "Squarespace Coming Soon",
+      "semantic_note": null
+    },
+    {
+      "path": "/deaf-community/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/deaf-community/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/deaf-community/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/emotional-wellness/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/emotional-wellness/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/emotional-wellness/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/responsible-ai/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/responsible-ai/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/responsible-ai/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/research/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/research/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/research/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/research/global-emotional-weather/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/research/global-emotional-weather/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/research/global-emotional-weather/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/partners/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/partners/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/partners/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/contact/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/contact/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/contact/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/privacy/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/privacy/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/privacy/",
+      "apex_observed": "Squarespace Coming Soon",
+      "semantic_note": null
+    },
+    {
+      "path": "/terms/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/terms/",
+      "fallback_observed": "page content returned",
+      "apex_url": "https://uraifoundation.org/terms/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    },
+    {
+      "path": "/security/",
+      "source_in_main": true,
+      "fallback_url": "https://urai-foundation.web.app/security/",
+      "fallback_observed": "HTTP 404 page_not_found",
+      "apex_url": "https://uraifoundation.org/security/",
+      "apex_observed": "not fetched individually",
+      "semantic_note": null
+    }
+  ],
+  "counts": {
+    "source_routes": 18,
+    "fallback_content": 10,
+    "fallback_404": 8,
+    "apex_pages_checked": 4
+  },
+  "boundaries": [
+    "Content was returned, but exact deployed commit SHA is NOT verified",
+    "Canonical DNS/TLS and Firebase/GCP live project ownership/IAM not verified",
+    "This is no authorization to redeploy/cutover DNS",
+    "Third-party fetching may use caches, preserve observation date"
+  ]
+}
