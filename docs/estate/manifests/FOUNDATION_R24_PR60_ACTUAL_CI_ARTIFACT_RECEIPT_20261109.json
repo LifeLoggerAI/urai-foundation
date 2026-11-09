@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-11-09",
+  "repository": "LifeLoggerAI/urai-foundation",
+  "source_sha": "aa7bff55f9a88656a7eb067e74c2ae5de879447c",
+  "source_pr": 60,
+  "state": "draft/unmerged, not currently deployed or release certified",
+  "github_action_runs": {
+    "check": 38009775773,
+    "visual": 38009775775
+  },
+  "github_artifacts": [
+    {
+      "id": 11652932822,
+      "kind": "public-site-build",
+      "zip_bytes": 112290,
+      "sha256": "971b913a4ffd2bd3b9c2d3b382c16405ab50563c3e80569fe90605ba33cdd2bc"
+    },
+    {
+      "id": 11652853107,
+      "kind": "check-diagnostics",
+      "zip_bytes": 5057,
+      "sha256": "9882a34e047bc064505887fad1c40616e8bb1c5dedd4b0edac77f199b0762ec3"
+    },
+    {
+      "id": 11652452754,
+      "kind": "visual-proof",
+      "zip_bytes": 3555749,
+      "sha256": "0a79ff703baff0a41c19a950f5b1d00558674481f0fcdc4a05eaa6c4b43d03f1"
+    }
+  ],
+  "fresh_r24": {
+    "public_manifest_files": 44,
+    "public_manifest_bytes": 245557,
+    "rehashed_file_mismatches": 0,
+    "local_http_200": 18,
+    "local_http_total": 18,
+    "local_link_misses": 0,
+    "html_missing_single_h1": 0,
+    "html_missing_main": 0,
+    "compiled_js_sha256": "bdeb3a0f44c57ca1fb3120de51f40d3d7cd8b36fce36c2f1afea904cd9300b6f",
+    "compiled_matches_original_R23_fixture": true,
+    "synthetic_trust_replay_expected": 10,
+    "synthetic_trust_replay_observed": 10,
+    "synthetic_trust_includes_unsafe_outcomes": true,
+    "chromium_fresh": "blocked by execution environment"
+  },
+  "historic_ci_logs": {
+    "sdk_compatibility_tests": 62,
+    "sdk_pass": 62,
+    "python_unit_tests": 71,
+    "python_pass": 71,
+    "functions_build": "pass",
+    "typecheck": "pass",
+    "npm_audit_findings_then": 0,
+    "historical_visual_screenshots": 25,
+    "historical_local_visual_routes_200": 9,
+    "governance_clip_hashes_match": 2
+  },
+  "historic_CI_limitation": "Candidate exact SHA only, no evidence of current deployment, legal status, physical device or authenticated native emulator acceptance.",
+  "current_ci_failure": {
+    "pr67_latest_before_R24": 42561092428,
+    "job_id": 128977446065,
+    "steps": null,
+    "logs": "404 BlobNotFound",
+    "artifacts": 0,
+    "root_cause": "UNKNOWN"
+  },
+  "public_source_contract": {
+    "main_source_sha": "8ee8036b649ae9c9e73ae374a7247f0bb34c4c03",
+    "main_allowlist_files": 42,
+    "main_routes": 17,
+    "main_unresolved_root_rel_refs": 3,
+    "pr60_allowlist_files": 44,
+    "pr60_routes": 18,
+    "pr60_unresolved_root_rel_refs": 0
+  },
+  "evidence_scope": "Archive original GitHub Actions artifacts and local independent artifact SHA/HTTP parsing; no production deployment or current provider resource inspection.",
+  "release_decision": "HOLD"
+}
